@@ -1,0 +1,81 @@
+# --------------------------------------------------  Welcome to the w40kmod --------------------------------------------
+icon		"w40kmod/w40keventmoddingbanner1.tga"
+description 	"v0.01 of Event Modding for w40kmod. Causes an Event on turn 1 that changes neutral units to themed 40k units. Requires ALL modules to work otherwise it WILL cause a crash when units cannot be found. Use with caution as it may also cause a slowdown as it checks each square in the game and replaces units."
+
+# --------------------------------------------------  Event Modding for w40kmod -----------------------------------------
+# Converts Independent undead to Necrons
+# Commented out due to causing the game to hang.
+squareevent
++turnnbr 0
+#promoteunits <player> <max amount> "from monster" "to monster"
+promoteunits 16 100 "Soulless" "Mindless Necron Warrior"
+promoteunits 16 100 "Longdead" "Damaged Necron Immortal"
+promoteunits 16 100 "Ghoul" "Flayed One"
+promoteunits 16 100 "Dust Walker" "Canoptek Wraith"
+promoteunits 16 100 "Ghost" "Deathmark"
+promoteunits 16 100 "Bandit" "Deathmark"
+promoteunits 16 100 "Bakemono Sho" "Canoptek Scarabs" #Guards mines
+promoteunits 16 100 "O Bakemono" "Canoptek Wraith"
+promoteunits 16 100 "Dai Bakemono" "Canoptek Spyder"
+promoteunits 16 100 "Ogre" "Lychguard"
+promoteunits 16 100 "Ogre Chief" "Obelisk (Dormant)"
+promoteunits 16 100 "Dwarf Warrior" "Necron Immortal" #Guards mines
+promoteunits 16 100 "Dwarf" "Necron Warrior"
+promoteunits 16 100 "Dwarf Arbalest" "Deathmark"
+promoteunits 16 100 "Dwarf Commander" "Necron Lord"
+promoteunits 16 100 "Pale One" "Flayed One"
+promoteunits 16 100 "Cavern Guard" "Tomb Blade"
+promoteunits 16 100 "Effigy" "Destroyer Lord"
+
+# Converts Independent monsters to Tyranids
+# Commented out due to causing the game to hang.
+
+#promoteunits <player> <max amount> "from monster" "to monster"
+promoteunits 16 100 "Deer" "Instinctive Termagant"
+promoteunits 16 100 "Wolf" "Instinctive Hormagaunt"
+promoteunits 16 100 "Bear" "Instinctive Venomthrope"
+promoteunits 16 100 "Snake" "Instinctive Hormagaunt"
+promoteunits 16 100 "Moose" "Instinctive Lictor"
+promoteunits 16 100 "Murder of crows" "Instinctive Gargoyle"
+promoteunits 16 100 "Boar" "Spore Mine"
+promoteunits 16 100 "Dryad" "Sporocyst"
+promoteunits 16 100 "Woodman" "Instinctive Lictor"
+promoteunits 16 100 "Monster Toad" "Sporocyst"
+promoteunits 16 100 "Swamp Ghost" "Toxicrene"
+promoteunits 16 100 "Lion" "Pyrovore"
+promoteunits 16 100 "Giant Ant" "Mucolid Spore Mine"
+promoteunits 16 100 "Fire Ant" "Spore Mine"
+promoteunits 16 100 "Serpent" "Ravener"
+
+# Converts Independent Humans to Astra Militarum Units
+# Commented out due to causing the game to hang.
+#promoteunits <player> <max amount> "from monster" "to monster"
+#Towns and cities
+promoteunits 16 100 "Spearman" "Cadian Conscript" 
+promoteunits 16 100 "Swordsman" "Penal Trooper"
+promoteunits 16 100 "Archer" "Barricades and Walls"
+promoteunits 16 100 "Crossbowman" "Vostroyan Firstborn"
+promoteunits 16 100 "Captain" "Icarus Lascannon Emplacement"
+promoteunits 16 100 "Halberdier" "Valhalan Ice Warrior"
+promoteunits 16 100 "Pikeneer" "Valhalan Ice Warrior"
+promoteunits 16 100 "Balista" "Imperial Bunker"
+promoteunits 16 100 "High Lord" "Armageddon Steel Legion Sergeant"
+promoteunits 16 100 "Knight" "Armageddon Steel Legion Heavy Weapons Team"
+promoteunits 16 100 "Longbowmen" "Armageddon Steel Legion Trooper"
+promoteunits 16 100 "Zweihander" "Armageddon Steel Legion Trooper"
+promoteunits 16 100 "Levy" "Mordian Iron Guard"
+promoteunits 16 100 "Slinger" "Mordian Iron Guard"
+promoteunits 16 100 "Scout" "Catachan Sniper"
+promoteunits 16 100 "Brigand" "Catachan Sniper"
+promoteunits 16 100 "Goblin" "Catachan Trooper"
+promoteunits 16 100 "Hyena Tribe Warrior" "Catachan Trooper"
+promoteunits 16 100 "Lion Tribe Warrior" "Catachan Trooper"
+promoteunits 16 100 "Lion King" "Catachan Heavy Weapons Team"
+promoteunits 16 100 "Witch Doctor" "Catachan Sergeant"
+promoteunits 16 100 "Pygmy" "Catachan Trooper"
+promoteunits 16 100 "Great Ape" "Catachan Special Weapons"
+promoteunits 16 100 "Tiger" "Catachan Sniper"
+promoteunits 16 100 "Scorpion" "Tallarn Desert Raider"
+promoteunits 16 100 "Scorpion Beast" "Tallarn Special Weapons"
+promoteunits 16 100 "Large Spider" "Cadian forward Sentry"
+endevent

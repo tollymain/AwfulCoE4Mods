@@ -1,0 +1,178 @@
+# Homeland SecurityCo4 mod
+#unzip contents into C:\Users\YourName\AppData\Roaming\coe4\mods
+# Add immobile defense to every players home citadel to prevent early AI destruction by aggressive wildlife and bandits.  Code had to be radically changed as original COe3 did not work. Added another crystal and Guardian.  Game may give AI  extra Guardian and crystals over player.
+
+icon "HomelandSecurityCo4.tga"
+description "Updated for Co4.   Add immobile defense to every players home citadel to prevent early AI elimination by random wildlife and bandits. Most early AI deaths now result in that class losing its only remaining commander.^Mod inspired by Ballbarian and updated for CoE4 by Stehmchip."
+
+selectclass 1  # Baron
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 2  # Necromancer
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 3  # Demonologist
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 4  # Witch
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 5  # Priestess
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 6  # Bakemono
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 7  # Barbarian
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 8  # Senator
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 9  # Pale One
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 10  # Druid
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 11  # Hoburg
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 12  # Warlock
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 13  # Priest King
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 14  # Troll King
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 15  # Enchanter
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 19  # High Cultist 
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 20  # Dwarf Queen
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 21  # Voice of El
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+
+
+selectclass 22  # Illusionist
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+selectclass 23  # Markgraf
+addstartunits "Guardian" 2
+addstartunits "Crystal" 6
+
+newmonster "Sidekick"
+copystats "Archer"
+
+newweapon "Summon Goblin"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+newweapon "Summon Ogre"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+newweapon "Summon Sidekick"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+newweapon "Summon Dwarf Warriors"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+newweapon "Summon Outdoor Dwarfs"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+selectmonster "Goblin Chieftain"
+prebatweapon 20 "Summon Goblin"
+
+selectmonster "Ogre Chief"
+prebatweapon 3 "Summon Ogre"
+
+selectmonster "Goblin Hero"
+prebatweapon 8 "Summon Goblin"
+
+selectmonster "Goblin Murderer"
+prebatweapon 3 "Summon Goblin"
+
+selectmonster "Hero"
+prebatweapon 3 "Summon Sidekick"
+
+selectmonster "Chosen of Dvalin"
+prebatweapon 3 "Summon Outdoor Dwarfs"
+prebatweapon 7 "Summon Dwarf Warriors"
+
+selectmonster "Greater Devil"
+name "Greater Balrog"
+descr "The proudest of all the Balrogs of Morgoth, head bodyguard of the once grand celestial turned vile sorcerer and who was thrown down at the end of the 2nd Age; the Greater Balrog loves to fly around and cause the sinners to cower in fear and awe.  Apart from impressing sinners, the Greater Balrogs also like to uphold discipline among the lesser balrogs and administer the necessary tortures to keep them in line."
+
+selectmonster "Devil"
+name "Balrog"
+descr "Balrogs, also known as devils, are the creation of Morgoth, an ancient celestial  who at the beginning of time rebelled against El.   Fused with the power of other great personages  who rebelled with him, Morgoth created  infernal beings of great strength as his bodyguards.  Only with human sacrifice is it possible to summon and bind these evil beings.  Balrogs are born in the fires of the Melkor's Inferno and are impervious to heat and flame.  They have glowing red bodies and bat-like wings grow from their shoulders.  Balrogs are armed with tridents and their barbed tails can sting opponents in close combat."
+
+selectmonster "Arch Devil"
+name "Arch Balrog"
+
+selectmonster "Devil Illusion"
+name "Balrog Illusion"
+descr "Looks just like a regular Balrog - if the Balrog was bluish, paper-thin and possible to see through.  Though our recommendation is to simply ignore them, there have still been some reports of soldiers who have managed to be wounded by them..."
+
+selectmonster "Greater Devil Illusion"
+name "Greater Balrog Illusion"
+descr "Looks just like a regular Greater Balrog - if the Balrog was bluish, paper-thin and possible to see through.  Though our recommendation is to simply ignore them, there have still been some reports of soldiers who have managed to be wounded by them..."
+
+selectmonster "Phantasmal Devil"
+name "Phantasmal Balrog"
+descr "Looks just like a regular Balrog, only mirrored.   If the troop you meet is left-handed or looks very similar to the rest of the squad, you might be better off ignoring it altogether and even disbelieving that it is there.  It is said, however, that most demons and Balrog are indeed left-handed to begin with, but any such rumors are still unsubstantiated as it is generally a bad idea to trust anyone that has survived a meeting with either, and Demonologists are generally very secretive about this"
+
+
+selectmonster "Phantasmal Greater Devil"
+name "Phantasmal Greater Balrog"
+descr "Looks just like a regular Greater Balrog, only mirrored.  If the troop you meet is left-handed or looks very similar to the rest of the squad, you might be better off ignoring it altogether and even disbelieving that it is there.  It is said, however, that most demons and Balrog are indeed left-handed to begin with, but any such rumors are still unsubstantiated as it is generally a bad idea to trust anyone that has survived a meeting with either, and Demonologists are generally very secretive about this."
+
+
+
+
+

@@ -1,0 +1,421 @@
+Modding Numbers
+Here are tables with updated numbers for coe4. Most numbers from coe3 are still valid, but there are many additions in coe4.
+
+player:
+   0-15 = player number
+   16 = independends
+   17 = special monsters
+   18 = Horrors
+   19 = Hades
+   20 = Inferno
+   -1 = everyone (only for messages and a few triggers)
+   -2 = event player (current player)
+   -3 = square owner
+   -4 = army owner
+
+resources (summoning cost types):
+    0 = gold
+    1 = iron
+    2 = herbs
+    3 = fungus
+    4 = sacr
+    5 = hands
+    6 = weed
+    7 = fire
+    8 = water
+    9 = air
+    10 = earth
+    11 = trade
+    12 = relics
+    13 = corpses
+    14 = gems
+
+target rank:
+    0 = self
+    1 = front row enemy
+    5 = border square (for summoning)
+    6 = border square, but not behind walls (for summoning)
+    7 = target a square (for summoning)
+    8 = a rear enemy
+    9 = any enemy
+   -9 = a friendly unit
+
+damage types (others same as coe3):
+   23 = banish
+
+sound effects (others same as coe3):
+   11 = heavy blow
+   31 = magic enchantment
+   39 = frost
+   57 = summoning
+   68 = small fire
+  114 = horn
+
+flymodes:
+  1 = sprite
+  2 = flying particles
+  3 = fast flying particles
+  4 = extra fast flying particles
+  5 = line made of particles
+  6 = only one flyspr, explosion (aoe) on hit
+  7 = only one line, explosion (aoe) on hit
+  8 = slow line made of particles
+  9 = particles from heaven (meteor)
+
+looks:
+  (these are all particle looks, most are made for flymode 2. Those suitable as flying particles are marked with (fly) and those suitable as particle lines are markes (line))
+  1 = Pain
+  2 = White Dust
+  3 = White Flare
+  4 = Horror Mark
+  5 = Fear
+  7 = Poison Cloud
+  8 = Poison Cloud
+  9 = Charm
+  10 = Charm
+  11 = Sleep
+  12 = Cold
+  13 = Sleeping
+  14 = Burning
+  15 = Summoning
+  16 = Ben
+  17 = Water
+  18 = Iron Storm
+  19 = Sun Flare
+  20 = Bolt of Unlife
+  21 = Iron Bolt (fly)
+  22 = Briar Cage
+  23 = Dark Purplish
+  24 = Huge Lightning
+  25 = Small Lightning
+  26 = Wind
+  27 = Earth
+  28 = Stellar Bolt
+  29 = Words of the Void
+  30 = Mind Burn
+  31 = Soul Slay
+  32 = Dimension Shift
+  33 = Lashes of Death
+  34 = Blood Burst
+  35 = Pillar of Fire
+  36 = Shooting Thorns
+  37 = Syllable of Death
+  38 = Purify
+  39 = Darkness
+  40 = Smite
+  41 = Blood Boil
+  42 = Dehydration
+  43 = Sailor's Death
+  44 = Stone Skin
+  45 = Iron Skin
+  46 = Strength
+  47 = Smokeless Flame
+  48 = Confusion
+  49 = Acid Splash
+  50 = Rain of Blood
+  51 = Golden Flare
+  52 = Harm
+  54 = Color Spray
+  55 = Divine Flames
+  56 = Small Flame
+  57 = Phantasmal Flame
+  58 = Drag Lightning
+  59 = Drag Chasm
+  60 = Poison Bolts (fly)
+  61 = Venom (line)
+  62 = Poison Cloud (fly)
+  63 = Poison Breath (fly)
+  64 = Poison Breath (fly)
+  65 = Fireball (fly)
+  66 = Flame (line)
+  67 = Blood (line)
+  68 = Flame
+  69 = Flame Smoke
+  70 = Phantalsmal Bolts (fly)
+  71 = Phantasmal Ray (line)
+  72 = Bolts of Light (fly)
+  73 = Ray of Light (line)
+  74 = Drain Life (line)
+  75 = Soul Drain (line)
+  76 = Bling Circle
+  77 = Bane Fire
+  78 = Bane Smoke
+  79 = Death Gaze (line)
+  80 = Golden Gaze (line)
+  81 = Black Gaze (line)
+  82 = Fear
+  83 = White Flare
+  84 = Meteor
+  85 = Meteor Smoke
+  86 = Meteor Shower
+  87 = Meteor Shower Smoke
+  88 = Frost (fly)
+  89 = Freeze (line)
+  90 = Frost
+  91 = Frost Smoke
+  92 = Blizzard
+  93 = Frost Smoke
+  94 = Icicle (fly)
+  95 = Fiery Breath (fly)
+  96 = Smoke Breath (fly)
+  97 = Icy Breath (fly)
+  98 = Frost Smoke Breath (fly)
+  99 = Acid Breath (line)
+  100 = Acid Breath (line)
+  101 = Summon Shade (line)
+  102 = Summon Shade (line)
+  103 = Purple Summon Circle
+  104 = Blood Demon (line)
+  105 = Blood Summon (line)
+  106 = Blood Summon Circle
+  107 = Symbol of Light (line)
+  108 = Hypno Ray (line)
+  109 = Frozen Heart (line)
+  110 = Hail Storm
+  111 = Combustion (line)
+  112 = Combustion Smoke
+  113 = Poison Dart (fly)
+  114 = Poison Mist (fx)
+  115 = Paralyze (line)
+  116 = Disintegrate (line)
+  117 = Confusion (line)
+  118 = Cloud of Death (fly)
+  119 = Cloud of Death
+  120 = Sleep (line)
+  121 = Hold (line)
+  122 = Enslave (line)
+  123 = Web (fly)
+  124 = Finger of Death (line)
+  125 = Purple Dust
+  126 = Wither (fly)
+  127 = Disease (fly)
+  128 = Decay (fly)
+  129 = Bolt of Unlife (fly)
+  130 = Black Cloud (fly)
+  131 = Black Smoke
+  132 = Strength Sap (line)
+  133 = Dark Red Smoke
+  134 = Weakness (fly)
+  135 = Dark Power (line)
+  136 = White Dust
+  137 = Wild Growth
+  138 = Acid Rain (fly)
+  139 = Acid Rain (fly)
+  140 = Invulnerability
+  141 = Death Spell (fly)
+  142 = Death Spell
+  143 = Chill of the Dead (fly)
+  144 = Chill of the Dead
+  145 = Chill of the Dead
+  146 = Shade of Death
+  147 = Tendrils of Death (line)
+  148 = Acid Mist (fly)
+  149 = Charm (line)
+  150 = Storm Wind (fly)
+  151 = Lightning (line)
+  152 = Orb Lightning
+  153 = Thunder Strike
+  154 = White Dust
+  155 = Thunderhead
+  156 = White Dust
+  157 = Curse (line)
+  158 = Curse
+  159 = Confusion (fly)
+  160 = Curse of the Frog Prince
+  161 = Maws of the Earth
+  162 = Redish Flame
+  163 = Acid Dart (fly)
+  164 = Acid Dart (fly)
+  165 = Small Flame
+  166 = Flame Smoke
+  167 = Small Cold
+  168 = Poison Cloud (bg)
+  169 = Poison Cloud (bg)
+  170 = Pain (line)
+  171 = Harm
+  172 = Lashes of Pain (line)
+  173 = Illusory Attack (line)
+  174 = Illusory Attack (fly)
+  175 = Sunbeam (line)
+  176 = Sunlight
+  177 = Banishment
+  178 = Luck
+  179 = Luck
+  180 = Awe
+  181 = Blessing
+  182 = Bloodletting
+  183 = Lashes of Fire (line)
+  184 = Vengeance (line)
+  185 = Lashes of Death (line)
+  186 = Shock (fly)
+  187 = Shock
+  188 = Sparks (fly)
+  189 = Air Shield
+  190 = Incinerate
+  191 = Smoke
+  192 = Strange Hymn (fly)
+  193 = Strange Hymn
+  194 = Words of the Void (fly)
+  195 = Tendril of Darkness (line)
+  196 = Dehydration (line)
+  197 = Torrent of Water (fly)
+  198 = Entangle
+  199 = Entangle (fly)
+  200 = Shooting Thorns (fly)
+  201 = Barkskin
+  202 = Curse of Wood (fly)
+  203 = Putrid Cloud (fly)
+  204 = Putrid Cloud (fly)
+  205 = Putrid Cloud
+  206 = Putrid Cloud
+  207 = Lesser Smite
+  208 = Vafur Flames (bg)
+  209 = Vafur Flames (bg)
+  210 = Mind Tentacles (fly)
+  211 = Earth Meld
+  212 = Mass Command (line)
+  213 = Disease Cloud (bg)
+  214 = Energy Beam (line)
+  215 = Paralyzing Scream (fly)
+
+magic paths (others same as coe3):
+  49 = Paladin Magic
+  50 = Famine Magic
+  51 = High Arcana
+  52 = Moon Magic
+  53 = Silver Arcana
+  54 = Forest Magic
+  55 = Alchemy
+  56 = Gold Arcana
+  57 = Metal Arcana
+  58 = Sky
+  59 = Death
+  60 = Tree Magic
+  61 = Astrology
+
+power types (others same as coe3)
+  25 = priest    
+  26 = illusion  
+  27 = monk       
+  28 = dvala     
+  29 = rune smith
+  30 = counsilor 
+  31 = senator   
+  32 = empress   
+  33 = warpriest   
+  34 = bloodpriest 
+  35 = skypriest   
+  36 = rainpriest  
+  37 = nightpriest 
+  38 = deathpriest 
+  39 = nekromant    
+  40 = fire giant   
+  41 = frost giant  
+  42 = mountain giant 
+  43 = storm giant  
+  44 = sea giant    
+  45 = dark emperor
+  46 = god emperor
+
+name types (others same as coe3):
+  51 = pale one males
+  52 = pale one females
+
+class numbers (others same as coe3):
+  21 = voice of el
+  22 = illusionist
+  23 = markgraf
+
+special terrain numbers:
+ -1 = anywhere
+ -2 = temples
+ -3 = libraries
+ -4 = mines
+ -5 = mounts
+ -6 = forests/jungles
+ -7 = mounts/forests/jungles
+ -8 = farm-village
+ -9 = castles (rec + walls)
+ -10 = forests/jungles/swamp
+ -11 = forest/ancient forest
+ -12 = proper mines
+ -13 = any farm
+ -14 = human settlement
+ -15 = ancient forest or battlefield
+ -16 = (market)village
+ -17 = near water
+ -18 = temple/pyramid
+ -19 = gold/silver mines
+ -20 = swamp/bog
+ -21 = not inside walls
+ -22 = a capital
+ -23 = citadels (rec)
+ -24 = farm-village/hoburgvillage
+ -25 = north
+ -26 = mid
+ -27 = south
+ -28 = towns+
+ -29 = hamlets+
+ -30 = gemdeposits/crystals
+ -31 = walls
+ -32 = village+
+ -33 = somewhat important square
+ -34 = blessable squares
+ -35 = citadels/graveyard
+ -36 = citadels in inferno
+ -37 = citadels in hades
+ -38 = forest/jungle (not ancient forest)
+ -39 = magic square (pyramids, columns, etc.)
+ -40 = hamlets & coastal hamlets
+ -41 = hamlets, tent villages and villages
+ -42 = any land
+ -43 = any sea
+ -44 = fire plane
+ -45 = water plane
+ -46 = air plane
+ -47 = earth plane
+ -48 = fire plane citadel
+ -49 = water plane citadel
+ -50 = air plane citadel
+ -51 = earth plane citadel
+ -52 = overwater citadel on water plane
+ -53 = void gateways
+ -54 = second sun
+ -55 = damned capitals
+ -56 = level 2 libraries
+ -57 = level 3 libraries
+ -58 = gold inc.
+ -59 = non-mines
+ 
+I wanted to try to make some spells for the Warhammer 40k mod, but when I tried to get things like "gone berserk" I found they had changed, but some commands from CoE3 do still work... my attempt to map things here: 
+ 
+ #Pwr 		Bitmask 	Special Benefit
+#-			0			#was nil, now "nothing"
+#2^0		1			#was Invulnerability, now invulnerability
+#2^1		2			#was Armor +1, now Armor +1 
+#2^2		4			#was Fire Resistance, now Fire Resistance
+#2^3	 	8			#was Cold Resistance, now Cold Resistance
+#2^4		16			#was Poison Resistance, now Poison Resistance
+#2^5		32			#was Shock Resistance, now Shock Resistance
+#2^6		64			#was Magic Resistance +2, now no unused (no effect)
+#2^7		128			#was Luck, now Luck
+#2^8		256			#was Etherealness, now Etherealness
+#2^9		512			#was Strength / Damage +2, now strength +2
+#2^10		1024		#was Fire Shield (3), now Fire Shield (3)
+#2^11		2048		#Air Shield
+#2^12		4096		#Regeneration
+#2^13		8192		#Awe (+1)
+#2^14		16384		#Command Missiles (unused)
+#2^15		32768		#unused (no effect)
+#2^16		65536		#was unused, now Blessing
+#2^17		131072		#unused (removes monster from game)
+#2^18		262144		#was unused, now pierce resistance
+#2^19		524288		#was unused, now slash resistance
+#2^20		1048576		#was Gone Berserk, now removes monster from game
+#2^21		2097152		#was Blessing, now displacement
+#2^22		4194304		#was Armor +2, now non-magic invulnerability
+#2^23		8388608		#was Pierce Resistance, now unused (no effect)
+#2^24		16777216	#was Slash Resistance, now non-magic invulnerability
+#2^25		33554432	#was Blunt Resistance, now unused (no effect)
+#2^26		67108864	#was Displacement, now unused (no effect)
+#2^27		134217728	#was Non-Magical Invulnerability, now unused (no effect)

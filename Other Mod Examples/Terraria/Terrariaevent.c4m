@@ -1,0 +1,1816 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"This makes the world more dangerous with Terraria monsters."
+
+#--Events
+
+squareevent #Forest Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "1d6*Green Slime"
+endevent
+
+squareevent #Forest Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "1d6*Blue Slime"
+endevent
+
+squareevent #Swamp Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 107
+newunits -2 "1d6*Toxic Sludge"
+endevent
+
+squareevent #Forest Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "1*Purple Slime"
+endevent
+
+squareevent #Pinky
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "1*Pinky"
+endevent
+
+squareevent #King Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "1*King Slime"
+endevent
+
+squareevent #Lava Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -44
+newunits -2 "1d6*Lava Slime"
+newunits -2 "1d4*Hellbat"
+endevent
+
+squareevent #Lava Slime
++player 20
++chance 1
++turnnbr -1
++terrain -36
+newunits -2 "2d6*Lava Slime"
+newunits -2 "1d4*Hellbat"
+endevent
+
+squareevent #Demon
++player 20
++chance 1
++turnnbr -1
++terrain -36
+newunits -2 "1d4*Demon"
+endevent
+
+squareevent #Demon
++player 20
++chance 1
++turnnbr -1
++terrain -36
+newunits -2 "1d4*Fire Imp"
+endevent
+
+squareevent #Bone Serpent
++player 20
++chance 1
++turnnbr -1
++terrain -36
+newunits -2 "1d2*Bone Serpent"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d6*Black Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Black Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d6*Red Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Red Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d3*Dungeon Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d3*Dungeon Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d3*Yellow Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d3*Yellow Slime"
+endevent
+
+squareevent #Underground Worms
++player 16
++chance 3
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d4*Giant Worm"
+endevent
+
+squareevent #Underground Worms
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Giant Worm"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1*Yellow Slime"
+newunits -2 "1d4*Black Slime"
+newunits -2 "1d4*Red Slime"
+endevent
+
+squareevent #Underground Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1*Yellow Slime"
+newunits -2 "1d4*Black Slime"
+newunits -2 "1d4*Red Slime"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "2d6+1*Cave Bat"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "2d6+1*Cave Bat"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d6*Giant Bat"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Giant Bat"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d6*Slimer"
+endevent
+
+squareevent #BATS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Slimer"
+endevent
+
+squareevent #Dungeon Trap
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Spike Ball"
+endevent
+
+squareevent #Dungeon Trap
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100
+newunits -2 "1d4*Spike Ball"
+endevent
+
+squareevent #Dungeon Trap
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Blazing Wheel"
+endevent
+
+squareevent #Dungeon Trap
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100
+newunits -2 "1d4*Blazing Wheel"
+endevent
+
+squareevent #Jungle Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Jungle Slime"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Tiki Pgymy"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1*Tiki Totem"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Tiki Warrior"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Tiki Archer"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d2*Tiki Dancer"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "Skull Doctor"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "Jungle Doctor"
+endevent
+
+squareevent #Jungle Creeps
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "Master of Bones"
+endevent
+
+squareevent #Jungle Slimes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Spiked Jungle Slime"
+endevent
+
+squareevent #Derpling
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Derpling"
+endevent
+
+squareevent #Jungle Mimic
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "Jungle Mimic"
+endevent
+
+squareevent #Hornet
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d4*Hornet"
+endevent
+
+squareevent #JBats
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "2d4*Jungle Bat"
+endevent
+
+squareevent #SPIN TO WING
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d2*Giant Tortoise"
+endevent
+
+
+
+squareevent #JBats
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 115
+newunits -2 "1d3*Giant Flying Fox"
+endevent
+
+squareevent #Demon Eyes
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "1d6*Demon Eye"
+endevent
+
+squareevent #Zombie
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 16 #Graveyard
+newunits -2 "1d6*Zombie"
+endevent
+
+squareevent #Zombie
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 19 #Old Battlefield
+newunits -2 "2d6*Zombie"
+endevent
+
+squareevent #Super Zombie
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 16 #Graveyard
+newunits -2 "1d3*Frakenstein"
+endevent
+
+squareevent #Super Zombie
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 19 #Old Battlefield
+newunits -2 "2d3*Frakenstein"
+endevent
+
+squareevent #Inferno Demon Eyes
++player 20
++chance 1
++turnnbr -1
++terrain -36
+newunits -2 "4d6*Demon Eye"
+endevent
+
+squareevent #The Eye of Cthulhu Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1*Eye of Cthulhu"
+newunits -2 "2d6*Demon Eye"
+endevent
+
+squareevent #Eater of Souls Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1d3*Corrupter"
+newunits -2 "2d6*Eater of Souls"
+endevent
+
+squareevent #Eater of Souls Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1d3*Herpling"
+newunits -2 "2d6*Crimera"
+endevent
+
+squareevent #Devourer Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Devourer"
+endevent
+
+squareevent #Eater of Worlds Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1*Eater of Worlds"
+newunits -2 "1d4*Devourer"
+endevent
+
+squareevent #Eating Faces
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Face Monster"
+endevent
+
+squareevent #Eating Faces
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Floaty Gross"
+endevent
+
+squareevent #Horror Hammer
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Cursed Hammer"
+endevent
+
+squareevent #Horror Axe
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Crimson Axe"
+endevent
+
+squareevent #Horror Flying Pigs
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1d4*Corruption Pigron"
+endevent
+
+
+squareevent #Horror Flying Pigs
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1d4*Crimson Pigron"
+endevent
+
+squareevent #Horror Slime
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Crimslime"
+endevent
+
+squareevent #Horror Slime
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Corrupt Slime"
+endevent
+
+squareevent #Horror Slime
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Shadow Slime"
+endevent
+
+squareevent #Horror Slime
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "1d6*Corrupt Slime"
+newunits -2 "1d6*Shadow Slime"
+endevent
+
+squareevent #Horror Slime
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "2d6*Corrupt Bunny"
+endevent
+
+squareevent #Horror Eyes
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "4d6*Demon Eye"
+endevent
+
+squareevent #Horror Chest
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "Corrupt Mimic"
+endevent
+
+squareevent #Horror Chest
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "Crimson Mimic"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d4*Zombie"
+newunits -2 "1d4*Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Zombie"
+newunits -2 "1d4*Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -35
+newunits -2 "1d4*Zombie"
+newunits -2 "1d4*Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d4*Armored Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Zombie"
+newunits -2 "1d4*Armored Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -35
+newunits -2 "1d4*Zombie"
+newunits -2 "1d4*Armored Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -35
+newunits -2 "1d4*Skeleton Archer"
+newunits -2 "1d4*Armored Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d4*Skeleton Archer"
+newunits -2 "1d4*Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Skeleton Archer"
+newunits -2 "1d4*Skeleton"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain #47
+newunits -2 "1d6*Undead Miner"
+endevent
+
+squareevent #Underground Undead
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Undead Miner"
+endevent
+
+squareevent #Meteor Heads
++player 18
++chance 1
++squareowner 16
++terrain 134
+newunits -2 "1d6*Meteor Head"
+endevent
+
+squareevent #Meteor Heads
++player 16
++chance 1
++turnnbr -1
++terrain -48
+newunits -2 "1d6*Meteor Head"
+endevent
+
+squareevent #Goblins
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "1d4*Goblin Peon"
+newunits -2 "1d4*Goblin Bowman"
+newunits -2 "1d4*Goblin Thief"
+newunits -2 "1d3*Goblin Warrior"
+endevent
+
+squareevent #Goblins
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "1d4*Goblin Peon"
+newunits -2 "1d4*Goblin Warrior"
+newunits -2 "1d4*Goblin Bowman"
+endevent
+
+squareevent #Goblins
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "1d4*Goblin Peon"
+newunits -2 "1d4*Goblin Thief"
+newunits -2 "1d4*Goblin Bowman"
+endevent
+
+squareevent #Goblin Scout
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "1d3*Goblin Scout"
+endevent
+
+squareevent #Goblins
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -7
+newunits -2 "2d4*Goblin Peon"
+newunits -2 "1d4*Goblin Thief"
+newunits -2 "1d4*Goblin Warrior"
+newunits -2 "2d4*Goblin Bowman"
+newunits -2 "Goblin Sorcerer"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 47
+newunits -2 "1d4*Angry Bones"
+newunits -2 "1d3*Skeleton Archer"
+newunits -2 "1*Dark Caster"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 47
+newunits -2 "1*Rune Wizard"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1*Rune Wizard"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 47
+newunits -2 "1*Undead Enchanter"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1*Undead Enchanter"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 47
+newunits -2 "1d6*Angry Bones"
+newunits -2 "1*Dark Caster"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d4*Angry Bones"
+newunits -2 "1d3*Skeleton Archer"
+newunits -2 "1*Dark Caster"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6*Angry Bones"
+newunits -2 "1*Dark Caster"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 47
+newunits -2 "1d6*Cursed Skull"
+endevent
+
+squareevent #Dungeon Mobs
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -4
+newunits -2 "1d6+*Cursed Skull"
+endevent
+
+squareevent #Skeletron
++player 16
++chance 1
++squareowner 16
++terrain 100 #Labyrinth
++turnnbr -1
+newunits -2 "1*Skeletron"
+newunits -2 "2*Skeletron Hand"
+newunits -2 "1d4*Angry Bones"
+newunits -2 "1d4*Skeleton Archer"
+newunits -2 "1d3*Dark Caster"
+endevent
+
+squareevent #Wraith
++player 16
++chance 1
++terrain 16 #Graveyard
++squareowner 16
++turnnbr -1
+newunits -2 "1d3*Dark Wraith"
+endevent
+
+squareevent #Wraith
++player 16
++chance 1
++terrain 19 #Old Battlefield
++squareowner 16
++turnnbr -1
+newunits -2 "1d3*Dark Wraith"
+endevent
+
+squareevent #Dungeon Slime
++player 16
++chance 1
++terrain -18
++squareowner 16
++turnnbr -1
+newunits -2 "1d3*Dungeon Slime"
+endevent
+
+squareevent #Dungeon Slime
++player 16
++chance 1
++terrain -4
++squareowner 16
++turnnbr -1
+newunits -2 "1d4*Dungeon Slime"
+endevent
+
+squareevent #Harpy
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -5
+newunits -2 "1d3*Harpy"
+endevent
+
+squareevent #Arch Wyvern
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -5
+newunits -2 "1*Arch Wyvern"
+endevent
+
+squareevent #Goldfish
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 69
+newunits -2 "4d6*Goldfish"
+endevent
+
+squareevent #Goldfish
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 69
+newunits -2 "4d6*Walking Goldfish"
+endevent
+
+
+squareevent #Nom Nom Fish
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 69
+newunits -2 "3d6*Piranha"
+endevent
+
+squareevent #Nom Nom Fish
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 69
+newunits -2 "1d4*Angler Fish"
+endevent
+
+squareevent #Nom Nom Fish
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 69
+newunits -2 "1d4*Arapaima"
+endevent
+
+squareevent #Crab
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -17
+newunits -2 "2d4*Crab"
+endevent
+
+squareevent #Vulture
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 117
+newunits -2 "1d4*Vulture"
+endevent
+
+squareevent #Antlion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 117
+newunits -2 "1d4*Antlion"
+endevent
+
+squareevent #Antlion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 117
+newunits -2 "1d3*Antlion"
+newunits -2 "Albino Antlion"
+endevent
+
+squareevent #Mimic
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -42
+newunits -2 "Mimic"
+endevent
+
+squareevent #Ice Mimic
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "Ice Mimic"
+endevent
+
+squareevent #Ice Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d4*Ice Slime"
+endevent
+
+squareevent #Ice Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d3*Spiked Ice Slime"
+endevent
+
+squareevent #Ice Bat
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d6*Ice Bat"
+endevent
+
+squareevent #Ice Barrage
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d2*Ice Elemental"
+endevent
+
+squareevent #Puppy
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d6*Snow Wolf"
+endevent
+
+squareevent #TURTLE
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d2*Ice Tortoise"
+endevent
+
+squareevent #Frost Legion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d3*Snowman Gangsta"
+newunits -2 "1d3*Mister Stabby"
+endevent
+
+squareevent #Frost Legion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d3*Snow Balla"
+newunits -2 "1d3*Mister Stabby"
+endevent
+
+squareevent #Frost Legion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d3*Snow Balla"
+newunits -2 "1d3*Snowman Gangsta"
+endevent
+
+squareevent #Frost Legion
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 44 #Tundra
+newunits -2 "1d6*Snow Balla"
+newunits -2 "1d6*Snowman Gangsta"
+newunits -2 "1d6*Mister Stabby"
+endevent
+
+
+squareevent *Werewolf
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11
+newunits -2 "Lycanthrope"
+endevent
+
+squareevent *Werewolf
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -6
+newunits -2 "Lycanthrope"
+endevent
+
+squareevent *Clown
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -58
+newunits -2 "1d3*Clown"
+endevent
+
+squareevent #The Twins Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "Retinazer"
+newunits -2 "Spazmatism"
+endevent
+
+squareevent #Skeletron Prime Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "Skeletron Prime"
+newunits -2 "Prime Cannon"
+newunits -2 "Prime Laser"
+newunits -2 "Prime Vice"
+newunits -2 "Prime Saw"
+endevent
+
+squareevent #The Destroyer Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "The Destroyer"
+newunits -2 "1d6*Probe"
+endevent
+
+squareevent #Brain of Cthulhu Invasion
++player 18
++chance 1
++terrain -53
++turnnbr -1
+newunits -2 "Brain of Cthulhu"
+newunits -2 "3d6*Creeper"
+endevent
+
+squareevent #Hallow Sword
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d6*Enchanted Sword"
+endevent
+
+squareevent #Hallowed Bat
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d6*Illuminant Bat"
+endevent
+
+squareevent #Hallowed Slime
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d6*Illuminant Slime"
+endevent
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d4*Chaos Elemental"
+endevent
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d4*Gastropod"
+endevent
+
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d4*Spectral Gastropod"
+endevent
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d4*Unicorn"
+endevent
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "1d4*Hallow Pigron"
+endevent
+
+squareevent #Hallowed Creatures
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "2d6*Pixie"
+endevent
+
+squareevent #Bunny
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -11 #Ancient Forest
+newunits -2 "2d6*Bunny"
+endevent
+
+squareevent #Hardmode Armor
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 19 #Battlefield
+newunits -2 "1d4*Possessed Armor"
+endevent
+
+squareevent #SPIDERS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -10
+newunits -2 "1d6*Wall Creeper"
+endevent
+
+squareevent #SPIDERS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -20
+newunits -2 "1d6*Swamp Zombie"
+endevent
+
+squareevent #MORE SPIDERS
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain -15
+newunits -2 "1d4*Black Recluse"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "1d6*Blue Armored Bones"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "1d6*Rusty Armored Bones"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "1d6*Hell Armored Bones"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "1d6*Dungeon Spirit"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Ragged Caster"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Undead Necromancer"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Diabolist"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Bone Lee"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Undead Paladin"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "1d3*Giant Cursed Skull"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Skeleton Sniper"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Tactical Skeleton"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Old Man"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Cursed Man"
+endevent
+
+squareevent #Hardmode Dungeon Mob
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "Doomed Man"
+endevent
+
+squareevent #Undead Hoplite
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 100 #Labyrinth
+newunits -2 "2d6*Undead Hoplite"
+endevent
+
+squareevent #Hallow Dryad
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "Dryad"
+endevent
+
+squareevent #Hallow Dryad
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "Greater Dryad"
+endevent
+
+squareevent #Hallow Dryad
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4 #Ancient Forest
+newunits -2 "Elder Dryad"
+endevent
+
+squareevent #Guide
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 42 
+newunits -2 "Guide"
+endevent
+
+squareevent #Guide
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 42 
+newunits -2 "Greater Guide"
+endevent
+
+squareevent #Guide
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 42 
+newunits -2 "Expert Guide"
+endevent
+
+squareevent #Wooden Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 2
+newunits -2 "2d6*Wooden Armor Adventurer"
+endevent
+
+squareevent #Wooden Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 4
+newunits -2 "2d6*Pearlwood Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "2d6*Tin Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "2d6*Copper Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "2d6*Miner"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Lead Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Iron Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Silver Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Gold Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Platinum Armor Adventurer"
+endevent
+
+squareevent #Mine Adventurers
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 105
+newunits -2 "1d6*Tungsten Armor Adventurer"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Glowing Mushroom"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Fungi Bulb"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Giant Fungi Bulb"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d4*Anomura Fungus"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Mushi Ladybug"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Glowing Snail"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Mushroom Zombie"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "Shroomite Hero"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "Baby Truffle"
+endevent
+
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "Truffle"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "Glowing Truffle"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "Evolved Truffle"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Spore Zombie"
+endevent
+
+squareevent #Mushroom Monsters
++player 16
++chance 1
++squareowner 16
++turnnbr -1
++terrain 195
+newunits -2 "1d6*Truffle Worm"
+endevent

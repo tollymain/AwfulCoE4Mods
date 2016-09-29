@@ -1,0 +1,497 @@
+# BUILT‐IN RECRUITMENT LISTS IN COE4.EXE, EXPRESSED AS PSEUDO-MOD CODE
+# (Unknown data, or data for which modding commands are missing,
+# given in comments.)
+# The standard recruitment lists (standard troops, standard wizards,
+# paid heroes and assassins) excluded, since I cannot find them
+# in any accessible format within coe4.exe.
+#
+#
+# Recruitment entry bitflags:
+# (explicitly given only where they deviate from mod behavior)
+#   0x1: One-off (Offer disappears once taken)
+#   0x2: ? (Not seen)
+#   0x4: Extra (Doesn't exhaust recruitment site)
+#   0x8: Not used in CoE4. (In CoE3: dwarf upgrade, requiring workers)
+#  0x10: ? (Not seen)
+#  0x20: templerec
+#  0x40: libraryrec
+#  0x80: Temple Guard of Voice of El (May be: Arch Bishop+ required)
+# 0x100: Templar of Voice of El (May be: Cardinal+ required)
+# 0x200: ? Mirror (the plain type only) of Illusionist
+#
+# Use of addcomrec (commander recruitment) in a mod will make the recruitment
+# be always both one-off and extra (flags 0x1 and 0x4 both set, for a bitflags
+# number of 0x5). The same goes for addmercrec (mercenary recruitment)
+# – with one difference: If the chance is 100%, the mercenary offer
+# won't be one-off. However,
+# RECRUITMENT ENTRIES IN THE EXECUTABLE DON'T ALWAYS ABIDE BY THESE RULES!
+# Where they deviate, I have provided the actual bitflags in a comment.
+#
+#
+# In CoE3, a chance of -1% makes the offer occur simultaneously with
+# the previous offer in the list. This mechanic is removed from CoE4.
+# (Yet, a Retiarius entry at -1%, after the Gladiator, remains.)
+#
+# Whether or not a Recruitment Offer message will be displayed,
+# seems to be determined solely by the probability of the offer(s).
+# If it's 33% or lower, the offer will be announced in a message.
+# If it's 34% or higher, the offer won't be mentioned in any message.
+#
+#
+# /Marlin
+
+selectclass 1  # Baron
+#                                            %  # gold die iron
+addunitrec  "Spearman"                     100  5   50  0   0
+addunitrec  "Swordsman"                    100  5   50  0   5
+addunitrec  "Crossbowman"                  100  5   50  0   5
+addunitrec  "Heavy Infantry"               100  5   50  0  25
+addunitrec  "Longbowman"                   100  4   50  0   0
+addunitrec  "Pikeneer"                     100  5   50  0   5
+addunitrec  "Halberdier"                   100  5   50  0   5
+addunitrec  "Zweihander"                   100  5   50  0  10
+addunitrec  "Tower Guard"                  100  5   50  0  15
+addunitrec  "Cavalryman"                   100  3   50  0  20
+addunitrec  "War Dog"                      100  4   25  0   0
+addunitrec  "Ballista"                     100  2   25  0  50
+addunitrec  "Catapult"                     100  1   25  0  50
+addunitrec  "Trebuchet"                    100  1   50  0  50
+addunitrec  "Archer"                         5 10   70  0   0
+addunitrec  "Crossbowman"                    5 10   70  0   7
+addunitrec  "Spearman"                       5 10   70  0   0
+addunitrec  "Swordsman"                      5 10   70  0   7
+addunitrec  "Trebuchet"                     10  2   75  0  75
+addmercrec  "Scout"                         10  1   15 10   0
+addcomrec   "Baron"                         10      60 10  10
+reclimiter  "-Baron"
+addcomrec   "High Lord"                     20      50 10  10
+addcomrec   "Captain"                       20      40 10   0
+addcomrec   "Monk"                           5      50 10   0
+templerec
+addcomrec   "Court Mage"                     3      40 15   0
+libraryrec
+addcomrec   "Alchemist"                      3      40 15   0
+libraryrec
+
+selectclass 2  # Necromancer
+#                                            %  # gold die iron
+addcomrec   "Goblin Chieftain"               5      35 10   0
+addmercrec  "Goblin"                        25  5   20  0   0
+reclimiter  "+Goblin Chieftain"
+addmercrec  "Goblin Spearman"               20  5   20  0   0
+reclimiter  "+Goblin Chieftain"
+addmercrec  "Goblin Archer"                 15  5   20  0   0
+reclimiter  "+Goblin Chieftain"
+addunitrec  "Soulless Soldier"             100  5    0  0   5
+reclimiter  "=Soulless"
+addunitrec  "Armored Soulless"             100  5    0  0  20
+reclimiter  "=Soulless"
+addunitrec  "Armored Longdead"             100  5    0  0  20
+reclimiter  "=Longdead"
+addunitrec  "Bane Fire Archer"             100  5    0  0   0  # +hands: 10
+reclimiter  "=Longdead"
+addunitrec  "Bane-Bones"                   100  5    0  0  10  # +hands:  5
+reclimiter  "=Longdead"
+addcomrec   "Necromancer's Apprentice"       3      55 20   0
+libraryrec
+
+selectclass 3  # Demonologist
+#                                            %  # gold die iron
+addcomrec   "Cultist"                        3      55 20   0
+templerec
+
+selectclass 4  # Witch
+#                                            %  # gold die iron
+addunitrec  "Androphag Spearman"           100  5   50  0   0
+addunitrec  "Androphag Archer"             100  5   50  0   0  # +fungus: 25
+addunitrec  "Androphag Cavalry"            100  4   50  0   5  # +fungus: 25
+addcomrec   "Androphag Lord"                25      50 10   0
+addcomrec   "Manflayer"                      2      70 20   0
+addcomrec   "Witch's Apprentice"             3      55 10   0
+templerec
+
+selectclass 5  # High Priestess
+#                                            %  # gold die iron
+addunitrec  "Ba'alite Spearman"            100  5   50  0   0
+addunitrec  "Ba'alite Archer"              100  5   50  0   0
+addunitrec  "Ba'alite Zealot"              100  5   50  0   5
+addunitrec  "Ba'alite Heavy Infantry"      100  5   50  0  25
+addunitrec  "Catapult"                     100  1   25  0  50
+addcomrec   "Hierodule"                      6      50 10   0
+templerec
+
+selectclass 6  # Bakemono
+#                                            %  # gold die iron
+addunitrec  "Bakemono Soldier"             100  5   25  0   1
+addunitrec  "Bakemono Archer"              100  5   25  0   1
+addunitrec  "Bakemono Swordsman"           100  5   25  0   3
+addunitrec  "Dai Bakemono"                  25  3   50  0  15
+addunitrec  "Dai Bakemono Archer"           25  3   50  0  15
+addunitrec  "O Bakemono"                    25  1   25  0   0
+addcomrec   "Bakemono General"              25      50 10   5
+addcomrec   "Bakemono Sorceror"              1     100 20   0
+libraryrec
+addcomrec   "Bakemono Shaman"                5      55 10   0
+templerec
+addcomrec   "Uba"                            2      75 10   0
+
+selectclass 7  # Barbarian
+#                                            %  # gold die iron
+addunitrec  "Barbarian Warrior"            100  7   50  0   0
+addunitrec  "Barbarian Bowman"             100  7   50  0   0
+addunitrec  "Barbarian Swordsman"          100  7   50  0  10
+addunitrec  "Barbarian Cavalry"            100  4   50  0   0
+addunitrec  "Barbarian Lancer"             100  4   50  0  10
+addunitrec  "Barbarian Werebear"            10  1   25  0   0
+addcomrec   "Spirit Guide"                   8      75 20   0
+templerec
+addcomrec   "Soothsayer"                     8      40 20   0
+templerec
+addcomrec   "Barbarian Leader"             100      25 10   0
+reclimiter  "-Barbarian Leader"
+addcomrec   "Mounted Chief"                 10      25 10   0
+addmercrec  "Mounted Scout"                 15  1   15 10   0
+addcomrec   "Crystal Priestess"              3      40 20   0
+templerec
+addcomrec   "Crystal Sorceress"              3      80 20   0
+reclimiter  "+Crystal Priestess"
+addunitrec  "Crystal Amazon"                25  8   50  0   0
+reclimiter  "+Crystal Priestess"
+addcomrec   "Garnet Priestess"               3      40 20   0
+templerec
+addcomrec   "Garnet Sorceress"               3      80 20   0
+reclimiter  "+Garnet Priestess"
+addunitrec  "Garnet Amazon"                 25  8   50  0   0
+reclimiter  "+Garnet Priestess"
+addcomrec   "Jade Priestess"                 3      40 20   0
+templerec
+addcomrec   "Jade Sorceress"                 3      80 20   0
+reclimiter  "+Jade Priestess"
+addunitrec  "Jade Amazon"                   25  8   50  0   0
+reclimiter  "+Jade Priestess"
+addcomrec   "Onyx Priestess"                 3      40 20   0
+templerec
+addcomrec   "Onyx Sorceress"                 3      80 20   0
+reclimiter  "+Onyx Priestess"
+addunitrec  "Onyx Amazon"                   25  8   50  0   0
+reclimiter  "+Onyx Priestess"
+
+selectclass 8  # Senator
+#                                            %  # gold die iron
+addunitrec  "Veles"                        100  5   40  0   0
+addunitrec  "Hastatus"                     100  5   45  0   5
+addunitrec  "Princeps"                     100  5   50  0  10
+addunitrec  "Princeps Solaris"             100  5   55  0  10
+reclimiter  "+Leo"
+addunitrec  "Triarius"                     100  5   55  0  20
+addunitrec  "Praetorian Guard"             100  5   60  0  20
+reclimiter  "+Emperor"
+reclimiter  "+God Emperor"
+reclimiter  "+Dark Emperor"
+reclimiter  "+God Emperor of the Underworld"
+addunitrec  "Ballista"                     100  2   25  0  50
+addunitrec  "Hastatus"                       5 10   65  0   5
+addmercrec  "Standard"                     100  1   20  0   0  #  Flags: 0x5
+addmercrec  "Archer"                        20  5   50  0   0
+addmercrec  "Gladiator"                     20  2   25  0   0
+addmercrec  "Retiarius"                     -1  2   25  0   0
+addcomrec   "Senator"                       10      50 10   0
+reclimiter  "-Senator"
+reclimiter  "-Emperor"
+reclimiter  "-God Emperor"
+reclimiter  "-Dark Emperor"
+reclimiter  "-God Emperor of the Underworld"
+addcomrec   "Centurion"                     25      35 10   0
+addcomrec   "Leo"                            5      50 20   0
+addcomrec   "Heliodromus"                    1      90 20   0
+libraryrec
+addcomrec   "Renata"                         5      50 20   0
+addcomrec   "Renatus"                        1     110 20   0
+libraryrec
+addcomrec   "Serpent Acolyte"                5      50 20   0
+templerec
+addcomrec   "Serpent Priest"                 2      90 20   0
+templerec
+addcomrec   "Reveler"                        5      50 20   0
+addcomrec   "Augur"                          3      60 20   0
+
+selectclass 9  # Pale One
+#                                            %  # gold die iron
+addunitrec  "Pale One"                     100  5   50  0   0
+addunitrec  "Pale One Soldier"             100  5   50  0   5
+addunitrec  "Cavern Guard"                 100  5   50  0  20
+addunitrec  "Ancient Pale One"              20  1   40  0  15
+addunitrec  "Ancient Hurler"                20  1   40  0   0
+addunitrec  "Seal Guard"                    10  1   50  0  25
+addcomrec   "Pale One Commander"            25      40 10   5
+addmercrec  "Pale One Scout"                 8  1   15 10   0
+addcomrec   "Ancient Commander"              5      60 20  15
+addcomrec   "Earth Reader"                   5      55 20   0
+templerec
+addcomrec   "Oracle of Subterranean Fires"   0     150 30   0
+templerec
+addcomrec   "Oracle of Subterranean Waters"  0     150 30   0
+templerec
+addcomrec   "Oracle of the Dead"             0     150 30   0
+templerec
+
+selectclass 10  # Druid
+#                                            %  # gold die iron
+addunitrec  "Barechested Warrior"          100  5   50  0   0
+addunitrec  "Barechested Slinger"          100  5   50  0   0
+addunitrec  "Barechested Swordsman"        100  5   50  0   0
+addunitrec  "Beast Cavalry"                100  3   50  0   5
+addunitrec  "Boar Warrior"                  20  4   50  0  10
+addmercrec  "Hornblower"                   100  1   25 10   0  #  Flags: 0x5
+addmercrec  "Barechested Scout"             15  1   15 10   0
+addcomrec   "Chieftain"                     20      40 10   0
+addcomrec   "Vergobret"                     20      30 10   0
+addcomrec   "Druid's Apprentice"             3      55 10   0
+templerec
+
+selectclass 11  # Burgmeister
+#                                            %  # gold die iron
+addunitrec  "Hoburg Militia"               100 15   50  0   0
+addunitrec  "Hoburg Slinger"               100 15   50  0   0
+addunitrec  "Hoburg Crossbow"              100 15   50  0   5
+addunitrec  "Hoburg Soldier"               100 15   50  0   5
+addunitrec  "Hoburg Defender"              100 15   50  0  10
+addunitrec  "Hoburg Pikeneer"              100 10   30  0   5
+addunitrec  "Burgmeister Guard"            100 10   40  0  10
+addunitrec  "Hog Knight"                   100  5   50  0  10
+addunitrec  "Catapult"                     100  1   25  0  50
+addcomrec   "Hogmeister"                    20      25  5   0
+addcomrec   "Horologist"                     2      75 10   0
+libraryrec
+addcomrec   "Horticulturist"                 2      75 10   0
+templerec
+
+selectclass 12  # Warlock
+#                                            %  # gold die iron
+addcomrec   "Warlock's Apprentice"           3      55 20   0
+libraryrec
+
+selectclass 13  # Priest King
+#                                            %  # gold die iron
+addunitrec  "Tribal Warrior"               100  7   50  0   0
+addunitrec  "Jungle Warrior"               100  6   50  0   0
+addunitrec  "Feathered Warrior"            100  5   50  0   5
+addunitrec  "Jaguar Warrior"               100  5   50  0   0
+reclimiter  "+Sun Temple Attendant"
+reclimiter  "+Priest King"
+reclimiter  "+High Priest of the Sun"
+addunitrec  "Eagle Warrior"                 20  5   50  0   0
+reclimiter  "+Sky Temple Attendant"
+reclimiter  "+Sky Priest"
+reclimiter  "+High Priest of the Sky"
+addunitrec  "Moon Warrior"                  20  4   50  0   5
+reclimiter  "+Moon Temple Attendant"
+reclimiter  "+Moon Priest"
+reclimiter  "+High Priest of the Night"
+addunitrec  "Sun Warrior"                   20  4   50  0  10
+reclimiter  "+Sun Temple Attendant"
+reclimiter  "+Priest King"
+reclimiter  "+High Priest of the Sun"
+addcomrec   "Tribal King"                   20      40 20   0
+addcomrec   "Nahualli"                       3      55 20   0
+libraryrec
+addcomrec   "Sun Temple Attendant"           3      45 20   0
+templerec
+addcomrec   "Blood Temple Attendant"         3      45 20   0
+templerec
+addcomrec   "Sky Temple Attendant"           3      45 20   0
+templerec
+addcomrec   "Rain Temple Attendant"          3      45 20   0
+templerec
+addcomrec   "Moon Temple Attendant"          3      45 20   0
+templerec
+addcomrec   "Death Temple Attendant"         3      45 20   0
+templerec
+
+selectclass 14  # Troll King
+#                                            %  # gold die iron
+addunitrec  "Goblin"                       100 15   50  0   0
+addunitrec  "Ogre"                         100  1   25  0   0
+addunitrec  "Goblin Spearman"               40 15   50  0   0
+addunitrec  "Goblin Archer"                 20 10   50  0   0
+addunitrec  "Wolf Kin"                      20 10   50  0   0
+addunitrec  "Wolf Kin Reaver"               20  7   50  0  10
+addunitrec  "Rock Troll"                    20  1   50  0  60
+addunitrec  "Troll"                         30  1   50  0  20
+addunitrec  "Forest Troll"                  40  1   40  0  10
+addunitrec  "Hill Giant"                     5  1  100  0   0
+addunitrec  "Ettin"                         10  1   75  0   0
+addcomrec   "Goblin Chieftain"               7      25 20   0
+addcomrec   "Ogre Chief"                     3      35 20   0
+addcomrec   "Forest Giant"                   5      70 20   0
+addcomrec   "Goblin Shaman"                  4      35 20   0
+templerec
+addcomrec   "Troll Shaman"                   2      75 50   0
+templerec
+addmercrec  "Goblin Murderer"                3  1   10 40   0
+addcomrec   "Goblin Hero"                    3      10 50   0
+
+selectclass 15  # Enchanter
+#                                            %  # gold die iron
+addcomrec   "Enchanter's Apprentice"         3      55 20   0
+libraryrec
+
+selectclass 16  # Beholder
+#                                            %  # gold die iron
+
+selectclass 17  # Archmage
+#                                            %  # gold die iron
+
+selectclass 18  # Goblin King
+#                                            %  # gold die iron
+addunitrec  "Goblin"                       100 15   50  0   0
+addunitrec  "Ogre"                         100  1   25  0   0
+addunitrec  "Goblin Spearman"              100 15   50  0   0
+addunitrec  "Goblin Archer"                100 10   50  0   0
+addunitrec  "Wolf Kin"                      50 10   50  0   0
+addunitrec  "Wolf Kin Reaver"               50  7   50  0  10
+addunitrec  "Rock Troll"                     4  1   50  0  60
+addunitrec  "Troll"                          4  1   50  0  20
+addunitrec  "Forest Troll"                   4  1   50  0  10
+addunitrec  "Ettin"                         10  1   75  0   0
+addcomrec   "Goblin Chieftain"              20      25 20   0
+addcomrec   "Ogre Chief"                     5      35 20   0
+addcomrec   "Goblin Shaman"                  6      35 20   0
+templerec
+addmercrec  "Goblin Murderer"                5  1   10 40   0
+addcomrec   "Goblin Hero"                    5      10 50   0
+
+selectclass 19  # High Cultist
+#                                            %  # gold die iron
+addcomrec   "Cultist of the Deep"            6      45 20   0
+templerec
+
+selectclass 20  # Dwarf Queen
+#                                            %  # gold die iron
+addunitrec  "Dwarf"                        100  5    0  0  20
+reclimiter  "=Dwarf Worker"
+addunitrec  "Dwarf Warrior"                100  5    0  0  30
+reclimiter  "=Dwarf Worker"
+addunitrec  "Dwarf Guard"                  100  5    0  0  40
+reclimiter  "=Dwarf Worker"
+addunitrec  "Dwarf Arbalest"               100  5    0  0  30
+reclimiter  "=Dwarf Worker"
+addunitrec  "Outdoor Dwarf"                100  2   10  0  10
+reclimiter  "=Dwarf Worker"
+addmercrec  "Dwarven Ballista"             100  1    0  0  40
+reclimiter  "=Dwarf Worker"
+addcomrec   "Dwarf Commander"              100      20  0  10
+reclimiter  "=Dwarf Worker"
+addmercrec  "Spearman"                       4 10  150  0   0
+addmercrec  "Pikeneer"                       4 10  150  0  10
+addmercrec  "Swordsman"                      4 10  150  0  10
+addmercrec  "Archer"                         4 10  150  0   0
+addmercrec  "Crossbowman"                    4 10  150  0   0
+addmercrec  "Pikeneer"                       2 20  250  0  10
+
+selectclass 21  # Voice of El
+#                                            %  # gold die iron
+addunitrec  "Spearman"                     100  5   50  0   0
+addunitrec  "Swordsman"                    100  5   50  0   5
+addunitrec  "Archer"                       100  5   50  0   0
+addunitrec  "Pikeneer"                     100  5   50  0   5
+addunitrec  "Halberdier"                   100  5   50  0   5
+addunitrec  "Temple Guard"                 100  5   50  0   5  # +relics:  1  Flags: 0x80
+addunitrec  "Templar"                      100  5   50  0  15  # +relics:  5  Flags: 0x100
+addunitrec  "Catapult"                     100  1   25  0  50
+addmercrec  "Scout"                         10  1   15 10   0
+addcomrec   "Bishop"                        10      40 10   0
+templerec
+
+selectclass 22  # Illusionist
+#                                            %  # gold die iron
+addcomrec   "Illusionist's Apprentice"       3      55 20   0
+libraryrec
+addmercrec  "Mirror"                       100  1   10  0   0  #  Flags: 0x204
+addmercrec  "Large Mirror"                 100  1   25  0   0
+addmercrec  "Silver Mirror"                100  1   50  0   0
+addmercrec  "Golden Mirror"                100  1  150  0   0
+
+selectclass 23  # Markgraf
+#                                            %  # gold die iron
+addunitrec  "Hoburg Militia"               100 15   50  0   0
+addunitrec  "Hoburg Slinger"               100 15   50  0   0
+addunitrec  "Hobmark Crossbow"             100 15   50  0   5
+addunitrec  "Hobmark Soldier"              100 15   50  0   5
+addunitrec  "Hobmark Defender"             100 15   50  0  10
+addunitrec  "Hobmark Hammerer"             100 10   30  0   5
+addunitrec  "Hobmark Pikeneer"             100 10   30  0   5
+addunitrec  "Markgraf Guard"               100 10   40  0  10
+addunitrec  "Hog Hussar"                   100  5   50  0   5
+addunitrec  "Ghoul Guardian"               100 10    0  0   5  # +hands:  5
+reclimiter  "+Ghoul Baron"
+reclimiter  "+Ghoulgraf"
+addunitrec  "Catapult"                     100  1   25  0  50
+addcomrec   "Markgraf"                      10      45  5   0
+reclimiter  "-Markgraf"
+reclimiter  "-Malefic Markgraf"
+reclimiter  "-Malefic Master"
+addcomrec   "Markmeister"                   20      25  5   0
+addcomrec   "Nekromant"                      2      55 10   0
+libraryrec
+
+
+# EXTRA RECRUITMENT OFFERS IN SPECIAL LOCATIONS
+selectclass 0
+#                                            %  # gold die iron
+# In citadels in Inferno (terrain -36):
+addunitrec  "Sinner"                       100 10   50  0   0
+# In citadels in Inferno (terrain -36):
+addunitrec  "Imp"                          100  5   50  0   0
+# In citadels in Inferno (terrain -36):
+addunitrec  "Bloodsworn"                   100  5  150 25   0
+# In citadels in Hades (terrain -37):
+addunitrec  "Ghost Warrior"                100  5  150  0   0
+# In citadels in Hades (terrain -37):
+addunitrec  "Spectral Archer"              100  5  150  0   0
+# In citadels in Hades (terrain -37):
+addunitrec  "Spectral Horseman"            100  3  150  0   0
+# In citadels in Hades (terrain -37):
+addcomrec   "Ghost Captain"                  5     100  0   0  #  Flags: 0x1
+# In Baron's Castle (terrain 30):
+addunitrec  "Pikeneer"                     100  5   50  0   5
+# In Baron's Castle (terrain 30):
+addunitrec  "Halberdier"                   100  5   50  0   5
+# In Baron's Castle (terrain 30):
+addunitrec  "Zweihander"                   100  5   50  0  10
+# In Baron's Castle (terrain 30):
+addunitrec  "Catapult"                     100  1   25  0  50
+# In Fortified Hoburg (terrain 1):
+addunitrec  "Hoburg Militia"               100 15   50  0   0
+# In Fortified Hoburg (terrain 1):
+addunitrec  "Hoburg Slinger"               100 15   50  0   0
+# In Troll Pit (terrain 32):
+addunitrec  "Goblin"                       100 15   50  0   0
+# In Mountain Stronghold (terrain 112):
+addunitrec  "Bakemono Sho"                 100  5   25  0   0
+# In Mountain Stronghold (terrain 112):
+addunitrec  "Bakemono Bowman"              100  5   25  0   0
+# In fire plane (terrain -44):
+addunitrec  "Flame Spirit"                  25  1  100  0   0
+# In fire plane (terrain -44):
+addunitrec  "Magma Child"                   50  1   75  0   0
+# In fire plane (terrain -44):
+addcomrec   "Champion of Flames"             3     150  0   0  #  Flags: 0x1
+# In overwater citadel on water plane (terrain -52):
+addunitrec  "Yeti"                         100  1   50  0   0
+# In water plane (terrain -45):
+addunitrec  "Undine"                        25  2  200  0   0
+# In water plane (terrain -45):
+addcomrec   "Champion of Waves"              3     150  0   0  #  Flags: 0x1
+# In air plane (terrain -46):
+addunitrec  "Sylph"                         25  2  200  0   0
+# In air plane (terrain -46):
+addcomrec   "Champion of Storms"             3     150  0   0  #  Flags: 0x1
+# In earth plane (terrain -47):
+addunitrec  "Earth Gnome"                   25  1  100  0   0
+# In earth plane (terrain -47):
+addcomrec   "Champion of Mountains"          3     150  0   0  #  Flags: 0x1
+# In Nexus (terrain 223):
+addunitrec  "Ether Warrior"                 25  5  500  0   0
+# In Nexus (terrain 223):
+addcomrec   "Ether Lord"                     3     250 50   0  #  Flags: 0x1

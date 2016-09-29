@@ -1,0 +1,204 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"This mods adds mages that summon and interact with the various Terraria mods for all vanilla classes. Requires the base Terraria mod."
+
+#-Classes Modification
+
+selectclass 1
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 2
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 3
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 4
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 5
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 6
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 7
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+selectclass 8
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 9
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 10
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 11
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 12
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 13
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 14
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 15
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+
+
+selectclass 16
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec
+addcomrec "Guide" 1 75 50 0
+libraryrec

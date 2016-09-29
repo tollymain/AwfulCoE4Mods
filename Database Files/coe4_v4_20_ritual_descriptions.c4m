@@ -1,0 +1,1059 @@
+# RITUAL DESCRIPTIONS IN COE4.EXE, PRESENTED AS PSEUDO-MOD CODE
+#
+# This file contains the ritual descriptions for CoE4, extracted from coe4.exe.
+# In the interest of remaining consistent with the pattern established by
+# Marlin, I present the ritual descriptions in the format of a CoE4 mod file.
+# Of course, this is not intended to actually be used as a mod.  Instead, I
+# hope this can serve as a useful resource for anyone who wants to look up the
+# description for a ritual without having to do it in game.
+#
+# The ritual descriptions are stored in coe4.exe from address 0xd01430 to
+# 0xd108a7, all in plain text.
+#
+# One interesting thing to note about the ritual descriptions is that they do
+# include the ceremonies of the Voice of El class, which are not included in
+# the ritual data.  This is probably because, although the ceremonies break
+# some of the rules followed by all rituals, their descriptions do not.
+#
+# ---
+#
+# Credits:
+#
+# - Illwinter Game Design, for the creation of the awesome Conquest of Elysium
+# and Dominions games in general, and specifically for the creation of
+# coe4.exe, from which all descriptions in this file were extracted.  
+#
+# - Esko Halttunen & Johan Karlsson, for the creation of the CoE4 modding
+# manual and the Documentation thread in the Modding subforum, which
+# established the names and syntax for the selectritual and descr commands used
+# in this file.
+#
+# - Me, Colonel Dracula joins the Navy, for extracting and reorganizing the
+# ritual descriptions.
+#
+# ----------------------------------------------------------------------------- 
+
+selectritual "Lesser Ritual of Mastery"
+descr "This ritual grants the caster a new first level ritual."
+
+
+selectritual "Lesser Void Mastery"
+descr "This ritual grants the caster a new first level ritual."
+
+
+selectritual "Ritual of Mastery"
+descr "This ritual grants the caster a new second level ritual.  If the caster is currently unable to cast second level rituals, it will be leveled up as well."
+
+
+selectritual "Ritual of Grand Mastery"
+descr "This ritual grants the caster a new third level ritual.  If the caster is currently unable to cast third level rituals, it will be leveled up as well."
+
+
+selectritual "Grand Void Mastery"
+descr "This ritual grants the caster a new third level ritual.  If the caster is currently unable to cast third level rituals, it will be leveled up as well."
+
+
+selectritual "Minor Animal Summoning"
+descr "This rituals summons and takes control of a small pack of animals that are native to the current location.  Casting it in a forest may yield a few deer or maybe a bear while casting it in a desert may result in a bunch of scorpions.  Casting the spell in an ancient forest usually gives a better result than casting it in an ordinary forest."
+
+
+selectritual "Major Animal Summoning"
+descr "This rituals summons and takes control of a pack of mighty beasts that are native to the current location.  Casting it in a forest may yield a few moose while casting it in a jungle may result in an elephant.  Casting the spell in an ancient forest usually gives a better result than casting it in an ordinary forest."
+
+
+selectritual "Messenger Crows"
+descr "The Druid summons a murder of crows that will move around randomly, gathering information and claiming lands.  The crows are quite aggressive and will sometimes attack travelers.  They are stealthy and will ambush anyone moving into their location."
+
+
+selectritual "Plant Forest Guardians"
+descr "This ritual can only be cast in wooded areas and will create some guardians that are suitable for defending it.  The ritual does not require many resources, but it takes a long time to perform."
+
+
+selectritual "Heart of the Forest"
+descr "Every ancient forest has a heart that is connected to the larger forest that surrounds it.  With this ritual the Druid takes control of heart of the forest.  The ancient forest will then begin to spread the Druid's influence and exert control over all forests in the vicinity, bringing them under his rule.  It will also be able to defend itself with nature magic if any hostile units should enter."
+
+
+selectritual "Lord of the Wild"
+descr "This is an enchantment that the Druid can cast on an ancient forest.  When the enchantment is active, groups of animals will appear in any nearby forests that are owned by the Druid.  These animals will be bound to serve the Druid."
+
+
+selectritual "Summon Mythic beasts"
+descr "This ritual summons and takes control of one or more mythic beasts.  The ritual can only be performed in an ancient forest."
+
+
+selectritual "Call Legendary Beings"
+descr "This ritual summons and takes control of one or more of the most powerful beasts in that have ever roamed Elysium.  The ritual can only be performed in an ancient forest."
+
+
+selectritual "Shepherds of the Wood"
+descr "By performing this ritual in an ancient forest, the Druid calls the Shepherd of the Wood that used to tend the forests in ancient times.  The Shepherds will grow in number over time and they will usually roam around in the vicinity of the forests, eliminating any enemies they encounter."
+
+
+selectritual "Faery Paths"
+descr "The Druid will travel using the Faery Paths that bind the ancient forests together.  The journey take almost no time and Druid can take an entire army with him, but it is only possible to travel to another ancient forest."
+
+
+selectritual "Capture Images"
+descr "The Illusionist traps a number of images in an enchanted mirror.  An image is an illusion that is so real that it can deal physical harm.  Its attacks can be avoided through magic resistance.  The image is blurry and ethereal and will be destroyed if hit.  A small mirror can contain up to ten images of soldiers or animals.  Large mirrors are more costly to make and can hold up to fifty soldiers or animals.  Large mirrors can also be filled with images of monsters, demons or swarms of bugs.  Some of the images in the mirror will be released before a battle starts, but most will appear a few at a time for the duration of the battle, or until the mirror is emptied.  After the battle the images will return to their host mirror."
+
+
+selectritual "Capture Phantasms"
+descr "The Illusionist traps a number of phantasms in an enchanted mirror.  A phantasm is a manifest illusion that is almost physical.  Its attacks are almost real and very difficult to avoid through magic resistance.  The phantasm is ethereal, but it is almost real and will not be destroyed like a simple illusion.  A silver mirror can contain up to five phantasms of soldiers or animals.  Golden mirrors can hold up to fifty soldiers or animals.  Golden mirrors can also be filled with images of monsters, demons or swarms of bugs.  Some of the images in the mirror will be released before a battle starts, but most will appear a few at a time for the duration of the battle, or until the mirror is emptied.  After the battle the phantasms will return to their host mirror."
+
+
+selectritual "Capture Spell"
+descr "The Illusionist traps a spell in an enchanted mirror.  A small mirror can contain up to ten castings of a spell, while a large mirror can hold up to fifty.  Large mirrors release two of their bound spells at a time.  The Illusionist can only bind Illusionism spells such as 'Fear', 'Blinding Light' and 'Confusion' into the mirror."
+
+
+selectritual "Capture Greater Spell"
+descr "The Illusionist traps a powerful spell in an enchanted mirror.  A silver mirror can contain up to ten castings of a spell, while a golden mirror can hold up to fifty.  Golden mirrors release two of their bound spells at a time.  The Illusionist can only bind Illusionism spells such as 'Terror', 'Color Spray' and 'Bewilderment' into the mirror."
+
+
+selectritual "Summon Phase Beast"
+descr "The Illusionist summons a phase beast and binds it to his service.  Phase Beasts are large predators that phase between this world and the mirror realm.  They can displace their own image and are difficult to hit."
+
+
+selectritual "Floating Eye"
+descr "This ritual creates a large but invisible floating eye that reveals everything it passes, including invisible units.  The eye will float around the world at random, letting the illusionist see parts of the world where he may never have been. Floating eyes cannot defend themselves and can be killed if they encounter an enemy that can detect invisible creatures."
+
+
+selectritual "Scrying"
+descr "The Illusionist looks into an empty mirror to scry upon distant lands."
+
+
+selectritual "Mirror Walk"
+descr "The Illusionist steps into an empty mirror and reappears in another empty mirror anywhere in the world."
+
+
+selectritual "Mirror Gate"
+descr "The Illusionist opens a gate between two golden mirrors and moves his entire army through the gate.  The golden mirror used in the ritual cannot enter itself and will remain where it was before the ritual was cast."
+
+
+selectritual "Create Simulacrum"
+descr "The Illusionist creates an almost exact copy of himself called a simulacrum.  The simulacrum can command armies and cast battle spells just as well as the real Illusionist and the only difference is that it cannot perform rituals.  If anyone should kill the illusionist while a Simulacrum is alive, no harm will be done, the Illusionist will simply continue to live on as the Simulacrum instead."
+
+
+selectritual "Mirror Wall"
+descr "Metal mirrors are put on the walls of a fortification and enchanted with the magic of Illusionism.  Anyone approaching the walls will see an image in the mirror and that image may just step out of the mirror and attack him."
+
+
+selectritual "Scry"
+descr "This ritual will grant the caster knowledge of the surrounding areas and whatever enemies may lurk there.  However, this method of scrying is unreliable and will leave many blind spots where enemies can still hide.  The scrying will also reveal stealthy troops and battles that take place at the location targeted by the scrying."
+
+
+selectritual "Wither Wood"
+descr "This will make a forest or jungle wither and die within a few days.  Herbs will stop growing, but the growth of fungus will not be affected."
+
+
+selectritual "Plant Shadow Tree"
+descr "With this ritual, an old tree is transformed into a vengeful Shadow Tree.  The Shadow Tree is stealthy and will ambush any creatures that enter its forest.  Being a tree, it is also very sturdy and can take great amounts of punishment before it dies.  Shadow Trees can be created in most forests and jungles, including the Troll Pit."
+
+
+selectritual "Call the Old Forest"
+descr "This ritual is used to awaken the old and sinister force dormant in all the forests of Elysium.  Once awakened, the forests will reanimate any corpses in them and vengeful vegetation begins thriving in the forest.  The awakened forests are called Troll Forests and their creatures will aid their creator in conquering the world and awakening more forests.  Any humanoids or animals that die in a Troll Forest will eventually become carrion creatures, dead beings that are held together and animated by vines directed by the will of the Troll Forest."
+
+
+selectritual "Golden Nose"
+descr "This ritual reveals the location of one previously unknown mine."
+
+
+selectritual "Summon Dragon"
+descr "Summons a powerful and intelligent Dragon that will help the Troll King and his armies to victory."
+
+
+selectritual "Stygian Bath"
+descr "By dipping a Troll in this special brew, the Troll will become invulnerable.  While invulnerable to all ordinary weapons, the Troll can still be harmed by magic and fire."
+
+
+selectritual "Raise Dead"
+descr "This ritual is used to raise the Dead as servants of the Necromancer.  The ritual will only work if there are humanoid corpses at the current location.  Raising the Dead does not cost any resources, but it does take a toll on the Necromancer's sanity.  Performing this ritual repeatedly will eventually drive the Necromancer permanently insane.  Good locations for the ritual to Raise the Dead are graveyards, battlefields and places where there have been large battles between humanoids."
+
+
+selectritual "Reanimate Animals"
+descr "This ritual is used to raise dead animals as servants of the Necromancer.  The ritual will only work if there are dead animals at the current location.  Raising dead animals does not cost any resources, but it does take a toll on the Necromancer's sanity.  Performing this ritual repeatedly will eventually drive the Necromancer permanently insane.  Good locations for the ritual are ancient forests and places where there have been large battles involving many animals."
+
+
+selectritual "Dark Knowledge"
+descr "When this ritual is performed, the spirits of the Netherworld will reveal a location in the world where there are many corpses.  The more corpses, the greater the chance for that particular location to be revealed."
+
+
+selectritual "Raven Spy"
+descr "The Necromancer summons a raven that will move around randomly, gathering information.  The raven is stealthy, but it can be attacked by armies able to see stealthy units.  It cannot claim lands."
+
+
+selectritual "Pierce the Veil of Death"
+descr "With this ritual the Necromancer can get a glimpse of the world of the dead, also known as Hades.  The world of Hades is the same as Elysium, but it is populated by the spirits of those who have died and instead of the green, lush nature in Elysium everything is dead.  Certain powerful undead can plane shift to Hades and this spell can be useful to find a safe spot to do so, because the spirits of the dead do not appreciate visitors."
+
+
+selectritual "Minor Summoning"
+descr "Summon one or more minor undead servants such as wights, ghost warriors or shades."
+
+
+selectritual "Major Summoning"
+descr "This incantation will summon forth a powerful undead servant. Not least among which is the Ghost, the Banshee, the Wraith and the Dracolich."
+
+
+selectritual "Raise Legion"
+descr "The Necromancer stirs the dead spirits of an old battlefield to raise an entire army.  The army is often led by ancient generals and mages of remarkable power.  Depending on whether the ritual is cast in the north or the south, different legions will answer the call.  The remnants of the old battlefield disappear when the ritual is cast."
+
+
+selectritual "Twiceborn"
+descr "With this ritual the Necromancer can ensure that he will not die permanently even if he should be killed due to some unforeseen circumstances.  After the Necromancer has been killed, he will rise as a Wight or Ghost, usually retaining all his necromantic powers and also removing most of his insanity.  If the ritual is cast in a citadel, the necromancer will rise as some kind of wight when killed. If it is cast in a graveyard, the necromancer will rise on a graveyard and live as a ghost instead.  Retaining magic skills is more difficult as a ghost and apprentices will probably lose whatever magic they knew in the process."
+
+
+selectritual "Ravenous Curse"
+descr "Ravenous Curse is cast on a small village and will turn some of the inhabitant into ghouls that hunger for flesh.  The ghouls will fall under the control of the Necromancer once they have satisfied most of their immediate hunger."
+
+
+selectritual "Blood Rite"
+descr "With this ritual the Necromancer turns himself into a Vampire. If the Vampire is slain it will turn into a cloud of dust and the body will soon reform in the coffin in the Vampire's home.  Thus the killed vampire will soon be able to fly out again and exact vengeance on its killer.  The Vampire can purify himself by drinking large amounts of blood and thus reduce the effects of insanity."
+
+
+selectritual "Mummification"
+descr "The Necromancer animates a pair of mummies and takes control over them.  The spell can only be cast in temples and pyramids and it will be slightly more effective in the latter.  Mummies are powerful undead beings that reform in their home temple if they should be slain."
+
+
+selectritual "Stygian Paths"
+descr "The Necromancer shifts into the world of Hades with his entire army.  In Hades he will be able to rush at incredible speed until the spell ends.  The spell ends after one month and when it does the Necromancer and his men will return to Elysium again."
+
+
+selectritual "Planar Swap"
+descr "This ritual swaps places for those in Elysium with those in Hades. It will affect everyone at the current location."
+
+
+selectritual "Lichcraft"
+descr "With this ritual the Necromancer turns himself into a Lich.  The Lich is a very powerful immortal being that will quickly recover from insanity."
+
+
+selectritual "Greater Lichcraft"
+descr "With this ritual the Lich gets rid of the shackles of maintaining a physical body and becomes a Demilich.  Having no real body makes the Demilich able to travel on the paths of the dead, enabling him to cross the entire world in no time.  Demiliches are also unkillable in combat, by normal means at least."
+
+
+selectritual "Lich Gate"
+descr "With this ritual the Demilich will use the Paths of the Dead to travel to another place in the world via the Underworld.  It is only possible to find a path to a place where there is at least one dead humanoid lying around.  Finding the right path is tricky and the travel will usually end in a place nearby the intended target where many corpses can be found.  Sometimes the travel will fail, especially when the are not many corpses in the area surrounding the intended destination."
+
+
+selectritual "Blood Rite"
+descr "With this ritual the Nekromant turns the Markgraf into a Vampire.  To perform this ritual both the Nekromant and the Markgraf must be in an old castle ruin.  If the Vampire is slain it will turn into a cloud of dust and the body will soon reform in the coffin in the Vampire's home.  Thus the killed Vampire will soon be able to fly out again and exact vengeance on its killer.  The Vampire can purify himself by drinking large amounts of blood and thus reduce the effects of insanity."
+
+
+selectritual "Blood Servant"
+descr "With this ritual the Vampire turns a Markmeister into a Vampire.  To perform this ritual both the Vampire and the Markmeister must be in an old castle ruin.  Vampires created with this power will be able to perform simple necromantic rituals like raising the dead."
+
+
+selectritual "Flesh Rite"
+descr "This ritual turns the Markgraf or a Markmeister into a Ghoul Baron.  To perform this ritual both the Nekromant and the Markgraf must be in an old castle ruin.  The Ghoul Baron is capable of necromancy and can also regain sanity by eating a substantial amount of people."
+
+
+selectritual "Animate Tools"
+descr "The enchanter makes a cartload full of tools come alive.  The tools will float and dance in the air and obey simple orders from anyone that wants their help cleaning a house, fetching water, thatching roofs or repairing broken carts.  The ritual is quite time consuming and can only be cast where people work and live.  If cast in a mine, mining tools are created.  The animated tools will increase gold and iron output from the settlement.  The enchantment animating the tools is local and the tools can't leave their place of creation."
+
+
+selectritual "Animate Sword"
+descr "A sword that is enchanted with this ritual will become alive, almost.  It will float in the air and obey simple orders from the Enchanter or his other commanders.  The ritual can only be cast in fortresses and similar locations where there are plenty of suitable swords to enchant."
+
+
+selectritual "Animate Bow"
+descr "A bow that is enchanted with this ritual will become alive, almost.  It will float in the air and obey simple orders from the Enchanter or his other commanders.  The ritual can only be cast in fortresses and similar locations where there are plenty of suitable bows to enchant."
+
+
+selectritual "Animate Armor"
+descr "This ritual makes a full plate armor come to life and it will be able to obey simple commands from the Enchanter.  The ritual can only be cast in fortresses and similar locations where there are plenty of suitable sets of armor to enchant."
+
+
+selectritual "Animate Ballista"
+descr "This ritual makes a ballista come to life.  The animated ballista floats in the air and no longer needs a stand.  It therefore moves as fast as regular armies.  It reloads itself and has a higher rate of fire than ordinary ballistae.  The ritual can only be cast in fortresses and similar locations where there are suitable parts available."
+
+
+selectritual "Craft Gargoyle"
+descr "The Enchanter crafts a Gargoyle from ordinary earth and brings it to life with a complex ritual.  This ritual is both time consuming and expensive, but the gargoyle is a solid construct that is difficult to harm in combat."
+
+
+selectritual "Sculpt Terracotta Soldier"
+descr "The Enchanter forms a soldier out of mud and brings it to life with a simple enchantment.  The process takes a long time, but it does not require any resources other than large quantities of mud."
+
+
+selectritual "Create Flesh Golem"
+descr "By taking five random corpses and stitching them together into one large humanoid being the Enchanter can create a Flesh Golem.  The creating of a Flesh Golem is relatively quick and inexpensive, but it is not nearly as powerful as golems made out of more solid materials."
+
+
+selectritual "Iron Grafting"
+descr "This ritual puts armored plates on a Flesh Golem and replaces the Golem's hands with iron weapons."
+
+
+selectritual "Create Wood Golem"
+descr "This enchantment chops down a small forest and builds a huge wood golem out of the best trees.  The ritual can be performed in both northern forests and southern jungles, but the ancient forests are able to resist the effect.  As with most golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Stone Golem"
+descr "This enchantment consumes the hidden power inherent in a coal mine and makes the mine rise as a Stone Golem.  Stone Golems are both huge and made out of stone, which makes them almost impossible to destroy with ordinary weapons.  As with most golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Ice Golem"
+descr "This ritual transforms the ice a frozen freshwater lake into a huge Ice Golem. Ice Golems can only be made where and when it is cold, because the water must be frozen.  As with most golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Clay Golem"
+descr "This ritual transforms a swamp into a mighty Clay Golem.  Clay Golems retain some the volatile property of mud and any wounds they suffer will close almost instantly.  As with most golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Craft Guardian"
+descr "With this ritual the Enchanter creates an immobile Guardian statue. The Guardian sees everything and blasts unwanted intruders with lightning."
+
+
+selectritual "Create Necrotod"
+descr "The bones of ten corpses are gathered together to form the Necrotod, an animated snake made of bones.  In addition to the corpses, the ritual requires a fair bit of gold and much time to perform."
+
+
+selectritual "Enliven Statue"
+descr "With this ritual the Enchanter will bring a humanlike statue to life and make it obey simple orders.  The ritual can only be performed in temples where there is an ample supply of statues and each casting of this ritual has a chance of destroying the temple."
+
+
+selectritual "Create Oak Golem"
+descr "This ritual consumes an ancient forest in order to create a powerful Oak Golem.  Only ancient forests have the power required to create an Oak Golem and the process is also time consuming and expensive."
+
+
+selectritual "Create Iron Golem"
+descr "This enchantment consumes the hidden power inherent in an iron mine and makes the mine rise as an Iron Golem.  Iron Golems are both huge and made of iron, which makes them just about impossible to destroy.  As with all powerful golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Onyx Golem"
+descr "This enchantment consumes the hidden power inherent in a gold stream and makes the surrounding mountain rise as an Onyx Golem.  Onyx Golems are huge and made of onyx, which makes them almost impossible to destroy.  As with all powerful golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Crystal Golem"
+descr "This enchantment consumes the hidden power inherent in crystal deposits and makes the crystals fuse together and rise as a Crystal Golem.  Crystal Golems are huge and made of crystal, which makes them very difficult to destroy.  As with all powerful golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Silver Golem"
+descr "This enchantment consumes the hidden power inherent in a silver mine and makes the mine rise as a Silver Golem.  Silver Golems are both huge and made of silver, which makes them just about impossible to destroy.  As with all powerful golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Gold Golem"
+descr "This enchantment consumes the hidden power inherent in a gold mine and makes the mine rise as a Gold Golem.  Gold Golems are both huge and made of gold, which makes them both nearly impossible to destroy and extremely valuable.  As with all powerful golem creations, the process is both time consuming and expensive."
+
+
+selectritual "Create Home Portal"
+descr "The Enchanter is able to create a permanent portal through which armies can cross vast distances instantly.  This ritual creates the home portal, which must be placed in the home citadel.  After creating the home portal, further portals can be placed wherever the enchanter happens to be.  The portals can be used by enemies as well and other Enchanters share the same portal space and will be able to go from their portals to another Enchanter's portals."
+
+
+selectritual "Create Portal"
+descr "The Enchanter is able to create a permanent portal through which armies can cross vast distances instantly.  This ritual creates one such portal.  The portals can be used by enemies as well and other Enchanters share the same portal space and will be able to go from their portals to another Enchanter's portals."
+
+
+selectritual "Enchanted Gate"
+descr "This ritual improves the defensive capabilities of the citadel by enchanting the iron gate.  When enchanted the gate is magically reinforced and charged with lightning, striking down anyone trying to break it down."
+
+
+selectritual "Infuse Magic Library"
+descr "The enchanter enchants the very books in an entire library and gives them awareness.  The collective awareness and lore of the books are then transferred to a more suitable vessel, one of the enchanter's metal golems.  The library takes charge of it's metal vessel, but will continue to serve the enchanter as a mage commander of his golem armies.  The library-commanded golem is no longer mindless, but it does not sleep and it has yet to encounter fear.  The library is able to cast metal arcana depending on it's golem vessel's body."
+
+
+selectritual "Infuse Magic Academy"
+descr "The enchanter enchants the very books in an entire Academy of High Magics and gives them awareness.  The collective awareness and lore of the books are then transferred to a more suitable vessel, one of the enchanter's metal golems.  The academy takes charge of it's metal vessel, but will continue to serve the enchanter as a mage commander of his golem armies.  The academy-commanded golem is no longer mindless, but it does not sleep and it has yet to encounter fear.  The academy is able to cast powerful metal arcana depending on it's golem vessel's body."
+
+
+selectritual "Sense Mines"
+descr "This power enables the Dwarf Queen to detect a mine anywhere in Elysium.  Usually the mine will be previously unknown, but the nature of the ritual and a limited number of mines makes it impossible to guarantee such a result."
+
+
+selectritual "Create Councilor"
+descr "With the use of this power, the Dwarf Queen will promote a dwarf worker to a Councilor.  The Councilor is a clever dwarf who is able to lead troops.  It is also the job of a Councilor to lead expeditions to the outside world and establish new dwarf colonies."
+
+
+selectritual "Create Rune Smith"
+descr "With the use of this power, the Dwarf Queen will promote a worker to a Rune Smith.  Rune Smiths are the mages of dwarven society and it is their job to support the warriors and guards of the dwarves with their battle magic.  They also craft enchanted armor and weapons to provide the colonies with elite warriors."
+
+
+selectritual "Divine Marriage"
+descr "With this ritual the Dvala becomes a Daughter of Dvalin.  A Daughter of Dvalin has superior magic powers and gives birth to more dwarves than a normal Dvala.  Her understanding of the mountain will also increase mining output further."
+
+
+selectritual "Create Rime Armor"
+descr "With the help of magic gems the Rune Smith forges five suits of magic armor for the best of the dwarven fighters.  A total of five Dwarf Warriors and Dwarf Guards must be present to make full use of this ability."
+
+
+selectritual "Create Furnace Armor"
+descr "With the help of magic gems the Rune Smith forges five suits of magic armor for the best of the dwarven fighters.  A total of five Dwarf Warriors and Dwarf Guards must be present to make full use of this ability."
+
+
+selectritual "Create Armor of Dvalin"
+descr "With the help of magic gems the Rune Smith forges five suits of magic armor for the best of the dwarven fighters.  A total of five Dwarf Warriors and Dwarf Guards must be present to make full use of this ability."
+
+
+selectritual "Rime Brand Weapons"
+descr "By rime branding a weapon it becomes magic and will strike foes with cold.  Dwarves with Rime Armor as well as arbalests can be targeted by this ritual."
+
+
+selectritual "Flame Brand Weapons"
+descr "By flame branding a weapon it becomes magic and will strike foes with fire.  Dwarves with Furnace Armor as well as arbalests can be targeted by this ritual."
+
+
+selectritual "Earth Brand Weapons"
+descr "By earth branding a weapon it becomes magic and will stun the foes it strikes, should they survive.  Dwarves with Armor of Dvalin as well as arbalests can be targeted by this ritual."
+
+
+selectritual "Rime Brand Ballista"
+descr "A rime branded ballista will freeze a large area around the place where it hit, potentially killing many foes with a single giant arrow."
+
+
+selectritual "Flame Brand Ballista"
+descr "A flame branded ballista will burn a large area around the place where it hit, potentially killing many foes with a single giant arrow."
+
+
+selectritual "Earth Brand Ballista"
+descr "An earth branded ballista will stun a large area around the place where it hit, potentially disrupting many foes with a single giant arrow."
+
+
+selectritual "Create Iron Gate"
+descr "The dwarves create an iron gate in their newly founded colony."
+
+
+selectritual "Enchant Gate"
+descr "The Dvala enchants the iron gate with a dwarven dweomer.  The enchanted gate is magically reinforced and charged with lightning, striking down anyone trying to break it down."
+
+
+selectritual "Lore of Dvalin I"
+descr "The Dvala taps into the ancient lore of Dvalin and learns a new combat spell to protect her children with."
+
+
+selectritual "Lore of Dvalin II"
+descr "The Dvala taps into the ancient lore of Dvalin and learns a new combat spell to protect her children with."
+
+
+selectritual "Lore of Dvalin III"
+descr "The Dvala taps into the ancient lore of Dvalin and learns a new combat spell to protect her children with."
+
+
+selectritual "Found Colony"
+descr "The Councilor performs the sacred task of putting a newly hatched Dvala in charge of her own dwarf colony.  Colonies can only be established in proper mines that the Dvala is sure to appreciate."
+
+
+selectritual "Living Boulders"
+descr "This ritual animates a pair of boulders and sets them to defend the mine against intruders.  There can only be one pair of animated boulders at each mine and the ritual can only be performed again after the previous animated boulders have been completely destroyed."
+
+
+selectritual "Portal of Dvalin"
+descr "The Dvala constructs a gate that connects to the Halls of Dvalin where a network of gates to all other Dvalas are located.  This network of magic gates might not be constructed yet, but Dvalin has proclaimed that it will be a vast network and it is up to his Daughters to make it so."
+
+
+selectritual "Ceremony of the Lord of Night"
+descr "A Moon Priest performs a blood sacrifice to call the servants of the Lord of Night.  Beast Bats or Ozelotl will answer the call.  The servants are sent by their Lord and are always loyal to the summoner."
+
+
+selectritual "Ceremony of the Bloody Mother"
+descr "A Priest of the Bloody Mother performs a blood sacrifice to call the servants of the Bloody Mother.  Serpents, Jaguars or Tlahuelpuchi will answer the call.  The servants are sent by their Mother and are always loyal to the summoner."
+
+
+selectritual "Ceremony of the Lord of War"
+descr "A Priest King performs a blood sacrifice to call the servants of the Lord of War.  Jaguars or Ozelotl will answer the call.  The servants are sent by their Lord and are always loyal to the summoner."
+
+
+selectritual "Ceremony of the Lord of Death"
+descr "A Priest of the Dead performs a blood sacrifice to call the servants of the Lord of War.  Longdead or Civateteo will answer the call.  The servants are sent by their Lord and are always loyal to the summoner."
+
+
+selectritual "Ceremony of the Lord of Sky"
+descr "A Sky Priest performs a blood sacrifice to call the servants of the Lord of Sky.  Beast Bats or Turkey Spirit Doubles will answer the call.  The servants are sent by their Lord and are always loyal to the summoner."
+
+
+selectritual "Ceremony of the Lord of Rain"
+descr "A Rain Priest performs a blood sacrifice to call the servants of the Lord of Rain.  Toad Warriors, Rain Warriors or Toad Priests will answer the call.  The servants are sent by their Lord and are always loyal to the summoner."
+
+
+selectritual "Greater Ceremony of the Lord of War"
+descr "The Priest King performs a great sacrifice to his insatiable Lord.  The King is rewarded with powerful servants of the Teotl.  Plumed Serpents, Balam or Great Macaws will arrive to witness the ceremony and follow the King."
+
+
+selectritual "Greater Ceremony of the Lord of Death"
+descr "A Priest of the Dead performs a great sacrifice to his insatiable Lord.  The Priest is rewarded with powerful servants of the Teotl.  Onaquis or Bolon-Ti-Kus will arrive to witness the ceremony and follow the priest."
+
+
+selectritual "Greater Ceremony of the Lord of Night"
+descr "A Moon Priest performs a great sacrifice to his insatiable Lord.  The Priest is rewarded with powerful servants of the Teotl.  Tzitzimitl or Onaquis will arrive to witness the ceremony and follow the priest."
+
+
+selectritual "Greater Ceremony of the Lord of Rain"
+descr "A Priest of the Sky performs a great sacrifice to his insatiable Lord.  The Priest is rewarded with powerful servants of the Teotl.  Tlaloques or Rain Kings with their Toad Warrior retinues will arrive to witness the ceremony and follow the priest."
+
+
+selectritual "Greater Ceremony of the Lord of Sky"
+descr "A Priest of the Sky performs a great sacrifice to his insatiable Lord.  The Priest is rewarded with powerful servants of the Teotl.  Tzitzimitl, Couatls, Great Macaws or Chaacs will arrive to witness the ceremony and follow the priest."
+
+
+selectritual "Greater Ceremony of the Bloody Mother"
+descr "A Priest of the Sky performs a great sacrifice to his insatiable Mother.  The Priest is rewarded with powerful servants of the Teteo Inan.  Plumed Serpents or Couatls will arrive to witness the ceremony and follow the priest."
+
+
+selectritual "Summon God"
+descr "The High Priest performs the ultimate sacrifice to draw his Teotl God into this world.  This will cost him and hundreds of slaves their life.  Different priests will summon different Gods.  The Teotl Gods are unique and six in number:  The Teotl of War, the Teotl of the Night, the Teotl of the Underworld, the Teotl of the Sky, the Teotl of Rain and Teteo Inan, the Bloody Mother. "
+
+
+selectritual "Convert Settlement"
+descr "Forces the population of a settlement to worship El.  This makes the settlement pay one third of its income to the church of El instead of regular taxes.  The worship of El does not end if an enemy should conquer the settlement.  The money given to the church of El will be divided among the leading priests, or if a Pontiff has been selected the entire collection will go to him."
+
+
+selectritual "Ceremony of Mastery"
+descr "This ceremony will advance a Bishop to an Arch Bishop, an Arch Bishop to a Cardinal and a Cardinal to the Pontiff. There can only be one Pontiff in Elysium at the same time.  If the old Pontiff is killed a new one can be appointed."
+
+
+selectritual "Break the First Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Second Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Third Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Fourth Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Fifth Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Sixth Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Break the Seventh Seal"
+descr "There are Seven Seals that prevent El from punishing the unfaithful.  When the First Seal is broken El will send minions to help his followers and strike at the heretics.  The more seals broken, the more powerful minions will arrive to combat the heretics, but breaking all seven will bring on the Apocalypse which is probably not a good idea.  There is only one set of Seven Seals and multiple El players can cooperate in breaking them."
+
+
+selectritual "Increase Divine Favor"
+descr "The Divine Favor determines how likely it is that help comes from El after at least one of the Seven Seals has been broken.  What this help consists of is determined by the number of seals broken."
+
+
+selectritual "Bolster Devotion"
+descr "This ceremony will increase the power that units receive from being blessed.  The bless effects are per player, so one player doing a Bolster Devotion ceremony will not help other Voice of El players.  The ceremony will cost more and more relics for every time it has been performed."
+
+
+selectritual "Start Crusade"
+descr "This ability calls on the Crusade, which is a formidable army.  The Crusade will go against a player of your choice and continue until that player is annihilated or the Crusade is defeated."
+
+
+selectritual "Call the Inquisition"
+descr "This ability calls on the Inquisition.  The Inquisition will go against all unconverted settlements and make sure they are converted."
+
+
+selectritual "Imp Summoning"
+descr "With this ritual the Demonologist will summon a bunch a imps and try to control them.  The more human sacrifices used, the greater the chance of successfully binding the imps.  Imps are evil and if the binding fails they will attack at the first opportunity."
+
+
+selectritual "Demon Summoning"
+descr "With this ritual the Demonologist will summon one of the less powerful demons and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+
+selectritual "Greater Demon Summoning"
+descr "With this ritual the Demonologist will summon a greater demon and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+
+selectritual "infernal Horde"
+descr "With this ritual the Demonologist will summon a small horde of low ranking demons and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the horde.  Demons do not like being bound to the service of mortals and if the binding fails the demons will attack at the first opportunity."
+
+
+selectritual "Summon Demon Lieutenant"
+descr "With this ritual the Demonologist will summon a high ranking demon and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lieutenants are very powerful and most can command armies, cast spells and perform rituals to summon more demons."
+
+
+selectritual "Summon Demon Lord"
+descr "With this ritual the Demonologist will summon one of the seven demon lords and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lords are extremely powerful and failure to bind it is likely to be fatal for the Demonologist."
+
+
+selectritual "Personal Gate"
+descr "Visiting Inferno is quite easy for a Demonologist.  With this ritual he negotiates a safe passage there for himself alone.  Unfortunately getting back from there is not quite as easy."
+
+
+selectritual "Returning"
+descr "This ritual is a life saver if you should ever end up in Inferno for some reason.  The ritual will transport the Demonologist back to Elysium.  Not necessarily a safe location in Elysium, but it should be safer than staying in the Inferno at least."
+
+
+selectritual "Infernal Gate"
+descr "This ritual creates a gate between the current location in Elysium and and a random location in the Inferno.  When that gate has been created the armies of the Demonologist are free to enter the Inferno, but the gate can also be used to leave Inferno by the forces already down there."
+
+
+selectritual "Wall of Torment"
+descr "By trapping human sacrifices inside the castle wall, the Demonologist can create a Wall of Torment.  The trapped souls will attack any enemies that come too close by releasing their dark energies on them.  The castle gates will be flanked by two heads that project the horror of those who are trapped in the wall and any enemies that approach the gate will run away in panic.  Creating the Wall of Torment is a very time consuming ritual."
+
+
+selectritual "Minor Summoning"
+descr "With this ritual the Witch will brew a decoction that is used to summon and control some creatures from the ancient days of Elysium.  The more fungi used, the greater the chance of managing to control the creatures that appear."
+
+
+selectritual "Major Summoning"
+descr "With this ritual the Witch will brew a decoction that is used to summon and control the some of the more powerful creatures from the ancient days of Elysium.  The more fungi used, the greater the chance of managing to control the creatures that appear."
+
+
+selectritual "Summon Old One"
+descr "With this ritual the Witch will brew a decoction that is used to awaken and control one of the Old Ones.  The Old Ones slumber in the swamps and the ritual can only be performed there.  The more fungi used, the greater the chance of managing to control the Old One."
+
+
+selectritual "Swamp Guardians"
+descr "This ritual summons some creatures that are are suitable for staying in one place and guarding it.  The swamp guardians can only appear in forest or swamplike terrains.  The more fungi used for the ritual, the greater the chance of controlling the creatures that appear."
+
+
+selectritual "Marshlands"
+descr "When man arrived in Elysium many swamps were drained and became fertile farms.  This ritual lets the farmlands return to their original swampy state."
+
+
+selectritual "Bog Eye"
+descr "All swamps are connected in a way that lets the Witch locate them with the help of magic.  This ritual will locate a swamp that was previously unknown to the Witch."
+
+
+selectritual "Mirror Mirror"
+descr "Mirror mirror on the wall, show me who is trying to destroy me now."
+
+
+selectritual "Murderous Mist"
+descr "This ritual makes a venomous green mist rise all around the walls of a castle, poisoning anyone on the wrong side of the walls.  The mist will only appear when the castle is threatened so friendly armies can move in and out during peacetime."
+
+
+selectritual "Miasma"
+descr "This ritual will make a swamp spread a thick green mist that is poisonous to all life.  The mist will blow with the wind to neighboring lands as well and may kill entire towns if they are nearby."
+
+
+selectritual "Swamp Soul"
+descr "The Witch binds her soul to the swamps of Elysium.  When she dies her soul will instantly return to the swamp which will then reform into a suitable body for the Witch.  The Witch must own a swamp for this trick of immortality to work and the swamp will be consumed in the process."
+
+
+selectritual "Bog Path"
+descr "This ritual enables the Witch to travel through the paths that connect all the swamps together.  The Witch and her entire army will travel instantly from one swamp to another swamp of her choosing."
+
+
+selectritual "Lesser Ceremony to Baal"
+descr "The Priestess performs a blood sacrifice to Baal and in return she will be granted command over some minions of Baal.  More powerful minions can appear if the blood sacrifice is performed in a desert."
+
+
+selectritual "Ceremony to Baal"
+descr "The Priestess performs a blood sacrifice to Baal and in return she will be granted command over some minions of Baal.  More powerful minions can appear if the blood sacrifice is performed in a desert."
+
+
+selectritual "Grand Ceremony to Baal"
+descr "The Priestess performs a large blood sacrifice to Baal and in return she will be granted command over one of Baal's more powerful minions."
+
+
+selectritual "Lesser Blood Feast"
+descr "By sacrificing a few blood slaves the Priestess will attract the attention of Baal and have him drain the life from a substantial part of the village's population.  In return for the sacrifice, Baal will lend the help from some of his ancient champions."
+
+
+selectritual "Blood Feast"
+descr "By sacrificing a few blood slaves the Priestess will attract the attention of Baal and have him drain the life from a substantial part of the village's population.  In return for the sacrifice, Baal will lend the help from some of his ancient champions."
+
+
+selectritual "Grand Blood Feast"
+descr "By sacrificing a few blood slaves the Priestess will attract the attention of Baal and have him drain the life from a substantial part of the village's population.  In return for the sacrifice, Baal will lend the help from some of his ancient champions."
+
+
+selectritual "Banquet for the Dead"
+descr "The Priestess of Ba'al holds a banquet for the deified dead.  For three days the living and the shades of the dead share tables and meals.  At the eastern end of the table is a throne for the living Priestess and at the western end is an empty throne.  Each night the ghostly shapes in the empty seats and throne become more solid.  At the final night the Priestess sacrifices the entire town to the dead king who can then manifest in the land of the living as a reawakened god."
+
+
+selectritual "Summon God"
+descr "The Anointed Priestess performs the ultimate sacrifice, by giving herself and one thousand human girls to Baal.  Hopefully this will enable Baal to enter Elysium."
+
+
+selectritual "Second Sun"
+descr "With this powerful ritual the Priestess creates a new sun that hangs over a mountain top.  The second sun will make sure the nearby part of Elysium never gets cold and anyone going too close is likely to be incinerated by the sun."
+
+
+selectritual "Flame Pact"
+descr "The Warlock seals a pact with the Elemental Lords of Fire to gain power.  An Apprentice casting this ritual will be elevated to a full fledged Warlock of Fire.  As a Warlock he loses the ability to cast rituals of Water, but Fire rituals are cheaper."
+
+
+selectritual "Water Pact"
+descr "The Warlock seals a pact with the Elemental Lords of Water to gain power.  An Apprentice casting this ritual will be elevated to a full fledged Warlock of Water.  As a Warlock he loses the ability to cast rituals of Fire, but Water rituals are cheaper."
+
+
+selectritual "Storm Pact"
+descr "The Warlock seals a pact with the Elemental Lords of Air to gain power.  An Apprentice casting this ritual will be elevated to a full fledged Warlock of Air.  As a Warlock he loses the ability to cast rituals of Earth, but Air rituals are cheaper."
+
+
+selectritual "Earth Pact"
+descr "The Warlock seals a pact with the Elemental Lords of Earth to gain power.  An Apprentice casting this ritual will be elevated to a full fledged Warlock of Earth.  As a Warlock he loses the ability to cast rituals of Air, but Earth rituals are cheaper."
+
+
+selectritual "Greater Flame Pact"
+descr "The Warlock seals a greater pact with the Elemental Lords of Fire to gain more power.  A Warlock casting this ritual will be elevated to a Great Warlock.  As a Great Warlock of Fire he loses the ability to cast all rituals except Fire based ones.  A Great Warlock will spend less resource when casting Fire rituals.  A Great Warlock who performs a sealing pact again will learn a new third level ritual."
+
+
+selectritual "Greater Water Pact"
+descr "The Warlock seals a greater pact with the Elemental Lords of Water to gain more power.  A Warlock casting this ritual will be elevated to a Great Warlock.  As a Great Warlock of Water he loses the ability to cast all rituals except Water based ones.  A Great Warlock will spend less resource when casting Water rituals.  A Great Warlock who performs a sealing pact again will learn a new third level ritual."
+
+
+selectritual "Greater Storm Pact"
+descr "The Warlock seals a greater pact with the Elemental Lords of Air to gain more power.  A Warlock casting this ritual will be elevated to a Great Warlock.  As a Great Warlock of Air he loses the ability to cast all rituals except Air based ones.  A Great Warlock will spend less resource when casting Air rituals.  A Great Warlock who performs a sealing pact again will learn a new third level ritual."
+
+
+selectritual "Greater Earth Pact"
+descr "The Warlock seals a greater pact with the Elemental Lords of Earth to gain more power.  A Warlock casting this ritual will be elevated to a Great Warlock.  As a Great Warlock of Earth he loses the ability to cast all rituals except Earth based ones.  A Great Warlock will spend less resource when casting Earth rituals.  A Great Warlock who performs a sealing pact again will learn a new third level ritual."
+
+
+selectritual "Lesser Fire Summoning"
+descr "This ritual will summon a fire elemental and bind it to service.  Elementals are beings of pure elemental energies given life through magical rituals.  Sometimes the elemental energies used to create the elemental are diluted and impure.  This results in one or more elemental shards or lesser elementals instead."
+
+
+selectritual "Lesser Water Summoning"
+descr "This ritual will summon a water elemental and bind it to service.  Elementals are beings of pure elemental energies given life through magical rituals.  Sometimes the elemental energies used to create the elemental are diluted and impure.  This results in one or more elemental shards or lesser elementals instead."
+
+
+selectritual "Lesser Earth Summoning"
+descr "This ritual will summon an earth elemental and bind it to service.  Elementals are beings of pure elemental energies given life through magical rituals.  Sometimes the elemental energies used to create the elemental are diluted and impure.  This results in one or more elemental shards or lesser elementals instead."
+
+
+selectritual "Lesser Air Summoning"
+descr "This ritual will summon an air elemental and bind it to service.  Elementals are beings of pure elemental energies given life through magical rituals.  Sometimes the elemental energies used to create the elemental are diluted and impure.  This results in one or more elemental shards or lesser elementals instead."
+
+
+selectritual "Greater Fire Summoning"
+descr "This ritual summons a few beings from the Elemental Plane of Fire and enables the Warlock to control them."
+
+
+selectritual "Summon Champion of Fire"
+descr "This ritual summons a commander from the Elemental Plane of Fire that will help the Warlock conquer the world."
+
+
+selectritual "Vafur Flames"
+descr "The Vafur Flames will surround a fortification and let friends pass while burning anyone who tries to pass with a hostile intent.  Creating the Vafur Flames is a very time consuming process."
+
+
+selectritual "Greater Water Summoning"
+descr "This ritual summons a few beings from the Elemental Plane of Water and ice and enables the Warlock to control them."
+
+
+selectritual "Summon Yeti"
+descr "This ritual summons a small pack of Yetis and binds them into servitude."
+
+
+selectritual "Summon Champion of Water"
+descr "This ritual summons a commander from the Elemental Plane of Water that will help the Warlock conquer the world."
+
+
+selectritual "Greater Air Summoning"
+descr "This ritual summons a few beings from the Elemental Plane of Air and enables the Warlock to control them."
+
+
+selectritual "Summon Champion of Air"
+descr "This ritual summons a commander from the Elemental Plane of Air that will help the Warlock conquer the world."
+
+
+selectritual "Greater Earth Summoning"
+descr "This ritual summons a few beings from the Elemental Plane of Earth and enables the Warlock to control them."
+
+
+selectritual "Summon Champion of Earth"
+descr "This ritual summons a commander from the Elemental Plane of Earth that will help the Warlock conquer the world."
+
+
+selectritual "Summon King of Fire"
+descr "The King of Fire is a powerful elemental being and a ruler of the Elemental Plane of Fire.  He is capable of performing Fire rituals."
+
+
+selectritual "Summon Queen of Water"
+descr "The Queen of Water is a powerful elemental being and a ruler of the Elemental Plane of Water.  She is capable of performing Water rituals."
+
+
+selectritual "Wheel of Frost and Flames"
+descr "This ritual will summon an elemental entity that is a unity of opposite elements.  It is believed to guard the primal gates that separate the Elemental Planes."
+
+
+selectritual "Wheel of Storm and Stone"
+descr "This ritual will summon an elemental entity that is a unity of opposite elements.  It is believed to guard the primal gates that separate the Elemental Planes."
+
+
+selectritual "Summon Queen of Air"
+descr "The Queen of Air is a powerful elemental being and a ruler of the Elemental Plane of Air.  She is capable of performing Air rituals."
+
+
+selectritual "Summon King of Earth"
+descr "The King of Earth is a powerful elemental being and a ruler of the Elemental Plane of Earth.  He is capable of performing Earth rituals."
+
+
+selectritual "Eternal Pyre"
+descr "A huge pillar of fire that burns forever without the need of any fuel.  The power of this eternal pillar of fire can be harvested into fire gems that are highly valuable to Warlocks of Fire."
+
+
+selectritual "Fimbul Fortress"
+descr "This ritual transforms a frozen lake into a citadel made of ice.  The Fimbul Fortress will spread cold to the surrounding areas and will also serve as a place of power for frost giants.  Frost giants will find that the rituals calling their servants are easier to cast here."
+
+
+selectritual "King of Giants"
+descr "This ritual will empower a giant and make him a Titan.  In addition to being huge and physically powerful the Titan is also a highly capable mage who can manipulate his element."
+
+
+selectritual "Call Giants"
+descr "The Titan summons a group of giants.  Giants are powerful beings that are attuned to their element."
+
+
+selectritual "Call Winter Wolves"
+descr "This ritual summon a pack of Winter Wolves.  Winter Wolves are more powerful than ordinary wolves and can breathe a deadly ice mist on their enemies."
+
+
+selectritual "Perpetual Storm"
+descr "The perpetual storm will cause heavy winds and the appearance of storm elementals that will roam the surrounding areas. The square that this enchantment is cast in will be the eye of the storm and it will be calm and free from storm elementals. The surrounding areas will have their income decreased due to the storms and in the eye of the storm air gems can be collected."
+
+
+selectritual "Raise Volcano"
+descr "The Warlock raises a volcano from a group of harmless looking hills. The volcano creation will not harm the warlock or his troops and afterward the volcano will be an excellent income of fire gems."
+
+
+selectritual "Summon Magma Warrior"
+descr "This ritual summons a band of para-elementals and binds them into servitude. Para-elementals gain power from two elements and are generally more powerful than the pure elemental soldiers."
+
+
+selectritual "Summon Smoke Warrior"
+descr "This ritual summons a band of para-elementals and binds them into servitude. Para-elementals gain power from two elements and are generally more powerful than the pure elemental soldiers."
+
+
+selectritual "Summon Mist Warrior"
+descr "This ritual summons a band of para-elementals and binds them into servitude. Para-elementals gain power from two elements and are generally more powerful than the pure elemental soldiers."
+
+
+selectritual "Summon Mud Warrior"
+descr "This ritual summons a band of para-elementals and binds them into servitude. Para-elementals gain power from two elements and are generally more powerful than the pure elemental soldiers."
+
+
+selectritual "Create Hoburg Village"
+descr "With gifts of wonderful Hoburg beer a farm is depopulated from humans and the Hoburghers move in to create a proper Hoburg village on the fertile land."
+
+
+selectritual "Animal Summoning"
+descr "With the help of special Hoburg plants the Horticulturist is able to control some beasts by tricking them into eating the delicious magic mixture."
+
+
+selectritual "Farm Animal Summoning"
+descr "With this ritual the Horticulturist can summon and take control over a group of beasts that enjoy living close to farmlands."
+
+
+selectritual "Summon Guardian of the Hoburgs"
+descr "This ancient ritual is only performed in times of great danger.  It summons a strong treelike creature that will protect the Hoburghers."
+
+
+selectritual "Great Animal Summoning"
+descr "With the help of special Hoburg plants the garden master is able to control a pack of beasts by tricking them into eating the delicious magic mixture."
+
+
+selectritual "Ruby Construct"
+descr "The mechanical constructs of the Horologist are truly formidable soldiers, many with magic attacks powered by the magic gems used."
+
+
+selectritual "Sapphire Construct"
+descr "The mechanical constructs of the Horologist are truly formidable soldiers, many with magic attacks powered by the magic gems used."
+
+
+selectritual "Diamond Construct"
+descr "The mechanical constructs of the Horologist are truly formidable soldiers, many with magic attacks powered by the magic gems used."
+
+
+selectritual "Emerald Construct"
+descr "The mechanical constructs of the Horologist are truly formidable soldiers, many with magic attacks powered by the magic gems used."
+
+
+selectritual "Ruby Iron Dragon"
+descr "The mechanical dragons of the master crafter are probably some the most powerful entities ever created.  They are almost indestructible and have magic powers based on the type of gems used."
+
+
+selectritual "Sapphire Iron Dragon"
+descr "The mechanical dragons of the master crafter are probably some the most powerful entities ever created.  They are almost indestructible and have magic powers based on the type of gems used."
+
+
+selectritual "Diamond Iron Dragon"
+descr "The mechanical dragons of the master crafter are probably some the most powerful entities ever created.  They are almost indestructible and have magic powers based on the type of gems used."
+
+
+selectritual "Emerald Iron Dragon"
+descr "The mechanical dragons of the master crafter are probably some the most powerful entities ever created.  They are almost indestructible and have magic powers based on the type of gems used."
+
+
+selectritual "Raise Levies"
+descr "Raises a militia from the local population that will defend the place from brigands, animals or worse.  The militia can only be raised in a settlement where there is no militia already.  The larger the settlement, the larger the militia will be."
+
+
+selectritual "Coronation"
+descr "The baron sits on the king's throne and proclaims himself King of Elysium.  In addition to gaining the respect of all civilized beings in Elysium, the King will receive free military units as long as he resides in the king's castle.  The king will receive free units when located in other castles too, but a reduced amount only."
+
+
+selectritual "Swift Justice"
+descr "Swift justice can be dealt to a brigand lair.  The place is surrounded and everyone is rounded up and hanged. This takes care of the brigand problem forever."
+
+
+selectritual "Drain Swamp"
+descr "Draining a swamp turns a useless tract of fenland into a fertile plot suitable for farming."
+
+
+selectritual "Raise Fort"
+descr "Puts a high wall all around the settlement and also raises a small hill with a simple fort on it where the guards can look out over the surroundings.  A fortification like this provides excellent protection against the beasts of Elysium and it will quickly fill up with more inhabitants than previously."
+
+
+selectritual "Raise Castle"
+descr "Builds an entire castle from the ground up.  This is a costly and time consuming enterprise, but the result is impressive."
+
+
+selectritual "Summon Ancestor"
+descr "The Spirit Guide builds a sweat lodge and burns aromatic herbs to attract the attention of an ancestral spirit of his tribe.  The spirit manifests as a spectral warrior ready to aid his descendants in battles."
+
+
+selectritual "Summon Heroes of Old"
+descr "The Spirit Guide builds a sweat lodge and burns large amounts aromatic herbs to call the spirits of the tribe's most heroic ancestors."
+
+
+selectritual "Carve Totempole"
+descr "The Spirit Guide carves intimidating faces on a great wooden pole.  The Spirit Guide then invites a mighty spirit to inhabit the pole."
+
+
+selectritual "Army of Legends"
+descr "The Spirit Guide burns an enormous amount of aromatic herbs in a place where spirits of the ancestors are near.  This will give a small army of ancestors a second chance to conquer the world."
+
+
+selectritual "Astrology"
+descr "Some say the stars control everything that happens in Elysium and some say that it is the other way around and the stars follow the actions of Elysium.  Neither hypothesis is right and the stars do not particularly care about Elysium, but the stars contain the record of everything and an experienced astrologer can take advantage of this by observing the ever shifting sky.  With this ritual the astrologer tries to interpret the sky to find out about any immediate threats to himself.  Astrology is not an exact science and the perceived threat may not be the one that is about to kill him.  This ritual is easier to perform in locations of power that are tied to the void."
+
+
+selectritual "Send Lesser Horror"
+descr "This ritual opens a small rift between the Void and Elysium, just long enough for one or more horrors to come through.  Distances in the Void work in strange ways and the rift can be made to appear on the other side of the world as easily as next to the caster.  However, getting it to appear at exactly the right spot is difficult and some deviations are likely.  This ritual is easier to perform in locations of power that are tied to the void."
+
+
+selectritual "Send Greater Horror"
+descr "This ritual opens a major rift between the Void and Elysium, just long enough for a powerful horror to come through.  Distances in the Void work in strange ways and the rift can be made to appear on the other side of the world as easily as next to the caster.  However, getting it to appear at exactly the right spot is difficult and some deviations are likely.  This ritual is easier to perform in locations of power that are tied to the void."
+
+
+selectritual "Call of the Deep"
+descr "This ritual is performed in a coastal area on a clear night when the stars are right.  Only then can the Cultist be assured that his sacrifice will appease the beings that will emerge from the Deep.  It has of course happened that the beings were not appeased and attacked the Cultist, but this is only the just punishment for misreading the stars."
+
+
+selectritual "Ceremony in the Deep"
+descr "By performing the summoning ceremony far below the surface of the ocean, the influence of the stars is much lessened and the danger of misreading the stars is minimized.  When the ritual is performed in the depths only special types of deep dwelling creatures will respond."
+
+
+selectritual "Greater Ceremony in the Deep"
+descr "By performing the summoning ceremony far below the surface of the ocean, the influence of the stars is much lessened and the danger of misreading the stars is minimized.  When the ritual is performed in the depths only special types of deep dwelling creatures will respond."
+
+
+selectritual "Call Warriors of the Deep"
+descr "This is a larger sacrifice that tries to call on the more combat oriented dwellers in the Deep.  The ritual is performed in a coastal area on a clear night when the stars are right.  But even then the Cultist cannot be sure his sacrifice will appease the beings as the warriors summoned are often very keen on killing people."
+
+
+selectritual "Call Army of the Deep"
+descr "This is a larger sacrifice that tries to call on the more combat oriented dwellers in the Deep.  The ritual is performed in a coastal area on a clear night when the stars are right.  But even then the Cultist cannot be sure his sacrifice will appease the beings as the warriors summoned are often very keen on killing people."
+
+
+selectritual "Contact Old Ones"
+descr "The Old Ones are ancient and powerful beings that live in the depths or maybe even in the Void.  Trying to contact them is a risky proposition.  It is safest to do it with a large army nearby, because it is nearly impossible to read the stars accurately enough to predict when the time for this summoning will be perfect."
+
+
+selectritual "Deep Rising"
+descr "This large sacrifice calls forth an entire army of beings from the Deep.  It is of utmost importance that the stars are right when this ritual is performed or the beings are likely to attack."
+
+
+selectritual "Contact Elder Being"
+descr "The cultist opens a rift in time or space and contacts an Elder Being.  One or a few beings will answer the call."
+
+
+selectritual "Call Elder Beings"
+descr "The Starspawn opens a rift in time or space and calls forth a group of Elder Beings or a Yithian Sage from the void."
+
+
+selectritual "Coronation"
+descr "The Senator proclaims himself Emperor and supreme ruler of Elysium.  The coronation can only be performed in the capital of Elysium.  Whether the capital is currently in working order or not does not matter.  Proclaiming oneself Emperor is unlikely to impress beasts, brigands or anyone else that didn't obey the Senator from the start and they will still have to be subjugated the hard way."
+
+
+selectritual "Imperial Wedding"
+descr "The Emperor is married with the Empress to be.  The Emperor's bride is a Renata carefully selected by her order to become the future Empress.  Both the Emperor and a Renata must be present in the capital to perform the wedding ceremony."
+
+
+selectritual "Erect Statue"
+descr "No major settlement is complete without its own gigantic statue of the Emperor.  The statue will guard the village from beasts and brigands and in return the villagers will be fully loyal to the Emperor and nothing will be withheld from the tax collection.  There can only be one statue of the Emperor in a single settlement.  After all, there is only one Emperor."
+
+
+selectritual "Apotheosis"
+descr "While being ruler over Elysium is great, the Gods are even more powerful than that.  This ritual fixes that by raising the Emperor or Empress of Elysium to the status of full godhood."
+
+
+selectritual "Incite Revelry"
+descr "This ritual awakens the powers of lust and revelry that are hidden in all ancient forests and tries to turn this power to the will of the Senator.  Women will shed their clothes and go deep into the forest and join the satyrs in their revelry.  After a while, bands of wild humanoids will emerge from the forest and spread the ways of the Senator."
+
+
+selectritual "Scrying"
+descr "This ritual summons the image of a location far away in a bowl of water.  It can be used to scry on unknown locations or enemy armies that have disappeared from sight."
+
+
+selectritual "Awaken Guardians"
+descr "This ritual creates guardian statues.  When an enemy approaches the statues will begin to move and fight the intruder if need be.  In times of peace or at least when there is no battle, the statues will remain stationary."
+
+
+selectritual "Lesser Lava Summoning"
+descr "This ritual summons and takes control over a small amount of Fire beings."
+
+
+selectritual "Lesser Olm Summoning"
+descr "This ritual summons an Olm to aid the King of the Deep in his campaign against Elysium.  The Olm can destroy lesser minds by using its mental powers."
+
+
+selectritual "Lesser Deep Summoning"
+descr "This ritual summons and takes control over some beings that can be found deep under Elysium."
+
+
+selectritual "Lesser Summoning of the Dead"
+descr "This ritual summons one of the King of the Deep's long dead allies ."
+
+
+selectritual "Olm Conclave"
+descr "The Olm Conclave consists of an Olm Sage and a few trusted Olms.  The Olms can destroy lesser minds by using their mental powers."
+
+
+selectritual "Summoning of the Dead"
+descr "This ritual summons a group of dead Deep Ones that have been dead for ages, so they can assist in the war once again."
+
+
+selectritual "Lava Summoning"
+descr "This ritual summons and takes control over a group of Fire beings."
+
+
+selectritual "Deep Earth Summoning"
+descr "This ritual summons and takes control over a group of beings that can be found deep under Elysium."
+
+
+selectritual "Awaken Marble Oracle"
+descr "This ritual creates a Marble Oracle and his two guardians.  The Marble Oracle is attuned to Earth magic and cannot leave the location it was created in."
+
+
+selectritual "Awaken Onyx Oracle"
+descr "This ritual creates an Onyx Oracle and his retinue.  The Onyx Oracle is highly attuned to Earth magic and cannot leave the location it was created in."
+
+
+selectritual "Summon Lesser Beings"
+descr "This ritual will summon and try to take control over a group of creatures that are useful in battle.  The more sacrifices used, the greater the chance of success."
+
+
+selectritual "Summon Greater Beings"
+descr "This ritual will summon and try to take control over one or more powerful creatures that are useful in battle.  The more sacrifices used, the greater the chance of success."
+
+
+selectritual "Summon Lesser Oni"
+descr "Oni are evil demons and this ritual will summon them and then try to control them.  The more sacrifices used the greater the chance of success."
+
+
+selectritual "Summon Oni"
+descr "Oni are evil demons and this ritual will summon them and then try to control them.  The more sacrifices used the greater the chance of success."
+
+
+selectritual "Make Effigy"
+descr "The bones from a few corpses are carefully arranged on a wooden structure before performing this time consuming ritual.  When the ritual is completed the bones have been turned into a simple magical construct called an Effigy.  The Effigy is able to cast spells to defend the area it is placed in."
+
+
+selectritual "Hide Heart"
+descr "With a ritual requiring a great blood sacrifice the Bakemono Sorceror removes his own heart and puts it somewhere safe, maybe hidden inside a castle wall.  Should he die later on, he can always reform in the vicinity of his still beating heart. Reforming takes some time however and should the castle where the ritual was performed be owned by the enemy, his heart will be found and the Sorceror will be slain permanently."
+
+
+selectritual "Mountain Lair"
+descr "This ritual turns an ordinary mine into a mountain lair where the bakemono can thrive.  Mountain lairs will produce twice as many bakemonos and also have some rudimentary walls for defence."
+
+
+selectritual "Summon King"
+descr "This ritual will summon and try to take control over a king and his guards.  The more sacrifices used, the greater the chance of success."
+
+

@@ -1,0 +1,298 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"Turns those mages that everyone get in terrariaexpansion and turn them into classes. Does not disable expansion and are underpowered compared to vanilla. Requires the expansion Terraria mod."
+
+#--Clases
+
+newclass
+setclassname "Dryad"
+classdescr "The Dryad is here to purify Elysium of corruption and taint. Can access powerful animals and slimes with herbs."
+hometerr 26 #Tower
+addstartterr 5 #Farm
+addstartunits "Green Slime" 10
+addstartunits "Slinger" 5
+setmaincom "Greater Dryad"
+addstartcom "Dryad"
+addunitrec "Spearman" 100 5 50 0 0
+addunitrec "Slinger" 100 6 50 0 0
+addunitrec "Archer" 100 5 50 0 0
+addmercrec "Harpy" 100 2 50 0 0
+addunitrec "Dog" 100 4 25 0 0
+addmercrec "Wooden Armor Adventurer" 1 30 100 0 0
+addmercrec "Pearlwood Armor Adventurer" 1 20 100 0 0
+addmercrec "Copper Armor Adventurer" 1 30 100 0 5
+addmercrec "Tin Armor Adventurer" 1 30 100 0 5
+addmercrec "Iron Armor Adventurer" 1 30 100 0 10
+addmercrec "Lead Armor Adventurer" 1 30 100 0 10
+addmercrec "Silver Armor Adventurer" 1 30 100 0 15
+addmercrec "Tungsten Armor Adventurer" 1 30 100 0 15
+addmercrec "Gold Armor Adventurer" 1 30 100 0 25
+addmercrec "Platinum Armor Adventurer" 1 30 100 0 25
+addcomrec "Captain" 20 40 25 0
+addcomrec "Dryad" 10 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec	
+addcomrec "Guide" 1 75 50 0
+libraryrec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+
+newclass
+setclassname "Old Man"
+classdescr "Conquer Elysium for a way to cure his curse? Sure, why not?"
+hometerr 22 #Castle
+addstartterr 17 #Town
+addstartunits "Skeleton" 10
+addstartunits "Skeleton Archer" 5
+addstartunits "Zombie" 5
+setmaincom "Cursed Man"
+addstartcom "Old Man"
+addunitrec "Zombie" 100 5 40 0 0
+addunitrec "Skeleton" 100 5 50 0 0
+addunitrec "Angry Bones" 100 5 50 0 5
+addunitrec "Skeleton Archer" 100 5 50 0 5
+addunitrec "Armored Skeleton" 100 5 50 0 10
+addunitrec "Cursed Skull" 100 4 50 0 10
+addunitrec "Undead Miner" 100 5 50 0 15
+addmercrec "Dungeon Slime" 20 3 50 25 0
+addmercrec "Spearman" 20 10 150 0 0
+addmercrec "Archer" 20 10 150 0 0
+addmercrec "Wooden Armor Adventurer" 1 30 100 0 0
+addmercrec "Pearlwood Armor Adventurer" 1 20 100 0 0
+addmercrec "Copper Armor Adventurer" 1 30 100 0 5
+addmercrec "Tin Armor Adventurer" 1 30 100 0 5
+addmercrec "Iron Armor Adventurer" 1 30 100 0 10
+addmercrec "Lead Armor Adventurer" 1 30 100 0 10
+addmercrec "Silver Armor Adventurer" 1 30 100 0 15
+addmercrec "Tungsten Armor Adventurer" 1 30 100 0 15
+addmercrec "Gold Armor Adventurer" 1 30 100 0 25
+addmercrec "Platinum Armor Adventurer" 1 30 100 0 25
+addcomrec "Demon Eye" 10 15 10 0
+addcomrec "Dark Caster" 5 50 25 0
+addcomrec "Rune Wizard" 5 50 25 0
+addcomrec "Undead Enchanter" 5 50 25 0
+addcomrec "Old Man" 5 50 50 0
+libraryrec	
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+
+newclass
+setclassname "Guide"
+classdescr "Help guide an army of adventurers to conquer Elysium! Has a 25% gold and iron bonus."
+hometerr 22 #Castle
+addstartterr 5 #Farm
+addstartterr 5 #Farm
+setmaincom "Guide"
+addstartcom "Guide"
+addstartunits "Spearman" 5
+addstartunits "Swordsman" 5
+addstartunits "Archer" 5
+addstartunits "Storekeeper"
+addstartunits "Demolitionist" 4
+addstartunits "Nurse" 2
+addstartunits "Wooden Armor Adventurer" 20
+addstartunits "Cooper Armor Adventurer" 10
+addstartunits "Tin Armor Adventurer" 10
+addstartunits "Plantinum Armor Adventurer" 1
+stdtroops
+addmercrec "Halberdier" 10 10 100 0 10
+addmercrec "Longbowman" 10 10 100 0 10
+addmercrec "Pikeineer" 10 10 100 0 10
+addmercrec "Wooden Armor Adventurer" 10 30 100 0 0
+addmercrec "Pearlwood Armor Adventurer" 10 20 100 0 0
+addmercrec "Copper Armor Adventurer" 10 30 100 0 5
+addmercrec "Tin Armor Adventurer" 10 30 100 0 5
+addmercrec "Iron Armor Adventurer" 10 30 100 0 10
+addmercrec "Lead Armor Adventurer" 10 30 100 0 10
+addmercrec "Silver Armor Adventurer" 10 30 100 0 15
+addmercrec "Tungsten Armor Adventurer" 10 30 100 0 15
+addmercrec "Gold Armor Adventurer" 10 30 100 0 25
+addmercrec "Platinum Armor Adventurer" 10 30 100 0 25
+addcomrec "Guide" 10 40 25 0
+libraryrec
+addcomrec "Old Man" 1 75 50 0
+libraryrec	
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+goldbonus 25
+ironbonus 25
+tradebonus 25
+
+newclass
+setclassname "Truffle"
+classdescr "Spread mushrooms all over Elysium in order to stop the Lunatic Cultist mad plot to conquer all worlds under the moons!"
+hometerr 26 #Tower
+addstartterr 195 #Fungal Forest
+addstartterr 195 #Fungal Forest
+addstartterr 195 #Fungal Forest
+setmaincom "Glowing Truffle"
+addstartcom "Truffle"
+addstartunits "Spore Zombie" 6
+addstartunits "Mushroom Zombie" 6
+addstartunits "Shroomite Hero" 3
+addstartunits "Glowing Mushroom" 3
+addstartunits "Giant Fungi Bulb" 3
+addunitrec "Mushroom Zombie" 100 5 50 0 0
+addunitrec "Spore Zombie" 100 5 50 0 0
+addunitrec "Shroomite Hero" 100 5 50 0 25
+addmercrec "Spearman" 20 10 150 0 0
+addmercrec "Archer" 20 10 150 0 0
+addmercrec "Wooden Armor Adventurer" 1 30 100 0 0
+addmercrec "Pearlwood Armor Adventurer" 1 20 100 0 0
+addmercrec "Copper Armor Adventurer" 1 30 100 0 5
+addmercrec "Tin Armor Adventurer" 1 30 100 0 5
+addmercrec "Iron Armor Adventurer" 1 30 100 0 10
+addmercrec "Lead Armor Adventurer" 1 30 100 0 10
+addmercrec "Silver Armor Adventurer" 1 30 100 0 15
+addmercrec "Tungsten Armor Adventurer" 1 30 100 0 15
+addmercrec "Gold Armor Adventurer" 1 30 100 0 25
+addmercrec "Platinum Armor Adventurer" 1 30 100 0 25
+addcomrec "Truffle" 10 40 25 0
+libraryrec
+addcomrec "Old Man" 1 75 50 0
+libraryrec	
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+addcomrec "Tiki Doctor" 1 75 50 0
+templerec
+
+newclass
+setclassname "Skull Doctor"
+classdescr "Sometimes, the only way to fight off an evil moon-worshipping cult is to curse them all with voodoo magic."
+hometerr 28 #Hut
+addstartterr 5 #Farm
+addstartterr 7 #Hamlet
+addstartterr 97 #Iron Bog
+addstartunits "Tiki Pygmy" 10
+addstartunits "Tiki Archer" 5
+addstartunits "Tiki Warrior" 5
+addstartunits "Tiki Totem" 3
+addunitrec "Tiki Pygmy" 100 7 50 0 0
+addunitrec "Tiki Warrior" 100 3 50 0 0
+addunitrec "Tiki Archer" 100 3 50 0 0
+addmercrec "Wooden Armor Adventurer" 1 30 100 0 0
+addmercrec "Pearlwood Armor Adventurer" 1 20 100 0 0
+addmercrec "Copper Armor Adventurer" 1 30 100 0 5
+addmercrec "Tin Armor Adventurer" 1 30 100 0 5
+addmercrec "Iron Armor Adventurer" 1 30 100 0 10
+addmercrec "Lead Armor Adventurer" 1 30 100 0 10
+addmercrec "Silver Armor Adventurer" 1 30 100 0 15
+addmercrec "Tungsten Armor Adventurer" 1 30 100 0 15
+addmercrec "Gold Armor Adventurer" 1 30 100 0 25
+addmercrec "Platinum Armor Adventurer" 1 30 100 0 25
+setmaincom "Skull Doctor"
+addstartcom "Tiki Doctor"
+addcomrec "Tiki Doctor" 5 50 50 0
+templerec	
+addcomrec "Tiki Dancer" 15 35 50 0
+templerec	
+addcomrec "Dryad" 1 75 50 0
+templerec
+addcomrec "Guide" 1 75 50 0
+libraryrec
+addcomrec "Truffle" 1 75 50 0
+templerec
+addcomrec "Old Man" 1 75 50 0
+libraryrec	
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Glowing Mushroom"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Fungi Bulb"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Giant Fungi Bulb"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "c*Baby Truffle"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Truffle Worm"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Wandering Anomura Fungus"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Wandering Mushi Ladybug"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Wandering Spore Zombie"
+endevent
+
+squareevent #Fungal Troops
++class -2 "Truffle"
++chance 1
++squareowner -2
++terrain 195
+newunits -2 "Wandering Mushroom Zombie"
+endevent
+
+squareevent #Graveyard Troops
++class -2 "Old Man"
++chance 5
++squareowner -2
++terrain 16 #Graveyard
+newunits -2 "5*Zombie"
+endevent
+
+squareevent #Graveyard Troops
++class -2 "Old Man"
++chance 5
++squareowner -2
++terrain 16 #Graveyard
+newunits -2 "5*Skeleton"
+endevent

@@ -1,0 +1,123 @@
+# THE STANDARD RECRUITMENT LISTS OF COE4, EXPRESSED AS PSEUDO‐MOD CODE
+#
+# Note: Unlike the class and special locations recruitment lists,
+# this file does NOT contain real data extracted from the game executable.
+# For the standard recruitment offers, I am unable to find any such data.
+# Thus, this is merely a guesstimate of what they might look like,
+# based on other info and on some limited testing. I wanted SOMETHING
+# about this to complement the class and recruitments data.
+# For completeness.
+#
+# /Marlin
+
+
+# THE STANDARD TROOPS LIST
+# This list can, within a class definition, be enabled with the short command
+stdtroops
+# Which I believe is equivalent to…
+#                                            %  # gold die iron
+addunitrec  "Spearman"                     100  5   50  0   0
+addunitrec  "Swordsman"                    100  5   50  0   5
+addunitrec  "Archer"                       100  5   50  0   0
+addunitrec  "Crossbowman"                  100  5   50  0   5
+addunitrec  "Heavy Infantry"               100  5   50  0  25
+addunitrec  "Catapult"                     100  1   25  0  50
+addcomrec   "Captain"                       20      40 10   0
+addmercrec  "Scout"                         10  1   15 10   0
+
+
+# THE PAID HEROES
+# The recruitment entry for paid heroes would,
+# I think, look like this:
+#                                            %  # gold die iron
+addcomrec   "Hero"                           0      50 20   5
+# Except that the chance per turn is determined by the command recherochance,
+# and it is given NOT in percent but seemingly in ⅔ of a percent.
+# Thus…
+recherochance    150
+# would be required to make hero offers occur every game turn.
+# Most built-in classes instead have…
+recherochance      1
+# for ⅔ percent chance per turn.
+# (This also is the default for user-made classes, I believe.)
+# While the Barbarian has…
+recherochance      2
+# for 1⅓ percent chance per turn.
+
+
+# THE STANDARD (HUMAN) WIZARDS
+# Except for the chance per turn, I THINK that
+# the standard wizard list looks like this:
+#                                            %  # gold die iron
+addcomrec   "Old Wizard"                     0     250 200  0
+addcomrec   "Dark Wizard"                    0      85 20   0
+addcomrec   "Pyromancer"                     0      85 20   0
+addcomrec   "Golden Wizard"                  0      85 20   0
+addcomrec   "White Wizard"                   0      85 20   0
+addcomrec   "Sea Father"                     0      85 20   0
+addcomrec   "Moon Mage"                      0      85 20   0
+addcomrec   "Astrologer"                     0      85 20   0
+addcomrec   "Ice Witch"                      0      85 20   0
+addcomrec   "Ice Druid"                      0      85 20   0
+addcomrec   "Animist"                        0      85 20   0
+addcomrec   "Sorceress"                      0      85 20   0
+addcomrec   "Black Sorceress"                0     100 20   0
+addcomrec   "Green Enchantress"              0      85 20   0
+addcomrec   "Initiate of the Metal Orders"   0      40 20   0
+addcomrec   "Hedge Wizard"                   0      40 20   0
+# (It's hard to know with certainty what in particular the die size is.)
+#
+# The chance per turn for each wizard type seems to be given in steps of
+# 1 per mille each – though 2 per mille for the last two (level one) wizards.
+# The number of steps is determined by the command recwizchance,
+# PLUS (presumably) the number of library points controlled by the player.
+# (In CoE3 there was, I think, a base value of 1 added to that,
+# but in CoE4, the chance starts at zero, I believe.)
+# Thus…
+recwizchance    1000
+# would produce an offer of every type of wizard (16 offers in total),
+# every turn, even with no libraries.
+# Whereas…
+recwizchance     500
+# would do the same only for the level one wizards, while offers for
+# each other type of wizard would occur every other turn, on average.
+#
+# Most built-in classes don't have any recwizchance command at all,
+# which in CoE4 means the chance of wizard offers is exactly zero,
+# unless and until they get library points.
+# The Baron, however, in CoE4 got…
+recwizchance       1
+# which should give him roughly a 1.8% chance/turn of SOME
+# standard wizard offer, even without any library.
+# Whereas the Senator in CoE4, like in CoE3, has…
+recwizchance       4
+# which in CoE4 should give him roughly a 7.2% chance/turn of some
+# standard wizard offer, without any library.
+
+
+# THE STANDARD ASSASSINS
+# For the standard assassins, the recasschance command determines not only
+# the chance per turn of offers, but also the (average) price.
+#
+# The way I THINK it works (not extensively tested though)
+# is, if the number given with recasschance is A, then
+# the chance per turn of an assassin offer will be A %,
+# and the gold price will be (11−A)×10 + D20 (open-ended).
+# Except if A is 7 or more, when the price will be 50 gold flat.
+# Corresponding recruitment commands would be…
+#                                            %  # gold die iron
+addcomrec   "Assassin"                       1     100 20   0  # recasschance 1
+addcomrec   "Assassin"                       2      90 20   0  # recasschance 2
+addcomrec   "Assassin"                       3      80 20   0  # recasschance 3
+addcomrec   "Assassin"                       4      70 20   0  # recasschance 4
+addcomrec   "Assassin"                       5      60 20   0  # recasschance 5
+addcomrec   "Assassin"                       6      50 20   0  # recasschance 6
+addcomrec   "Assassin"                       7      50  0   0  # recasschance 7
+# ...                                                           ...
+addcomrec   "Assassin"                     100      50  0  0 # recasschance 100
+# The default recasschance is 2 (would have to be set to 0, if addcomrec
+# were to be actually used as a replacement, according to the above),
+# and no built-in class has a recasschance higher than 6,
+# which is what the High Priestess has.
+# (recasschance 2 gives an average price of 101 gold;
+#  recasschance 6 gives an average price of  61 gold.)

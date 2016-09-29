@@ -1,0 +1,178 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"Requires the base mod. Adds Terraria defenders via a event, so all civs gain defenders, even civs from other mods."
+
+squareevent #Defenders
++player 0
++chance 100
++squareowner 0
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 2
++chance 100
++squareowner 2
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 3
++chance 100
++squareowner 3
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 4
++chance 100
++squareowner 4
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 5
++chance 100
++squareowner 5
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 6
++chance 100
++squareowner 6
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 7
++chance 100
++squareowner 7
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 8
++chance 100
++squareowner 8
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 9
++chance 100
++squareowner 9
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 10
++chance 100
++squareowner 10
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 11
++chance 100
++squareowner 11
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 12
++chance 100
++squareowner 12
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 13
++chance 100
++squareowner 13
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 14
++chance 100
++squareowner 14
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 15
++chance 100
++squareowner 15
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent
+
+squareevent #Defenders
++player 1
++chance 100
++squareowner 1
++turnnbr -1
++terrain -23
+newunits -2 "3*Spike Ball"
+newunits -2 "3*Dart Trap"
+newunits -2 "3*Blazing Wheel"
+endevent

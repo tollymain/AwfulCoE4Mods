@@ -1,0 +1,398 @@
+# BUILT‐IN CLASS DEFINITIONS IN COE4.EXE, EXPRESSED AS PSEUDO-MOD CODE
+# (Unknown data, or data for which modding commands are missing,
+# given in comments. So too are all class ability codes; see below.)
+#
+# Not included: Class descriptions and recruitment lists aren't found in the
+# main class definition blocks of the executable. They are stored separately.
+# (Although each class definition block ends with 4000 unused, zeroed bytes
+# that might be reserved for the description text.)
+# I deal with those in their own files.
+# Also, of course, some things don't seem at all openly available
+# in any data blocks, such as the conscription mechanic of the Baron.
+#
+#
+# Class ability codes found in the executable as far as I have deciphered them:
+# 200  goldbonus
+# 201  ironbonus
+# 202  tradebonus
+# 203  Hidden class (if value = 1), not available to human players
+# 204  ? All hidden classes have this, no one else. Value is always 90
+# 205  ? Enchanter has this at 100, Dwarf Queen has it at 50
+# 206  ? Enchanter and Illusionist have this at 100
+# 207  ? Enchanter has this at 80. In CoE4, Burgmeister also got it, at 20
+# 208  ? Troll King has this at 1. In CoE4, Witch also got it, at 1000!
+# 209  ? Barbarian has this at 1. In CoE4, Druid also got it, at 1000!
+# 210  ? Beholder and Archmage (but not Goblin King) have this at 5
+# 211  ? Goblin King (only) has this at 4
+# 212  ? Troll King (only) has this at -50
+# 213  reqterr
+# 214  (if value = 1) Can use Watch Towers as citadels (Senator only)
+# 215  (if value = 1) Can use Ancient Forests as citadels (Troll King only)
+# 216  ? Not found in CoE4. (Dwarf Queen had it at 100 in CoE3)
+# 217  Income modifier for non-mine locations (= -1 for Dwarf Queen)
+# 218  ? Dwarf Queen (only) has this at 1
+# 219  ? Troll King and Illusionist have this at 200
+# 220  ? Not found
+# 221  ? Necromancer, Witch and Troll King have this at 1
+# 222  stdtroops (if value = 1)
+# 223  recwizchance   (Sets base chances of standard wizard offers)
+# 224  recherochance  (Sets chance of paid hero offers)
+# 225  recasschance   (Sets chance AND PRICE of assassin offers)
+# 226  Can capture given terrain even without ability to use its resources
+# 227  Some modifier to chance of a northern home (values between 1 and -2)
+# 228  Some modifier to chance of a southern home (values between 2 and -2)
+# 229  ? High Cultist (only) has this at 10. (New for CoE4)
+#
+# Probabilities and prices for assassins, wizards and paid heroes are mere
+# guesstimates, not hard data from the executable. More on this elsewhere.
+#
+#
+# /Marlin
+
+newclass
+setclassname     "Baron"
+setmaincom       "Baron"
+hometerr          30  # Baron's Castle
+addstartterr       5  # Farm
+addstartterr       6  # Farm
+addstartterr       7  # Hamlet
+addstartunits    "Spearman"             6
+addstartunits    "Longbowman"           5
+addstartcom      "High Lord"
+addstartunits    "Cavalryman"           5
+goldbonus         25  # code 200, value  25
+ironbonus         25  # code 201, value  25
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+#                       code 226, value   4  (can hold Ancient Forest without using its resources)
+recwizchance       1  # code 223, value   1  (wizards: some chances even without libraries)
+libbonusdescr    "wizards"
+templebonusdescr "monks"
+
+newclass
+setclassname     "Necromancer"
+setmaincom       "Necromancer"
+hometerr          24  # Dark Citadel
+addstartterr       5  # Farm
+addstartterr     153  # Gallows
+addstartunits    "Spearman"            10
+addstartunits    "Archer"               5
+addstartcom      "Necromancer's Apprentice"
+#                       code 221, value   1
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "wizards and apprentices"
+
+newclass
+setclassname     "Demonologist"
+setmaincom       "Demonologist"
+hometerr          23  # Citadel
+addstartterr       7  # Hamlet
+addstartterr       5  # Farm
+addstartterr       6  # Farm
+addstartunits    "Swordsman"            8
+addstartunits    "Crossbowman"          5
+addstartcom      "Cultist"
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "wizards"
+templebonusdescr "cultists"
+
+newclass
+setclassname     "Witch"
+setmaincom       "Witch"
+hometerr          26  # Tower
+addstartunits    "Androphag Cavalry"    1
+addstartunits    "Androphag Spearman"   5
+addstartunits    "Androphag Archer"     5
+addstartcom      "Witch's Apprentice"
+reqterr          107  # code 213, value 107  (at least one Swamp should be on the map)
+#                       code 221, value   1
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+#                       code 208, value 1000
+libbonusdescr    "wizards"
+templebonusdescr "apprentices"
+
+newclass
+setclassname     "High Priestess"
+setmaincom       "High Priestess"
+hometerr          31  # Temple of Ba'al
+addstartterr      18  # Village
+addstartunits    "Ba'alite Spearman"   10
+addstartunits    "Ba'alite Archer"      5
+addstartcom      "Hierodule"
+recasschance       6  # code 225, value   6  (assassins: 6%, for 61 gold on average)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+#                       code 227, value  -2  (northern home shunned)
+#                       code 228, value   2  (southern home preferred)
+libbonusdescr    "wizards"
+templebonusdescr "hierodules"
+
+newclass
+setclassname     "Bakemono"
+setmaincom       "Bakemono Sorceror"
+hometerr         112  # Mountain Stronghold
+addstartterr     105  # Coal Mine
+addstartunits    "Bakemono Spearman"   10
+addstartunits    "Bakemono Sho"        10
+addstartunits    "Bakemono Bowman"      5
+addstartcom      "Bakemono General"
+#                       code 227, value   1  (northern home preferred)
+libbonusdescr    "sorcerors and human wizards"
+templebonusdescr "shamans"
+
+newclass
+setclassname     "Barbarian"
+setmaincom       "Barbarian Leader"
+hometerr         113  # Barbarian Camp
+addstartunits    "Barbarian Warrior"   20
+addstartunits    "random totem"         1
+addstartunits    "barbarian Bowman"     5
+addstartcom      "Mounted Chief"
+addstartunits    "Barbarian Cavalry"    5
+#                       code 209, value   1
+recherochance      2  # code 224, value   2  (paid heroes: 1.33%)
+libbonusdescr    "wizards"
+templebonusdescr "spirit guides and soothsayers"
+
+newclass
+setclassname     "Senator"
+setmaincom       "Senator"
+hometerr         154  # Outpost
+addstartterr      17  # Town
+addstartunits    "Hastatus"            10
+addstartunits    "Veles"               10
+addstartunits    "Princeps"             5
+addstartcom      "Centurion"
+goldbonus         50  # code 200, value  50
+tradebonus        50  # code 202, value  50
+#                       code 214, value   1  (can use Watch Towers as citadels)
+recwizchance       4  # code 223, value   4  (wizards: some chances even without libraries)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+#                       code 227, value  -1  (northern home shunned)
+#                       code 228, value  -1  (southern home shunned)
+libbonusdescr    "wizards"
+templebonusdescr "serpent acolytes and serpent priests"
+
+newclass
+setclassname     "Pale One"
+setmaincom       "King of the Deep"
+hometerr         121  # Huge Cave
+addstartunits    "Pale One Soldier"     5
+addstartunits    "Pale One"            10
+addstartcom      "Earth Reader"
+libbonusdescr    "human wizards"
+templebonusdescr "oracles and earth readers"
+
+newclass
+setclassname     "Druid"
+setmaincom       "Druid"
+hometerr          28  # Hut
+addstartterr       5  # Farm
+addstartterr       6  # Farm
+addstartunits    "Barechested Warrior" 10
+addstartunits    "Barechested Slinger"  5
+addstartunits    "Barechested Scout"    1
+addstartcom      "Druid's Apprentice"
+reqterr            4  # code 213, value   4  (at least one Ancient Forest should be on the map)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+#                       code 209, value 1000
+libbonusdescr    "wizards"
+templebonusdescr "apprentices"
+
+newclass
+setclassname     "Burgmeister"
+setmaincom       "Burgmeister"
+hometerr           1  # Fortified Hoburg
+addstartterr      70  # Hoburg Village
+addstartterr       5  # Farm
+addstartunits    "Hoburg Defender"      5
+addstartunits    "Hoburg Soldier"      10
+addstartunits    "Hoburg Crossbow"     10
+addstartcom      "Hogmeister"
+reqterr            4  # code 213, value   4  (at least one Ancient Forest should be on the map)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+#                       code 227, value  -1  (northern home shunned)
+#                       code 207, value  20
+libbonusdescr    "horologists and human wizards"
+templebonusdescr "horticulturists"
+
+newclass
+setclassname     "Warlock"
+setmaincom       "Warlock of Fire"
+hometerr          29  # Tower of the Elements
+addstartunits    "Spearman"            12
+addstartunits    "Archer"               5
+addstartcom      "Warlock's Apprentice"
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "apprentices and wizards"
+
+newclass
+setclassname     "Priest King"
+setmaincom       "Priest King"
+hometerr           3  # Temple City
+addstartterr       5  # Farm
+addstartunits    "Jungle Warrior"      10
+addstartunits    "Tribal Warrior"      10
+addstartcom      "Tribal King"
+#                       code 228, value   1  (southern home preferred)
+#                       code 227, value  -2  (northern home shunned)
+libbonusdescr    "wizards"
+templebonusdescr "temple attendants, priests and nahuallis"
+
+newclass
+setclassname     "Troll King"
+setmaincom       "Troll King"
+hometerr          32  # Troll Pit
+addstartunits    "Goblin"              10
+reqterr            4  # code 213, value   4  (at least one Ancient Forest should be on the map)
+#                       code 219, value 200
+#                       code 208, value   1
+#                       code 212, value -50
+#                       code 215, value   1  (can use Ancient Forests as citadels)
+#                       code 221, value   1
+#                       code 227, value   1  (northern home preferred)
+#                       code 228, value  -2  (southern home shunned)
+libbonusdescr    "human wizards"
+templebonusdescr "shamans"
+
+newclass
+setclassname     "Enchanter"
+setmaincom       "Enchanter"
+hometerr         110  # Crystal Tower
+addstartterr     105  # Coal Mine
+addstartunits    "Swordsman"           10
+addstartunits    "Crossbowman"          3
+addstartcom      "Enchanter's Apprentice"
+#                       code 205, value 100
+#                       code 207, value  80
+#                       code 206, value 100
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "apprentices and wizards"
+
+newclass
+setclassname     "Beholder"
+setmaincom       "Elder Beholder"
+hometerr         106  # Beholder Cave
+addstartunits    "Dwarf"                5
+addstartunits    "Giant Spider"         3
+addstartunits    "Bear"                 2
+addstartunits    "Goblin"               5
+#                       code 203, value   1  (this class is hidden, not available to humans)
+#                       code 204, value  90
+#                       code 210, value   5
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "human wizards"
+
+newclass
+setclassname     "Archmage"
+setmaincom       "Archmage"
+hometerr          88  # Academy of Higher Magic
+addstartterr       5  # Farm
+addstartterr       7  # Hamlet
+addstartunits    "Spearman"             5
+addstartunits    "Swordsman"            5
+addstartunits    "Archer"              10
+addstartcom      "Captain"
+#                       code 203, value   1  (this class is hidden, not available to humans)
+#                       code 204, value  90
+#                       code 210, value   5
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "wizards"
+
+newclass
+setclassname     "Goblin King"
+setmaincom       "Goblin King"
+hometerr          32  # Troll Pit
+addstartterr     105  # Coal Mine
+addstartunits    "Goblin"              30
+#                       code 203, value   1  (this class is hidden, not available to humans)
+#                       code 204, value  90
+#                       code 211, value   4
+#                       code 227, value   1  (northern home preferred)
+#                       code 228, value  -2  (southern home shunned)
+libbonusdescr    "human wizards"
+templebonusdescr "troll shamans, goblin shamans"
+
+newclass
+setclassname     "High Cultist"
+setmaincom       "High Cultist"
+hometerr         161  # Deserted Port
+addstartterr       6  # Farm
+addstartunits    "Spearman"             8
+addstartunits    "Crossbowman"          5
+addstartcom      "Cultist of the Deep"
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+#                       code 229, value  10
+libbonusdescr    "wizards"
+templebonusdescr "cultists"
+
+newclass
+setclassname     "Dwarf Queen"
+setmaincom       "Young Dvala"
+hometerr         126  # Dwarven City
+addstartunits    "Dwarf"                5
+addstartunits    "Dwarf Worker"        10
+addstartcom      "Dwarf Commander"
+#                       code 217, value  -1  (income modifier for non-mine locations)
+#                       code 218, value   1
+#                       code 205, value  50
+#                       code 227, value   1  (northern home preferred)
+#                       code 228, value  -2  (southern home shunned)
+libbonusdescr    "human wizards"
+
+newclass
+setclassname     "Voice of El"
+setmaincom       "Arch Bishop"
+hometerr          25  # Temple of El
+addstartterr       5  # Farm
+addstartterr       7  # Hamlet
+addstartunits    "Halberdier"           7
+addstartunits    "Spearman"            10
+addstartcom      "Bishop"
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+libbonusdescr    "wizards"
+templebonusdescr "bishops"
+
+newclass
+setclassname     "Illusionist"
+setmaincom       "Illusionist"
+hometerr         156  # Crystal Palace
+addstartunits    "Spearman"            10
+addstartunits    "Archer"               5
+addstartcom      "Illusionist's Apprentice"
+stdtroops             # code 222, value   1  (standard troops, including scouts & captains)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+recasschance       2  # code 225, value   2  (assassins: 2%, for 101 gold on average)
+#                       code 228, value   1  (southern home preferred)
+#                       code 206, value 100
+#                       code 219, value 200
+libbonusdescr    "wizards and apprentices"
+
+newclass
+setclassname     "Markgraf"
+setmaincom       "Markgraf"
+hometerr           1  # Fortified Hoburg
+addstartterr      70  # Hoburg Village
+addstartterr       5  # Farm
+addstartunits    "Hobmark Defender"     5
+addstartunits    "Hobmark Soldier"     10
+addstartunits    "Hobmark Crossbow"    10
+addstartcom      "Nekromant"
+reqterr           38  # code 213, value  38  (at least one Old Castle Ruin should be on the map)
+recherochance      1  # code 224, value   1  (paid heroes: 0.67%)
+#                       code 227, value  -1  (northern home shunned)
+libbonusdescr    "nekromants and human wizards"

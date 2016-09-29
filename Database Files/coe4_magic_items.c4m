@@ -1,0 +1,1043 @@
+# BUILT‐IN MAGIC ITEM DEFINITIONS IN COE4.EXE, EXPRESSED AS PSEUDO-MOD CODE
+#
+# Magic items, of course, aren't moddable at all, so the "commands"
+# in this file are mostly bogus (and commented out). The name "rarity"
+# for an item property with a value 0-3 is furthermore just a guess.
+# I don't really know the function of that number at all.
+#
+# Where items grant abilities and properties to its holder, however,
+# I have borrowed the corresponding commands from monster modding.
+# I also borrowed the command descr for descriptions.
+#
+# When a weapon definition is referred to by an item, it will replace plain
+# meleeweapon attacks (attack mode 1), only, of the holder. The damage value
+# will be the one given for the original melee attack(s) it replaces.
+#
+# Some items come with a spell – an attack that can be made regardless of
+# the combat capabilities of the holder. It is referred to by a SPELL NAME,
+# and appears to make use of the first spell definition with a matching name,
+# but it doesn't combine with other attacks of the holder the way a spell
+# attack does.
+#
+# Such an attack has its own mode, not to be confused with the attack modes
+# of a unit/monster:
+# • Mode 1 (conditionally). The description says "Can be used to cast ..."
+#   In the CoE4 battle messages it says that holder "zaps magic item".
+#   This mode, in CoE3, corresponds to a rangedweapon50 attack, I think
+#   – meaning it can, in CoE3, be added to any other ranged attack of
+#   the holder but won't combine with native spell attacks of his.
+#   (Also, it may, in CoE3, sometimes be used in melee.)
+#   In CoE4, this was changed. I haven't yet figured out exactly how it works,
+#   but it seems any use of it now REPLACES all other attacks the holder could
+#   have made. I also don't think it will ever be used in melee.
+# • Mode 2 (automatically). Unrestricted use every battle round, I think.
+# • Mode -1 (at start of battle). Only once per battle but otherwise
+#   unrestricted use, I think.
+#
+# For items that summon units/monsters,
+# a negative amount refers to summoning at the start of the battle,
+# while a positive amount will be summoned every battle round.
+#
+# /Marlin
+
+#newitem "Frost Brand"                                                    #   0
+#sprite       1026    26 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        172    Frost Brand
+coldres        100  # Cold Immunity
+
+#newitem "Fire Brand"                                                     #   1
+#sprite       1027    27 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        173    Fire Brand
+fireres        100  # Fire Immunity
+
+#newitem "Demon Whip"                                                     #   2
+#sprite       1034    34 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        166    Demon Whip
+
+#newitem "Serpent Kryss"                                                  #   3
+#sprite       1033    33 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        181    Serpent Kryss
+
+#newitem "Staff of Power"                                                 #   4
+#sprite       1013    13 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        201    Staff of Power
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+
+#newitem "Club of the Ogre King"                                          #   5
+#sprite       1039    39 in subgroup 1 of item.trs
+#rarity          2
+#slot            1    Weapon
+#weapon        253    Club of the Ogre King
+coldres        100  # Cold Immunity
+# Ability20     25  # Extra hit points
+descr "This club was once wielded by Forgnosh the Ogre King. It made Forgnosh much more resistant to damage and immune to cold. Anyone surviving a hit from the club will be stunned unless he is exceptionally strong."
+
+#newitem "Sword of the Damned"                                            #   6
+#sprite       1001    1 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        254    Sword of the Damned
+
+#newitem "Flail of Pain"                                                  #   7
+#sprite       1008    8 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        287    Flail of Pain
+
+#newitem "Infernal Torch"                                                 #   8
+#sprite       1009    9 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        295    Infernal Torch
+fireres        100  # Fire Immunity
+burnforest       2
+
+#newitem "Mace of Order"                                                  #   9
+#sprite       1012    12 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        298    Mace of Order
+localleadership  1
+descr "This mace is traditionally used by fighting commanders in well equipped armies. It will increase the discipline of all nearby soldiers. When the mace is used to strike an enemy, it will strike adjacent enemies as well."
+
+#newitem "Staff of the Arch Magi"                                         #  10
+#sprite       1014    14 in subgroup 1 of item.trs
+#rarity          2
+#slot            1    Weapon
+#weapon        201    Staff of Power
+spiritsight
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+spellrange       1
+#casts "No name for spell" 1 (conditionally)
+
+#newitem "Scepter of the Goblin King"                                     #  11
+#sprite       1021    21 in subgroup 1 of item.trs
+#rarity          2
+#slot            1    Weapon
+#weapon        342    Scepter of the Goblin King
+#casts "Flame Burst" 1 (conditionally)
+descr "This scepter was first found by a grave robber. Later it was taken by a band of goblin brigands and one of these brigands used the scepter to make himself the Goblin King. The scepter will curse anyone struck by it and can engulf opponents in flames from a distance."
+
+#newitem "Tempest"                                                        #  12
+#sprite       1031    31 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        383    Tempest
+shockres       100  # Shock Immunity
+#casts "Thunder Strike" 1 (conditionally)
+
+#newitem "Staff of Lightning"                                             #  13
+#sprite       1018    18 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        385    Magic Staff
+#casts "Chain Lightning" 1 (conditionally)
+
+#newitem "Rod of Death"                                                   #  14
+#sprite       1019    19 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Drain Life" 1 (conditionally)
+
+#newitem "Venom Sword"                                                    #  15
+#sprite       1003    3 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        408    Venom Sword
+
+#newitem "Morningstar of Flames"                                          #  16
+#sprite       1010    10 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        410    Morningstar of Flames
+
+#newitem "Death"                                                          #  17
+#sprite       1024    24 in subgroup 1 of item.trs
+#rarity          3
+#slot            1    Weapon
+#weapon        417    Death Scepter
+
+#newitem "Hell's Reign"                                                   #  18
+#sprite       1025    25 in subgroup 1 of item.trs
+#rarity          3
+#slot            1    Weapon
+#weapon        418    Hell's Reign
+fireres        100  # Fire Immunity
+descr "This scepter was forged by the Duke of Hell himself and it is a formidable weapon."
+
+#newitem "Faithful"                                                       #  19
+#sprite       1005    5 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        474    Magic Sword
+#specben       128    = 0x80 (Luck)
+
+#newitem "Staff of Fire"                                                  #  20
+#sprite       1017    17 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        385    Magic Staff
+fireres        100  # Fire Immunity
+#casts "Fireball" 1 (conditionally)
+
+#newitem "Shaman's Staff"                                                 #  21
+#sprite       1015    15 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        385    Magic Staff
+spiritsight
+#specben       128    = 0x80 (Luck)
+#casts "Curse" 1 (conditionally)
+
+#newitem "Staff of the Spirit World"                                      #  22
+#sprite       1016    16 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        385    Magic Staff
+spiritsight
+ethereal
+# Ability18     -1  # Extra magic resistance
+#summons "Dispossessed Spirit" -5 (5 at start of battle)
+
+#newitem "Sword of Heroes"                                                #  23
+#sprite       1000    0 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        475    Magic Sword
+# Ability18      2  # Extra magic resistance
+
+#newitem "Axe of Sharpness"                                               #  24
+#sprite       1036    36 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        710    Axe of Sharpness
+
+#newitem "Club of Dreams"                                                 #  25
+#sprite       1038    38 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        711    Club of Dreams
+sleepres            # Sleep Immunity
+
+#newitem "Golden Sickle"                                                  #  26
+#sprite       1037    37 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        714    Golden Sickle
+# Ability163   505  # 20% cost reduction to Druidism rituals
+
+#newitem "Wand of Fire"                                                   #  27
+#sprite       1042    42 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Flame Burst" 1 (conditionally)
+
+#newitem "Wand of Frost"                                                  #  28
+#sprite       1043    43 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Frozen Heart" 1 (conditionally)
+
+#newitem "Witch Wand"                                                     #  29
+#sprite       1044    44 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Curse of the Frog Prince" 1 (conditionally)
+
+#newitem "Wand of Sleep"                                                  #  30
+#sprite       1045    45 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Sleep Cloud" 1 (conditionally)
+
+#newitem "Wand of Fear"                                                   #  31
+#sprite       1019    19 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        386    Magic Rod
+#casts "Fear" 1 (conditionally)
+
+#newitem "Athame of High Sacrifice"                                       #  32
+#sprite       1041    41 in subgroup 1 of item.trs
+#rarity          1
+#slot            1    Weapon
+#weapon        731    Athame
+# Ability163   508  # 20% cost reduction to Baalite Rituals
+
+#newitem "Sun Helm"                                                       #  33
+#sprite       3000    0 in subgroup 3 of item.trs
+#rarity          0
+#slot            3    Helmet
+fireres        100  # Fire Immunity
+# Ability20      5  # Extra hit points
+
+#newitem "Crown of Command"                                               #  34
+#sprite       3001    1 in subgroup 3 of item.trs
+#rarity          0
+#slot            3    Helmet
+leadership       1
+
+#newitem "Crown of Intimidation"                                          #  35
+#sprite       3002    2 in subgroup 3 of item.trs
+#rarity          0
+#slot            3    Helmet
+awe              1
+
+#newitem "Wraith Crown"                                                   #  36
+#sprite       3003    3 in subgroup 3 of item.trs
+#rarity          0
+#slot            3    Helmet
+ethereal
+float
+hadesres       100
+#summons "Longdead" -12 (12 at start of battle)
+
+#newitem "Helmet of Might"                                                #  37
+#sprite       3004    4 in subgroup 3 of item.trs
+#rarity          1
+#slot            3    Helmet
+# Ability20      5  # Extra hit points
+# Ability42      2  # Extra strength
+# Ability18      1  # Extra magic resistance
+
+#newitem "Helmet of the Triton King"                                      #  38
+#sprite       3005    5 in subgroup 3 of item.trs
+#rarity          1
+#slot            3    Helmet
+shockres       100  # Shock Immunity
+water               # Survives/moves in water
+# Ability20      8  # Extra hit points
+
+#newitem "Helmet of the Efreet"                                           #  39
+#sprite       3006    6 in subgroup 3 of item.trs
+#rarity          1
+#slot            3    Helmet
+fireres        100  # Fire Immunity
+# Ability20      5  # Extra hit points
+burnforest     100
+fireaura         5
+
+#newitem "Horror Helmet"                                                  #  40
+#sprite       3007    7 in subgroup 3 of item.trs
+#rarity          0
+#slot            3    Helmet
+fear                # Causes Fear (1D7 vs morale) in adjacent squares
+# Ability20      1  # Extra hit points
+
+#newitem "Crown of Overmight"                                             #  41
+#sprite       3008    8 in subgroup 3 of item.trs
+#rarity          2
+#slot            3    Helmet
+poisonres      100  # Poison Immunity
+sleepres            # Sleep Immunity
+charmres            # Charm immunity
+leadership       1
+# Ability20     10  # Extra hit points
+# Ability18      1  # Extra magic resistance
+# Ability42     -1  # Extra strength
+awe              3
+
+#newitem "Wreath of the Arch Druid"                                       #  42
+#sprite       3009    9 in subgroup 3 of item.trs
+#rarity          2
+#slot            3    Helmet
+coldres        100  # Cold Immunity
+poisonres      100  # Poison Immunity
+# Ability20      5  # Extra hit points
+#summons "Bear" -1 (1 at start of battle)
+#casts "Befriend Animal" 2 (automatically)
+
+#newitem "Gauntlets of Power"                                             #  43
+#sprite       4000    0 in subgroup 4 of item.trs
+#rarity          0
+#slot            5    Gauntlets
+# Ability42      2  # Extra strength
+
+#newitem "Gauntlets of Knighthood"                                        #  44
+#sprite       4002    2 in subgroup 4 of item.trs
+#rarity          0
+#slot            5    Gauntlets
+# Ability27      1  # Extra armor
+# Ability42      1  # Extra strength
+
+#newitem "Infernal Gauntlets"                                             #  45
+#sprite       4004    4 in subgroup 4 of item.trs
+#rarity          1
+#slot            5    Gauntlets
+fireres        100  # Fire Immunity
+#specben      1024    = 0x400 (Fire Shield (3))
+# Ability20      5  # Extra hit points
+
+#newitem "Thunder Gauntlets"                                              #  46
+#sprite       4003    3 in subgroup 4 of item.trs
+#rarity          1
+#slot            5    Gauntlets
+shockres       100  # Shock Immunity
+shockaura        3
+
+#newitem "Gauntlets of Protection"                                        #  47
+#sprite       4001    1 in subgroup 4 of item.trs
+#rarity          0
+#slot            5    Gauntlets
+# Ability27      1  # Extra armor
+# Ability20      5  # Extra hit points
+
+#newitem "Gauntlets of Giant Strength"                                    #  48
+#sprite       4005    5 in subgroup 4 of item.trs
+#rarity          1
+#slot            5    Gauntlets
+# Ability42      4  # Extra strength
+# Ability20      5  # Extra hit points
+
+#newitem "Boots of the Swamp"                                             #  49
+#sprite       5004    4 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+poisonres      100  # Poison Immunity
+swamp               # Swamp Move
+
+#newitem "Boots of Regeneration"                                          #  50
+#sprite       5003    3 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+regeneration
+
+#newitem "Boots of the North"                                             #  51
+#sprite       5002    2 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+coldres        100  # Cold Immunity
+# Ability42      1  # Extra strength
+
+#newitem "Shoes of Speed"                                                 #  52
+#sprite       5005    5 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+fast
+
+#newitem "Shaia's Enchanted Boots"                                        #  53
+#sprite       5006    6 in subgroup 5 of item.trs
+#rarity          2
+#slot            6    Boots
+fireres        100  # Fire Immunity
+coldres        100  # Cold Immunity
+#specben       128    = 0x80 (Luck)
+fast
+# Ability27      1  # Extra armor
+descr "Shaia was once a mighty druidess. She made these magic boots to make her life easier in the forest. The boots protect their wearer from cold, heat and being hit by anything, be it animals or tree branches. They also confer the ability to run without getting tired."
+
+#newitem "Boots of the Mountains"                                         #  54
+#sprite       5001    1 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+mountain            # Mountain Move
+# Ability42      2  # Extra strength
+
+#newitem "Shoes of Protection"                                            #  55
+#sprite       5010    10 in subgroup 5 of item.trs
+#rarity          1
+#slot            6    Boots
+# Ability27      1  # Extra armor
+
+#newitem "Shadow Boots"                                                   #  56
+#sprite       5007    7 in subgroup 5 of item.trs
+#rarity          1
+#slot            6    Boots
+stealth
+ethereal
+
+#newitem "Shoes of Flying"                                                #  57
+#sprite       5008    8 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+flying
+
+#newitem "Boots of Scouting"                                              #  58
+#sprite       5009    9 in subgroup 5 of item.trs
+#rarity          0
+#slot            6    Boots
+stealth
+fast
+
+#newitem "Hydra Skin Armor"                                               #  59
+#sprite       2002    2 in subgroup 2 of item.trs
+#rarity          0
+#slot            4    Body Armor
+regeneration
+# Ability20      5  # Extra hit points
+# Ability19      2  # Alternative armor (used if better than intrinsic one)
+
+#newitem "Robe of Power"                                                  #  60
+#sprite       2011    11 in subgroup 2 of item.trs
+#rarity          1
+#slot            4    Body Armor
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+
+#newitem "Robe of the Arch Magi"                                          #  61
+#sprite       2007    7 in subgroup 2 of item.trs
+#rarity          2
+#slot            4    Body Armor
+fireres        100  # Fire Immunity
+#specben      2048    = 0x800 (Air Shield)
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+# Ability27      1  # Extra armor
+
+#newitem "Mirror Armor"                                                   #  62
+#sprite       2003    3 in subgroup 2 of item.trs
+#rarity          0
+#slot            4    Body Armor
+# Ability18      2  # Extra magic resistance
+# Ability19      2  # Alternative armor (used if better than intrinsic one)
+# Ability20      5  # Extra hit points
+
+#newitem "Aseftik's Armor"                                                #  63
+#sprite       2004    4 in subgroup 2 of item.trs
+#rarity          2
+#slot            4    Body Armor
+# Ability18      2  # Extra magic resistance
+# Ability19      4  # Alternative armor (used if better than intrinsic one)
+# Ability42      2  # Extra strength
+# Ability20     10  # Extra hit points
+
+#newitem "Bloodstone Armor"                                               #  64
+#sprite       2001    1 in subgroup 2 of item.trs
+#rarity          1
+#slot            4    Body Armor
+regeneration
+# Ability19      3  # Alternative armor (used if better than intrinsic one)
+# Ability42      2  # Extra strength
+# Ability20     10  # Extra hit points
+
+#newitem "Elven Cloak"                                                    #  65
+#sprite       2012    12 in subgroup 2 of item.trs
+#rarity          0
+#slot            4    Body Armor
+stealth
+
+#newitem "Durgon's Robe of Authority"                                     #  66
+#sprite       2013    13 in subgroup 2 of item.trs
+#rarity          2
+#slot            4    Body Armor
+charmres            # Charm immunity
+acutesenses
+ethereal
+# Bitflag46         # Cursed Item (cannot be given away)
+# Ability20     10  # Extra hit points
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+leadership       1
+# Ability18      1  # Extra magic resistance
+
+#newitem "Robe of Invulnerability"                                        #  67
+#sprite       2009    9 in subgroup 2 of item.trs
+#rarity          1
+#slot            4    Body Armor
+# Bitflag32         # Invulnerability
+
+#newitem "Robe of Shadows"                                                #  68
+#sprite       2010    10 in subgroup 2 of item.trs
+#rarity          0
+#slot            4    Body Armor
+ethereal
+float
+
+#newitem "Monolith Armor"                                                 #  69
+#sprite       2006    6 in subgroup 2 of item.trs
+#rarity          2
+#slot            4    Body Armor
+regeneration
+slashres            # Slash Resistance
+slow
+# Ability19      5  # Alternative armor (used if better than intrinsic one)
+# Ability20     15  # Extra hit points
+
+#newitem "Elven Armor"                                                    #  70
+#sprite       2015    15 in subgroup 2 of item.trs
+#rarity          1
+#slot            4    Body Armor
+stealth
+# Ability20      5  # Extra hit points
+# Ability19      1  # Alternative armor (used if better than intrinsic one)
+
+#newitem "Cloak of Displacement"                                          #  71
+#sprite       2008    8 in subgroup 2 of item.trs
+#rarity          0
+#slot            4    Body Armor
+#specben   2097152    = 0x200000 (Displacement)
+
+#newitem "Demon Armor"                                                    #  72
+#sprite       2016    16 in subgroup 2 of item.trs
+#rarity          1
+#slot            4    Body Armor
+bluntres            # Blunt Resistance
+slashres            # Slash Resistance
+pierceres           # Pierce Resistance
+# Ability20     10  # Extra hit points
+# Ability19      1  # Alternative armor (used if better than intrinsic one)
+planeshift       2  # Can Plane Shift to Inferno
+
+#newitem "Pendant of Luck"                                                #  73
+#sprite       6000    0 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+#specben       128    = 0x80 (Luck)
+
+#newitem "Ring of the Dead"                                               #  74
+#sprite       6021    21 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Longdead" 1 (1 per round)
+descr "In battle this ring can be used to constantly summon the dead to aid its wearer in combat."
+
+#newitem "Spirit Ring"                                                    #  75
+#sprite       6024    24 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+ethereal
+float
+descr "The wearer of this ring will become spirit-like and able to float through the air and through solid objects."
+
+#newitem "Dream Crystal"                                                  #  76
+#sprite       6001    1 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+sleepres            # Sleep Immunity
+fast
+descr "This strange crystal dreams for its wielder so that no sleep will be necessary. This makes it possible to travel further and resist sleep based attacks."
+
+#newitem "Gem of Fire Resistance"                                         #  77
+#sprite       6003    3 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+fireres        100  # Fire Immunity
+
+#newitem "Amulet of Cold Resistance"                                      #  78
+#sprite       6013    13 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+coldres        100  # Cold Immunity
+
+#newitem "Amulet of Hate"                                                 #  79
+#sprite       6009    9 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+charmres            # Charm immunity
+berserker
+
+#newitem "Pendant of the Gods"                                            #  80
+#sprite       6019    19 in subgroup 6 of item.trs
+#rarity          1
+#slot            7    Misc item
+shockres       100  # Shock Immunity
+flying
+# Ability20      5  # Extra hit points
+# Ability27      1  # Extra armor
+awe              1
+
+#newitem "Ring of Invisibility"                                           #  81
+#sprite       6022    22 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+invisible
+
+#newitem "Ring of Protection"                                             #  82
+#sprite       6023    23 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability27      1  # Extra armor
+# Ability18      2  # Extra magic resistance
+
+#newitem "Gem of Flying"                                                  #  83
+#sprite       6012    12 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+flying
+
+#newitem "Gem of True Seeing"                                             #  84
+#sprite       6030    30 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+spiritsight
+
+#newitem "Amulet of Anti Magic"                                           #  85
+#sprite       6015    15 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability18      3  # Extra magic resistance
+
+#newitem "Bloodstone Amulet"                                              #  86
+#sprite       6016    16 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+regeneration
+
+#newitem "Woundfend Amulet"                                               #  87
+#sprite       6017    17 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+slashres            # Slash Resistance
+
+#newitem "Stonebone Amulet"                                               #  88
+#sprite       6018    18 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+bluntres            # Blunt Resistance
+
+#newitem "Coral Ring"                                                     #  89
+#sprite       6006    6 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+pierceres           # Pierce Resistance
+
+#newitem "Ring of Infinite Gold"                                          #  90
+#sprite       6028    28 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+gold             5  # Provides this much gold each month
+
+#newitem "Trader's Medallion"                                             #  91
+#sprite       6029    29 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+gold             1  # Provides this much gold each month
+trade            2  # Provides this much trade each month
+
+#newitem "Star Ruby"                                                      #  92
+#sprite       6011    11 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability17      3  # Path Boost: Pyromancy + 1
+
+#newitem "Star Sapphire"                                                  #  93
+#sprite       6002    2 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+lucky               # Has a 50% chance of avoiding damage from any attack
+# Ability17     42  # Path Boost: Void Magic + 1
+# Ability18     -1  # Extra magic resistance
+
+#newitem "Frozen Star"                                                    #  94
+#sprite       6014    14 in subgroup 6 of item.trs
+#rarity          1
+#slot            7    Misc item
+coldres        100  # Cold Immunity
+coldaura         3
+
+#newitem "Soul Stone"                                                     #  95
+#sprite       6031    31 in subgroup 6 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Bitflag37         # Extra Life
+
+#newitem "Gem of Concentration"                                           #  96
+#sprite       6007    7 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Bitflag19         # Combat Caster
+
+#newitem "Shadow Stone"                                                   #  97
+#sprite       6032    32 in subgroup 6 of item.trs
+#rarity          1
+#slot            7    Misc item
+ethereal
+planeshift       1  # Can Plane Shift to Hades
+
+#newitem "Torleifur's Ring"                                               #  98
+#sprite       6025    25 in subgroup 6 of item.trs
+#rarity          2
+#slot            7    Misc item
+fireres        100  # Fire Immunity
+stealth
+# Bitflag46         # Cursed Item (cannot be given away)
+# Ability20     10  # Extra hit points
+# Ability40      2  # Extra morale
+# Ability42      1  # Extra strength
+
+#newitem "Precious"                                                       #  99
+#sprite       6026    26 in subgroup 6 of item.trs
+#rarity          2
+#slot            7    Misc item
+invisible
+ethereal
+# Bitflag46         # Cursed Item (cannot be given away)
+#specdmg     16384    = 0x4000 (Horrormark)
+# Ability20     15  # Extra hit points
+# Ability42      1  # Extra strength
+# Ability18     -1  # Extra magic resistance
+
+#newitem "Oblivion"                                                       # 100
+#sprite       6033    33 in subgroup 6 of item.trs
+#rarity          3
+#slot            7    Misc item
+# Bitflag37         # Extra Life
+# Ability27      1  # Extra armor
+# Ability18      2  # Extra magic resistance
+descr "This amulet contains enough souls to both protect its wearer from harm and to resurrect him should he fall in battle. It was created by the Duke of Hell himself."
+
+#newitem "Ring of Water Breathing"                                        # 101
+#sprite       6035    35 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+water               # Survives/moves in water
+
+#newitem "Serpent Amulet"                                                 # 102
+#sprite       6020    20 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+poisonres      100  # Poison Immunity
+# Ability20      3  # Extra hit points
+
+#newitem "Tome of High Magic"                                             # 103
+#sprite       7000    0 in subgroup 7 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+
+#newitem "Infernal Tome"                                                  # 104
+#sprite       7001    1 in subgroup 7 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Imp" 1 (1 per round)
+
+#newitem "Spell Scroll Level 1"                                           # 105
+#sprite       7005    5 in subgroup 7 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability23      1  # This many level 1 spells will be learned from using item
+
+#newitem "Spell Scroll Level 2"                                           # 106
+#sprite       7006    6 in subgroup 7 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability24      1  # This many level 2 spells will be learned from using item
+
+#newitem "Spell Scroll Level 3"                                           # 107
+#sprite       7007    7 in subgroup 7 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability25      1  # This many level 3 spells will be learned from using item
+
+#newitem "Adept's Spell Scroll"                                           # 108
+#sprite       7008    8 in subgroup 7 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability24      1  # This many level 2 spells will be learned from using item
+
+#newitem "Archmage's Spell Scroll"                                        # 109
+#sprite       7009    9 in subgroup 7 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability23      1  # This many level 1 spells will be learned from using item
+# Ability24      1  # This many level 2 spells will be learned from using item
+# Ability25      1  # This many level 3 spells will be learned from using item
+
+#newitem "Bottle of Demon Blood"                                          # 110
+#sprite       8004    4 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+fireres        100  # Fire Immunity
+# Ability17      1  # Path Boost: Infernal Magic + 1
+
+#newitem "A Chest Full of Fire"                                           # 111
+#sprite       8010    10 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+fireres        100  # Fire Immunity
+coldres        100  # Cold Immunity
+# Ability17      3  # Path Boost: Pyromancy + 1
+burnforest       3
+# Ability42      1  # Extra strength
+fireaura         3
+
+#newitem "Magic Acorns"                                                   # 112
+#sprite       8012    12 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Woodman" -1 (1 at start of battle)
+
+#newitem "Magic Flowers"                                                  # 113
+#sprite       8015    15 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Venus Trap" -1 (1 at start of battle)
+
+#newitem "Magic Spores"                                                   # 114
+#sprite       8013    13 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Blood Fungus" -1 (1 at start of battle)
+
+#newitem "Devil Spores"                                                   # 115
+#sprite       8014    14 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+#summons "Devil Fungus" -1 (1 at start of battle)
+
+#newitem "Pile of Bones"                                                  # 116
+#sprite       8016    16 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Longdead" -5 (5 at start of battle)
+
+#newitem "Horn of Valor"                                                  # 117
+#sprite       8007    7 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+localleadership  1
+
+#newitem "Magic Lamp"                                                     # 118
+#sprite       8008    8 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Air Elemental" -1 (1 at start of battle)
+
+#newitem "Pocket Lich"                                                    # 119
+#sprite       8001    1 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability17     38  # Path Boost: Necromancy + 1
+#summons "Longdead" 3 (3 per round)
+#casts "Fear" 2 (automatically)
+
+#newitem "Warrior's Charm"                                                # 120
+#sprite       8011    11 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+# Ability20      5  # Extra hit points
+# Ability40      2  # Extra morale
+# Ability42      1  # Extra strength
+
+#newitem "Hydra Bowl"                                                     # 121
+#sprite       8006    6 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+poisonres      100  # Poison Immunity
+poisoncloud      2
+
+#newitem "Bottle of Living Water"                                         # 122
+#sprite       8005    5 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+#summons "Water Elemental" -1 (1 at start of battle)
+descr "The owner of this bottle can summon a water elemental at the start of every battle."
+
+#newitem "Seeing Stone"                                                   # 123
+#sprite       8002    2 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+spiritsight
+farsight         1
+
+#newitem "Sphere of Power"                                                # 124
+#sprite       8003    3 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability16      1  # General Magic Boost (extra spell level): + 1
+
+#newitem "Whispering Skull"                                               # 125
+#sprite       8000    0 in subgroup 8 of item.trs
+#rarity          0
+#slot            7    Misc item
+charmres            # Charm immunity
+# Ability17     38  # Path Boost: Necromancy + 1
+
+#newitem "Mirage Crystal"                                                 # 126
+#sprite       6036    36 in subgroup 6 of item.trs
+#rarity          0
+#slot            7    Misc item
+stealth
+# Ability17     43  # Path Boost: Illusionism + 1
+
+#newitem "Orb of Fire"                                                    # 127
+#sprite       8017    17 in subgroup 8 of item.trs
+#rarity          3
+#slot            7    Misc item
+fireres        100  # Fire Immunity
+# Ability17      3  # Path Boost: Pyromancy + 1
+
+#newitem "Orb of Water"                                                   # 128
+#sprite       8018    18 in subgroup 8 of item.trs
+#rarity          3
+#slot            7    Misc item
+coldres        100  # Cold Immunity
+water               # Survives/moves in water
+# Ability17      4  # Path Boost: Hydromancy + 1
+
+#newitem "Orb of Air"                                                     # 129
+#sprite       8019    19 in subgroup 8 of item.trs
+#rarity          3
+#slot            7    Misc item
+shockres       100  # Shock Immunity
+flying
+# Ability17      5  # Path Boost: Storm Magic + 1
+
+#newitem "Orb of Earth"                                                   # 130
+#sprite       8020    20 in subgroup 8 of item.trs
+#rarity          3
+#slot            7    Misc item
+# Ability17      6  # Path Boost: Geomancy + 1
+# Ability27      1  # Extra armor
+
+#newitem "Sacred Ark"                                                     # 131
+#sprite       8021    21 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+# Ability17     28  # Path Boost: Dark Prayers + 1
+# Ability17     25  # Path Boost: Prayers + 1
+growhp         168
+growhp           0
+
+#newitem "Balances of Famine"                                             # 132
+#sprite       8022    22 in subgroup 8 of item.trs
+#rarity          3
+#slot            7    Misc item
+# Bitflag46         # Cursed Item (cannot be given away)
+#specdmg         1    = 0x1 (Disease)
+#specben       128    = 0x80 (Luck)
+
+#newitem "Sword of War"                                                   # 133
+#sprite       1001    1 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        732    Sword of War
+# Bitflag46         # Cursed Item (cannot be given away)
+
+#newitem "Soul Scythe"                                                    # 134
+#sprite       1051    51 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        511    Soul Scythe
+# Bitflag46         # Cursed Item (cannot be given away)
+
+#newitem "Staff of the Magi"                                              # 135
+#sprite       1052    52 in subgroup 1 of item.trs
+#rarity          0
+#slot            1    Weapon
+#weapon        201    Staff of Power
+spellrange       1
+
+#newitem "Orb of Projection"                                              # 136
+#sprite       8017    17 in subgroup 8 of item.trs
+#rarity          1
+#slot            7    Misc item
+spellrange       2

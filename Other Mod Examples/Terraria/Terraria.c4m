@@ -1,0 +1,5482 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"This is the base file for the Terraria mod."
+
+#--Regular Monster
+
+newweapon "Bash"
+range 1
+init 1
+dmgtype 2
+mundane
+
+newweapon "Summon Blue Slime"
+dmgtype 18
+range 5
+init 1
+sound 57
+look 15
+nostr
+reload2
+trgrank 7
+
+newmonster "King Slime"
+spr1 "/Terraria/kingslime.tga"
+descr "The lord of all slimes. It has a nice crown."
+hp 78
+str 6
+mor 10
+mr 6
+armor 0
+rank 1
+meleeweapon 12 "Bash"
+meleeweapon 8 "Incorporate"
+rangedweaponbonus 1 "Summon Blue Slime"
+digest 4
+incorporate 4
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+forest2
+allitemslots
+randomitem 25
+randommisc 25
+
+newweapon "Frost Touch"
+range 1
+init 1
+dmgtype 5
+look 12
+sound 39
+
+newmonster "Blue Slime"
+spr1 "/Terraria/blueslime.tga"
+descr "An aggressive slime. This one is blue and cannot be poisoned."
+hp 6
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon 4 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+forest2
+miscslots
+
+newmonster "Ice Slime"
+spr1 "/Terraria/iceslime.tga"
+descr "An aggressive slime that is rather slushy like. Put a straw in it and drink up!"
+hp 6
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon 4 "Frost Touch"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+coldres 100
+coldaura 3
+forest2
+miscslots
+
+newweapon "Ice Spike"
+dmgtype 3
+init 2
+range 4
+trgrank 9
+mundane
+look 88
+flylook 88
+sound 39
+flysound 39
+flymode 2
+scatter
+lob
+rangepen
+next
+newweapon "Ice Spike Ice"
+dmgtype 5
+dmg 4
+
+newmonster "Spiked Ice Slime"
+spr1 "/Terraria/spikediceslime.tga"
+descr "An ice slime, but more annoying."
+hp 4
+str 3
+mor 3
+mr 3
+armor 0
+rank 0
+meleeweapon 3 "Frost Touch"
+rangedweapon 3 "Ice Spike"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+coldres 100
+coldaura 3
+forest2
+miscslots
+
+newmonster "Dungeon Slime"
+spr1 "/Terraria/dslime.tga"
+descr "An aggressive slime that can easily hide in dark places. They are resistant to poison."
+hp 12
+str 4
+mor 4
+mr 3
+armor 0
+rank 1
+meleeweapon 6 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+aihold 1
+miscslots
+stealth
+
+newweapon "Summon Slimeling"
+dmgtype 18
+range 3
+init 1
+sound 57
+look 15
+nostr
+reload2
+
+newmonster "Corrupt Slime"
+spr1 "/Terraria/corruptslime.tga"
+descr "This slime comes from the great beyond and corrupts those around it."
+hp 8
+str 4
+mor 99
+mr 4
+armor 0
+rank 1
+meleeweapon 6 "Bash"
+rangedweaponbonus 1 "Summon Slimeling"
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+horror
+miscslots
+poisonspikes 3
+
+newmonster "Slimeling"
+spr1 "/Terraria/slimeling.tga"
+descr "The most cutest and most evil being."
+hp 1
+str 3
+mor 99
+mr 2
+armor 0
+rank 1
+meleeweapon 2 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+horror
+miscslots
+poisonspikes 1
+
+newmonster "Shadow Slime"
+spr1 "/Terraria/shadowslime.tga"
+descr "This slime is too sneaky to have a description."
+hp 12
+str 4
+mor 99
+mr 4
+armor 0
+rank 1
+meleeweapon 6 "Bash"
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+horror
+miscslots
+stealth
+
+newmonster "Crimslime"
+spr1 "/Terraria/crimslime.tga"
+descr "The bloodiest slime of them all"
+hp 16
+str 4
+mor 99
+mr 4
+armor 0
+rank 1
+meleeweapon 4 "Bash"
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+horror
+miscslots
+
+newmonster "Green Slime"
+spr1 "/Terraria/greenslime.tga"
+descr "An aggressive slime. The green ones are the weakest."
+hp 5
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon 4 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+forest2
+miscslots
+
+newweapon "Toxic Jam"
+range 1
+init 1
+dmgtype 2
+dmg 4
+mundane
+next
+newweapon "Toxic Party"
+range 1
+init 1
+dmgtype 9
+dmg 10
+mundane
+an
+stone
+undead
+
+newmonster "Toxic Sludge"
+spr1 "/Terraria/toxicsludge.tga"
+descr "This nasty slime is far too happy to see you get close to it."
+hp 8
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon "Toxic Jam"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+forest2
+miscslots
+poisonspikes 3
+poisonres 100
+
+newmonster "Red Slime"
+spr1 "/Terraria/redslime.tga"
+descr "The slime with an attitude."
+hp 6
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+meleeweapon 7 "Bash"
+animal
+regeneration
+bluntres
+pierceres
+miscslots
+berserker
+
+newmonster "Black Slime"
+spr1 "/Terraria/blackslime.tga"
+descr "An aggressive slime. The black ones are found underground most of the time."
+hp 8
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon 4 "Bash"
+animal
+regeneration
+bluntres
+pierceres
+miscslots
+
+newmonster "Purple Slime"
+spr1 "/Terraria/purpleslime.tga"
+descr "An aggressive slime. The purple ones are infrequent, but tougher than normal."
+hp 16
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+meleeweapon 4 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+forest2
+miscslots
+
+newmonster "Yellow Slime"
+spr1 "/Terraria/yellowslime.tga"
+descr "An aggressive slime. The yellow ones are big and fat."
+hp 24
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+meleeweapon 6 "Bash"
+size2x2
+animal
+regeneration
+badsight
+bluntres
+pierceres
+miscslots
+
+newmonster "Lava Slime"
+spr1 "/Terraria/lavaslime.tga"
+descr "An aggressive slime. THAT IS ON FIRE!"
+hp 8
+str 4
+mor 3
+mr 3
+armor 0
+rank 1
+meleeweapon 6 "Flame Strike"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+fireres 100
+fireaura 2
+miscslots
+
+newmonster "Pinky"
+spr1 "/Terraria/pinky.tga"
+descr "An aggressive slime. This one is small and carries a lot of gold for some reason. What slimes do with gold, no one knows."
+hp 30
+str 6
+mor 4
+mr 6
+armor 0
+rank 1
+meleeweapon 8 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+forest2
+miscslots
+randommisc 50
+
+newmonster "Jungle Slime"
+spr1 "/Terraria/jungleslime.tga"
+descr "An aggressive slime that prefers the jungles."
+hp 12
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+meleeweapon 6 "Bash"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+jungle2
+south2
+miscslots
+
+newweapon "Jungle Stinger"
+dmgtype 3
+init 2
+range 4
+trgrank 9
+mundane
+look 60
+flylook 60
+sound 39
+flysound 39
+flymode 2
+scatter
+lob
+rangepen
+next
+newweapon "Jungle Spike Venom"
+dmgtype 9
+dmg 8
+
+newmonster "Spiked Jungle Slime"
+spr1 "/Terraria/spikedjungleslime.tga"
+descr "An aggressive slime that prefers the jungles."
+hp 6
+str 4
+mor 4
+mr 4
+armor 0
+rank 0
+meleeweapon 4 "Bash"
+rangedweapon 3 "Jungle Stinger"
+animal
+regeneration
+badsight
+bluntres
+pierceres
+poisonres 100
+jungle2
+south2
+miscslots
+
+newmonster "Demon Eye"
+spr1 "/Terraria/demoneye.tga"
+descr "A flying eye that often attacks at night. It's creepy but not very dangerous. Swat it as it flies close to attack!"
+hp 4
+str 2
+mor 3
+mr 3
+rank 1
+meleeweapon 3 "Bash"
+flying
+miscslots
+spiritsight
+aggressive
+noleader
+
+newweapon "Zombie Arm"
+range 1
+init 2
+dmgtype 2
+mundane
+sound 9
+
+newweapon "Zombie Bite"
+range 1
+init 1
+dmgtype 1
+mundane
+sound 9
+replicate
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/zombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 1 "Zombie Bite"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 4 "Zombie Arm"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/pincushionzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 2 "Claw"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedpincushionzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 2 "Claw"
+meleeweapon 4 "Zombie Arm"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/slimezombie.tga"
+bluntres
+pierceres
+stupid
+aggressive
+clearweapons
+meleeweapon 2 "Bash"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedslimezombie.tga"
+bluntres
+pierceres
+stupid
+aggressive
+clearweapons
+meleeweapon 2 "Bash"
+meleeweapon 4 "Zombie Arm"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/swampzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 1 "Zombie Bite"
+swamp
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedswampzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 4 "Zombie Arm"
+swamp
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/twiggyzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 1 "Zombie Bite"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedtwiggyzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 4 "Zombie Arm"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/femalezombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 1 "Zombie Bite"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/armedfemalezombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+meleeweapon 4 "Zombie Arm"
+
+newmonster "Zombie"
+copystats "Soulless"
+spr1 "/Terraria/raincoatzombie.tga"
+bluntres
+stupid
+aggressive
+clearweapons
+armor 1
+meleeweapon 1 "Zombie Bite"
+
+newweapon "Summon Creeper"
+dmgtype 18
+range 5
+init 1
+sound 57
+look 15
+nostr
+reload2
+trgrank 5
+
+newmonster "Brain of Cthulhu"
+spr1 "/Terraria/boc.tga"
+spr2 "/Terraria/boc2.tga"
+descr "The Brain of Cthulhu is a strange creature with powerful mind-altering magic! Prepare your tinfoil hats!"
+hp 80
+str 8
+mor 99
+mr 8
+rank -1
+armor 0
+meleeweapon 8 "Bash"
+prebatweapon 10 "Summon Creeper"
+spellweaponbonus 43 3
+huge
+flying
+miscslots
+spiritsight
+aggressive
+teleport
+charmres
+sleepres
+miscslots
+randomitem 50
+horror
+
+newmonster "Creeper"
+copystats "Demon Eye"
+spr1 "/Terraria/creeper.tga"
+descr "A servant of the Brain of Cthulhu."
+hp 3
+charmres
+sleepres
+horror
+aggressive
+
+newweapon "Summon Servant of Cthulhu"
+dmgtype 18
+range 5
+init 1
+sound 57
+look 15
+nostr
+reload2
+trgrank 7
+
+newmonster "Eye of Cthulhu"
+spr1 "/Terraria/eoc.tga"
+spr2 "/Terraria/eoc2.tga"
+descr "The Eye of Cthulhu is a powerful demon eye that spawns many servants and devour the souls of the weak. It carves for the flesh of all and feeds on suffering and pain. It spawms many smaller servants over time."
+hp 120
+str 8
+mor 99
+mr 8
+rank 1
+armor 0
+meleeweapon 18 "Bite"
+rangedweaponbonus 3 "Summon Servant of Cthulhu"
+trample 10
+huge
+flying
+miscslots
+spiritsight
+aggressive
+reanimate 3
+battlefast
+charmres
+sleepres
+miscslots
+randomitem 50
+horror
+
+newmonster "Servant of Cthulhu"
+copystats "Demon Eye"
+spr1 "/Terraria/soc.tga"
+descr "A servant of the Eye of Cthulhu."
+hp 3
+charmres
+sleepres
+horror
+aggressive
+
+newmonster "Eater of Souls"
+spr1 "/Terraria/eaterofsouls.tga"
+descr "A special type of horror that wishes to taint and corrupt the world."
+hp 16
+str 4
+mor 15
+mr 6
+rank 1
+meleeweapon 8 "Bite"
+flying
+battlefast
+horror
+aggressive
+
+newmonster "Crimera"
+spr1 "/Terraria/crimera.tga"
+descr "A special type of horror that wishes to taint and corrupt the world."
+hp 12
+str 4
+mor 99
+mr 6
+rank 1
+meleeweapon 6 "Gore"
+flying
+battlefast
+horror
+aggressive
+
+newweapon "Death Hop"
+init 2
+range 1
+dmgtype 2
+mundane
+
+newmonster "Herpling"
+spr1 "/Terraria/herpling.tga"
+descr "It has been long recorded in the annals of man that most horror tend to feast on your soul and suffering. This one just hops on you and mash you into a bloody pulp."
+hp 24
+str 6
+mor 99
+mr 6
+rank 1
+armor 2
+meleeweapon 8 "Death Hop"
+horror
+aggressive
+slow
+water
+badsight
+bluntres
+extraeyes -1
+wall
+
+newweapon "Vile Spit"
+range 4
+init 1
+dmgtype 10
+sound 32
+look 21
+
+newmonster "Corrupter"
+copystats "Eater of Souls"
+spr1 "/Terraria/corrupter.tga"
+descr "A special type of horror that wishes to taint and corrupt the world."
+hp 24
+rangedweapon 10 "Vile Spit"
+rank 0
+randomitem 10
+horror
+aggressive
+
+newmonster "Face Monster"
+spr1 "/Terraria/facemonster.tga"
+hp 12
+str 5
+mor 99
+mr 4
+armor 0
+rank 1
+meleeweapon 4 "Bite"
+poisonres 100
+bluntres
+slashres
+
+newmonster "Floaty Gross"
+spr1 "/Terraria/floatygross.tga"
+hp 8
+str 5
+mor 99
+mr 4
+armor 0
+rank 1
+meleeweapon 4 "Touch of the Dead"
+float
+ethereal
+
+newweapon "Crushing Vile Spit"
+range 15
+init 1
+dmgtype 10
+sound 32
+look 21
+reload2
+
+newmonster "Eater of Worlds"
+spr1 "/Terraria/eaterofworlds.tga"
+descr "The ground trembles and shakes as this large creature stands before your army. It is composed of many segments that constantly sheds to form more worms. The air is tainted with powerful magic. It intends to eat most of the world and corrupts what is left."
+hp 160
+mor 99
+mr 8
+str 8
+armor 3
+rank 1
+aggressive
+meleeweapon 12 "Bite"
+rangedweaponbonus 6 "Vile Spit"
+siegeweapon 20 "Crushing Vile Spit"
+tunnel
+huge
+fear 1
+horror
+randomitem 50
+extraeyes 2
+sleepres
+charmres
+trample 6
+
+newmonster "Devourer"
+spr1 "/Terraria/devourer.tga"
+descr "A large worm that will probably eat you."
+rank 1
+hp 20
+mor 15
+mr 6
+str 6
+meleeweapon 4 "Bite"
+meleeweapon 4 "Bite"
+tunnel
+horror
+aggressive
+trample 2
+
+newmonster "Giant Worm"
+spr1 "/Terraria/gworm.tga"
+descr "A large worm that will probably eat you."
+rank 1
+hp 12
+mor 4
+mr 4
+str 4
+meleeweapon 3 "Bite"
+meleeweapon 3 "Bite"
+tunnel
+animal
+trample 1
+
+newweapon "Bone"
+range 4
+dmgtype 2
+dmg 1
+init 3
+trgrank 9
+sound 19
+flylook 21
+flysound 19
+flymode 6
+scatter
+oneshot
+lob
+
+newmonster "Skeleton"
+copystats "Longdead"
+descr "Beware the clatter of these bones."
+spr1 "/Terraria/skeleton.tga"
+slashres
+pierceres
+rangedweapon 2 "Bone"
+hp 4
+
+newmonster "Skeleton"
+copystats "Longdead"
+spr1 "/Terraria/headacheskeleton.tga"
+slashres
+pierceres
+hp 3
+armor 1
+
+newmonster "Skeleton"
+copystats "Longdead"
+spr1 "/Terraria/misassembledskeleton.tga"
+slashres
+pierceres
+hp 6
+badsight
+clearweapons
+meleeweapon 4 "Bash"
+
+newmonster "Skeleton"
+copystats "Longdead"
+spr1 "/Terraria/pantlessskeleton.tga"
+slashres
+pierceres
+hp 4
+fast
+
+newmonster "Armored Skeleton"
+copystats "Longdead"
+descr "Beware the clatter of these bones."
+spr1 "/Terraria/armoredskeleton.tga"
+clearweapons
+meleeweapon 1 "Axe"
+shield
+armor 1
+hp 8
+slashres
+pierceres
+
+newweapon "Marrow Bow"
+init 2
+trgrank 9
+dmgtype 4
+dmg 4
+range 4
+look 14
+sound 14
+flylook 65
+flysound 14
+flymode 6
+arrow
+lob
+rangepen
+nostr
+
+newmonster "Skeleton Archer"
+copystats "Longdead"
+descr "Maybe they use the bones as arrows."
+spr1 "/Terraria/skeletonarcher.tga"
+clearweapons
+meleeweapon 1 "Fist"
+rangedweapon 0 "Marrow Bow"
+rank 0
+hp 4
+armor 1
+slashres
+pierceres
+
+newmonster "Meteor Head"
+spr1 "/Terraria/Meteorhead.tga"
+descr "These burning chunks of rocks will give you a nasty burn!"
+hp 8
+mor 99
+mr 4
+str 4
+armor 1
+meleeweapon 6 "Flame Strike"
+horror
+noheal
+float
+fireres 100
+slashres
+fireaura 1
+aggressive
+
+newmonster "Goblin Peon"
+spr1 "/Terraria/gpeon.tga"
+descr "The basic grunt of the goblin army."
+hp 2
+str 3
+mor 3
+mr 3
+rank 1
+meleeweapon "Dagger"
+foreststealth
+money2
+allitemslots
+
+newmonster "Goblin Thief"
+spr1 "/Terraria/gthief.tga"
+descr "The goblins used to get over the walls of the enemy."
+hp 2
+str 3
+mor 3
+mr 3
+rank 1
+meleeweapon "Dagger"
+foreststealth
+money2
+acutesenses
+battlefast
+wall
+allitemslots
+randomitem 1
+
+newmonster "Goblin Bowman"
+spr1 "/Terraria/goblinbowman.tga"
+descr "Goblins equipped with low quality bows. Not nearly as effective as human archers."
+hp 2
+str 3
+mor 3
+mr 3
+rank 0
+meleeweapon -1 "Dagger"
+rangedweapon -1 "Bow"
+foreststealth
+money2
+allitemslots
+
+newmonster "Goblin Scout"
+spr1 "/Terraria/goblinscout.tga"
+descr "The scouts and fast attackers of the goblin army."
+hp 2
+str 3
+mor 3
+mr 3
+rank 1
+meleeweapon "Dagger"
+stealth
+money2
+acutesenses
+fast
+wall
+allitemslots
+noleader
+
+newmonster "Goblin Warrior"
+spr1 "/Terraria/gwarrior.tga"
+descr "The front line troops of the goblin army. Why they bothered making armor for goblins is beyond anyone reasonable."
+hp 4
+str 3
+mor 3
+mr 3
+armor 1
+rank 1
+meleeweapon "Broadsword"
+foreststealth
+shield
+money2
+allitemslots
+
+newweapon "Chaos Ball"
+range 10
+dmgtype 7
+sound 32
+look 33
+init 6
+trgrank 9
+reload3
+flymode 2
+look 70
+flylook 70
+sound 31
+flylook 31
+
+newmonster "Goblin Sorcerer"
+spr1 "/Terraria/gsorcerer.tga"
+descr "The only goblin you really should be worrying about right now."
+hp 4
+str 3
+mor 3
+mr 3
+rank -1
+meleeweapon 1 "Dagger"
+foreststealth
+money2
+teleport
+rangedweaponbonus 6 "Chaos Ball"
+siegeweapon 6 "Chaos Ball"
+spellweapon 7 1
+allitemslots
+randomitem 25
+
+newmonster "Angry Bones"
+copystats "Longdead"
+spr1 "/Terraria/angrybones.tga"
+descr "This skeleton has a bone to pick with you."
+armor 1
+hp 5
+slashres
+pierceres
+berserker
+clearweapons
+meleeweapon 3 "Fist"
+rangedweapon 2 "Bone"
+
+newmonster "Angry Bones"
+copystats "Longdead"
+spr1 "/Terraria/angrybones2.tga"
+descr "This skeleton has a bone to pick with you."
+armor 0
+str 5
+hp 8
+slashres
+pierceres
+berserker
+clearweapons
+meleeweapon 4 "Fist"
+
+newmonster "Angry Bones"
+copystats "Longdead"
+spr1 "/Terraria/angrybones3.tga"
+descr "This skeleton has a bone to pick with you."
+armor 2
+hp 6
+slashres
+pierceres
+berserker
+clearweapons
+meleeweapon 2 "Fist"
+
+newmonster "Angry Bones"
+copystats "Longdead"
+spr1 "/Terraria/angrybones4.tga"
+descr "This skeleton has a bone to pick with you."
+armor 2
+hp 6
+slashres
+pierceres
+berserker
+clearweapons
+meleeweapon 2 "Fist"
+
+newweapon "Bomb"
+range 4
+dmgtype 4
+dmg 5
+init 3
+trgrank 9
+aoe 1
+look 68
+sound 16
+flylook 21
+flysound 16
+flymode 6
+scatter
+oneshot
+lob
+nostr
+
+newmonster "Undead Miner"
+copystats "Longdead"
+spr1 "/Terraria/undeadminer.tga"
+descr "These undead miners are well known for making tunnels with explosives. And if they cannot see what they are doing, they use the light of more bombs to help see."
+clearweapons
+meleeweapon 0 "Pick Axe"
+rangedweapon 0 "Bomb"
+fireexpl 4
+hp 8
+slashres
+pierceres
+
+newmonster "Dark Caster"
+copystats "Longdead"
+spr1 "/Terraria/darkcaster.tga"
+armor 1
+hp 6
+spellweapon 4 1
+rank -1
+allitemslots
+randomitem 25
+slashres
+pierceres
+
+newmonster "Rune Wizard"
+copystats "Longdead"
+spr1 "/Terraria/runewizard.tga"
+armor 1
+hp 6
+spellweapon 3 1
+rank -1
+allitemslots
+randomitem 25
+slashres
+pierceres
+
+newmonster "Undead Enchanter"
+copystats "Longdead"
+spr1 "/Terraria/tim.tga"
+armor 1
+hp 6
+spellweapon 26 1
+rank -1
+allitemslots
+randomitem 25
+slashres
+pierceres
+
+newweapon "Spinning Head Attack"
+range 1
+init 4
+dmgtype 2
+mundane
+sweep
+
+newmonster "Skeletron"
+copystats "Longdead"
+spr1 "/Terraria/skeletron.tga"
+armor 2
+hp 120
+flying
+clearweapons
+meleeweapon 30 "Spinning Head Attack"
+reanimate 3
+miscslots
+randommisc 50
+randommisc 50
+size2x2
+immobile
+rank 1
+slashres
+pierceres
+
+newmonster "Skeletron Hand"
+copystats "Longdead"
+spr1 "/Terraria/shand.tga"
+armor 2
+hp 60
+flying
+clearweapons
+meleeweapon 24 "Fist"
+miscslots
+randommisc 50
+size2x2
+aihold 1
+rank 1
+slashres
+pierceres
+
+newmonster "Hornet"
+spr1 "/Terraria/hornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 4
+armor 1
+mor 3
+mr 2
+meleeweapon 4 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+battlefast
+
+newmonster "Hornet"
+spr1 "/Terraria/fattyhornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 6
+armor 1
+mor 3
+mr 2
+meleeweapon 4 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+slow
+
+newmonster "Hornet"
+spr1 "/Terraria/honeyhornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 4
+armor 1
+mor 3
+mr 2
+meleeweapon 4 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+battlefast
+
+newmonster "Hornet"
+spr1 "/Terraria/leafyhornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 4
+armor 1
+mor 3
+mr 2
+meleeweapon 4 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+foreststealth
+
+newmonster "Hornet"
+spr1 "/Terraria/spikeyhornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 4
+armor 1
+mor 3
+mr 2
+meleeweapon 4 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+poisonspikes 1
+
+newmonster "Hornet"
+spr1 "/Terraria/stingyhornet.tga"
+descr "This little bugger is going to sting you and it will suck."
+rank 1
+hp 4
+armor 1
+mor 3
+mr 2
+meleeweapon 6 "Stinger"
+rangedweapon 3 "Jungle Stinger"
+flying
+animal
+
+newweapon "Feather"
+range 5
+dmgtype 3
+sound 32
+flysound 32
+look 21
+flylook 21
+flymode 2
+scatter
+lob
+rangepen
+aoe -3
+mundane
+init 4
+
+newmonster "Harpy"
+spr1 "/Terraria/harpy.tga"
+descr "This half woman half bird creature seeks to cover the world in razor sharp feathers."
+rank 0
+hp 12
+armor 0
+mor 3
+mr 3
+meleeweapon 4 "Claw"
+rangedweapon 4 "Feather"
+animal
+human
+flying
+aggressive
+
+newmonster "Vulture"
+spr1 "/Terraria/vulture.tga"
+rank 1
+hp 10
+armor 0
+mor 3
+mr 2
+clearweapons
+meleeweapon 5 "Bite"
+absorbdead 1
+animal
+rank 1
+flying
+
+newmonster "Cave Bat"
+copystats "Murder of Crows"
+spr1 "/Terraria/cavebat.tga"
+clearweapons
+meleeweapon 4 "Bite"
+animal
+rank 1
+
+newmonster "Ice Bat"
+copystats "Cave Bat"
+spr1 "/Terraria/icebat.tga"
+clearweapons
+meleeweapon 5 "Frost Touch"
+rank 1
+
+newmonster "Illuminant Bat"
+copystats "Cave Bat"
+spr1 "/Terraria/illbat.tga"
+descr "How does a bat glow in the dark?"
+clearweapons
+meleeweapon 4 "Bite"
+mr 4
+animal
+fireres 100
+poisonres 100
+unaging
+rank 1
+
+newmonster "Illuminant Slime"
+copystats "Blue Slime"
+spr1 "/Terraria/illslime.tga"
+fireres 100
+poisonres 100
+unaging
+mr 4
+
+newmonster "Giant Bat"
+copystats "Cave Bat"
+spr1 "/Terraria/giant bat.tga"
+hp 10
+clearweapons
+meleeweapon 4 "Foul Bite"
+
+newmonster "Slimer"
+copystats "Black Slime"
+spr1 "/Terraria/slimer.tga"
+flying
+hp 10
+
+newmonster "Jungle Bat"
+copystats "Cave Bat"
+spr1 "/Terraria/junglebat.tga"
+hp 4
+clearweapons
+meleeweapon 6 "Bite"
+animal
+rank 1
+
+newmonster "Giant Flying Fox"
+copystats "Jungle Bat"
+spr1 "/Terraria/giantflyingfox.tga"
+hp 10
+meleeweapon 4 "Foul Bite"
+
+newmonster "Hellbat"
+copystats "Jungle Bat"
+spr1 "/Terraria/hellbat.tga"
+hp 6
+clearweapons
+meleeweapon 4 "Bite"
+meleeweapon 3 "Flame Strike"
+fireaura 2
+fireres 100
+animal
+rank 1
+frontpos
+
+newmonster "Goldfish"
+spr1 "/Terraria/goldfish.tga"
+hp 1
+mr 2
+mor 2
+meleeweapon 1 "Bite"
+wateronly
+animal
+rank 1
+fast
+
+newmonster "Walking Goldfish"
+spr1 "/Terraria/walkinggoldfish.tga"
+hp 1
+mr 2
+mor 2
+meleeweapon 1 "Bite"
+water
+animal
+rank 1
+slow
+
+newmonster "Piranha"
+spr1 "/Terraria/piranha.tga"
+hp 3
+mr 2
+mor 2
+meleeweapon 3 "Bite"
+wateronly
+animal
+rank 1
+fast
+
+newmonster "Angler Fish"
+spr1 "/Terraria/anglerfish.tga"
+hp 4
+mr 2
+mor 3
+str 3
+meleeweapon 3 "Foul Bite"
+wateronly
+animal
+rank 1
+fast
+
+newmonster "Arapaima"
+spr1 "/Terraria/arapaima.tga"
+hp 8
+mr 2
+mor 4
+meleeweapon 6 "Bite"
+wateronly
+animal
+rank 1
+fast
+
+newmonster "Crab"
+spr1 "/Terraria/crab.tga"
+hp 2
+mr 2
+mor 2
+armor 1
+meleeweapon 1 "Pincer"
+meleeweapon 1 "Pincer"
+water
+animal
+rank 1
+
+newmonster "Antlion"
+spr1 "/Terraria/antlion.tga"
+hp 16
+mr 2
+mor 3
+armor 3
+meleeweapon 8 "Bite"
+rangedweapon 6 "Vile Spit"
+animal
+stationary
+immobile
+rank -1
+stealth
+
+newmonster "Albino Antlion"
+spr1 "/Terraria/aantlion.tga"
+hp 24
+mr 3
+mor 4
+armor 4
+meleeweapon 12 "Bite"
+rangedweapon 8 "Vile Spit"
+animal
+stationary
+immobile
+rank -1
+stealth
+size2x2
+
+newmonster "Dark Wraith"
+copystats "Shade"
+spr1 "/Terraria/wraith.tga"
+hp 8
+fireres 100
+float
+passwall
+invisible
+clearweapons
+meleeweapon 6 "Touch of the Dead"
+meleeweapon 6 "Touch of the Dead"
+
+newmonster "Mimic"
+spr1 "/Terraria/mimic.tga"
+descr "A hidden killing loot box."
+hp 30
+rank 1
+armor 2
+mr 6
+mor 99
+stealth
+stationary
+fast
+aggressive
+meleeambush 1
+deployoutside 1
+meleeweapon 4 "Bash"
+meleeweapon 8 "Bite"
+poisonres 100
+noheal
+allitemslots
+indepitem 100
+indepitem 100
+
+newmonster "Ice Mimic"
+spr1 "/Terraria/icemimic.tga"
+descr "You think there is some important loot in here. Mind the teeth and frostbite."
+hp 20
+rank 1
+armor 1
+mr 6
+mor 99
+stealth
+stationary
+fast
+aggressive
+meleeambush 1
+deployoutside 1
+meleeweapon 4 "Bite"
+meleeweapon 4 "Frost Touch"
+poisonres 100
+noheal
+allitemslots
+indepitem 100
+indepitem 100
+spellweaponbonus 27 1
+coldres 100
+coldaura 1
+
+newmonster "Corrupt Mimic"
+spr1 "/Terraria/corruptmimic.tga"
+spr2 "/Terraria/corruptmimic2.tga"
+descr "Apparently, boxes can be horrors too. Who knew?"
+hp 30
+rank 1
+armor 2
+mr 6
+mor 99
+invisible
+fast
+aggressive
+meleeambush 1
+deployoutside 1
+meleeweapon 4 "Astral Hook"
+meleeweapon 4 "Astral Hook"
+meleeweapon 8 "Bite"
+poisonres 100
+noheal
+horror
+allitemslots
+indepitem 100
+indepitem 100
+
+newmonster "Crimson Mimic"
+spr1 "/Terraria/crimsonmimic.tga"
+spr2 "/Terraria/crimsonmimic2.tga"
+descr "Apparently, boxes can be horrors too. Who knew?"
+hp 30
+rank 1
+armor 2
+mr 6
+mor 99
+invisible
+fast
+aggressive
+meleeambush 1
+deployoutside 1
+meleeweapon 4 "Astral Hook"
+meleeweapon 4 "Astral Hook"
+meleeweapon 8 "Bite"
+poisonres 100
+noheal
+horror
+allitemslots
+indepitem 100
+indepitem 100
+
+newmonster "Jungle Mimic"
+spr1 "/Terraria/junglemimic.tga"
+spr2 "/Terraria/junglemimic2.tga"
+hp 40
+rank 1
+armor 3
+mr 6
+mor 99
+stationary
+stealth
+fast
+aggressive
+meleeambush 1
+deployoutside 1
+meleeweapon 4 "Stinger"
+meleeweapon 8 "Bite"
+poisonres 100
+noheal
+poisonspikes 3
+allitemslots
+indepitem 100
+indepitem 100
+
+newmonster "Arch Wyvern"
+spr1 "/Terraria/wyvern.tga"
+hp 60
+rank 1
+armor 0
+mor 8
+mr 6
+flying
+aggressive
+huge
+meleeweapon 8 "Bite"
+trample 4
+animal
+
+newweapon "Werewolf Claw"
+dmgtype 1
+range 1
+init 2
+replicate
+
+newmonster "Lycanthrope"
+spr1 "/Terraria/werewolf.tga"
+hp 12
+rank 1
+armor 0
+mor 5
+mr 5
+str 6
+animal
+fast
+foreststealth
+aggressive
+berserker
+forest2
+meleeweapon 4 "Werewolf Claw"
+meleeweapon 4 "Foul Bite"
+
+newweapon "Clown Bomb"
+range 4
+dmgtype 4
+dmg 8
+init 4
+trgrank 9
+aoe 9
+look 14
+sound 16
+flylook 14
+flysound 16
+flymode 1
+reload3
+lob
+scatter
+rangepen
+
+newweapon "Clown Party"
+range 1
+init 2
+dmgtype 12
+dmg 0 #262144 = Confusion
+mr
+undead
+mind
+stone
+inanimate
+
+newmonster "Clown"
+spr1 "/Terraria/clown.tga"
+hp 6
+rank 0
+mor 4
+str 4
+mr 4
+human
+slow
+aggressive
+meleeweapon 262144 "Clown Party" #Confusion
+rangedweapon 0 "Clown Bomb"
+fear 1
+localleadership 1
+money1
+
+newweapon "Death Laser"
+range 12
+dmgtype 4
+dmg 24
+init 1
+trgrank 9
+sound 16
+look 33
+flylook 33
+flysound 16
+flymode 1
+reload3
+lob
+scatter
+rangepen
+
+newweapon "Rapid Laser"
+range 12
+dmgtype 4
+dmg 4
+init 1
+trgrank 9
+sound 16
+look 72
+flylook 72
+flysound 16
+flymode 2
+lob
+scatter
+rangepen
+
+newmonster "Retinazer"
+spr1 "/Terraria/Retinazer.tga"
+spr2 "/Terraria/Retinazer2.tga"
+hp 200
+rank 1
+mor 99
+mr 10
+armor 3
+poisonres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+huge
+meleeweapon 24 "Bash"
+rangedweapon 0 "Death Laser"
+rangedweapon 0 "Rapid Laser"
+rangedweapon 0 "Rapid Laser"
+rangedweapon 0 "Rapid Laser"
+rangedweapon 0 "Rapid Laser"
+noheal
+
+newmonster "Spazmatism"
+spr1 "/Terraria/Spazmatism.tga"
+spr2 "/Terraria/Spazmatism2.tga"
+hp 200
+rank 1
+mor 99
+mr 10
+armor 3
+poisonres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+huge
+meleeweapon 24 "Flame Strike"
+meleeweapon 6 "Fiery Breath"
+meleeweapon 6 "Fiery Breath"
+meleeweapon 6 "Fiery Breath"
+noheal
+
+newweapon "Cannon"
+range 8
+dmgtype 2
+dmg 18
+init 1
+trgrank 9
+sound 16
+look 33
+flylook 33
+flysound 16
+flymode 1
+reload3
+lob
+scatter
+rangepen
+
+newmonster "Skeletron Prime"
+spr1 "/Terraria/sprime.tga"
+hp 200
+rank 1
+mor 99
+mr 10
+armor 4
+str 7
+poisonres 100
+fireres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+huge
+meleeweapon 12 "Bash"
+meleeweapon 12 "Bash"
+meleeweapon 12 "Bash"
+meleeweapon 12 "Bash"
+noheal
+
+newmonster "Prime Cannon"
+spr1 "/Terraria/primecannon.tga"
+hp 60
+rank 0
+mor 99
+mr 8
+armor 3
+str 6
+poisonres 100
+fireres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+size2x2
+meleeweapon 8 "Bash"
+rangedweapon 2 "Cannon"
+rangedweapon 2 "Cannon"
+noheal
+
+newmonster "Prime Laser"
+spr1 "/Terraria/primelaser.tga"
+hp 60
+rank 0
+mor 99
+mr 8
+armor 3
+str 6
+poisonres 100
+fireres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+size2x2
+meleeweapon 8 "Bash"
+rangedweapon "Death Laser"
+noheal
+
+newmonster "Prime Vice"
+spr1 "/Terraria/primevica.tga"
+hp 60
+rank 1
+mor 99
+mr 8
+armor 3
+str 6
+poisonres 100
+fireres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+size2x2
+battlefast
+meleeweapon 24 "Pincer"
+noheal
+
+newmonster "Prime Saw"
+spr1 "/Terraria/primesaw.tga"
+hp 60
+rank 1
+mor 99
+mr 8
+armor 3
+str 6
+poisonres 100
+fireres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+size2x2
+battlefast
+meleeweapon 0 "Broadsword"
+meleeweapon 0 "Broadsword"
+meleeweapon 0 "Broadsword"
+meleeweapon 0 "Broadsword"
+noheal
+
+newweapon "Summon Probe"
+dmgtype 18
+range 5
+init 1
+sound 57
+look 15
+nostr
+reload2
+trgrank 7
+
+newmonster "The Destroyer"
+spr1 "/Terraria/destroyer.tga"
+hp 240
+rank 1
+mor 99
+mr 10
+armor 4
+poisonres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+huge
+meleeweapon 12 "Bash"
+meleeweapon 12 "Bash"
+rangedweapon50 0 "Rapid Laser"
+rangedweapon50 0 "Rapid Laser"
+rangedweapon50 0 "Rapid Laser"
+rangedweapon50 0 "Rapid Laser"
+rangedweaponbonus 3 "Summon Probe"
+noheal
+
+newmonster "Probe"
+spr1 "/Terraria/probe.tga"
+hp 10
+rank 1
+mor 99
+mr 10
+armor 3
+poisonres 100
+unaging
+charmres
+sleepres
+slashres
+pierceres
+horror
+aggressive
+void2
+swallowres
+diseaseres
+affres 50
+flying
+meleeweapon 6 "Bash"
+rangedweapon50 0 "Rapid Laser"
+noheal
+
+newmonster "Chaos Elemental"
+spr1 "/Terraria/chaoselemental.tga"
+hp 10
+rank 1
+mor 99
+mr 8
+armor 1
+ethereal
+fireres 100
+poisonres 100
+unaging
+fast
+meleeweapon 6 "Bash"
+
+newmonster "Gastropod"
+spr1 "/Terraria/Gastropod.tga"
+hp 8
+rank 0
+mor 4
+mr 4
+armor 0
+poisonres 100
+meleeweapon 2 "Bash"
+rangedweapon 0 "Rapid Laser"
+flying
+animal
+
+newmonster "Spectral Gastropod"
+spr1 "/Terraria/sgastropod.tga"
+hp 6
+rank 0
+mor 3
+mr 3
+armor 1
+ethereal
+poisonres 100
+meleeweapon 2 "Bash"
+rangedweapon 0 "Rapid Laser"
+flying
+animal
+
+newmonster "Unicorn"
+spr1 "/Terraria/unicorn.tga"
+hp 20
+rank 1
+mor 6
+mr 6
+armor 0
+fast
+awe 1
+holy
+meleeweapon 10 "Gore"
+meleeweapon 4 "Hoof"
+animal
+
+newmonster "Pixie"
+spr1 "/Terraria/pixie.tga"
+hp 8
+rank 1
+mor 99
+mr 8
+armor 0
+fast
+animal
+meleeweapon 6 "Bash"
+charmres
+fireres 100
+poisonres 100
+unaging
+
+newweapon "Cursed Strike"
+range 1
+init 4
+dmgtype 2
+dmg 4
+an
+next
+newweapon "CURSES"
+range 1
+init 4
+dmgtype 12
+dmg 66
+mr
+
+newmonster "Cursed Skull"
+copystats "Longdead"
+spr1 "/Terraria/cursedskull.tga"
+hp 6
+clearweapons
+flying
+meleeweapon 0 "Cursed Strike"
+
+newmonster "Bone Serpent"
+copystats "Longdead"
+spr1 "/Terraria/boneserpent.tga"
+hp 50
+armor 3
+str 6
+tunnel
+fireres 100
+huge
+clearweapons
+meleeweapon 12 "Bite"
+trample 5
+ 
+newmonster "Bunny"
+copystats "Rabbit"
+spr1 "/Terraria/bunny.tga"
+
+newmonster "Corrupt Bunny"
+copystats "Bunny"
+spr1 "/Terraria/corruptbunny.tga"
+horror
+aggressive
+
+newweapon "Demon Scythe"
+range 4
+init 6
+trgrank 1
+dmgtype 7
+dmg 6
+aoe 3
+sound 18
+flysound 18
+flylook 103
+look 103
+flymode 2
+reload2
+nostr
+next
+newweapon "Demon Scythe Blind"
+dmgtype 12
+dmg 67108864
+easymr
+
+newmonster "Demon"
+spr1 "/Terraria/demon.tga"
+hp 24
+str 5
+mr 6
+mor 6
+fireres 100
+rangedweaponbonus 0 "Demon Scythe"
+
+newmonster "Fire Imp"
+spr1 "/Terraria/fireimp.tga"
+hp 5
+str 3
+mor 4
+mr 6
+fireres 100
+fireaura 1
+rank -1
+teleport
+meleeweapon 3 "Claw"
+spellweapon 3 1
+
+newmonster "Spike Ball"
+spr1 "/Terraria/spikeball.tga"
+hp 12
+armor 3
+str 6
+mor 99
+mr 4
+rank 1
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+affres 100
+poisonres 100
+stationary
+immobile
+spread 1
+deployoutside 1
+meleeambush
+stealth
+meleeweapon 10 "Great Club"
+
+newmonster "Blazing Wheel"
+spr1 "/Terraria/blazingwheel.tga"
+hp 12
+armor 1
+str 6
+mor 99
+mr 5
+rank 1
+fireaura 2
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+affres 100
+stationary
+spread 1
+deployoutside 1
+meleeambush
+stealth
+fireres 100
+poisonres 100
+meleeweapon 4 "Flame Strike"
+meleeweapon 4 "Flame Strike"
+meleeweapon 4 "Flame Strike"
+meleeweapon 4 "Flame Strike"
+battlefast
+wall
+
+newmonster "Dart Trap"
+spr1 "/Terraria/darttrap.tga"
+hp 8
+armor 3
+str 5
+mor 99
+mr 4
+rank 0
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+affres 100
+stationary
+immobile
+spread 1
+deployoutside 1
+stealth
+fireres 100
+poisonres 100
+rangedweaponbonus 1 "Poison Bow"
+
+newweapon "Cursed Hammer Strike"
+range 1
+init 2
+dmgtype 2
+dmg 4
+sweep
+next
+newweapon "CURSES"
+dmgtype 12
+dmg 66
+
+newmonster "Cursed Hammer"
+spr1 "/Terraria/cursedhammer.tga"
+hp 8
+armor 3
+str 6
+mor 99
+mr 5
+rank 1
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+deployoutside 1
+meleeambush
+stealth
+poisonres 100
+meleeweapon 10 "Cursed Hammer Strike"
+flying
+horror
+
+newweapon "Cursed Axe Strike"
+range 1
+init 2
+dmgtype 1
+dmg 4
+sweep
+next
+newweapon "CURSES"
+dmgtype 12
+dmg 66
+
+
+newmonster "Crimson Axe"
+spr1 "/Terraria/crimsonaxe.tga"
+hp 8
+armor 3
+str 6
+mor 99
+mr 5
+rank 1
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+deployoutside 1
+meleeambush
+stealth
+poisonres 100
+meleeweapon 10 "Cursed Axe Strike"
+flying
+horror
+
+newweapon "Cursed Sword Strike"
+range 1
+init 2
+dmgtype 1
+dmg 4
+sweep
+next
+newweapon "CURSES"
+dmgtype 12
+dmg 66
+
+
+newmonster "Enchanted Sword"
+spr1 "/Terraria/enchantedsword.tga"
+hp 8
+armor 3
+str 6
+mor 99
+mr 5
+rank 1
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+deployoutside 1
+meleeambush
+stealth
+poisonres 100
+meleeweapon 10 "Cursed Sword Strike"
+flying
+
+newmonster "Possessed Armor"
+spr1 "/Terraria/possessedarmor.tga"
+hp 10
+armor 3
+str 4
+mor 99
+mr 4
+rank 1
+charmres
+sleepres
+noheal
+diseaseres
+unaging
+affres 100
+poisonres 100
+fireres 100
+meleeweapon 4 "Fist"
+
+newweapon "Gangsta Tommy Gun"
+init 6
+range 6
+dmg 4
+dmgtype 2
+trgrank 1
+sound 16
+look 33
+flylook 33
+flysound 16
+flymode 1
+rangepen
+mundane
+nostr
+
+newmonster "Snowman Gangsta"
+spr1 "/Terraria/snowmangangsta.tga"
+hp 4
+str 4
+mor 3
+mr 1
+rank 0
+meleeweapon 3 "Frost Touch"
+rangedweapon 0 "Gangsta Tommy Gun"
+north1
+melt 1
+poisonres 100
+coldheal 4
+iceprot 1
+aggressive
+snow
+
+newmonster "Mister Stabby"
+spr1 "/Terraria/misterstabby.tga"
+hp 4
+str 4
+mor 3
+mr 1
+rank 1
+meleeweapon "Shortsword"
+north1
+melt 1
+poisonres 100
+coldheal 4
+iceprot 1
+battlefast
+aggressive
+snow
+
+newmonster "Snow Balla"
+spr1 "/Terraria/snowballa.tga"
+hp 4
+str 4
+mor 3
+mr 1
+rank 1
+meleeweapon 3 "Frost Touch"
+rangedweapon 2 "Throw Rock"
+north1
+melt 1
+poisonres 100
+coldheal 4
+iceprot 1
+aggressive
+snow
+
+newmonster "Giant Tortoise"
+spr1 "/Terraria/gianttortoise.tga"
+descr "This creatue fights by moving slowly towards the enemy, before somehow jumping great lengths to spin with it's shell into a formation of men, scattering them aside. It can even somehow leap over walls. Perphaps it is jealouse of the hare."
+hp 20
+str 6
+mor 6
+mr 3
+armor 2
+slow
+meleeweapon 12 "Tail Sweep"
+wall
+animal
+rank 1
+
+newmonster "Ice Tortoise"
+spr1 "/Terraria/icetortoise.tga"
+descr "This creatue fights by moving slowly towards the enemy, before somehow jumping great lengths to spin with it's shell into a formation of men, scattering them aside. It can even somehow leap over walls. Perphaps it is jealouse of the hare."
+hp 16
+str 6
+mor 6
+mr 3
+armor 1
+slow
+meleeweapon 8 "Tail Sweep"
+wall
+coldres 100
+iceprot 1
+coldaura 3
+animal
+rank 1
+snow
+
+newmonster "Snow Wolf"
+copystats "Wolf"
+spr1 "/Terraria/snowwolf.tga"
+
+newmonster "Frakenstein"
+copystats "Zombie"
+spr1 "/Terraria/frankenstein.tga"
+clearweapons
+meleeweapon 6 "Zombie Bite"
+hp 16
+
+newmonster "Swamp Zombie"
+copystats "Zombie"
+spr1 "/Terraria/swampthing.tga"
+clearweapons
+meleeweapon 4 "Claw"
+meleeweapon 4 "Claw"
+hp 16
+
+newmonster "Wall Creeper"
+copystats "Large Spider"
+spr1 "/Terraria/wallcreeper.tga"
+
+newmonster "Black Recluse"
+copystats "Giant Spider"
+spr1 "/Terraria/blackrecluse.tga"
+
+newmonster "Ice Elemental"
+spr1 "/Terraria/iceelemental.tga"
+hp 6
+str 4
+mor 99
+mr 6
+spellweapon 27 1
+north1
+snow
+rank -1
+float
+
+newmonster "Corruption Pigron"
+copystats "Boar"
+spr1 "/Terraria/corruptionpigron.tga"
+flying
+horror
+aggressive
+ethereal
+
+newmonster "Crimson Pigron"
+copystats "Boar"
+spr1 "/Terraria/crimsonpigron.tga"
+flying
+horror
+aggressive
+ethereal
+
+newmonster "Hallow Pigron"
+copystats "Boar"
+spr1 "/Terraria/hallowpigron.tga"
+flying
+ethereal
+holy
+
+newmonster "Derpling"
+spr1 "/Terraria/derpling.tga"
+descr "Some creatures are so stupid that they use hopping as a form of attack."
+hp 18
+str 5
+mor 99
+mr 3
+rank 1
+armor 1
+meleeweapon 8 "Death Hop"
+aggressive
+slow
+water
+wall
+
+newmonster "Blue Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/bluearmoredbones.tga"
+descr "This blue skeleton is of a tougher sort than most."
+armor 2
+hp 14
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 3 "Fist"
+meleeweapon 3 "Gore"
+
+newmonster "Blue Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/bluearmoredbones2.tga"
+descr "This blue skeleton is of a tougher sort than most."
+armor 1
+hp 12
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 2 "Mace"
+
+newmonster "Blue Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/bluearmoredbones3.tga"
+descr "This blue skeleton is of a tougher sort than most."
+armor 2
+hp 14
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 3 "Fist"
+meleeweapon 3 "Fist"
+
+newmonster "Blue Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/bluearmoredbones4.tga"
+descr "This blue skeleton is of a tougher sort than most."
+armor 1
+hp 12
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 2 "Broadsword"
+
+newweapon "Rusty Axe"
+shieldneg
+sound 8
+init 2
+dmgtype 1
+dmg 5
+range 1
+mundane
+next
+newweapon "Rusty Axe Bleed"
+dmgtype 12
+dmg 1
+
+newmonster "Rusty Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/rustyarmoredbones.tga"
+descr "This skeleton has never learned how to properly maintain his equipment, unlike a proper human solider."
+armor 1
+hp 12
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 0 "Rusty Axe"
+
+newweapon "Rusty Frail"
+an
+sound 9
+init 1
+dmgtype 2
+dmg 5
+range 1
+mundane
+next
+newweapon "Rusty Frail Bleed"
+dmgtype 12
+dmg 1
+
+newmonster "Rusty Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/rustyarmoredbones2.tga"
+descr "This skeleton has never learned how to properly maintain his equipment, unlike a proper human solider."
+armor 1
+hp 12
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 0 "Rusty Frail"
+
+newweapon "Rusty Sword"
+sound 8
+init 3
+dmgtype 1
+dmg 6
+range 1
+mundane
+next
+newweapon "Rusty Sword Bleed"
+dmgtype 12
+dmg 1
+
+newmonster "Rusty Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/rustyarmoredbones3.tga"
+descr "This skeleton has never learned how to properly maintain his equipment, unlike a proper human solider."
+armor 1
+hp 12
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 0 "Rusty Sword"
+
+newmonster "Rusty Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/rustyarmoredbones4.tga"
+descr "This skeleton has never learned how to properly maintain his equipment, unlike a proper human solider."
+armor 0
+hp 10
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+clearweapons
+meleeweapon 1 "Rusty Sword"
+meleeweapon 1 "Fist"
+
+newweapon "Hell Axe"
+shieldneg
+sound 8
+init 2
+dmgtype 1
+dmg 5
+range 1
+next
+newweapon "Hell Axe Fire"
+dmgtype 4
+dmg 5
+
+newmonster "Hell Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/hellarmoredbones1.tga"
+descr "This skeleton is ON FIRE!"
+armor 1
+hp 10
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+fireres 100
+clearweapons
+meleeweapon 0 "Hell Axe"
+
+newweapon "Hell Fist"
+an
+sound 8
+init 1
+dmgtype 2
+dmg 3
+range 1
+next
+newweapon "Hell Fist Fire"
+dmgtype 4
+dmg 6
+
+newmonster "Hell Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/hellarmoredbones2.tga"
+descr "This skeleton is ON FIRE!"
+armor 1
+hp 10
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+fireres 100
+clearweapons
+meleeweapon 0 "Hell Fist"
+
+newweapon "Hell Club"
+sound 8
+init 1
+dmgtype 1
+dmg 6
+range 1
+next
+newweapon "Hell Club Fire"
+dmgtype 4
+dmg 6
+
+newmonster "Hell Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/hellarmoredbones3.tga"
+descr "This skeleton is ON FIRE!"
+armor 1
+hp 10
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+fireres 100
+clearweapons
+meleeweapon 0 "Hell Club"
+
+newweapon "Hell Sword"
+sound 8
+init 3
+dmgtype 1
+dmg 4
+range 1
+next
+newweapon "Hell Sword Fire"
+dmgtype 4
+dmg 4
+
+newmonster "Hell Armored Bones"
+copystats "Longdead"
+spr1 "/Terraria/hellarmoredbones4.tga"
+descr "This skeleton is ON FIRE!"
+armor 1
+hp 10
+str 5
+mor 99
+mr 4
+slashres
+pierceres
+fireres 100
+clearweapons
+meleeweapon 0 "Hell Sword"
+
+newmonster "Ragged Caster"
+copystats "Longdead"
+spr1 "/Terraria/raggedcaster.tga"
+spr2 "/Terraria/raggedcaster2.tga"
+descr "This skeleton envies those with eyes and seeks to gouge them out with magic."
+armor 0
+hp 6
+str 4
+mor 99
+mr 6
+rank -1
+slashres
+pierceres
+teleport
+clearweapons
+meleeweapon 1 "Fist"
+spellweapon 22 2
+
+newmonster "Undead Necromancer"
+copystats "Longdead"
+spr1 "/Terraria/undeadnecro.tga"
+spr2 "/Terraria/undeadnecro2.tga"
+descr "The living are not the only one who wishes to rule the undead. So do the undead."
+armor 0
+hp 6
+str 4
+mor 99
+mr 6
+rank -1
+slashres
+pierceres
+teleport
+clearweapons
+meleeweapon 1 "Fist"
+spellweapon 8 2
+
+newmonster "Diabolist"
+copystats "Longdead"
+spr1 "/Terraria/diabolist.tga"
+spr2 "/Terraria/diabolist2.tga"
+descr "Some skeleton want to watch the world burn. This one will settle for your face melting off."
+armor 0
+hp 5
+str 3
+mor 99
+mr 10
+rank -1
+slashres
+pierceres
+teleport
+clearweapons
+meleeweapon 1 "Fist"
+spellweapon 3 3
+
+newmonster "Bone Lee"
+copystats "Longdead"
+spr1 "/Terraria/bonelee.tga"
+armor 0
+hp 20
+str 6
+mor 99
+mr 6
+rank 1
+slashres
+pierceres
+wall
+stealth
+fast
+clearweapons
+meleeweapon 4 "Fist"
+meleeweapon 4 "Fist"
+meleeweapon 4 "Fist"
+assassinweapon 4 "Fist"
+assassinweapon 4 "Fist"
+assassinweapon 4 "Fist"
+
+newmonster "Dungeon Spirit"
+copystats "Longdead"
+spr1 "/Terraria/dungeonspirit.tga"
+hp 6
+armor 0
+mor 99
+mr 6
+rank 1
+flying
+ethereal
+clearweapons
+meleeweapon 6 "Touch of the Dead"
+
+newweapon "Cursed Bolt"
+range 5
+init 2
+dmgtype 7
+dmg 6
+look 129
+flylook 129
+sound 18
+flysound 18
+flymode 2
+nostr
+next
+newweapon "MORE CURSES"
+dmgtype 12
+dmg 66
+
+newmonster "Giant Cursed Skull"
+copystats "Cursed Skull"
+spr1 "/Terraria/giantcursedskull.tga"
+size2x2
+hp 20
+armor 2
+clearweapons
+meleeweapon 12 "Cursed Strike"
+rangedweaponbonus 0 "Cursed Bolt"
+
+newweapon "Paladin Hammer"
+range 5
+init 8
+dmgtype 2
+dmg 6
+look 71
+flylook 71
+sound 18
+flysound 18
+flymode 5
+aoe 1005
+next
+newweapon "Paladin Hammer Magic"
+dmgtype 7
+dmg 6
+an
+
+newmonster "Undead Paladin"
+copystats "Longdead"
+spr1 "/Terraria/undeadpaladin.tga"
+hp 56
+armor 3
+mr 8
+str 8
+largeshield
+holy
+slow
+clearweapons
+rangedweaponbonus 0 "Paladin Hammer"
+spellweaponbonus 49 1
+
+newweapon "Sniper Rifle"
+range 20
+dmgtype 3
+dmg 20
+init 1
+trgrank 1
+sound 16
+look 33
+flylook 33
+flysound 16
+flymode 1
+reload3
+nostr
+mundane
+
+newmonster "Skeleton Sniper"
+copystats "Longdead"
+spr1 "/Terraria/skeletonsniper.tga"
+hp 8
+rank -1
+armor 1
+pierceres
+bluntres
+slashres
+clearweapons
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Sniper Rifle"
+assassinweapon 0 "Sniper Rifle"
+siegeweapon 0 "Sniper Rifle"
+
+newweapon "Shotgun"
+range 4
+dmgtype 2
+dmg 8
+init 6
+trgrank 1
+sound 16
+look 33
+flylook 33
+flysound 16
+flymode 1
+aoe 3
+nostr
+mundane
+
+newmonster "Tactical Skeleton"
+copystats "Longdead"
+spr1 "/Terraria/tacticalskeleton.tga"
+hp 24
+rank 1
+armor 3
+pierceres
+bluntres
+slashres
+clearweapons
+rangedweaponbonus 0 "Shotgun"
+
+newweapon "Rocket"
+range 12
+dmgtype 4
+dmg 8
+init 1
+trgrank 9
+sound 16
+look 95
+flylook 95
+flysound 16
+flymode 5
+reload3
+lob
+scatter
+rangepen
+aoe 9
+nostr
+
+newmonster "Skeleton Commando"
+copystats "Longdead"
+spr1 "/Terraria/skeletoncommando.tga"
+hp 18
+rank 0
+armor 2
+pierceres
+bluntres
+slashres
+clearweapons
+meleeweapon 1 "Fist"
+rangedweapon 0 "Rocket"
+siegeweapon 0 "Rocket"
+
+newmonster "Undead Hoplite"
+copystats "Longdead"
+spr1 "/Terraria/undeadhoplite.tga"
+hp 12
+armor 1
+shield
+rank 1
+frontpos
+clearweapons
+meleeweaponlong 0 "Pike"
+rangedweapon 0 "Javelin"
+
+newweapon "Wooden Shortsword"
+range 1
+init 3
+dmgtype 2
+dmg 2
+mundane
+
+newweapon "Wooden Broadsword"
+range 1
+init 2
+dmgtype 2
+dmg 3
+mundane
+
+newweapon "Wooden Hammer"
+an
+range 1
+init 1
+dmgtype 2
+dmg 1
+mundane
+
+newweapon "Wooden Axe"
+shieldneg
+range 1
+init 2
+dmgtype 2
+dmg 2
+mundane
+
+newweapon "Wooden Pickaxe"
+range 1
+init 1
+dmgtype 2
+dmg 3
+mundane
+
+newweapon "Wooden Bow"
+shieldneg
+range 4
+init 3
+dmgtype 2
+dmg 2
+flymode 2
+sound 14
+flysound 14
+look 21
+flylook 21
+mundane
+arrow
+lob
+rangepen
+
+newweapon "Wooden Boomerang"
+shieldneg
+range 3
+init 2
+dmgtype 2
+dmg 2
+flymode 2
+sound 14
+flysound 14
+look 21
+flylook 21
+mundane
+arrow
+lob
+scatter
+rangepen
+trgrank 9
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Shortsword"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor1.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Broadsword"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor2.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Axe"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor3.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Hammer"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor4.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Shortsword"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor5.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Wooden Pickaxe"
+foreststealth
+forest2
+aggressive
+tunnel
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor6.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 0
+human
+allitemslots
+meleeweapon 1 "Fist"
+rangedweapon 0 "Wooden Bow"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Wooden Armor Adventurer"
+spr1 "/Terraria/woodenarmor7.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 0
+rank 0
+human
+allitemslots
+rangedweaponbonus 0 "Wooden Boomerang"
+foreststealth
+forest2
+aggressive
+stupid
+
+newmonster "Miner"
+spr1 "/Terraria/miner.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 1
+rank -1
+human
+allitemslots
+meleeweapon 0 "Pick Axe"
+rangedweapon 2 "Bomb"
+money2
+aggressive
+limitgold 1
+limitiron 1
+tunnel
+
+newmonster "Miner"
+spr1 "/Terraria/miner2.tga"
+hp 4
+str 3
+mor 4
+mr 3
+armor 1
+rank -1
+human
+allitemslots
+meleeweapon 0 "Pick Axe"
+rangedweapon 2 "Bomb"
+stupid
+money2
+aggressive
+limitgold 1
+limitiron 1
+tunnel
+
+newmonster "Pearlwood Armor Adventurer"
+spr1 "/Terraria/pearlwood.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 0 "Shortsword"
+rangedweaponbonus 0 "Wooden Boomerang"
+stupid
+money2
+aggressive
+
+newmonster "Pearlwood Armor Adventurer"
+spr1 "/Terraria/pearlwood2.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 1
+rank 0
+human
+allitemslots
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Bow"
+stupid
+money2
+aggressive
+
+newmonster "Copper Armor Adventurer"
+spr1 "/Terraria/copper.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Shortsword"
+stupid
+money2
+aggressive
+
+newmonster "Copper Armor Adventurer"
+spr1 "/Terraria/copper2.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 0
+human
+allitemslots
+meleeweapon -1 "Dagger"
+rangedweapon -1 "Bow"
+stupid
+money2
+aggressive
+
+newmonster "Tin Armor Adventurer"
+spr1 "/Terraria/tin.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Axe"
+stupid
+money2
+aggressive
+
+newmonster "Tin Armor Adventurer"
+spr1 "/Terraria/tin2.tga"
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Pick Axe"
+stupid
+money2
+aggressive
+tunnel
+
+newmonster "Iron Armor Adventurer"
+spr1 "/Terraria/ironarmor.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 0 "Pick Axe"
+stupid
+money2
+aggressive
+tunnel
+
+newmonster "Iron Armor Adventurer"
+spr1 "/Terraria/ironarmor1.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 0 "Broadsword"
+stupid
+money2
+aggressive
+
+newmonster "Iron Armor Adventurer"
+spr1 "/Terraria/ironarmor2.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 1
+rank 0
+human
+allitemslots
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Bow"
+stupid
+money2
+aggressive
+
+newmonster "Lead Armor Adventurer"
+spr1 "/Terraria/leadarmor.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 2 "Hammer"
+stupid
+money2
+aggressive
+
+newmonster "Lead Armor Adventurer"
+spr1 "/Terraria/leadarmor1.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 0 "Axe"
+stupid
+money2
+aggressive
+
+newmonster "Silver Armor Adventurer"
+spr1 "/Terraria/silverarmor.tga"
+hp 8
+str 5
+mor 5
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 1 "Pick Axe"
+stupid
+money2
+aggressive
+tunnel
+
+newmonster "Silver Armor Adventurer"
+spr1 "/Terraria/silverarmor1.tga"
+hp 8
+str 5
+mor 5
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 3 "Hammer"
+stupid
+money2
+aggressive
+
+newmonster "Tungsten Armor Adventurer"
+spr1 "/Terraria/tungstenarmor.tga"
+hp 8
+str 5
+mor 5
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 0 "Greatsword"
+stupid
+money2
+aggressive
+
+newmonster "Tungsten Armor Adventurer"
+spr1 "/Terraria/tungstenarmor1.tga"
+hp 8
+str 5
+mor 5
+mr 4
+armor 1
+rank 0
+human
+allitemslots
+meleeweapon 0 "Broadsword"
+rangedweapon 1 "Bow"
+stupid
+money2
+aggressive
+
+newmonster "Gold Armor Adventurer"
+spr1 "/Terraria/goldarmor.tga"
+hp 12
+str 5
+mor 6
+mr 5
+armor 2
+rank 1
+human
+allitemslots
+meleeweapon 2 "Pick Axe"
+stupid
+money2
+aggressive
+tunnel
+
+newmonster "Gold Armor Adventurer"
+spr1 "/Terraria/goldarmor1.tga"
+hp 12
+str 5
+mor 6
+mr 5
+armor 2
+rank 1
+human
+allitemslots
+meleeweapon 4 "Hammer"
+stupid
+money2
+aggressive
+
+newmonster "Gold Armor Adventurer"
+spr1 "/Terraria/goldarmor2.tga"
+hp 12
+str 5
+mor 6
+mr 5
+armor 2
+rank 1
+human
+allitemslots
+meleeweapon 4 "Axe"
+stupid
+money2
+aggressive
+
+newmonster "Platinum Armor Adventurer"
+spr1 "/Terraria/platinumarmor.tga"
+hp 12
+str 5
+mor 6
+mr 5
+armor 2
+rank 1
+human
+allitemslots
+meleeweapon 2 "Greatsword"
+stupid
+money2
+aggressive
+
+newmonster "Platinum Armor Adventurer"
+spr1 "/Terraria/platinumarmor1.tga"
+hp 12
+str 5
+mor 6
+mr 5
+armor 2
+rank 0
+human
+allitemslots
+meleeweapon 2 "Broadsword"
+rangedweapon 3 "Bow"
+stupid
+money2
+aggressive
+
+newweapon "Poison Javelin"
+init 4
+dmgtype 3
+dmg 3
+mundane
+range 3
+oneshot
+lob
+flymode 1
+sound 19
+flysound 19
+next
+newweapon "Spear Poison"
+dmgtype 9
+dmg 4
+range 1
+an
+
+newmonster "Tiki Pygmy"
+spr1 "/Terraria/tiki1.tga"
+hp 3
+str 3
+mor 4
+mr 4
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Poison Spear"
+rangedweapon 0 "Poison Javelin"
+shield
+foreststealth
+forest2
+fast
+
+newmonster "Tiki Pygmy"
+spr1 "/Terraria/tiki2.tga"
+hp 3
+str 3
+mor 4
+mr 4
+armor 0
+rank 0
+human
+allitemslots
+meleeweapon 0 "Poison Spear"
+rangedweapon 0 "Poison Bow"
+shield
+foreststealth
+forest2
+fast
+
+newmonster "Tiki Pygmy"
+spr1 "/Terraria/tiki3.tga"
+hp 3
+str 3
+mor 4
+mr 4
+armor 0
+rank 0
+human
+allitemslots
+meleeweapon 0 "Poison Spear"
+rangedweapon 0 "Poison Javelin"
+shield
+foreststealth
+forest2
+fast
+
+newmonster "Tiki Pygmy"
+spr1 "/Terraria/tiki4.tga"
+hp 3
+str 3
+mor 4
+mr 4
+armor 0
+rank 1
+human
+allitemslots
+meleeweapon 0 "Poison Spear"
+rangedweapon 0 "Poison Bow"
+shield
+foreststealth
+forest2
+fast
+
+newweapon "Summon Tiki Spirit"
+dmgtype 18
+range 5
+init 1
+sound 57
+look 15
+nostr
+trgrank 7
+
+newmonster "Tiki Totem"
+spr1 "/Terraria/tikitotem.tga"
+hp 8
+str 6
+mor 99
+mr 6
+armor 2
+rank -1
+rangedweapon 3 "Summon Tiki Spirit"
+spellweaponbonus 46 1
+foreststealth
+stationary
+immobile
+noheal
+fear
+
+newmonster "Tiki Spirit"
+copystats "Shade"
+spr1 "/Terraria/tikispirit.tga"
+hp 2
+float
+passwall
+clearweapons
+meleeweapon 4 "Touch of the Dead"
+
+newmonster "Tiki Warrior"
+spr1 "/Terraria/tikiwarrior.tga"
+hp 7
+str 4
+mor 5
+mr 4
+armor 1
+rank 1
+human
+allitemslots
+meleeweapon 1 "Poison Spear"
+rangedweapon 1 "Poison Javelin"
+shield
+foreststealth
+
+newmonster "Tiki Archer"
+spr1 "/Terraria/tikiarcher.tga"
+hp 6
+str 4
+mor 5
+mr 4
+armor 1
+rank 0
+human
+allitemslots
+meleeweapon 1 "Poison Spear"
+rangedweapon 1 "Poison Bow"
+foreststealth
+
+newmonster "Tiki Dancer"
+spr1 "/Terraria/tikiarcher.tga"
+hp 5
+str 4
+mor 5
+mr 6
+armor 1
+rank -1
+human
+allitemslots
+rangedweaponbonus 1 "Summon Tiki Spirit"
+foreststealth
+
+newmonster "Lihzahrd"
+spr1 "/Terraria/lihzahrd.tga"
+hp 12
+str 4
+mor 5
+mr 4
+armor 2
+rank 1
+animal
+allitemslots
+poisonres 100
+meleeweapon 6 "Claw"
+meleeweapon 6 "Claw"
+coldblood
+fastheal
+
+newmonster "Lihzahrd Runner"
+spr1 "/Terraria/lihzahrdrunner.tga"
+hp 10
+str 4
+mor 5
+mr 4
+armor 2
+rank 1
+animal
+miscslots
+poisonres 100
+meleeweapon 6 "Claw"
+meleeweapon 4 "Bite"
+fast
+coldblood
+fastheal
+
+newmonster "Flying Snake"
+spr1 "/Terraria/flyingsnake.tga"
+hp 16
+str 6
+mor 4
+mr 2
+armor 1
+rank 1
+animal
+miscslots
+poisonres 100
+meleeweapon 8 "Venomous Bite"
+flying
+coldblood
+fastheal
+
+newmonster "Moth"
+spr1 "/Terraria/moth.tga"
+hp 32
+str 4
+mor 15
+mr 2
+armor 0
+rank 1
+animal
+miscslots
+poisonres 100
+meleeweapon 8 "Bash"
+flying
+
+#--Class and NPC Monsters
+
+newweapon "Dryad Blessing"
+init 1
+range 2
+dmgtype 13
+dmg 0 #4098 Regeneration & Armor
+sound 29
+flysound 29
+flymode 2
+look 16
+flylook 16
+onlyfriend
+trgrank 0
+aoe 997
+
+newmonster "Dryad"
+spr1 "/Terraria/Dryad.tga"
+hp 4
+str 3
+mor 4
+mr 5
+armor 0
+rank -1
+meleeweapon 3 "Fist"
+prebatweapon 4098 "Dryad Blessing"
+spellweapon 60 1
+foreststealth
+forest2
+regeneration
+gatherherbs
+mastery 1
+allitemslots
+
+newmonster "Greater Dryad"
+spr1 "/Terraria/Dryad.tga"
+hp 5
+str 3
+mor 4
+mr 6
+armor 0
+rank -1
+meleeweapon 3 "Fist"
+prebatweapon 4098 "Dryad Blessing"
+spellweapon 60 2
+foreststealth
+forest2
+regeneration
+gatherherbs
+mastery 1
+allitemslots
+
+newmonster "Elder Dryad"
+spr1 "/Terraria/Dryad.tga"
+hp 8
+str 3
+mor 4
+mr 7
+armor 0
+rank -1
+meleeweapon 3 "Fist"
+prebatweapon 4098 "Dryad Blessing"
+spellweapon 60 3
+foreststealth
+forest2
+regeneration
+gatherherbs
+mastery 1
+allitemslots
+
+newmonster "Old Man"
+spr1 "/Terraria/oldman.tga"
+descr "An old man with a terrible curse and strange powers."
+hp 3
+str 2
+mor 3
+mr 4
+armor 0
+rank -1
+meleeweapon 2 "Fist"
+spellweapon 9 1
+gatherhands
+mastery 1
+sensedead 1
+allitemslots
+human
+
+newmonster "Cursed Man"
+spr1 "/Terraria/oldman.tga"
+descr "An old man with a terrible curse and strange powers."
+hp 3
+str 2
+mor 4
+mr 5
+armor 0
+rank -1
+meleeweapon 2 "Fist"
+spellweapon 9 2
+gatherhands
+mastery 1
+sensedead 1
+allitemslots
+human
+
+newmonster "Doomed Man"
+spr1 "/Terraria/oldman.tga"
+descr "An old man with a terrible curse and strange powers."
+hp 6
+str 3
+mor 5
+mr 6
+armor 0
+rank -1
+meleeweapon 2 "Fist"
+spellweapon 9 3
+gatherhands
+mastery 1
+sensedead 1
+allitemslots
+human
+
+newmonster "Clothier"
+spr1 "/Terraria/clothier.tga"
+descr "Freed of his curse, he now runs a traveling clothing shop and ensures that you see some of the profit."
+hp 4
+str 3
+mor 5
+mr 6
+armor 1
+rank -1
+meleeweapon 2 "Fist"
+spellweapon 9 3
+leadership 1
+gold 5
+iron 5
+allitemslots
+human
+
+newmonster "Guide"
+spr1 "/Terraria/guide.tga"
+descr "The Guide is a helper of adventers, who lead them to glory, explain and helps them with crafting and let in zombie quests during the bloodmoon so the adventurs don't get lonely."
+hp 8
+str 4
+mor 6
+mr 3
+armor 0
+rank -1
+meleeweapon 1 "Fist"
+rangedweapon -1 "Bow"
+allitemslots
+human
+mastery 1
+
+newmonster "Greater Guide"
+spr1 "/Terraria/guide.tga"
+descr "The Guide is a helper of adventers, who lead them to glory, explain and helps them with crafting and let in zombie quests during the bloodmoon so the adventurs don't get lonely."
+hp 9
+str 4
+mor 6
+mr 3
+armor 0
+rank -1
+meleeweapon 1 "Fist"
+rangedweapon 0 "Bow"
+allitemslots
+human
+mastery 1
+
+newmonster "Expert Guide"
+spr1 "/Terraria/guide.tga"
+descr "The Guide is a helper of adventers, who lead them to glory, explain and helps them with crafting and let in zombie quests during the bloodmoon so the adventurs don't get lonely."
+hp 12
+str 5
+mor 8
+mr 6
+armor 1
+rank -1
+meleeweapon 1 "Shortsword"
+rangedweapon 1 "Marrow Bow"
+allitemslots
+human
+
+newmonster "Goblin Tinkerer"
+spr1 "/Terraria/goblintinkerer.tga"
+descr "The Goblin Tinkerer is a master of improving and reforging armor and gear."
+hp 6
+str 4
+mor 6
+mr 5
+armor 2
+rank -1
+meleeweapon 2 "Mace"
+spellweapon 26 1
+
+newmonster "Storekeeper"
+spr1 "/Terraria/merchant.tga"
+descr "Merchants are vital to any group of adventurs to buy supplies from and offload their loot from. Merchants are ficitious creatures however, and don't like to move anyway, and only engage in military actions as a last resorts. At least they are good at finding potential customer."
+hp 6
+str 3
+mor 5
+mr 3
+armor 1
+rank -1
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Skuriken"
+allitemslots
+human
+limitgold 10
+limitiron 10
+acutesenses
+stationary
+
+newweapon "Nurse Healing"
+init 4
+range 3
+dmgtype 13
+dmg 0 #4096 Regeneration
+sound 29
+flysound 29
+flymode 2
+look 16
+flylook 16
+reload3
+onlyfriend
+trgrank -9
+
+newmonster "Nurse"
+spr1 "/Terraria/nurse.tga"
+descr "It is always a good idea to have a nurse. They are good at healing the important members of the army. Or at least the whiny one that are screaming in pain so they don't have to be listened to anymore."
+hp 4
+str 3
+mor 5
+mr 3
+armor 0
+rank 0
+meleeweapon 1 "Fist"
+rangedweaponbonus 0 "Poison Bow"
+rangedweaponbonus 4096 "Nurse Healing"
+allitemslots
+human
+
+newweapon "Mining Charge"
+range 4
+dmgtype 4
+dmg 6
+init 4
+trgrank 9
+aoe 1
+look 68
+sound 16
+flylook 21
+flysound 16
+flymode 6
+scatter
+lob
+nostr
+reload1
+
+newmonster "Demolitionist"
+spr1 "/Terraria/demolitionist.tga"
+descr "Demonlitionists are good for opening pathways in mines, or through enemy armies."
+hp 6
+str 4
+mor 6
+mr 4
+armor 1
+rank 0
+meleeweapon 1 "Fist"
+rangedweapon 0 "Mining Charge"
+allitemslots
+human
+
+newmonster "Arms Dealer"
+spr1 "/Terraria/armsdealer.tga"
+descr "Arms Dealer specalize in the sale and use of goods related to firing hot lead out of a tube. However, given the danger of this new world known as Elysium they find themselves in, they now just hoard the guns to themselves"
+hp 10
+str 5
+mor 6
+mr 4
+armor 1
+rank -1
+meleeweapon 2 "Fist"
+rangedweapon 0 "Sniper Rifle"
+allitemslots
+human
+
+newmonster "Arms Dealer"
+spr1 "/Terraria/armsdealer.tga"
+descr "Arms Dealer specalize in the sale and use of goods related to firing hot lead out of a tube. However, given the danger of this new world known as Elysium they find themselves in, they now just hoard the guns to themselves"
+hp 10
+str 5
+mor 6
+mr 4
+armor 1
+rank 0
+meleeweapon 2 "Fist"
+rangedweapon 0 "Shotgun"
+allitemslots
+human
+
+
+newmonster "Wizard"
+spr1 "/Terraria/wizard.tga"
+descr "Wizards are surprisingly good at wizardry magic."
+hp 5
+str 3
+mor 6
+mr 6
+armor 0
+rank -1
+meleeweapon 1 "Fist"
+spellweapon 29 1
+allitemslots
+human
+
+newmonster "Wizard"
+spr1 "/Terraria/wizard.tga"
+descr "Wizards are surprisingly good at wizardry magic."
+hp 4
+str 3
+mor 6
+mr 7
+armor 0
+rank -1
+meleeweapon 1 "Fist"
+spellweapon 29 2
+allitemslots
+human
+
+newweapon "Mushroom Spear"
+init 4
+dmgtype 3
+dmg 4
+mundane
+range 1
+next
+newweapon "Mushroom Spear Poison"
+dmgtype 9
+dmg 12
+range 1
+an
+
+newmonster "Baby Truffle"
+spr1 "/Terraria/babytruffle.tga"
+descr "This innocent creature isn't very dangerous, is very self-centered and borderline stupid, it will eventually become a regular truffle given a few years. Therefore, you should send your more psychopathic soliders to kill them on sight."
+hp 1
+str 3
+mr 5
+mor 6
+armor 0
+rank -1
+meleeweapon 1 "Fist"
+spellweapon 40 1
+charmres
+sleepres
+diseaseres
+unaging
+poisonres 100
+poisonspikes 1
+gatherfungus
+sensedead 1
+allitemslots
+growtime 36
+stupid
+
+newmonster "Truffle"
+spr1 "/Terraria/truffle.tga"
+descr "This living blue mushroom man seeks to expand his mushroom kin to rule over Elysium."
+hp 8
+str 4
+mr 6
+mor 8
+armor 1
+rank -1
+meleeweaponlong 0 "Mushroom Spear"
+spellweapon 40 1
+charmres
+sleepres
+diseaseres
+unaging
+poisonres 100
+poisonspikes 1
+putridexpl 4
+gatherfungus
+sensedead 1
+allitemslots
+mastery 1
+
+newmonster "Glowing Truffle"
+spr1 "/Terraria/truffle.tga"
+descr "This living blue mushroom man seeks to expand his mushroom kin to rule over Elysium."
+hp 10
+str 4
+mr 8
+mor 8
+armor 1
+rank -1
+meleeweaponlong 0 "Mushroom Spear"
+spellweapon 40 2
+charmres
+sleepres
+diseaseres
+unaging
+poisonres 100
+poisonspikes 2
+putridexpl 6
+gatherfungus
+sensedead 1
+allitemslots
+mastery 1
+
+newmonster "Evolved Truffle"
+spr1 "/Terraria/truffle.tga"
+descr "This living blue mushroom man seeks to expand his mushroom kin to rule over Elysium."
+hp 12
+str 5
+mr 9
+mor 8
+armor 1
+rank -1
+meleeweaponlong 2 "Mushroom Spear"
+spellweapon 40 3
+charmres
+sleepres
+diseaseres
+unaging
+poisonres 100
+poisonspikes 3
+putridexpl 8
+gatherfungus
+sensedead 1
+allitemslots
+
+newweapon "Glowing Mushroom Spores"
+init 1
+range 2
+dmgtype 13
+dmg 0 #4096 Regeneration
+sound 29
+flysound 29
+flymode 2
+look 16
+flylook 16
+reload3
+onlyfriend
+trgrank -9
+
+newmonster "Glowing Mushroom"
+spr1 "/Terraria/glowingmushroom.tga"
+descr "These small tiny mushrooms serve as eyes for the Truffle clan and their spores have a mild healing effect."
+hp 1
+armor 0
+str 2
+mr 3
+mor 99
+rangedweapon 4096 "Glowing Mushroom Spores"
+foreststealth
+immobile
+stationary
+rank 0
+stealth
+fastheal
+spread 2
+poisonres 100
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Glowing Mushroom"
+spr1 "/Terraria/glowingmushroom.tga"
+descr "These small tiny mushrooms serve as eyes for the Truffle clan and their spores have a mild healing effect."
+hp 1
+armor 0
+str 2
+mr 3
+mor 99
+rangedweapon 4096 "Glowing Mushroom Spores"
+stealth
+immobile
+stationary
+rank -1
+foreststealth
+fastheal
+spread 2
+poisonres 100
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Glowing Mushroom"
+spr1 "/Terraria/glowingmushroom.tga"
+descr "These small tiny mushrooms serve as eyes for the Truffle clan and their spores have a mild healing effect."
+hp 1
+armor 0
+str 2
+mr 3
+mor 99
+rangedweapon 4096 "Glowing Mushroom Spores"
+foreststealth
+immobile
+stationary
+rank 1
+stealth
+fastheal
+spread 2
+poisonres 100
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Fungi Bulb"
+spr1 "/Terraria/fungibulb.tga"
+descr "These small fungi bulbs aren't very dangerous, but like most of the creatures from the world known as Terraria, they are highly aggressive if you step too close to them. They can attack from a surprising distrance away. It is required by most local laws to destroy them on sight, because over time, they will grow giant and become able to shoot projectiles."
+hp 4
+armor 0
+str 3
+mr 3
+mor 99
+meleeweaponlong 4 "Bash"
+immobile
+stationary
+rank 1
+stealth
+fastheal
+spread 2
+growtime 12
+poisonres 100
+charmres
+sleepres
+diseaseres
+unaging
+
+newweapon "Fungi Spore"
+init 2
+range 5
+dmgtype 10
+dmg 0
+sound 15
+flysound 15
+flymode 2
+look 60
+flylook 60
+trgrank 9
+an
+lob
+rangepen
+mundane
+
+newmonster "Giant Fungi Bulb"
+spr1 "/Terraria/giantfungibulb.tga"
+descr "These giant alien fungi are heavily aggressive, able to shoot spores over quite the distance, yet still reach out to smash with a dangerous melee attack."
+hp 16
+armor 1
+str 6
+mr 4
+mor 99
+meleeweaponlong 8 "Bash"
+rangedweaponbonus 6 "Fungi Spore"
+immobile
+stationary
+rank 0
+stealth
+fastheal
+spread 2
+poisonres 100
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Anomura Fungus"
+spr1 "/Terraria/anomurafungus.tga"
+descr "These creatures resembles a strange mix of crab and fungi, but mixed with the aggression of a boar. They are very well armored due to stealing the shell of sealife, which no good self-respecting fungus would do, as the dwarves would tell you."
+hp 12
+armor 3
+str 5
+mr 4
+mor 99
+meleeweapon 6 "Gore"
+meleeweapon 4 "Bite"
+rank 1
+stealth
+fastheal
+poisonres 100
+animal
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Wandering Anomura Fungus"
+spr1 "/Terraria/anomurafungus.tga"
+descr "These creatures resembles a strange mix of crab and fungi, but mixed with the aggression of a boar. They are very well armored due to stealing the shell of sealife, which no good self-respecting fungus would do, as the dwarves would tell you."
+hp 12
+armor 3
+str 5
+mr 4
+mor 99
+meleeweapon 6 "Gore"
+meleeweapon 4 "Bite"
+rank 1
+stealth
+fastheal
+poisonres 100
+animal
+charmres
+sleepres
+diseaseres
+unaging
+stupid
+eatdeadcap 10
+
+newmonster "Mushi Ladybug"
+spr1 "/Terraria/mushiladybug.tga"
+descr "Instead of copying something dangerous and proud like a knight, the fungus decide to copy and use the bodies of oversized ladybugs as a carrier for their spores. Regradless, these are often used to fly over the walls of towns to harrass the archers and mages while the mushrooms forces slowly build up outside the gates and strave everyone inside to death."
+hp 6
+armor 1
+str 4
+mr 4
+mor 99
+meleeweapon 4 "Bite"
+rank 1
+stealth
+fastheal
+flying
+poisonres 100
+animal
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Wandering Mushi Ladybug"
+spr1 "/Terraria/mushiladybug.tga"
+descr "Instead of copying something dangerous and proud like a knight, the fungus decide to copy and use the bodies of oversized ladybugs as a carrier for their spores. Regradless, these are often used to fly over the walls of towns to harrass the archers and mages while the mushrooms forces slowly build up outside the gates and strave everyone inside to death."
+hp 6
+armor 1
+str 4
+mr 4
+mor 99
+meleeweapon 4 "Bite"
+rank 1
+stealth
+fastheal
+flying
+poisonres 100
+animal
+charmres
+sleepres
+diseaseres
+unaging
+stupid
+eatdeadcap 10
+
+newmonster "Spore Zombie"
+copystats "Soulless"
+spr1 "/Terraria/sporezombie.tga"
+descr "Sometimes, the spores used by the mushroom clans will use a dead body as a host, effectivly making a zombie. Unlike most zombie, the spores are able to control and direct the zombie in a useful manner."
+bluntres
+clearweapons
+meleeweapon 2 "Claw"
+rangedweaponbonus 2 "Fungi Spore"
+poisonres 100
+stealth
+charmres
+sleepres
+diseaseres
+unaging
+allitemslots
+
+newmonster "Mushroom Zombie"
+copystats "Soulless"
+spr1 "/Terraria/mushroomzombie.tga"
+descr "Sometimes, the spores used by the mushroom clans will use a dead body as a host, effectivly making a zombie. Unlike most zombie, the spores are able to control and direct the zombie in a useful manner."
+bluntres
+clearweapons
+meleeweapon 4 "Foul Bite"
+poisonres 100
+stealth
+charmres
+sleepres
+diseaseres
+unaging
+allitemslots
+
+newmonster "Wandering Spore Zombie"
+copystats "Soulless"
+spr1 "/Terraria/sporezombie.tga"
+descr "Sometimes, the spores used by the mushroom clans will use a dead body as a host, effectivly making a zombie. Unlike most zombie, the spores are able to control and direct the zombie in a useful manner."
+bluntres
+clearweapons
+meleeweapon 2 "Claw"
+rangedweaponbonus 2 "Fungi Spore"
+poisonres 100
+stealth
+charmres
+sleepres
+diseaseres
+unaging
+allitemslots
+eatdeadcap 10
+stupid
+
+newmonster "Wandering Mushroom Zombie"
+copystats "Soulless"
+spr1 "/Terraria/mushroomzombie.tga"
+descr "Sometimes, the spores used by the mushroom clans will use a dead body as a host, effectivly making a zombie. Unlike most zombie, the spores are able to control and direct the zombie in a useful manner."
+bluntres
+clearweapons
+meleeweapon 4 "Foul Bite"
+poisonres 100
+stealth
+charmres
+sleepres
+diseaseres
+unaging
+allitemslots
+eatdeadcap 10
+stupid
+
+newmonster "Glowing Snail"
+spr1 "/Terraria/glowingsnail.tga"
+descr "This snail seems to have eaten a glowing mushroom and can now shoot it spores to heal others. Why it never heals the enemy by accident might incidate that snails might be far smarter than our scholars gave them credit for. Plans should be drawn to prepare for a possible snail invasion."
+hp 3
+armor 3
+str 3
+mr 4
+mor 99
+meleeweapon 2 "Bash"
+rangedweaponbonus 4096 "Glowing Mushroom Spores"
+poisonres 100
+stealth
+fastheal
+slow
+wall
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Shroomite Hero"
+spr1 "/Terraria/shroomite.tga"
+descr "Adventurers who have chosen to work for Truffle. They use a strange device called an autohammer to hammer mushroom spores into a stealth armor that allows them to attack with ranged weapons in the beginning of combat."
+hp 12
+armor 1
+mor 5
+mr 4
+str 4
+rank 0
+meleeweaponlong 1 "Mushroom Spear"
+rangedweapon 1 "Poison Bow"
+assassinweapon 1 "Poison Bow"
+invisible
+displaced 1
+poisonres 100
+allitemslots
+
+newmonster "Truffle Worm"
+copystats "Snake"
+passwall
+spr1 "/Terraria/truffleworm.tga"
+descr "It is some sort of mushroom worm. It is quite small, but can burrow small holes through walls and bite the toes off of archers."
+poisonres 100
+stealth
+fastheal
+charmres
+sleepres
+diseaseres
+unaging
+
+newmonster "Tiki Doctor"
+spr1 "/Terraria/skulldoctor.tga"
+descr "The Skull Doctor is a denizen of the jungle who uses strange and complicated voodoo magic. These require many different goods and are time-consuming, but the tiki doctor has a great array of minions at his disposal."
+hp 6
+str 3
+mor 6
+mr 6
+armor 1
+rank -1
+meleeweapon 1 "Poison Spear"
+rangedweapon 0 "Poison Bow"
+spellweaponbonus 46 1
+allitemslots
+human
+mastery 1
+gatherherbs
+gatherfungus
+gathersacr
+
+newmonster "Skull Doctor"
+spr1 "/Terraria/skulldoctor.tga"
+descr "The Skull Doctor is a denizen of the jungle who uses strange and complicated voodoo magic. These require many different goods and are time-consuming, but the tiki doctor has a great array of minions at his disposal."
+hp 7
+str 3
+mor 6
+mr 7
+armor 1
+rank -1
+meleeweapon 1 "Poison Spear"
+rangedweapon 0 "Poison Bow"
+spellweaponbonus 46 1
+spellweaponbonus 8 1
+allitemslots
+human
+mastery 1
+gatherherbs
+gatherfungus
+gathersacr
+
+newmonster "Master of Bones"
+spr1 "/Terraria/skulldoctor.tga"
+descr "The Skull Doctor is a denizen of the jungle who uses strange and complicated voodoo magic. These require many different goods and are time-consuming, but the tiki doctor has a great array of minions at his disposal."
+hp 8
+str 3
+mor 6
+mr 9
+armor 1
+rank -1
+meleeweapon 1 "Poison Spear"
+rangedweapon 0 "Poison Bow"
+spellweaponbonus 46 2
+spellweaponbonus 8 1
+spellweaponbonus 40 1
+allitemslots
+human
+gatherherbs
+gatherfungus
+gathersacr
+
+#---Rituals number
+
+newritpow #Dryad
+
+selectmonster "Dryad"
+power 0 1
+selectmonster "Greater Dryad"
+power 0 2
+selectmonster "Elder Dryad"
+power 0 3
+
+newritual	"Lesser Dryad Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		2 25
+free
+
+newritual	"Call Slimes"
+descr "Use some herbs and some mystical energy to call some slimes towards your side."
+level	        1
+summoning
+addstring       "1d4*Blue Slime"
+addstring       "1d4*Green Slime"
+addstring       "1d3*Red Slime"
+addstring       "1d2*Black Slime"
+addstring		"Yellow Slime"
+cost 2 50
+
+newritual	"Call Winter Animal"
+descr "When in the cold north, the Dryad can call upon special northen animals."
+level	        1
+terr -25
+summoning
+addstring		"2d6*Ice Bat"
+addstring		"1d6*Ice Slime"
+addstring		"2d6*Snow Wolf"
+addstring		"Ice Tortoise"
+cost 2 100
+
+newritual	"Dryad Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		2 150
+free
+
+newritual	"Call Slime Army"
+descr "Use a lot of herbs and some mystical energy to call some slimes towards your side."
+level	        2
+summoning
+addstring       "1d6+1*Blue Slime & 1d6+1*Green Slime"
+addstring		"1d6+1*Red Slime & 1d2+1*Yellow Slime"
+addstring		"1d3+1*Slimer"
+addstring		"1d4+1*Black Slime & 1d2+1*Purple Slime"
+cost 2 200
+
+newritual	"Call Rare Animal"
+descr "There are rare animals that only the Dryad knows how to call."
+level	        2
+summoning
+addstring       "Arch Wyvern"
+addstring		"3d6+3*Cave Bat"
+addstring		"2d4+2*Giant Bat"
+addstring		"2d4+2*Vulture"
+addstring		"2d3*Harpy"
+addstring		"1d3*Lycanthrope"
+addstring		"2d4+2*Giant Worm"
+cost 2 200
+
+newritual	"Call Jungle Animal"
+descr "There are animals in the jungle that the dryads knows how to bait out."
+level	        2
+terr 115
+summoning
+addstring		"4d6*Jungle Bat"
+addstring		"2d4*Giant Flying Fox"
+addstring		"3d4*Hornet"
+addstring		"1d6*Jungle Slime"
+addstring		"1d4*Spiked Jungle Slime"
+addstring		"1d3*Giant Tortoise"
+cost 2 150
+
+newritual "Regrow Forest"
+descr "Use some herbs to restore this dead forest."
+level 2
+terr 36
+alterloc 2
+cost 2 50
+free
+
+newritual "Regrow Jungle"
+descr "Use some herbs to restore this dead jungle."
+level 2
+terr 116
+alterloc 115
+cost 2 75
+free
+
+newritual	"Grand Dryad Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 		2 500
+free
+
+newritual	"Call King Slime"
+descr "Summon the Lord of Slimes. He has a nice crown. He only response when you are in an ancient forest." 
+terr 4
+level	        3
+summoning
+addstring       "King Slime"
+cost 2 500
+
+newritual	"Call the Hallow"
+descr "There are rare and powerful creatues that live in ancient forests. These hallowed creatures are legendary and require many herbs to call upon and control."
+terr 4
+level	        3
+summoning
+addstring       "3d6+3*Pixie"
+addstring       "3d6+3*Illuminant Bat"
+addstring       "3d6+3*Illuminant Slime"
+addstring       "2d6+2*Chaos Elemental"
+addstring       "2d6*Gastropod"
+addstring       "1d6*Spectral Gastropod"
+addstring       "2d6*Unicorn"
+addstring		"1d6*Hallow Pigrong"
+cost 2 500
+
+newritual "Regrow Ancient Forest"
+descr "Use some herbs to restore this dead ancient forest."
+level 3
+terr 37
+alterloc 4
+cost 2 200
+free
+
+newritual "Purify"
+descr "Seal off this gateway into taint and corruption forever! Now with added trees."
+level 3
+terr -53
+alterloc 2
+cost 2 500
+free
+
+newritpow #Cursed Man
+
+selectmonster "Old Man"
+power 0 1
+selectmonster "Cursed Man"
+power 0 2
+selectmonster "Doomed Man"
+power 0 3
+
+newritual	"Lesser Ritual of Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		5 10
+free
+
+newritual	"Craft Undead"
+descr "Take a few local corpses and animate it to have it serve you."
+level	        1
+summoning
+addstring       "3*Zombie"
+addstring		"3*Skeleton"
+cost 13 5
+
+newritual	"Conjure Undead"
+descr "Call a few friends over with your glowing hand things."
+level	        1
+summoning
+addstring       "1d4+1*Zombie & 1d4+1*Skeleton"
+cost 5 10
+
+newritual	"Call Eyes"
+descr "Use dark powers to gather a few extra eyes for your army."
+level	        1
+summoning
+addstring       "4d2*Demon Eye"
+cost 5 10
+
+newritual	"Call Slightly Smarter Eye"
+descr "Use dark powers to summon an eyeball that is slightly smarter than the average floating eyeball."
+level	        2
+summoning
+addstring       "c*Demon Eye"
+cost 5 25
+
+newritual "In the Middle of the Night"
+descr "The Old Man can take a large amount of time in an old battlefield to use his powers to take a suit of armor and bind a spirit to it, creating a possessed armor. Sometimes, the spirit fails, but joins the Old Man's forces out of boredom anyway."
+level		1
+apcost 2
+terr 19 #Old Battlefield
+cost 5 1
+cost 1 1
+summoning
+addstring	"Possessed Armor"
+addstring	"Dark Wraith"
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		5 100
+free
+
+newritual "Dungeon Sense"
+descr "Try to locate a labyrinth, the dungeons where the old man gained his terrible curse."
+level		2
+randterrloc 100
+cost 5 10
+scryloc 10
+free
+
+newritual	"Create Armored Undead"
+descr "Grab a few bones, slap some armor on them, breath a bit of dark magic and viola. Warriors!"
+level	        2
+summoning
+addstring       "1d6+2*Angry Bones"
+addstring       "1d4+2*Armored Skeleton"
+addstring		"1d4+2*Skeleton Archer"
+addstring		"1d4+2*Cursed Skull"
+addstring		"1d3+1*Undead Miner"
+addstring		"c*Dark Caster"
+addstring		"c*Rune Wizard"
+addstring		"c*Undead Enchanter"
+addstring		"2*Blue Armored Bones"
+addstring		"2*Rusty Armored Bones"
+addstring		"2*Hell Armored Bones"
+apcost 2
+cost 13 10
+cost 1 10
+
+newritual "Lesser Dungeon Army"
+descr "Raise the strage lesser undead found in the dungeons."
+level		2
+terr 100
+cost 5 25
+summoning
+addstring       "1d8+3*Angry Bones"
+addstring       "1d6+2*Armored Skeleton"
+addstring		"1d6+2*Skeleton Archer"
+addstring		"1d6+2*Cursed Skull"
+addstring		"1d4+2*Undead Miner"
+addstring		"c*Dark Caster"
+addstring		"c*Rune Wizard"
+addstring		"c*Undead Enchanter"
+
+newritual "Corrupt Temple"
+descr "Uses hands of glory at a sacred place to summon ancient armored warriors. This has a chance of corrupting and rendering the temple useless."
+level		2
+terr -18 #Temple/Pyramid
+cost 5 25
+summoning
+addstring       "3d4*Undead Hoplite"
+destroyterr 25
+
+newritual	"Create Trap"
+descr "The Dungeon that the Old Man came from has many traps, traps that he knows how to remake."
+level	        2
+summoning
+addstring       "Blazing Wheel"
+addstring       "2*Spike Ball"
+addstring		"2*Dart Trap"
+cost 1 15
+
+newritual	"Ritual of Grand Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 		5 200
+free
+
+newritual	"Release the Curse"
+level	        3
+summoning
+addstring       "c*Skeletron & 1*Skeletron Hand & 1*Skeletron Hand"
+defctrl 75
+levelup 4
+forgetrits
+cost 		5 100
+free
+
+newritual "Bloodmoon"
+descr "Corrupt an entire village and send the resulting army at a distant location. The undead created will not be under your control however."
+level		3
+reducetown
+cost 5 100
+setplayer 17
+chooseterrloc -42
+farsummon
+addstring	"6d6+6*Zombie & 6d6+6*Skeleton & 6d6+6*Demon Eye"
+
+newritual "Time to Die Again"
+descr "Ancient Warriors sometimes are also found in old battlefields. By destroying the battlefield, the Old Man can attempt to pull these greater warriors out of the ground to fight and die once more."
+level		3
+terr 19 # Old Battlefield
+cost 5 50
+alterloc 1
+summoning
+addstring	"c*Diabolist"
+addstring	"c*Undead Paladin"
+addstring	"1d3+1*Tactical Skeleton"
+addstring	"1d3+1*Skeleton Sniper"
+addstring	"1d3+1*Skeleton Commando"
+addstring	"1d3+1*Giant Cursed Skull"
+addstring	"1d3+1*Bone Lee"
+addstring	"c*Undead Necromancer"
+addstring	"c*Ragged Caster"
+addstring	"2d6+2*Rusty Armored Bones"
+addstring	"2d6+2*Hell Armored Bones"
+addstring	"2d6+2*Blue Armored Bones"
+addstring	"3d6+3*Dungeon Spirit"
+
+newritual "Greater Dungeon Army"
+descr "Raise the strage and powerful undead found in the deepest dungeons."
+level		3
+terr 100
+cost 5 75
+summoning
+addstring	"c*Diabolist"
+addstring	"c*Undead Paladin"
+addstring	"1d3+1*Tactical Skeleton"
+addstring	"1d3+1*Skeleton Sniper"
+addstring	"1d3+1*Skeleton Commando"
+addstring	"1d3+1*Giant Cursed Skull"
+addstring	"1d3+1*Bone Lee"
+addstring	"c*Undead Necromancer"
+addstring	"c*Ragged Caster"
+addstring	"2d6+2*Rusty Armored Bones"
+addstring	"2d6+2*Hell Armored Bones"
+addstring	"2d6+2*Blue Armored Bones"
+addstring	"3d6+3*Dungeon Spirit"
+
+
+newritpow #Guide
+
+selectmonster "Guide"
+power 0 1
+selectmonster "Greater Guide"
+power 0 2
+selectmonster "Expert Guide"
+power 0 3
+
+newritual "Outfit Wooden Adveturers"
+level		1
+descr "Help a group of new adventurers get outfitted in basic wooden armor."
+apcost 2
+destroyterr 40
+terr 2 #Forest
+summoning
+addstring	"4d3*Wooden Armor Adventurer"
+free
+
+newritual "Help Outfit Copper and Tin Armor Adventurers"
+level		1
+descr "Using a coal mine, the Guide can help a group of adventurers acquire starter armor."
+apcost 2
+destroyterr 20
+terr 105 #Coal Mine
+summoning
+addstring	"4d4*Copper Armor Adventurer"
+addstring	"4d4*Tin Armor Adventurer"
+addstring	"2d6*Copper Armor Adventurer & 2d3*Tin Armor Adventurer & 1d3*Miner"
+free
+
+newritual "Help Outfit Iron and Lead Armor Adventurers"
+level		1
+descr "Using an iron mine, the Guide can help a group of adventurers acquire metal armor."
+apcost 2
+destroyterr 20
+terr 14 #Iron Mine
+summoning
+addstring	"4d4*Iron Armor Adventurer"
+addstring	"3d4*Iron Armor Adventurer & 1d6*Copper Armor Adventurer"
+addstring	"4d4*Lead Armor Adventurer"
+addstring	"4d4*Lead Armor Adventurer & 1d6*Tin Armor Adventurer"
+addstring	"2d6*Iron Armor Adventurer & 2d3*Lead Armor Adventurer & 1d3*Miner"
+addstring	"1d6*Iron Armor Adventurer & 1d3*Lead Armor Adventurer & 2d4*Copper Armor Adventurer & 2d4*Tin Armor Adventurer & 1d3*Miner"
+free
+
+newritual "Help Outfit Silver and Tungsten Armor Adventurers"
+level		1
+descr "Using a silver mine, the Guide can help a group of adventurers acquire metal armor."
+apcost 2
+destroyterr 15
+terr 15 #Silver Mine
+summoning
+addstring	"4d4*Silver Armor Adventurer"
+addstring	"3d4*Silver Armor Adventurer & 1d4*Iron Armor Adventurer & 1d6*Copper Armor Adventurer"
+addstring	"4d4*Tungsten Armor Adventurer"
+addstring	"3d4*Tungsten Armor Adventurer & 1d4*Lead Armor Adventurer & 1d6*Tin Armor Adventurer"
+addstring	"2d6*Silver Armor Adventurer & 2d3*Tungsten Armor Adventurer & 1d3*Miner"
+addstring	"1d6*Silver Armor Adventurer & 1d3*Tungsten Armor Adventurer & 1d3*Miner & 1d4*Iron Armor Adventurer & 1d6*Copper Armor Adventurer & 1d4*Lead Armor Adventurer & 1d6*Tin Armor Adventurer"
+free
+
+newritual "Help Outfit Gold and Platinum Armor Adventurers"
+level		1
+descr "Using a gold mine, the Guide can help a group of adventurers acquire metal armor."
+apcost 2
+destroyterr 10
+terr 34 #Gold Mine
+summoning
+addstring	"4d4*Gold Armor Adventurer"
+addstring	"3d4*Gold Armor Adventurer & 1d4*Silver Armor Adventurer & 1d6*Iron Armor Adventurer"
+addstring	"4d4*Platinum Armor Adventurer"
+addstring	"3d4*Platinum Armor Adventurer & 1d4*Tungsten Armor Adventurer & 1d6*Lead Armor Adventurer"
+addstring	"2d6*Gold Armor Adventurer & 2d3*Platinum Armor Adventurer & 1d3*Miner"
+addstring	"1d6*Gold Armor Adventurer & 1d3*PLatinum Armor Adventurer & 1d3*Miner & 1d4*Tungsten Armor Adventurer & 1d6*Silver Armor Adventurer & 1d4*Lead Armor Adventurer & 1d6*Iron Armor Adventurer"
+free
+
+newritual "Town Service"
+level		1
+descr "The Guide is a master of attracting vital people to join to help form a town and provide special services."
+apcost 2
+terr -58
+cost 0 50
+cost 1 10
+summoning
+addstring	"Storekeeper"
+addstring	"2d3*Nurse"
+addstring	"2d3*Demolitionist"
+addstring	"1d4*Arms Dealer"
+free
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		0 100
+free
+
+newritual "Forest Raid"
+level		2
+descr "Help a group of adventurers collect wood to make basic wooden armor. Then, using the hidden pathways between ancient forests, the adventurers can attack a forest biome."
+cost 0 25
+apcost 2
+destroyterr 50
+terr 4 #Ancient Forest
+chooseterrloc -11 #Ancient Forest or Forest
+farsummon
+addstring	"5d4*Wooden Armor Adventurer & 2d6*Pearlwood Armor Adventurer"
+free
+
+newritual "Tin and Copper Raid"
+level		2
+descr "Using a coal mine, the Guide can help a group of adventurers acquire starter armor, then send them to get more for whatever projects they have for their commieblocks. The miners can travel and attack another coal mine within the month by digging and using hidden tunnels between mines."
+cost 0 50
+cost 1 15
+destroyterr 20
+terr 105 #Coal Mine
+chooseterrloc -4 #Mine
+farsummon
+addstring	"5d5*Copper Armor Adventurer"
+addstring	"5d5*Tin Armor Adventurer"
+addstring	"4d4*Copper Armor Adventurer & 4d4*Tin Armor Adventurer & 2d2*Miner"
+free
+
+newritual "Iron and Lead Raid"
+level		2
+descr "Using an iron mine, the Guide can help a group of adventurers acquire metal armor, then send them to get more for whatever projects they have for their commieblocks. The miners can travel and attack another iron mine within the month by digging and using hidden tunnels between mines."
+cost 0 60
+cost 1 20
+destroyterr 15
+terr 14 #Iron Mine
+chooseterrloc -4 #Mine
+farsummon
+addstring	"5d5*Iron Armor Adventurer"
+addstring	"3d5*Iron Armor Adventurer & 2d6*Copper Armor Adventurer"
+addstring	"5d5*Lead Armor Adventurer"
+addstring	"5d5*Lead Armor Adventurer & 2d6*Tin Armor Adventurer"
+addstring	"4d4*Iron Armor Adventurer & 4d4*Lead Armor Adventurer & 2d2*Miner"
+addstring	"3d4*Iron Armor Adventurer & 3d4*Lead Armor Adventurer & 1d2*Miner & 1d6*Copper Armor Adventurer & 1d6*Tin Armor Adventurer"
+free
+
+newritual "Silver and Tungsten Raid"
+level		2
+descr "Using a silver mine, the Guide can help a group of adventurers acquire metal armor, then send them to get more for whatever projects they have for their commieblocks. The miners can travel and attack another silver mine within the month by digging and using hidden tunnels between mines."
+cost 0 75
+cost 1 30
+destroyterr 20
+terr 15 #Silver Mine
+chooseterrloc -4 #Mine
+farsummon
+addstring	"5d5*Silver Armor Adventurer"
+addstring	"3d5*Silver Armor Adventurer & 1d6*Iron Armor Adventurer & 2d4*Copper Armor Adventurer"
+addstring	"5d5*Tungsten Armor Adventurer"
+addstring	"3d5*Tungsten Armor Adventurer & 1d6*Lead Armor Adventurer & 2d4*Tin Armor Adventurer"
+addstring	"4d4*Silver Armor Adventurer & 4d4*Tungsten Armor Adventurer & 2d2*Miner"
+addstring	"3d4*Silver Armor Adventurer & 3d4*Tungsten Armor Adventurer & 2d2*Miner & 1d6*Iron Armor Adventurer & 2d4*Copper Armor Adventurer & 1d6*Lead Armor Adventurer & 2d4*Tin Armor Adventure"
+free
+
+newritual "Gold and Platinum Raid"
+level		2
+descr "Using a gold mine, the Guide can help a group of adventurers acquire metal armor, then send them to get more for whatever projects they have for their commieblocks. The miners can travel and attack another silver mine within the month by digging and using hidden tunnels between mines."
+cost 0 100
+cost 1 50
+destroyterr 10
+terr 34 #Gold Mine
+chooseterrloc -4 #Mine
+farsummon
+addstring	"5d5*Gold Armor Adventurer"
+addstring	"3d5*Gold Armor Adventurer & 1d6*Silver Armor Adventurer & 2d4*Iron Armor Adventurer"
+addstring	"5d5*Platinum Armor Adventurer"
+addstring	"3d5*Platinum Armor Adventurer & 1d6*Tungsten Armor Adventurer & 2d4*Lead Armor Adventurer"
+addstring	"4d4*Gold Armor Adventurer & 4d4*Platinum Armor Adventurer & 2d2*Miner"
+addstring	"3d4*Gold Armor Adventurer & 3d4*Platinum Armor Adventurer & 2d2*Miner & 1d6*Silver Armor Adventurer & 2d4*Iron Armor Adventurer & 1d6*Tungsten Armor Adventurer & 2d4*Lead Armor Adventure"
+free
+
+newritual	"Ritual of Grand Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 		0 200
+free
+
+newritual "Cave Rescue"
+level		2
+descr "Rescue various people trapped deep below the caves."
+cost 0 125
+cost 1 25
+apcost 2
+destroyterr 10
+terr -4 #Mines
+summoning
+addstring "c*Goblin Tinkerer"
+addstring "c*Wizard"
+
+newritpow #Goblin Tinkerer
+
+selectmonster "Goblin Tinkerer"
+power 0 1
+
+newritual "Reforge Equipment"
+descr "The Goblin Tinkerer takes the time to improve and forge the equipment of his entire army."
+level 1
+apcost 2
+free
+bentargall 514
+
+newritpow #Truffle
+
+selectmonster "Truffle"
+power 0 1
+selectmonster "Glowing Truffle"
+power 0 2
+selectmonster "Evolved Truffle"
+power 0 3
+
+
+newritual	"Lesser Ritual of Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		3 50
+free
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		3 150
+free
+
+newritual	"Ritual of Grand Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 		3 600
+free
+
+newritual "Grow Zombies"
+level		1
+descr "Turn bodies into zombie minions, with a few added mushroom friends holding those rotting forms together."
+cost 13 5
+cost 3 25
+summoning
+addstring	"5*Mushroom Zombie"
+addstring	"5*Spore Zombie"
+
+newritual "Grow Mushroom"
+level 1
+descr "Using fungal spores, create a collection of minor mushroom to protect the area. Better results in forests and fungal forests"
+cost 3 25
+summoning
+addstring "1d4*Glowing Mushroom"
+addstring "1d2*Fungi Bulb"
+terrboost -6 #Forest/Jungle
+terrscale50 195 #Fungal Forest
+
+newritual "Rise, Mushrooms, Rise!"
+level		1
+descr "Turn a dead forest into a fungal forest."
+cost 3 50
+terr 36 #Dead Forest
+alterloc 195 #Fungal Forest
+
+newritual "Mushroom Biome"
+level		2
+descr "Convert a forest or jungle into a fungal forest."
+cost 3 150
+terr -6 #Forest/Jungle
+alterloc 195 #Fungal Forest
+
+newritual "Mushroom Horde"
+level 2
+descr "Using fungal spores, create a large collection of mushrooms minions. Better results in forests and fungal forests"
+cost 3 150
+summoning
+addstring "2d6*Glowing Mushroom & 1d4*Fungi Bulb & 1d6*Glowing Snail"
+addstring "2d6*Mushi Ladybug"
+addstring "3d6*Truffle Worm"
+addstring "1d6+1*Anomura Fungus"
+terrboost -6 #Forest/Jungle
+terrscale50 195 #Fungal Forest
+
+newritual "Jungle Brain Hijacking Spores"
+level		2
+descr "When within the jungle, the Truffle can attempt to implant spores into the native creatures take control of them via their brains. This doesn't always go right plus it requires the truffle to spend a large amount of time doing so."
+cost 3 250
+apcost 2
+terr 115 #Jungle
+summoning
+defctrl 75
+addstring	"2d6*Hornet"
+addstring	"2d6*Jungle Bat"
+addstring	"1d8*Giant Flying Fox"
+addstring	"1d4*Giant Tortoise"
+addstring	"1d4*Derpling"
+
+newritual "Mushroom Raid"
+level		3
+descr "Send out a collection of spores that gather up mushrooms in an area, then gathers up nearby mushrooms from other areas to call down a horde upon an area. Only works in and targeting fungi forests, but will make life hell for invaders."
+cost 3 300
+terr 195
+farsummon
+chooseterrloc 195
+addstring	"1d6*Mushroom Zombie & 1d6*Glowing Mushroom & 1d6*Spore Zombie & 1d6*Fungi Bulb & Fungi Bulb"
+
+newritual "Shroomite Hero"
+level		2
+descr "Make a collection of heros using shroomite bars."
+cost 3 250
+cost 1 25
+apcost 2
+terr -4 #Mine
+summoning
+addstring	"5*Shroomite Hero"
+
+newritual "Create Truffle"
+level 3
+descr "Create a new truffle to join the cause!"
+cost 3 500
+terr 195
+summoning
+addstring "c*Truffle"
+
+newritual "Mushroom Clone"
+level 3
+descr "Create a clone of the truffle that is a clone of the casting truffle."
+cost 3 500
+terr 195
+simulacrum
+
+newritual "Human Brain Hijacking Spores"
+level		3
+descr "When within a human settlement, the Truffle can spread a massive amount of spores to attempt to take control over the population. The humans sometimes resist plus the effort always reduces the town."
+cost 3 500
+apcost 2
+reducetown
+terr -14 #Human Settlement
+summoning
+defctrl 75
+addstring	"c*Captain & 3d6*Spearman & 3d6*Archer & 2d6*Crossbowman & 2d6*Swordsman"
+addstring	"c*Captain & 2d6*Pikeneer & 3d6*Longbowman & 2d6*Cavalryman"
+addstring	"2d6*Pikeneer & 2d6*Longbowman & 2d6*Cavalryman & 1d3*Ballista"
+addstring	"3d6*Spearman & 3d6*Archer & 2d6*Crossbowman & 2d6*Swordsman & 1d2*Catapult"
+addstring	"c*Merchant & 2d6*Caravan Guards & 2d6*Crossbowman & 1d4*Orge"
+
+newritpow #Skull Doctor
+
+selectmonster "Tiki Doctor"
+power 0 1
+selectmonster "Skull Doctor"
+power 0 2
+selectmonster "Master of Bones"
+power 0 3
+
+newritual	"Lesser Ritual of Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		2 50
+cost 3 50
+free
+
+newritual	"Bind Jungle Creatures"
+descr "Use a mixture of herbs and fungus to attract and bind jungle creatures to your cause."
+level	        1
+apcost 2
+terr 115 # Jungle
+summoning
+addstring       "3d6*Hornet"
+addstring       "3d6*Jungle Bat"
+addstring       "2d6*Wall Creeper"
+addstring       "2d4*Giant Flying Fox"
+addstring       "2d4*Jungle Slime"
+addstring       "2d4*Derpling"
+addstring       "2d3*Spiked Jungle Slime"
+addstring		"1d4*Moth"
+addstring		"1d3*Giant Tortoise"
+cost 2 50
+cost 3 50
+
+newritual	"Tiki Party"
+descr "Use human sacrifices to lure tiki tribals into a party before using herbs to take control of their souls and bind them to your will."
+level	        1
+apcost 2
+terr 158 #Lion Tribe Village
+summoning
+addstring       "2d6*Tiki Warrior"
+addstring       "2d6*Tiki Archer"
+addstring       "c*Tiki Dancer"
+addstring       "3d6*Tiki Pygmy"
+cost 2 50
+cost 4 15
+
+newritual	"Tiki Totem"
+descr "Herbs are used to call spirits and bind it into a totem made of woods and body parts."
+level	        1
+apcost 2
+summoning
+addstring       "Tiki Totem"
+cost 2 50
+cost 13 5
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		2 250
+cost 4 100
+free
+
+newritual	"Tiki Traps"
+descr "Using the blood of slaves and some iron to create and power dangerous jungle traps."
+level	        2
+apcost 2
+summoning
+addstring       "3*Dart Trap"
+addstring       "Jungle Mimic"
+cost 1 10
+cost 4 20
+
+newritual	"Call of the Temple"
+descr "Lihzahrd are oddly attracted to both blood and temples. A good witch doctor can abuse this to get some loyal scaly soliders into his army."
+level	        2
+terr -2
+summoning
+addstring       "3d6*Lihzahrd"
+addstring       "3d6*Lihzahrd Runner"
+addstring       "3d6*Flying Snake"
+cost 2 100
+cost 4 25
+
+newritual	"Grand Ritual of Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 3 500
+cost 4 250
+free

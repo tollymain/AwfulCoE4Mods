@@ -1,0 +1,3 @@
+How to find out terrain numbers:
+
+Press ctrl-i to get info on the current map square.

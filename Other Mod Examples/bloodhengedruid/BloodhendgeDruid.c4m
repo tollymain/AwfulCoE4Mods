@@ -1,0 +1,1238 @@
+icon "bloodhengedruid/blooddruidmod.tga"
+description "Adds the Bloodhenge Druid Class to the game"
+
+newritpow 
+newritual "Feral Feast" 
+descr "The Bloodhenge Druid performs a Feral Feast of sacrifices to turn normal animals into feral bloodthristy beasts."
+level 1 
+cost 2 25
+cost 4 10
+summoning 
+addstring       "3d3*Bloodsuckers"
+addstring       "2d3*Black Serpent"
+addstring       "1d3+1*Razortusk Boar"
+addstring       "2d3*Corpse Eater Raptor"
+addstring       "2d4*Feral Deer"
+addstring       "2d4*Feral Wolf"
+addstring       "1d4*Feral Blackbear"
+addstring       "1*Feral Blackbear & 1d4+2*Feral Wolf"
+addstring       "2*Razortusk Boar & 1d4*Corpse Eater Raptor"
+addstring       "1d3*Maneater Moose"
+terr 2
+
+newritual "Enlivin Nature" 
+descr "The Bloodhenge Druid can summon nature to protect their lands."
+level 1 
+cost 2 50
+cost 4 10
+summoning
+addstring       "1d6+2*Blood Vines"
+addstring       "1d6*Manikin"
+addstring       "1*Dark Vines"
+addstring       "1*Assassin Vines"
+addstring       "2*Myconid"
+addstring       "1*Rock Throwing Vine"
+terr 2
+
+newritual "Call Pani"
+descr "The Bloodhenge Druid can call fourth a powerful Pani, that can perform even more powerful rituals."
+level 1 
+cost 2 150
+cost 4 75
+summoning
+addstring		"c*Pan & 3d6*Maenad"
+terr 4
+
+newritual "Lesser Crossbreeding" 
+descr "The Bloodhenge Druid can crossbreed creatures together to create new strange creatures."
+level 1 
+cost 2 10
+cost 4 10
+summoning
+addstring       "1d2*Crossbreed Bearman"
+addstring       "2d6*Crossbreed Tentacle"
+addstring       "2d6*Crossbreed Deerhead"
+addstring       "1d6*Crossbreed Spider"
+addstring       "1d6*Crossbreed Worm"
+addstring       "2d6*Crossbreed Headpig"
+addstring       "1d5*Crossbreed Horsetoad"
+addstring       "1d6*Crossbreed Freak"
+addstring       "1*Serpent Lady & 1d2*Black Serpent"
+addstring       "1*Crossbreed Rat Monster & 1d2*Crossbreed Freak"
+addstring       "1*Crossbreed Bearman & 1d4*Crossbreed Tentacle & 1d4*Crossbreed Deerhead"
+
+newritual "Crossbreeding" 
+descr "The Bloodhenge Druid can crossbreed creatures together to create new strange creatures."
+level 2
+cost 2 50
+cost 4 50
+summoning
+addstring       "1d2*Crossbreed Sharkbull"
+addstring       "1d2*Crossbreed Monsterous"
+addstring       "1d2*Crossbreed Monster Worm"
+addstring       "1d2*Crossbreed Meat Monster"
+addstring       "1d4*Crossbreed Elephantman"
+addstring       "2d4+1*Crossbreed Rat Monster"
+addstring       "1d4+2*Serpent Lady"
+addstring		"c*Misshapen Hag & 2d6*Crossbreed Freak"
+
+newritual "Call Primal Beast" 
+descr "The Bloodhenge Druid can call fourth powerful Primal Beasts to fight for him."
+level 2
+cost 2 120
+cost 4 60
+summoning
+addstring       "1d2*Minotaur"
+addstring       "1d2*Dire Wolf"
+addstring       "1d6*Werewolf"
+addstring       "1d2*Giant Ape"
+addstring       "1d2*Forest Drake"
+addstring       "1d2*Ursa Warrior"
+terr 2
+
+newritual "Call of The Wild Hunt" 
+descr "The Bloodhenge Druid can call fourth Feral animals to roam the wilderness in a mad frenzie.."
+level 2
+cost 2 60
+cost 4 30
+summoning
+addstring       "c*Savage Ursa Leader & 1*Savage Ursa Warrior & 1d4*Savage Feral Blackbear"
+addstring       "c*Savage Ursa Leader & 2*Savage Werewolf & 1d6*Savage Feral Wolf"
+addstring       "c*Savage Werewolf & 3d4*Savage Feral Deer"
+addstring       "c*Savage Ursa Leader & 2d4+1*Savage Razortusk Boar"
+addstring       "c*Savage Werewolf & 2d3*Savage Black Serpent"
+addstring       "c*Savage Ursa Leader & 2d3*Savage Feral Blackbear"
+addstring       "c*Savage Ursa Leader & 2d3*Savage Maneater Moose"
+terr 2
+
+newritual "Greater Crossbreeding" 
+descr "The Bloodhenge Druid can crossbreed creatures together to create new strange creatures."
+level 3
+cost 2 200
+cost 4 200
+summoning
+addstring       "1*Crossbreed Horror"
+addstring       "1*Crossbreed Abomination"
+addstring       "2d6+1*Crossbreed Rat Monster & 2d4*Crossbreed Elephantman & 8d6*Crossbreed Freak"
+addstring       "2d6+1*Crossbreed Monster Worm"
+
+newritual "Call Ancient Primal Ones" 
+descr "The Bloodhenge Druid can call some of the most powerful primal beasts in the lands to fight for him."
+level 3
+cost 2 400
+cost 4 175
+summoning
+addstring       "1*Bear Spirit"
+addstring       "1d4*Giant Cobra"
+addstring       "1*Doom Worm"
+addstring       "1d5*Bloodhenge Wolf"
+addstring       "c*Wild Lord & 1d4+1*Maneater Moose"
+addstring       "1*Tyrannosaurus"
+terr 4
+
+newritual "Call the Lord of The Wild Hunt" 
+descr "The Bloodhenge Druid can call fourth the Lord of the Wild Hunt to hunt down his enemies and defend his lands."
+level 3
+cost 2 250
+cost 4 125
+summoning
+addstring       "c*Lord of the Wild Hunt & c*Savage Ursa Leader & 1d6+1*Savage Werewolf & 1d6+1*Savage Ursa Warrior & 5d6*Savage Feral Deer & 5d6*Savage Feral Wolf & 2d6*Savage Feral Blackbear & 3d6*Savage Razortusk Boar"
+terr 4
+
+newritual	"Lesser Ritual of Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		2 10
+cost		4 5
+free
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		2 100
+cost		4 40
+free
+
+newritual	"Ritual of Grand Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost		2 400
+cost		4 200
+free
+
+newmonster "Crossbreed Horror"
+name "Crossbreed Horror"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/allspawn1.tga"
+spr2 "./bloodhengedruid/allspawn2.tga"
+hp 160
+str 9
+mor 9
+mr 7
+armor 0
+rank 1
+meleeweapon 6 "Wave of Pus"
+meleeweapon 6 "Wave of Pus"
+spellweapon 10 3
+miscslots
+
+newmonster "Crossbreed Abomination"
+name "Crossbreed Abomination"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedabomination.tga"
+spr2 "./bloodhengedruid/crossbreedabominationa.tga"
+hp 100
+str 10
+mor 10
+mr 9
+armor 0
+rank 1
+meleeweapon 8 "Life Drain"
+meleeweapon 8 "Life Drain"
+meleeweapon 8 "Life Drain"
+spellweapon 36 2
+spellweapon 36 2
+spiritsight
+miscslots
+
+newmonster "Tyrannosaurus"
+name "Tyrannosaurus"
+descr "One of the most powerful ancient beasts in all of Elysium. The Tyrannosaurus is truely a sight to behold"
+spr1 "./bloodhengedruid/tyrannosaur.tga"
+spr2 "./bloodhengedruid/tyrannosaura.tga"
+hp 145
+str 12
+mor 11
+mr 7
+armor 1
+rank 1
+coldblood
+fear 3
+meleeweapon 30 416
+meleeweapon 14 12
+miscslots
+animal
+
+newmonster "Bear Spirit"
+name "Bear Spirit"
+descr "One of the most powerful ancient beasts in all of Elysium. The Bear Spirit lives between this world and the spirit world and is very hard to hurt without magic."
+spr1 "./bloodhengedruid/bearspirit.tga"
+spr2 "./bloodhengedruid/bearspirita.tga"
+hp 130
+str 11
+mor 12
+mr 8
+armor 0
+rank 1
+berserker
+meleeweapon 20 11
+meleeweaponbonus 14 11
+meleeweaponbonus 14 11
+spiritsight
+miscslots
+animal
+ethereal
+
+newmonster "Giant Cobra"
+name "Giant Cobra"
+descr "One of the most powerful ancient beasts in all of Elysium. The Giant Cobra's are less powerful  then other ancient beings but farm more numerous and poisonous. They also have exceptionally strong scales."
+spr1 "./bloodhengedruid/giant_serpent_1.tga"
+spr2 "./bloodhengedruid/giant_serpent_2.tga"
+hp 70
+str 9
+mor 9
+mr 7
+armor 3
+rank 1
+meleeweapon 17 41
+coldblood
+miscslots
+animal
+
+newmonster "Doom Worm"
+name "Doom Worm"
+descr "One of the most powerful ancient beasts in all of Elysium. The Doom worm sprays acid on it's victims."
+spr1 "./bloodhengedruid/greatworm1.tga"
+spr2 "./bloodhengedruid/greatworm2.tga"
+hp 150
+str 11
+mor 14
+mr 8
+armor 0
+rank 1
+meleeweapon 20 163
+rangedweaponbonus 20 "Acid Spray"
+miscslots
+animal
+
+newmonster "Bloodhenge Wolf"
+name "Bloodhenge Wolf"
+descr "One of the most powerful ancient beasts in all of Elysium. The Bloodhenge Wolf is one of the mosty terrfying beasts in all of Elysium."
+spr1 "./bloodhengedruid/BloodhengeWolf.tga"
+spr2 "./bloodhengedruid/BloodhengeWolfa.tga"
+hp 65
+str 9
+mor 9
+mr 7
+armor 0
+rank 1
+fear 1
+meleeweapon 16 11
+meleeweapon 10 12
+acutesenses
+fast
+miscslots
+animal
+
+newmonster "Wild Lord"
+name "Wild Lord"
+descr "The Wild Lord is extremely strong and is versed in powerful primal magic."
+spr1 "./bloodhengedruid/Wildlord.tga"
+spr2 "./bloodhengedruid/Wildlorda.tga"
+hp 110
+str 12
+mor 14
+mr 9
+armor 0
+rank 0
+meleeweapon 12 0
+meleeweaponbonus 12 14
+meleeweaponbonus 12 95
+spellweapon 11 3
+power 0 2
+nametype 9
+foreststealth
+gatherherbs
+gathersacr
+hideanimals
+allitemslots
+
+newmonster "Lord of the Wild Hunt"
+name "Lord of the Wild Hunt"
+descr "The Lord of the Wild hunt seeks out the greatest prey in all of Elysium."
+spr1 "./bloodhengedruid/lordofthehunt.tga"
+spr2 "./bloodhengedruid/lordofthehunta.tga"
+hp 135
+str 13
+mor 14
+mr 10
+armor 1
+rank 0
+meleeweapon 13 4
+meleeweaponbonus 13 14
+spellweapon 39 3
+spellweapon 11 3
+stupid
+nametype 9
+foreststealth
+gatherherbs
+gathersacr
+hideanimals
+unique 1
+allitemslots
+
+newmonster "Savage Ursa Leader"
+name "Savage Ursa Leader"
+descr "Ursa's live deep in the forests but can be lured out with the right sacrfice..."
+spr1 "./bloodhengedruid/Druid1.tga"
+spr2 "./bloodhengedruid/Druid1.tga"
+hp 45
+str 9
+mor 10
+mr 5
+armor 2
+rank 0
+animal
+meleeweapon 5 3
+meleeweaponbonus 5 12
+meleeweaponbonus 8 11
+stupid
+allitemslots
+
+newmonster "Savage Maneater Moose"
+name "Savage Maneater Moose"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Maneatermoose.tga"
+spr2 "./bloodhengedruid/Maneatermoosea.tga"
+hp 35
+str 6
+mor 4
+mr 3
+armor 0
+rank 1
+animal
+meleeweapon 6 11
+meleeweaponbonus 7 "Antlers"
+meleeweaponbonus 5 "Hoof"
+stupid
+miscslots
+
+newmonster "Savage Black Serpent"
+name "Savage Black Serpent"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Darkserpent.tga"
+spr2 "./bloodhengedruid/Darkserpenta.tga"
+hp 10
+str 5
+mor 5
+mr 3
+armor 0
+rank 1
+coldblood
+wall
+swamp
+foreststealth
+animal
+meleeweapon 4 42
+stupid
+miscslots
+
+newmonster "Savage Feral Deer"
+name "Savage Feral Deer"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/evildeer.tga"
+spr2 "./bloodhengedruid/evildeera.tga"
+hp 7
+str 5
+mor 3
+mr 3
+armor 0
+rank 1
+fast
+animal
+meleeweapon 3 14
+stupid
+miscslots
+
+newmonster "Savage Werewolf"
+copystats "Werewolf"
+name "Savage Werewolf"
+stupid
+
+newmonster "Savage Feral Wolf"
+name "Savage Feral Wolf"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/feralwolf.tga"
+spr2 "./bloodhengedruid/feralwolfa.tga"
+hp 5
+str 5
+mor 3
+mr 3
+armor 0
+rank 1
+fast
+animal
+meleeweapon 6 11
+stupid
+miscslots
+
+newmonster "Savage Feral Blackbear"
+name "Savage Feral Blackbear"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/blackbear.tga"
+spr2 "./bloodhengedruid/blackbeara.tga"
+hp 30
+str 7
+mor 6
+mr 3
+armor 0
+rank 1
+animal
+berserker
+meleeweapon 6 11
+meleeweaponbonus 3 12
+meleeweaponbonus 3 12
+stupid
+miscslots
+
+newmonster "Savage Razortusk Boar"
+name "Savage Razortusk Boar"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Razortuskboar.tga"
+spr2 "./bloodhengedruid/Razortuskboara.tga"
+hp 20
+str 7
+mor 5
+mr 3
+armor 0
+rank 1
+fast
+berserker
+animal
+meleeweapon 7 37
+stupid
+miscslots
+
+newmonster "Ursa Warrior"
+name "Ursa Warrior"
+descr "Ursa's live deep in the forests but can be lured out with the right sacrfice..."
+spr1 "./bloodhengedruid/Ursawarrior.tga"
+spr2 "./bloodhengedruid/Ursawarrior.tga"
+hp 40
+str 9
+mor 9
+mr 5
+armor 2
+rank 1
+animal
+meleeweapon 5 12
+meleeweaponbonus 5 12
+meleeweaponbonus 8 11
+allitemslots
+
+newmonster "Forest Drake"
+name "Forest Drake"
+descr "Although thought to be extinct the Forest Drake can be drawn out with bloody sacrfices."
+spr1 "./bloodhengedruid/forestdrakething.tga"
+spr2 "./bloodhengedruid/forestdrakethinga.tga"
+hp 35
+str 6
+mor 7
+mr 6
+armor 1
+rank 1
+coldblood
+flying
+foreststealth
+animal
+fireres 50
+meleeweapon 6 11
+rangedweaponbonus 4 84
+miscslots
+
+newmonster "Pan"
+name "Pan"
+descr "Pan's are powerful primal spellcasters and perform rituals to increase their power and to summon the most powerful beasts of the primal world."
+spr1 "./bloodhengedruid/Pan.tga"
+spr2 "./bloodhengedruid/Pana.tga"
+hp 28
+str 6
+mor 7
+mr 8
+armor 0
+rank -1
+meleeweapon 2 5
+spellweapon 11 2
+spellweapon 39 1
+power 0 2
+mastery 1
+nametype 9
+foreststealth
+gatherherbs
+gathersacr
+hideanimals
+allitemslots
+
+newmonster "Pandemoniac"
+name "Pandemoniac"
+descr "Pan's are powerful primal spellcasters and perform rituals to increase their power and to summon the most powerful beasts of the primal world."
+spr1 "./bloodhengedruid/pandemon.tga"
+spr2 "./bloodhengedruid/pandemona.tga"
+hp 33
+str 7
+mor 9
+mr 10
+armor 0
+rank -1
+meleeweapon 4 5
+spellweapon 11 3
+spellweapon 39 2
+power 0 3
+nametype 9
+foreststealth
+gatherherbs
+gathersacr
+hideanimals
+allitemslots
+
+newmonster "Giant Ape"
+name "Giant Ape"
+descr "A huge dangerous ape from the depths of the forsts."
+spr1 "./bloodhengedruid/Bigape.tga"
+spr2 "./bloodhengedruid/Bigapea.tga"
+hp 66
+str 8
+mor 6
+mr 4
+armor 0
+rank 1
+animal
+meleeweapon 5 11
+meleeweapon 8 0
+meleeweapon 8 0
+miscslots
+
+newmonster "Serpent Lady"
+name "Serpent Lady"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/MalachlabraID.tga"
+spr2 "./bloodhengedruid/MalachlabraID.tga"
+hp 12
+str 4
+mor 7
+mr 6
+armor 0
+rank 0
+poisonres 100
+coldblood
+meleeweapon 4 0
+meleeweaponbonus 5 39
+meleeweaponbonus 5 39
+spellweapon 21 1
+nametype 35
+weaponslots
+
+newmonster "Misshapen Hag"
+name "Misshapen Hag"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/misshapenhag.tga"
+spr2 "./bloodhengedruid/misshapenhaga.tga"
+hp 14
+str 4
+mor 7
+mr 8
+armor 0
+rank -1
+meleeweapon 4 12
+meleeweapon 4 12
+spellweapon 10 2
+nametype 35
+miscslots
+
+newmonster "Crossbreed Sharkbull"
+name "Crossbreed Sharkbull"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/bullshark.tga"
+spr2 "./bloodhengedruid/bullsharka.tga"
+hp 85
+str 7
+mor 8
+mr 6
+armor 0
+rank 1
+meleeweapon 22 416
+meleeweapon 8 95
+miscslots
+
+newmonster "Crossbreed Rat Monster"
+name "Crossbreed Rat Monster"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedratmonster.tga"
+spr2 "./bloodhengedruid/crossbreedratmonster.tga"
+hp 40
+str 7
+mor 4
+mr 4
+armor 1
+rank 1
+meleeweapon 8 11
+meleeweapon 6 12
+meleeweapon 6 12
+miscslots
+
+newmonster "Crossbreed Elephantman"
+name "Crossbreed Elephantman"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/elephantman.tga"
+spr2 "./bloodhengedruid/elephantmana.tga"
+hp 64
+str 7
+mor 7
+mr 5
+armor 2
+rank 1
+meleeweapon 9 25
+meleeweaponbonus 6 37
+weaponslots
+
+newmonster "Crossbreed Meat Monster"
+name "Crossbreed Meat Monster"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/meatfactoryMonstrosity1.tga"
+spr2 "./bloodhengedruid/meatfactoryMonstrosity2.tga"
+hp 125
+str 8
+mor 8
+mr 2
+armor 0
+rank 1
+pierceres
+meleeweapon 14 12
+meleeweapon 14 44
+miscslots
+
+newmonster "Crossbreed Monsterous"
+name "Crossbreed Monsterous"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedmonsterous.tga"
+spr2 "./bloodhengedruid/crossbreedmonsterousa.tga"
+hp 95
+str 8
+mor 7
+mr 5
+armor 1
+rank 1
+meleeweapon 8 0
+meleeweapon 6 44
+meleeweapon 8 143
+meleeweapon 6 11
+rangedweaponbonus 6 83
+miscslots
+
+newmonster "Crossbreed Monster Worm"
+name "Crossbreed Monster Worm"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedmonsterworm.tga"
+spr2 "./bloodhengedruid/crossbreedmonsterworma.tga"
+hp 80
+str 7
+mor 7
+mr 5
+armor 1
+rank 1
+bluntres
+wall
+meleeweapon 4 11
+meleeweapon 4 44
+meleeweapon 4 44
+meleeweapon 4 44
+meleeweapon 4 44
+meleeweapon 4 44
+meleeweapon 4 44
+miscslots
+
+newmonster "Crossbreed Horsetoad"
+name "Crossbreed Horsetoad"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedhorsetoad.tga"
+spr2 "./bloodhengedruid/crossbreedhorsetoada.tga"
+hp 16
+str 4
+mor 4
+mr 3
+armor 0
+rank 0
+meleeweapon 4 95
+rangedweapon 6 46
+
+newmonster "Crossbreed Headpig"
+name "Crossbreed Headpig"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedheadpig.tga"
+spr2 "./bloodhengedruid/crossbreedheadpiga.tga"
+hp 16
+str 5
+mor 2
+mr 2
+armor 0
+rank 1
+meleeweapon 3 95
+
+newmonster "Crossbreed Worm"
+name "Crossbreed Worm"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/psydemon1.tga"
+spr2 "./bloodhengedruid/psydemon2.tga"
+hp 14
+str 5
+mor 6
+mr 4
+armor 0
+rank 1
+bluntres
+meleeweapon 2 0
+meleeweaponbonus 5 39
+weaponslots
+
+newmonster "Crossbreed Spider"
+name "Crossbreed Spider"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedspider.tga"
+spr2 "./bloodhengedruid/crossbreedspidera.tga"
+hp 18
+str 5
+mor 6
+mr 4
+armor 0
+rank 1
+wall
+meleeweapon 4 0
+meleeweaponbonus 0 "Web"
+weaponslots
+
+newmonster "Crossbreed Bearman"
+name "Crossbreed Bearman"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/bearman.tga"
+spr2 "./bloodhengedruid/bearmana.tga"
+hp 29
+str 7
+mor 6
+mr 4
+armor 0
+rank 1
+meleeweapon 6 11
+meleeweapon 4 12
+miscslots
+
+newmonster "Crossbreed Freak"
+name "Crossbreed Freak"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/crossbreedfreak.tga"
+spr2 "./bloodhengedruid/crossbreedfreaka.tga"
+hp 8
+str 4
+mor 3
+mr 3
+armor 0
+rank 1
+water
+meleeweapon 2 11
+meleeweapon 2 44
+meleeweapon 4 51
+miscslots
+
+newmonster "Crossbreed Tentacle"
+name "Crossbreed Tentacle"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/mutant.tga"
+spr2 "./bloodhengedruid/mutanta.tga"
+hp 6
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+bluntres
+meleeweapon 2 44
+meleeweapon 2 44
+allitemslots
+
+newmonster "Crossbreed Deerhead"
+name "Crossbreed Deerhead"
+descr "The Bloodhenge druid can create horrible crossbreeds between humans, animals, monsters and plants, this is one of them."
+spr1 "./bloodhengedruid/mutantdeerhead.tga"
+spr2 "./bloodhengedruid/mutantdeerheada.tga"
+hp 7
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+fast
+meleeweapon 5 14
+allitemslots
+
+
+newmonster "Dark Vines"
+name "Dark Vines"
+descr "Vines soaked in blood to bring them to life in a terrible blood ritual."
+spr1 "./bloodhengedruid/darkvines.tga"
+spr2 "./bloodhengedruid/darkvinesa.tga"
+hp 50
+str 7
+mor 99
+mr 5
+armor 0
+rank 1
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+slow
+meleeweapon 7 44
+meleeweapon 7 44
+meleeweapon 7 44
+miscslots
+
+
+newmonster "Manikin"
+name "Manikin"
+descr "Manikins are skeletons animated by vicious vines."
+spr1 "./bloodhengedruid/Manikin.tga"
+spr2 "./bloodhengedruid/Manikin.tga"
+hp 11
+str 4
+mor 99
+mr 2
+armor 0
+rank 1
+coldres 100
+pierceres
+poisonres 100
+sleepres
+charmres
+foreststealth
+meleeweapon 4 0
+rangedweapon 4 "Tangle Vines"
+miscslots
+
+newmonster "Myconid"
+name "Myconid"
+descr "Some mushrooms when they absorb enough blood and bodies become beyond sentient and attain mind powers."
+spr1 "./bloodhengedruid/MyconidLarge.tga"
+spr2 "./bloodhengedruid/MyconidLargea.tga"
+hp 13
+str 5
+mor 10
+mr 6
+armor 0
+rank 0
+slow
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+meleeweapon 1 4
+rangedweapon 3 306
+allitemslots
+
+newmonster "Blood Vines"
+name "Blood Vines"
+descr "Vines soaked in blood to bring them to life in a terrible blood ritual."
+spr1 "./bloodhengedruid/Bloodvines.tga"
+spr2 "./bloodhengedruid/Bloodvinesa.tga"
+hp 11
+str 5
+mor 99
+mr 4
+armor 0
+rank 1
+wall
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+meleeweapon 4 44
+meleeweapon 4 44
+miscslots
+
+newmonster "Dark Vines"
+name "Dark Vines"
+descr "Vines soaked in blood to bring them to life in a terrible blood ritual."
+spr1 "./bloodhengedruid/darkvines.tga"
+spr2 "./bloodhengedruid/darkvinesa.tga"
+hp 50
+str 7
+mor 99
+mr 5
+armor 0
+rank 1
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+slow
+meleeweapon 7 44
+meleeweapon 7 44
+meleeweapon 7 44
+miscslots
+
+newmonster "Rock Throwing Vine"
+name "Rock Throwing Vine"
+descr "A huge aniated vine knows only throwing rocks."
+spr1 "./bloodhengedruid/rochthrowvine.tga"
+spr2 "./bloodhengedruid/rochthrowvinea.tga"
+hp 26
+str 10
+mor 99
+mr 5
+armor 0
+rank 0
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+slow
+meleeweapon 10 44
+rangedweapon 20 305
+siegeweapon 20 237
+miscslots
+
+newmonster "Assassin Vines"
+name "Assassin Vines"
+descr "Vines soaked in blood to bring them to life in a terrible blood ritual."
+spr1 "./bloodhengedruid/assassinvinething.tga"
+spr2 "./bloodhengedruid/assassinvinethinga.tga"
+hp 35
+str 5
+mor 99
+mr 5
+armor 0
+rank 1
+fireres -50
+bluntres
+pierceres
+poisonres 75
+sleepres
+foreststealth
+slow
+rearpos
+meleeweaponlong	0 22
+meleeweaponlong 0 22
+meleeweaponlong 0 22
+assassinweapon 5 143
+miscslots
+
+newmonster "Bloodsuckers"
+name "Bloodsuckers"
+descr "Small Bloodsucking insects."
+spr1 "./bloodhengedruid/Bloodsuckers.tga"
+spr2 "./bloodhengedruid/Bloodsuckersa.tga"
+hp 3
+str 3
+mor 99
+mr 6
+armor 2
+rank 1
+animal
+meleeweapon 1 "Life Drain"
+meleeweaponbonus 1 "Life Drain"
+miscslots
+
+newmonster "Black Serpent"
+name "Black Serpent"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Darkserpent.tga"
+spr2 "./bloodhengedruid/Darkserpenta.tga"
+hp 10
+str 5
+mor 5
+mr 3
+armor 0
+rank 1
+coldblood
+wall
+swamp
+foreststealth
+animal
+meleeweapon 4 42
+miscslots
+
+newmonster "Razortusk Boar"
+name "Razortusk Boar"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Razortuskboar.tga"
+spr2 "./bloodhengedruid/Razortuskboara.tga"
+hp 20
+str 7
+mor 5
+mr 3
+armor 0
+rank 1
+fast
+berserker
+animal
+meleeweapon 7 37
+miscslots
+
+newmonster "Corpse Eater Raptor"
+name "Corpse Eater Raptor"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/corpseeater.tga"
+spr2 "./bloodhengedruid/corpseeatera.tga"
+hp 8
+str 4
+mor 3
+mr 3
+armor 0
+rank 1
+rearpos
+flying
+eatdead 30
+animal
+acutesenses
+meleeweapon 2 93
+meleeweaponbonus 2 94
+miscslots
+
+newmonster "Feral Deer"
+name "Feral Deer"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/evildeer.tga"
+spr2 "./bloodhengedruid/evildeera.tga"
+hp 7
+str 5
+mor 3
+mr 3
+armor 0
+rank 1
+fast
+animal
+meleeweapon 3 14
+miscslots
+
+newmonster "Feral Wolf"
+name "Feral Wolf"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/feralwolf.tga"
+spr2 "./bloodhengedruid/feralwolfa.tga"
+hp 5
+str 5
+mor 3
+mr 3
+armor 0
+rank 1
+fast
+animal
+meleeweapon 6 11
+miscslots
+
+newmonster "Maneater Moose"
+name "Maneater Moose"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/Maneatermoose.tga"
+spr2 "./bloodhengedruid/Maneatermoosea.tga"
+hp 35
+str 6
+mor 4
+mr 3
+armor 0
+rank 1
+animal
+meleeweapon 6 11
+meleeweaponbonus 7 "Antlers"
+meleeweaponbonus 5 "Hoof"
+miscslots
+
+newmonster "Feral Blackbear"
+name "Feral Blackbear"
+descr "An animal created from a blood ritual, they are now feral, are extremely agressive, hard to tame and effect with magic and eat human flesh."
+spr1 "./bloodhengedruid/blackbear.tga"
+spr2 "./bloodhengedruid/blackbeara.tga"
+hp 30
+str 7
+mor 6
+mr 3
+armor 0
+rank 1
+animal
+berserker
+meleeweapon 6 11
+meleeweaponbonus 3 12
+meleeweaponbonus 3 12
+miscslots
+
+newmonster "Satyr Shieldbearer"
+name "Satyr Shieldbearer"
+descr "Satyrs from the bloodhenge are numerous but weaker then other Satyrs. They often partake in great revelry and blood rituals."
+spr1 "./bloodhengedruid/satyrshield.tga"
+spr2 "./bloodhengedruid/satyrshielda.tga"
+hp 7
+str 4
+mor 3
+mr 4
+armor 0
+rank 1
+foreststealth
+meleeweapon 0 4
+allitemslots
+shield
+
+newmonster "Satyr Javlineer"
+name "Satyr Javlineer"
+descr "Satyrs from the bloodhenge are numerous but weaker then other Satyrs. They often partake in great revelry and blood rituals."
+spr1 "./bloodhengedruid/satyrjav.tga"
+spr2 "./bloodhengedruid/satyrjava.tga"
+hp 7
+str 4
+mor 3
+mr 4
+armor 0
+rank 1
+foreststealth
+meleeweapon 0 4
+rangedweapon 0 24
+allitemslots
+
+newmonster "Centaur Warrior"
+name "Centaur Warrior"
+descr "Powerful horseman."
+spr1 "./bloodhengedruid/centaurwar.tga"
+spr2 "./bloodhengedruid/centaurwara.tga"
+hp 14
+str 5
+mor 5
+mr 4
+armor 1
+rank 1
+foreststealth
+meleeweapon 2 4
+meleeweaponbonus 4 95
+weaponslots
+shield
+
+newmonster "Centaur Archer"
+name "Centaur Archer"
+descr "Althrough very strong Centaurs usually prefer to use a bow."
+spr1 "./bloodhengedruid/centaur.tga"
+spr2 "./bloodhengedruid/centaura.tga"
+hp 12
+str 5
+mor 5
+mr 4
+armor 0
+rank 0
+foreststealth
+meleeweapon 4 95
+rangedweapon 1 28
+weaponslots
+
+newmonster "Bloodhenge Druid"
+name "Bloodhenge Druid"
+descr "Bloodhenge Druids attempt to unravel the primal powers of nature through use of herbs and blood sacrfices but they are not the true weilders of this power."
+spr1 "./bloodhengedruid/bloodhengedruid.tga"
+spr2 "./bloodhengedruid/bloodhengedruida.tga"
+hp 5
+mr 6
+str 3
+armor 0
+mor 5
+rank -1
+meleeweapon 0 "Dagger"
+spellweapon 11 1
+spellweapon 39 1
+power 0 1
+human
+nametype 9
+foreststealth
+gatherherbs
+gathersacr
+hideanimals
+
+newclass
+setclassname "Bloodhenge Druid"
+classdescr "The Bloodhenge druid can harness the primal powers that lurk deep in the dark woods of Elysium, they use Herbs and Blood sacrfices to unlesh these ancient powers."
+clearrec
+addunitrec "Satyr Javlineer" 100 5 50 0 0
+addunitrec "Satyr Shieldbearer" 100 5 50 0 0
+addunitrec "Centaur Warrior" 100 3 60 0 5
+addunitrec "Centaur Archer" 100 3 65 0 0
+addcomrec "Bloodhenge Druid" 5 1 70 0 0
+templerec
+templebonusdescr "Temples will increase the chance of recruiting a Bloodhenge Druid."
+nostdtroops
+clearstartunits
+addstartunits "Satyr Javlineer" 8
+addstartunits "Satyr Shieldbearer" 8
+setmaincom "Bloodhenge Druid"
+addstartcom "Bloodhenge Druid"
+hometerr 28
+addstartterr 18

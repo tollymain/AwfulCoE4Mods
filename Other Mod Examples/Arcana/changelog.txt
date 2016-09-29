@@ -1,0 +1,26 @@
+
+CHANGELOG v2.0
+
+-Recruitment costs no longer variable. All properly defined.
+
+-Rituals added. (See readme for details on each)
+
+-Mastery rituals rebate rate lowered from 50% to 20% when in lvl 3 libraries only.
+
+-"Fabricate Engines" of War now spawns less overall but more reliably. Cost also increased/rebate rate lowered.
+
+-"Tear the Aether" now costs gold in addition to existing ap cost. Has rebate for being cast in libraries.
+
+-Entropy Magus buffed. Given new weapon: precombat fieldwide debuff. Given Planeshift ability. Vengeance increased (1->2). Armor taken away in place for ethereal.
+
+-Lord Alchemist no longer has flat gold bonus. Now has up to flat 2/month gold and iron bonus up to max produced by current terrain. Retains old mine-based 200% bonus, but added same thing for iron.
+
+-Lord Alchemist no longer generates rare items.
+
+-7 new units. All are created through the use of the "Mage" unit. Rituals either convert or "exchange" the units for their counterpart. All have custom attacks of some kind.
+
+-Balanced morale score in all units.
+
+-Balanced War Mage armor (5->3). Increased iron cost for War Mage recruitment branch.
+
+-Fixed unit rank values (where they stand). Removed the accursed battleslow ability from any unit that had it. (Archmagi still offset bc of "teleport")

@@ -1,0 +1,671 @@
+Here is a list of all modding commands in CoE4.
+   Basic info
+-----------------
+icon		"image.tga"
+description 	"text"
+modprio         <1-9> 
+(changes mod load order, 1=first, 5=default, 9=last) 
+
+
+   Monster
+-----------------
+selectmonster	"monster name" [<offset>]
+newmonster	"monster name"
+copystats	"monster name"
+name		"monster name"
+spr1		"image.tga"
+spr2		"image.tga"
+descr           "text"
+copyspr  	"monster name"
+hp		<nbr>
+mr		<nbr>
+str		<nbr>
+armor		<nbr>
+mor		<nbr>
+rank		<nbr>
+clearspec	
+clearmove
+power		<pow nbr>
+startitem	"item name"
+clearweapons	
+meleeweapon		<dmg> "weapon"
+meleeweaponspec         <dmg> "weapon"
+meleeweaponbonus	<dmg> "weapon"
+meleeweaponlong		<dmg> "weapon"
+rangedweapon		<dmg> "weapon"
+rangedweaponbonus	<dmg> "weapon"
+rangedweapon25		<dmg> "weapon"
+rangedweapon50		<dmg> "weapon"
+spellweapon		<path> <level>
+spellweaponbonus	<path> <level>
+spellweapon50		<path> <level>
+spellweaponsingle	<path> <level>
+siegeweapon		<dmg> "weapon"
+assassinweapon		<dmg> "weapon"
+prebatweapon		<dmg> "weapon"
+lucky
+fireres
+coldres
+poisonres
+shockres
+diseaseres
+human
+undead
+animal
+inanimate
+holy
+immortal
+acutesenses
+spiritsight
+badsight
+stealth
+foreststealth
+invisible
+sleepres
+charmres
+bluntres
+slashres
+pierceres
+ethereal
+shield
+largeshield
+noheal
+fear
+berserker
+fastheal
+noleader
+regeneration
+rearpos
+allitemslots
+weaponslots
+noslots
+nobootslots
+miscslots
+nonmaginvul
+swallowres
+banishsurv
+size1x1
+size2x2
+unaging
+coldblood
+snowstealthy
+clumsy
+nozoc
+unimportant
+frontpos
+growhp		<nbr>
+shrinkhp	<nbr>
+firstshape	<nbr>
+secondshape	<nbr>
+classcost	<nbr>
+leadership	<nbr>
+localleadership	<nbr>
+burnforest	<nbr>
+randomitem	<percent>	
+randomweapon	<percent>
+randommisc	<percent>
+randomrare	<percent>
+indepitem	<percent>
+awe		<nbr>
+slavehunt	<nbr>
+armytrainer	<nbr>
+lookslike	<nbr>
+poisonexpl	<nbr>
+fireexpl	<nbr>
+shardexpl	<nbr>
+motherspawn	<nbr>
+more1spells	<nbr>
+more2spells	<nbr>
+more3spells	<nbr>
+eatvillage	<nbr>
+nametype	<nbr>
+unique		<nbr>
+loner		<nbr>
+gold		<nbr>
+iron		<nbr>
+trade		<nbr>
+fireaura	<nbr>
+coldaura	<nbr>
+shockaura	<nbr>
+poisonspikes	<nbr>
+aihold		<nbr>
+eatdead		<nbr>
+eatdeadcap	<nbr>
+scry		<nbr>
+scrycost	<nbr>
+immortalap	<nbr>
+digest		<nbr>
+incorporate	<nbr>
+hpoverflow	<nbr>
+spawnmon	<nbr>
+absorbdead	<nbr>
+airshield	<nbr>
+extraeyes	<nbr>
+look		<nbr>
+vengeance	<nbr>
+montag		<nbr>
+ctrlchance	<nbr>
+gatherherbs	
+gatherfungus	
+gathersacr	
+gatherhands	
+gatherweed
+gathergems
+gatherrelics
+mastery		<nbr>
+flying
+huge
+immobile
+slow
+fast
+swamp
+water
+float
+mountain
+noland
+wateronly
+swamp1
+swamp2
+desert1
+desert2
+deadforest1
+deadforest2
+mountain1
+mountain2
+jungle1
+jungle2
+money1
+money2
+horror
+forest1
+forest2
+stupid
+temple1
+temple2
+coastal
+loner
+south1
+south2
+passwall
+battlefast
+wall
+stationary
+winteridle
+snow
+nonruin1
+teleport
+battleslow
+aggressive
+tunnel
+north1
+gates1
+void2
+saner <value>
+  (regains this amount of sanity per month)
+sensedead <value>
+  (can sense the number of corpses (of all types) in a square)
+reformloc <value>
+  (respawn terrain for immortals (-1 = anywhere, 1000=home))
+hideanimals <value>
+  (animals following this commander gains forest stealth)
+mirror <value>
+  (1=is small mirror, 2=is large mirror, 3=silver, 4=gold)
+revertmirror <value>
+  (revert to mirror when empty. 1=small mirror, 2=large mirror, 3=silver, 4=gold)
+phantasm <value>
+  (1=phantasmal warrior, 2=phantasmal animal, etc.)
+releasephant <value>
+  (mirror releases this type of phantasms (has phantasm = value))
+releaserate <value>
+  (bonus to the number of phantasms released)
+troll
+  (is a troll)
+noplanecamo <value>
+  (does not use fx_lookslike when in plane = value)
+homeplane <value>
+  (will return to this plane if slain outside it and be indep controlled again)
+allrit <value>
+  (knows all rituals of this type e.g. fx_necropow, -1=all powers)
+displaced <value>
+  (25% chance of missing per rank away from target)
+riverdmg <value>
+  (takes an value damage when passing a river)
+iceprot <value>
+  (+value armor in cold climate)
+melt <value>
+  (takes value dmg per month when not cold)
+voidsanity <value>
+  (reduces insanity gains (like armor))
+planeshift <value>
+  (can go to/from other plane, 1=hades, 2=inferno)
+aipowcom1 <value>
+  (unit wants to be led by com with this power at level 1+)
+aipowcom2 <value>
+  (unit wants to be led by com with this power at level 2+)
+aipowcom3 <value>
+  (unit wants to be led by com with this power at level 3+)
+releasespell <value>
+  (making an attack drains one mirror charge (fx_mirror))
+fear <value>
+  (causes fear: 1=fear, 2=dread, 3=terror)
+goldcarrier <value>
+  (spoils of war when defeating this monster)
+ironcarrier <value>
+  (spoils of war when defeating this monster)
+rebate <value>
+  (give rebate on rituals with fx_rebatefx??)
+makeruin <value>
+  (value = chance of turning current square into a ruin if possible)
+meleeambush <value>
+  (Will start in melee combat when ambushing)
+blesspierce <value>
+  (Just like res_pierce but only for bless effects)
+poisoncloud <value>
+  (spreads poison cloud, value = radius + 1)
+mirrorammo <value>
+  (default number of images for this type of mirror (def 20))
+affres <value>
+  (value = chance of not receiving battle affliction)
+wander <value>
+  (1=random & peaceful, 2=crusade, 3=inquisition/saint, 4=rider, 5=angel, 6=devil, 7=ghost, 8=settlements)
+infwander <value>
+  (only wander if owned by INFPLAYER)
+hadeswander <value>
+  (only wander if owned by DEATHPLAYER)
+maxsinners <value>
+  (Will gather sinners when owned by INFPLAYER (value=amount before returning))
+forestheart <value>
+  (takes control of nearby forests)
+spread <value>
+  (unit will position itself spread out among the other troops)
+seduceaura <value>
+  (attacker within this range might get seduced instead)
+fireres <value>
+  (fire resistance)
+coldres <value>
+  (cold resistance)
+shockres <value>
+  (shock resistance)
+poisonres <value>
+  (poison resistance)
+coldheal <value>
+  (heals value hp/month when it's cold)
+growtime <value>
+  (will grow into next monster after about value turns)
+growoffs <value>
+  (to become other than next monster)
+localironbonus <value>
+  (att% bonus to iron income in this square (only works in mines))
+localgoldbonus <value>
+  (att% bonus to gold income in this square (only works in mines))
+neverturn <value>
+  (never draw facing the other way)
+aigoldrally <value>
+  (Hint that AI should go to recruitment loc when having lots of gold)
+thrallhunt <value>
+  (can create thralls (vampire))
+ainofollower
+  (AI hint to always use this commander as a leader (not a subcommander))
+putridexpl <value>
+  (Putrefy cloud upon death (value magic dmg + disease(mr)))
+aimaxshop <value>
+  (ai won't buy more than this amount at the same place)
+maxsum <value>
+  (the maximum amount that can be summoned in a single battle)
+farsight <value>
+  (can see further)
+changetemp <value>
+  (makes square value degrees hotter)
+setcreator <value>
+  (get a fx_createdby ufx when created)
+statue <value>
+  (get name from creator)
+minorstartaff <value>
+  (value = chance)
+landshape <value>
+  (will take shape +value when on land)
+watershape <value>
+  (will take shape +value when in the sea)
+likestoburn <value>
+  (value% chance of wanting to burn a forest (wandering indep coms only))
+reanimate <value>
+  (reanimates automatically if possible, value = max amount / month)
+spawnmon <value>
+  (Spawns next monster. value/100 = monsters per turn)
+spawnoffs <value>
+  (To spawn something other than the next monster)
+spawnmonaway <value>
+  (Spawns next monster, but not on homeplane. value/100 = monsters per turn)
+spellrange <value>
+  (value = +range for battle spells)
+spawn1d6mon <value>
+  (Spawns 1d6 of next monster. value = chance)
+spawn2d6mon <value>
+  (Spawns 2d6 of next monster. value = chance)
+diseasecloud <value>
+  (spreads disease cloud, value = radius + 1)
+mindexpl <value>
+  (value = 1)
+limitgold <value>
+  (value = amount of gold per month, but max the value of the square)
+limitiron <value>
+  (value = amount of iron per month, but max the value of the square)
+reformdestroy <value>
+  (chance to destroy location on immortality respawn)
+deployoutside <value>
+  (setup this unit outside fort in battles)
+hadesres <value>
+  (resistance to the effects of hades)
+stonebeing
+  (monster is made of stone)
+trample <dmg>
+  (monster will get a trample attack with this damage value)
+tramplexsize <bonus size>
+  (monster will count as this number of squares larger regarding trampling)
+nocombat
+  (monster is a non-combatant, like a floating eye)
+acidblood <dmg>
+  (acid blood strikeback effect)
+noeyes 
+  (monster has no eyes and doesn't need eyes to see)
+makecolony <terrain nbr>
+  (has a chance of turning terrain into this terrain and then die)
+
+
+   GUI
+------------------
+playercolor		<player> <red> <green> <blue>
+tablecolor		<red> <green> <blue> <alpha>
+guibordertex		"image.tga"
+guiborderthintex	"image.tga"
+guititletex		"image.tga"
+guibordersquaretex	"image.tga"
+guiborder2tex		"image.tga"
+guiborder3tex		"image.tga"
+guibartex		"image.tga"
+guisbartex		"image.tga"
+guibardarktex		"image.tga"
+guihbartex		"image.tga"
+
+
+
+   Class
+---------------------------
+selectclass	<class nbr>
+newclass
+clearrec
+addunitrec	"monster name" <chance> <nbr> <gold> <gold die> <iron>
+addmercrec	"monster name" <chance> <nbr> <gold> <gold die> <iron>
+addcomrec	"monster name" <chance> <nbr> <gold> <gold die> <iron>
+templerec
+libraryrec
+reclimiter      "string"
+  (This will alter the requirements for the last added recruitment. string can be somthing like "+Baron" to require a Baron, "-Baron" to require the Baron to not be alive or "=Dwarf Worker" to require dwarf workers to be upgraded into the new troops.)
+stdtroops
+nostdtroops
+recwizchance	<bonus>
+recherochance	<chance>
+recasschance	<chance>
+goldbonus	<percent>
+ironbonus	<percent>
+tradebonus	<percent>
+reqterr		<terrain nbr>
+clearstartunits	
+addstartunits	"monster name" <nbr>
+addstartcom	"monster name"
+setmaincom	"monster name"
+setclassname	"class name"
+hometerr	<terrain nbr>
+clearstartterr	
+addstartterr	<terrain nbr>
+classdescr	"text"
+libbonusdescr	"text"
+templebonusdescr "text"
+
+
+   Weapon
+----------------------
+newweapon	"weapon name"
+selectweapon	"weapon name" | <nbr>
+clearwspec	
+trgrank		<nbr>
+range           <nbr>
+init            <nbr>
+dmgtype		<nbr>
+dmg		<nbr>
+aoe		<nbr>
+look		<look>
+sound		<sound>
+flymode         <flymode nbr>
+flylook         <look>
+flysound	<sound>
+next		<nbr>
+nextdmg		<nbr>
+drain		
+oneshot
+reload1
+reload2
+reload3
+easymr
+mr
+hardmr
+an
+shieldneg
+strresist
+holykill
+affectundead
+mundane
+nostr
+drown
+affectanimal
+reanimate
+undead
+hardmorale
+mutate
+replicate
+yellow
+blue
+ethereal
+mind
+inanimate
+huge
+affecthuman
+flying
+arrow
+morale
+sweep
+fullsweep
+lob
+rangepen
+onlyenemy
+onlyfriend
+large
+ghoulify
+scatter
+poison
+dispossess
+affectmale
+stone
+
+
+   Rituals
+----------------------
+newritpow
+newritual	"name"
+selectritual	"name"
+descr              "text description"
+addstring	"string"
+clearritspec
+ritpow		<pow nbr>
+level		<1-9>
+terr		<terrain nbr>
+cost		<resource type> <amount>
+clearritspec
+summoning
+defctrl		<percent>
+varcost		<percent>
+specpow		<nbr> (deprecated)
+newrit		
+levelreq	<1-9>
+soundfx		<sound>
+squarespec	<ss nbr>
+scryloc		<radius*10>
+teleportloc	<1-2>
+resrestrict	<res nbr>
+resreq		<res nbr>
+transformtarg	<1-2>
+raisedead	
+gainrit		<1-9>
+bentarg		<ben nbr>
+reducetown	
+apcost		<nbr>
+destroyterr
+rebatelvl	<1-9>
+alterloc	<terrain nbr>
+benrestrict	<ben nbr>
+gainbless	
+ornext		<percent>
+ornext2		<percent>
+ornext3		<percent>
+mirrortarg	<mirror size>
+selectfx	<fx nbr>
+setfx		<nbr>
+fillmirror	<images>
+castertarg	
+trollifyloc
+scatterscry	<nbr of squares>
+choosefxtarg	<fx nbr>
+setplane	<plane nbr>
+planereq	<plane nbr>
+killtarg	<dmg>
+makeportal	<portal nbr>
+centerloc	
+closewin
+levelup		<1-9>
+levelupmon	<1-9>
+nomonreq	
+terrboost	<terrain nbr>
+terrscale50	<terrain nbr>
+sacrscale
+sum0chance	<percent>
+sum1chance	<percent>
+planeloc	<plane nbr>
+setplayer	<player nbr>
+fxreq		<fx nbr>
+squareench	<ench nbr>
+chooseterrloc	<terrain nbr>
+updatehome
+failplayer	<player nbr>
+raiseanimals	
+farsummon
+randomloc	<1-5>
+chooseloc	<1-5>
+randterrloc	<terrain nbr>
+randnewloc	<terrain nbr>
+nofxherereq	<fx nbr>
+promotion	<nbr of units>
+rebatefx25	<fx nbr>
+rebatefx50	<fx nbr>
+newlocplanes	<terrain nbr>	
+nomonworldreq
+enchherereq	<ench nbr>
+newspell1	<path nbr>
+newspell2	<path nbr>
+newspell3	<path nbr>
+planeswap	<plane nbr>
+centercaster
+nofortreq
+fortreq
+setvar		<nbr>
+bentargvar	<ben nbr>
+bentargall	<ben nbr>
+unfollowtarg
+simulacrum
+hasportalreq	<portal nbr>
+rebateterr20	<terrain nbr>
+rebateterr50	<terrain nbr>
+forgetrits
+free
+nostart
+nodemon
+rarestart
+notforpoor
+start
+nexttoo
+noundead
+
+
+   Terrain
+-----------------------
+selectterr	<terrain nbr>
+spr             "image.tga"
+clearspec
+clearfort
+name		"name"
+gold		<nbr>
+iron		<nbr>
+trade		<nbr>
+herbs		<nbr>
+fungus		<nbr>
+weed		<nbr>
+sacr		<nbr>
+dead		<nbr>
+hands		<nbr>
+pop		<nbr>
+apcost		<nbr>
+citadel
+burnable
+water
+siegeable
+cave
+nostdrec
+ownable
+smoke
+goldboost
+ironboost
+tradeboost
+harvest
+invisible
+forest
+eastcoast
+deepspawn
+mountain
+melts
+nostart
+woodencitadel
+forestcitadel
+useable
+rare
+mine
+farsight
+nosight
+temple
+relic1
+relic2
+relicm1
+relicm2
+el
+settlement
+voidret
+library1
+library2
+hoburg
+snowok
+desertok
+invseason
+spreadcold
+earthgate
+airgate
+watergate
+firegate
+walls
+highwalls
+widebattlements
+woodengate
+irongate
+enchantedgate
+extracover
+sidegates
+widegate
+cavewalls
+tempimmune

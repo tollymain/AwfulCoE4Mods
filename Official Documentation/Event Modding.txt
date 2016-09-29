@@ -1,0 +1,100 @@
+Event Modding
+Here is a list of the event modding commands. Note that triggers can be inverted by writing - instead of +.
+
+-------------------------
+---  Event start/end  ---
+-------------------------
+
+playerevent
+(once for each player every turn, occurs in home citadel by default)
+
+squareevent
+(for each player and each square in the world every turn)
+
+endevent
+
+
+-----------------------
+---  Triggers  --------
+-----------------------
++squareowner	<player>
+  (true if target square is owned or occupied by this player)
++armyowner	<player>
+  (true if square is occupied by this player)
++turnnbr	<turn nbr>
++minturn	<turn nbr>
++chance 	<percent>
++player         <player>
+  (true if current player has this player number)
++class		<player> "class name"
+  (true if this player is this class)
++hascom         <player> "commander's name"
+  (also sets target unit)
++hascomhere     <player> "commander's name"
+  (also sets target unit)
++ownsloc	<player> <terr nbr>
+  (true if player owns this terrain anywhere in the world)
++terrain        <terr nbr>
+  (true if target square is of this terrain)
++season		<0-3>
+  (0=summer, 1=autumn, 2=winter, 3=spring)
++seasondelay    <1-3>
+  (3=early (guaranteed to only happen once per season), 2=mid, 1=late)
++varequal     	<var> <value>
+  (var = 0-999, true if variable equals value)
++varlesser	<var> <value>
+  (true if the variable is less than value)
++hasunit        <player> "monster name"
+  (also sets target unit) (player -1 = any player)
++hasunithere    <player> "monster name"
+  (also sets target unit) (player -1 = any player)
+
+
+-----------------------
+---  Event actions  ---
+-----------------------
+addresources	<player> <type> <amount>
+message		<to player> "text"
+
+
+affect target location
+-------
+newunits	<player> "monsters"
+  (also sets target unit)
+promoteunits    <player> <max amount> "from monster" "to monster"
+  (also sets target unit)
+alterterrain    <terr nbr>
+  (changes the terrain of the current location)
+killsquare 
+  (kills everyone in target square)
+
+
+
+change where the target location is
+-----------------------------------
+setloc          <x> <y>
+  (move target location to a fixed location)
+scatterloc      <radius>
+  (makes target location deviate a bit, can result in the same square. Cannot be used on squareevents)
+  
+
+affect target unit
+-------
+comname         "commander's name"
+newitem		"item name"
+randitem	<rare chance>
+randmisc	<rare chance>
+killunit	<dmg>
+promote		<commanderize> "monster"
+  (commanderize 0 = do not alter commander status, 1 = turns a non commander into a commander)
+makestationary
+  (makes target unit stationary on world map)
+
+affect variables
+----------------
+  (all variables are set to zero when the game begins)
+  
+setvar		<var> <value>
+  (var = 0-999, sets a variable to a value)
+addvar		<var> <value>
+  (var = 0-999, adds a value to a variable)

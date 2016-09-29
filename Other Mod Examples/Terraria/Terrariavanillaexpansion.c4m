@@ -1,0 +1,281 @@
+icon 	"./Terraria/TBanner.tga"
+description 	"This adds Terraria based stuff to each vanilla class."
+
+#--Baron
+
+#--Necro
+
+newritpow
+newritual	"Minor Bone Summoning"
+ritpow 1
+descr "The creation of special skeleton minions."
+level	        1
+summoning
+addstring		"2*Skeleton"
+addstring		"Angry Bones"
+addstring		"Armored Skeleton"
+addstring		"Skeleton Archer"
+addstring		"Undead Miner"
+addstring		"Cursed Skull"
+cost 5 10
+
+newritpow
+newritual	"Bone Summoning"
+ritpow 1
+descr "The creation of many special skeleton minions."
+level	        2
+summoning
+addstring		"2d8+4*Skeleton"
+addstring		"1d6+2*Angry Bones & 1d2*Skeleton Archer"
+addstring		"1d6+2*Armored Skeleton & 1d2*Skeleton Archer"
+addstring		"1d6+2*Skeleton Archer & 1d2*Armored Skeleton"
+addstring		"1d6+2*Undead Miner & 1d2*Skeleton Archer"
+addstring		"1d6+2*Cursed Skull & 1d2*Skeleton Archer"
+cost 5 50
+
+newritpow
+newritual	"Zombie Rampage"
+ritpow 1
+descr "Send out a group of zombies to start trouble."
+level	        2
+summoning
+addstring		"2d8+4*Zombie"
+cost 5 50
+
+#--Demon
+
+newritpow
+newritual	"Underworld Binding"
+ritpow 3
+descr "Draw upon less demonic but still native to Inferno beings."
+level 1
+summoning
+addstring "1d4+1*Lava Slime"
+addstring "1d4+1*Hellbat"
+addstring "Bone Serpent"
+addstring "Demon"
+addstring "Fire Imp"
+cost 4 20 
+defctrl 50
+
+#--Witch
+
+newritpow
+newritual	"Swamp Slime"
+ritpow 4
+descr "Slimes love swamp. And there are types of slimes resistant to poison. With this knowledge, the witch recruits certain types of slimes from the swamp for her army."
+level	        1
+terr 107 #Swamp
+summoning
+addstring       "1d6*Blue Slime"
+addstring       "1d3*Toxic Sludge"
+cost 3 20
+defctrl 50
+
+#--Priestess
+
+#--Bakemono
+
+#--Barbarian
+
+#--Senator
+
+#--Pale One
+
+#--Druid
+
+newritual	"Call Slime Army"
+descr "Set up a ritual to call a large amoutn of slimes towards your side when in a forest, jungle or swamp. You get more slimes when in a swamp."
+ritpow 5
+level	        2
+terr -10
+summoning
+addstring       "1d6+1*Blue Slime & 1d6+1*Green Slime"
+addstring		"1d6+1*Red Slime & 1d2+1*Yellow Slime"
+addstring		"1d3+1*Slimer"
+addstring		"1d4+1*Black Slime & 1d2+1*Purple Slime"
+terrscale50 107 #Swamp
+cost 2 100
+nostart
+
+newritual	"Call Rare Animal"
+descr "There are rare animals that will only come to the call of a druid in an ancient forest."
+ritpow 5
+level	        2
+terr 4
+summoning
+addstring       "Arch Wyvern"
+addstring		"1d4*Harpy"
+addstring		"1d6*Giant Worm"
+addstring		"1d4*Vulture"
+addstring		"Lycanthrope"
+cost 2 125
+nostart
+
+newritual	"Call Jungle Animal"
+descr "Gather up some of the animals in the jungle to serve your cause."
+ritpow 5
+level	        2
+terr 115
+summoning
+addstring		"2d6*Jungle Bat"
+addstring		"1d4*Giant Flying Fox"
+addstring		"1d4*Hornet"
+addstring		"1d4*Jungle Slime"
+addstring		"1d4*Spiked Jungle Slime"
+addstring		"1d2*Giant Tortoise"
+cost 2 100
+nostart
+
+newritual	"Call the Hallow"
+descr "There are rare and powerful creatues that live in ancient forests. These hallowed creatures are legendary and require many herbs to call upon and control."
+terr 4
+level	        3
+summoning
+addstring       "3d6+3*Pixie"
+addstring       "3d6+3*Illuminant Bat"
+addstring       "3d6+3*Illuminant Slime"
+addstring       "2d6+2*Chaos Elemental"
+addstring       "2d6*Gastropod"
+addstring       "1d6*Spectral Gastropod"
+addstring       "2d6*Unicorn"
+addstring		"1d6*Hallow Pigrong"
+cost 2 600
+nostart
+
+#--Hoburg
+
+#--Warlock
+
+#--Priest King
+
+#--Troll King
+
+selectclass 14
+addmercrec "Goblin Peon" 10 15 50 0 0
+addmercrec "Goblin Bowman" 10 10 50 0 0
+addmercrec "Goblin Thief" 10 10 50 0 0
+addmercrec "Goblin Warrior" 10 10 50 0 5
+addcomrec "Goblin Scout" 10 30 15 0 
+
+#--Enchanter
+
+newritpow
+newritual	"Create Trap"
+ritpow 11
+descr "Create a dangerous trap on this tile."
+level	1
+summoning
+addstring       "Mimic"
+addstring		"2*Spike Ball"
+addstring		"Blazing Wheel"
+addstring		"2*Dart Trap"
+cost 0 20
+cost 1 10
+apcost 1
+
+newritpow
+newritual	"Create Horror Golem"
+ritpow 11
+descr "You see these only in strange dreams when you are near void gateways. Or near void gateways in general. Jealouse, enraged, possibly crazy, you want one. Using the power of a void gateway and a lot of resouces, you too can get one of these mighty constucts. Try not to go too nuts."
+level	3
+summoning
+addstring       "The Destroyer"
+addstring       "Spazmatism & Retinazer"
+addstring		"Skeletron Prime & Prime Cannon & Prime Laser & Prime Vice & Prime Saw"
+cost 0 150
+cost 1 150
+apcost 2
+terr -53
+alterloc 0
+
+
+#--High Cultist
+
+newritpow
+newritual	"Minor Corruption Binding"
+ritpow 23
+descr "While standing at a void gateway, a high cultist may attempt to control and summon a specific breed of outworlders."
+level 1
+terr -53
+failplayer 18
+summoning
+addstring "1d3*Eater of Souls"
+addstring "1d3*Crimera"
+addstring "1d3*Face Monster"
+addstring "1d3*Floaty Gross"
+addstring "Herpling"
+addstring "Shadow Slime"
+addstring "Devourer"
+addstring "Corrupt Slime"
+addstring "Crimslime"
+addstring "2d6*Servant of Cthulhu"
+cost 4 25 
+defctrl 75
+
+newritpow
+newritual	"Greater Corruption Binding"
+ritpow 23
+descr "While standing at a void gateway, a high cultist may attempt to control and summon a specific breed of outworlders."
+level 2
+terr -53
+failplayer 18
+summoning
+addstring "2d4*Eater of Souls & 1d3*Corrupter"
+addstring "2d4*Crimera & 1d3*Herpling"
+addstring "2d4*Face Monster & 2d4*Floaty Gross"
+addstring "1d3*Shadow Slime & 1d3*Corrupt Slime"
+addstring "1d4*Devourer & 2d4*Eater of Souls"
+addstring "1d3*Crimson Axe"
+addstring "1d3*Cursed Hammer"
+addstring "c*Eye of Cthulhu"
+addstring "c*Brain of Cthulhu"
+addstring "c*Eater of Worlds"
+cost 4 100
+defctrl 75
+
+
+#--Dwarf Queen
+
+#--Voice of El
+
+#--Illusionist
+
+#--Markgrav
+
+newritpow
+newritual	"Minor Bone Summoning"
+ritpow 39
+descr "The creation of special skeleton minions."
+level	        1
+summoning
+addstring		"2*Skeleton"
+addstring		"Angry Bones"
+addstring		"Armored Skeleton"
+addstring		"Skeleton Archer"
+addstring		"Undead Miner"
+addstring		"Cursed Skull"
+cost 5 10
+
+newritpow
+newritual	"Bone Summoning"
+ritpow 39
+descr "The creation of many special skeleton minions."
+level	        2
+summoning
+addstring		"2d8+4*Skeleton"
+addstring		"1d6+2*Angry Bones & 1d2*Skeleton Archer"
+addstring		"1d6+2*Armored Skeleton & 1d2*Skeleton Archer"
+addstring		"1d6+2*Skeleton Archer & 1d2*Armored Skeleton"
+addstring		"1d6+2*Undead Miner & 1d2*Skeleton Archer"
+addstring		"1d6+2*Cursed Skull & 1d2*Skeleton Archer"
+cost 5 50
+
+newritpow
+newritual	"Zombie Rampage"
+ritpow 39
+descr "Send out a group of zombies to start trouble."
+level	        2
+summoning
+addstring		"2d8+4*Zombie"
+cost 5 50

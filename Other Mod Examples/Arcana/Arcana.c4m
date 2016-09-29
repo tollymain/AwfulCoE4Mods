@@ -1,0 +1,945 @@
+
+icon		"Arcana/Arcana.tga"
+description	"This mod adds the faction of the magi, led by the Grand Arcanist. All units are casters of some kind. Optimal eras include Agricultural and Monarchy. Please enjoy."
+
+# -----  Rituals -----
+
+
+newritpow
+
+newritual	"Fabricate Arcane Eye"
+level 1
+summoning
+addstring	"1*Arcane Eye"
+terrboost -3
+descr "Through simplistic methods, prodigious arcane scholars are able to create an autonomous, and nearly undetectable scrying magical construct to assist them in scouting an area."
+cost 0 5
+
+
+newritual	"Conuslt the Aether" 
+level 1
+terr -3
+newspell1 43
+newspell1 29
+newspell1 36
+descr "Many students of the arcane seek knowledge from the Aether. The smart ones keep quiet and listen to it. Those open to its secrets are taught rudimentary spells for their patience."
+soundfx			39
+apcost 1
+centerloc 
+closewin
+
+newritual	"Elemental Protection"
+level			1
+soundfx			57
+descr "The most important lesson for a mage to learn is how to protect oneself and those around them from their mistakes. Naturally, resisting elemental damage is imperative."
+castertarg
+apcost 1
+bentargall 4
+bentargall 8
+bentargall 32
+centerloc
+closewin
+
+newritual	"Instruct Lecture of Nature"
+level			1
+descr "Many scholars seek intricate knowledge, rather than a wide array regarding the arcane. This course introduces the lessons of Wild Magic amongst the magi."
+soundfx			57
+terr 			-3
+promotion 10
+addstring	"Mage"
+addstring	"Green Mage"
+cost 0 20
+apcost 2
+free
+
+newritual	"Instruct Lecture of Death"
+level			1
+descr "Many scholars seek intricate knowledge, rather than a wide array regarding the arcane. This course introduces the lessons of Black Magic amongst the magi."
+soundfx			57
+terr 			-3
+promotion 10
+addstring	"Mage"
+addstring	"Black Mage"
+cost 0 20
+apcost 2
+centerloc 
+free
+
+newritual	"Instruct Lecture of Life"
+level			1
+descr "Many scholars seek intricate knowledge, rather than a wide array regarding the arcane. This course introduces the lessons of White Magic amongst the magi."
+soundfx			57
+terr 			-3
+promotion 10
+addstring	"Mage"
+addstring	"White Mage"
+cost 0 20
+apcost 2
+centerloc 
+free
+
+newritual	"Instruct Lecture of Industry"
+level			1
+descr "Many scholars seek intricate knowledge, rather than a wide array regarding the arcane. This course introduces the lessons of Iron Magic amongst the magi."
+soundfx			57
+terr 			-3
+promotion 10
+addstring	"Mage"
+addstring	"Grey Mage"
+cost 0 20
+apcost 2
+centerloc 
+free
+
+newritual     "Glimpse the Aether"                             
+level                  1
+descr "All practitioners of magic are normally aware of the various planes of existence. Skilled magi know that there are certain ones directly connected to their own. Through this ability, said magi are able to draw knowledge from the Aether by peering through it, revealing the connected planes."
+terr                  95
+chooseloc              1
+planeloc               1
+scryloc                5
+planeloc               2
+scryloc                5
+planeloc               3
+scryloc                5
+apcost                 5
+cost 0 5
+closewin
+
+newritual   "Infernal Exchange Program"
+level			2
+descr "Demons and Devils are naturally interested in all things relating to power. The society of magi does not descriminate even to these beings, as any pursuit of knowledge is welcomed by the magi as long as it does not inflict harm upon their people. With two of their own getting the experience of studying magic in the inferno, the society deems it worthwhile."
+soundfx			57
+terr 			-3
+promotion 2
+addstring	"Mage"
+addstring	"Infernal Scholar"
+cost 0 50
+apcost 2
+centerloc 
+
+newritual   "Phantasmal Exchange Program"
+level			2
+descr "Death does not stop those truly dedicated to the study of the arcane. Many old and withered spirits and wraiths that walk the realm of Hades are seen as perfect students among the magi, as they never allow their emotions to hinder their study. Because of this, it's with open arms that the studious denizens of Hades are welcomed in exchange for an equal opportunity to learn abroad in the underworld. It must be truly delightful to learn there, as most students seemingly choose never to return."
+soundfx			57
+terr 			-3
+promotion 2
+addstring	"Mage"
+addstring	"Phantom Scholar"
+cost 0 50
+apcost 2
+centerloc 
+
+newritual   "Abyssal Exchange Program"
+level			2
+descr "The void being as dangerous as it is, one would understand almost immediately that those more intelligent, yet native to that troublesome plane would choose to seek knowledge of all things magic elsewhere. Some magi however, leap at the opportunity to seek knowledge in what some refer to as 'The home to all magic inexplicable'. It would seem that the students opting for this exchange program were thrilled to such an extent that none have ever decided to request the return trip."
+soundfx			57
+terr 			-3
+promotion 2
+addstring	"Mage"
+addstring	"Starspawn Scholar"
+cost 0 50
+apcost 2
+centerloc 
+
+newritual	"Sift Through Aether"
+level 			2
+chooseloc		1
+teleportloc		1 #self only
+soundfx			57
+apcost			2
+centerloc 
+descr "More exceptional magi uncover the methods needed to slip into the Aether to travel unthinkable distances."
+closewin
+
+newritual	"Study the Aether" 
+level 2
+terr -3
+newspell2 43
+newspell2 29
+newspell2 36
+descr "After attaining rudimentary knowledge, the more successful arcane scholars do not cease in their observation of what further answers the Aether may hold. Most are rewarded with more detailed understanding and a few more intricate spells."
+soundfx			39
+apcost 1
+centerloc 
+closewin
+
+newritual	"Educate the Masses"
+level			2
+soundfx			57
+alterloc		13 #turns village type terrain into library
+terr			-41
+cost	0 20
+cost 	1 10
+start
+centerloc 
+descr "The one duty that any who study the arcane arts have in common is to spread the wealth of knowledge to the people. Erecting libraries throughout the land for the common folk is one of the cornerstones of the magi society."
+closewin
+
+newritual	"Study Dark Arts"
+level			2
+soundfx			57
+castertarg
+terr			151 #requires dark tower. Use crystal globe to scry for them in hades (Gaurd tower equivelent). Be careful, as your units do not have hadesres (teleport in, teleport out). 
+promotion		-1
+addstring	"Grand Arcanist" #turns caster GA into EM; loses rituals, becomes better combatent
+addstring	"Entropy Magus"
+apcost 5
+descr "Those talented enough may find that their interest lies no longer in the desire for understanding, but rather the cumulation of absolute power. Magi who preform such a ritual forsake the respect of their peers in exchange for undeniable mastery of the darker arts."
+nostart
+centerloc 
+closewin
+
+newritual	"Fabricate Engines of War"
+level	        3
+summoning
+addstring       "3d2*Trebuchet"
+terr		-31
+cost		0 400
+cost		1 200
+rebateterr20 -3
+descr "In times where their way of life is threatened, it is said there is nothing the magi cannot accomplish. To fight a war, one needs the proper tools."
+
+newritual	"Construct Labyrinth"
+level			3
+alterloc		100
+terr			0
+soundfx			57
+cost		1 10
+descr "The magi are normally a peaceful people, preferring to keep to themselves and their studies. Over time, they've developed methods to impede any would-be invaders, as well as ways to rid themselves of their less than dedicated scholars."
+centerloc 
+closewin
+
+newritual	"Answer the Aether" 
+level 3
+terr -3
+newspell3 43
+newspell3 29
+newspell3 36
+newspell3 51
+newspell3 61
+descr "Only true masters of the arcane could hope to think of answering the everpresent whispers flowing from the Aether with their own information and knowledge. Those that do, understand that the answers they had sought before came from magi like themselves, imparting answers to those less powerful that seek the Aether for wisdom. In response to their contribution, another voice different from the rest provides even greater teachings. Most Archmagi make an effort not to think about who or what offers the answers for magi of their station."
+soundfx			39
+apcost 8
+centerloc 
+closewin
+
+
+newritual	"Tear the Aether"
+level 			3
+chooseloc		1
+teleportloc		2 #entire army under caster's command
+soundfx			57
+apcost			5
+cost 0 120
+rebateterr50 -3
+descr "Few legendary magi hold the knowledge and expertise needed to rip the Aether apart in order to transport entire legions of their peers. Enemies seldom expect full force invasions without a chance to see their opposition coming."
+centerloc 
+closewin
+
+newritual	"Whispers of the Aether"
+level	        1
+newrit		1
+rebateterr20 88
+soundfx		57
+cost		0 50
+free
+terr -3
+descr "A step on the path to greatness."
+
+newritual	"Secrets of the Aether"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+rebateterr20 88
+soundfx		57
+cost		0 100
+free
+terr -3
+descr "A journey on the trail to success."
+
+newritual	"Wisdom of the Aether"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+rebateterr20 88
+soundfx		57
+cost 		0 300
+free
+terr -3
+descr "A stride along the road at the top."
+
+# ----- Weapons ----------------------
+
+newweapon "Ebony Staff"
+trgrank 1
+range 1
+dmgtype 2
+dmg 6
+init 8
+aoe 1
+look 50
+sound 22
+an
+shieldneg
+drain
+next
+nextdmg 4
+
+newweapon "Ebony Staff2"
+trgrank 1
+range 1
+dmgtype 12
+
+
+newweapon "Golden Staff"
+trgrank 1
+range	1
+dmgtype	2
+dmg		4
+init	7
+look 51
+sound 84
+an
+shieldneg
+next	
+nextdmg 524288
+
+newweapon "Golden Staff2"
+trgrank 1
+range	1
+dmgtype	12
+init	7
+
+newweapon "Naturalize"        
+trgrank    9  
+range     8
+init       1
+dmgtype   12
+easymr            
+an            
+flymode    2  
+flylook  202
+flysound 113  
+look       2
+sound    109  
+
+newweapon "Fortify"                                                      
+trgrank   -9  
+range      6
+init       1
+dmgtype   13  
+ethereal      
+flysound  29  
+look      45
+sound     -1
+
+newweapon "Iron Rain"
+trgrank    9  
+range     24
+init       1
+dmgtype    3
+aoe        3  
+mundane
+scatter
+flymode    1
+flylook    31
+flysound   104
+sound      1
+
+newweapon "Enervate"                                          
+trgrank    9
+range      7
+init       1
+aoe       -2
+dmgtype    7  
+hardmr        
+an            
+flymode    5  
+flylook  195
+flysound  -1  
+look      39
+sound     54
+next
+nextdmg 16777216
+
+newweapon "Enervate2"
+range 7
+init 1
+dmgtype 12
+easymr 
+an
+
+newweapon "Invigorate"                                                 
+trgrank   -9
+range      3
+init       1
+dmgtype   13
+inanimate     
+onlyfriend
+ethereal
+flymode    3
+flylook   73
+flysound  30
+look      53
+sound     29
+
+newweapon "Entropic Tide"
+trgrank    0
+range      0
+init       4
+dmgtype    12
+dmg 8388608
+aoe     9999
+mr            
+an            
+onlyenemy
+flymode    2
+flylook  134
+flysound  -1 
+look     146
+sound 108
+next
+nextdmg 4
+
+newweapon "Entropic Tide2"
+range 0
+init  4
+dmgtype 12
+easymr            
+an            
+onlyenemy
+look     131
+
+newweapon "Void Worms"  
+trgrank    9                                                 
+range      3
+aoe        -5
+init       2
+dmgtype    3
+dmg        1
+nostr
+arrow
+mundane
+shieldneg
+flymode    1
+flylook   34
+flysound  19
+sound     88
+next
+nextdmg 16384
+
+newweapon "Void Worms2"
+range 3
+init 2
+dmgtype 12
+an
+hardmr
+inanimate
+ethereal
+next
+nextdmg 32768
+
+newweapon "Void Worms3"
+range 3
+init 2
+dmgtype 12
+an
+easymr
+inanimate
+ethereal
+
+newweapon "Soulbolt"
+trgrank    9
+range      5
+init       1
+dmgtype    7
+hardmr     
+an
+nostr
+dispossess
+inanimate
+flymode    4
+flylook   88
+flysound   3
+look      91
+sound    109
+
+newweapon "Awaken Sin"                                               
+trgrank    8 
+range      1
+init       4
+dmgtype    3
+dmg        4    
+an     
+shieldneg      
+nostr
+look      68
+sound     -1 
+next
+nextdmg 32
+
+newweapon "Awaken Sin2"
+range     1
+init      4
+dmgtype  12
+an
+next
+nextdmg 262144
+
+newweapon "Awaken Sin3"
+range     1
+init      4
+dmgtype  12
+an
+mind
+hardmr
+next
+nextdmg 1
+
+newweapon "Awaken Sin4"
+range     1
+init      4
+dmgtype  14
+easymr
+an
+mind
+next
+nextdmg 512
+
+newweapon "Awaken Sin5"
+range     1
+init      4
+dmgtype  13
+
+# ----- Units -----
+
+newmonster	"Arcane Eye"
+copystats	"Raven Spy"
+spr1	"Arcana/aeye.tga"
+spr2	"Arcana/aeye2.tga"
+descr "A form similar to that of a homunculus or a familiar, constructed for the purpose of surveying an area."
+clearweapons
+hp 1
+mr 9
+inanimate
+charmres
+spiritsight
+farsight
+wander 1
+stupid
+stealth
+changetemp 10
+
+newmonster "Battlemage"
+clearweapons
+clearspec
+spr1 "Arcana/mk1.tga"
+spr2 "Arcana/mk2.tga"
+descr "Some more dedicated than their peers to defend their right to learn take up efforts to apply their knowledge to the field of battle. Enchanted arms and armor prove effective in fighting various enemies."
+hp 6
+armor 1
+str 6
+mor 6
+mr 5
+spellweapon50 26 1
+meleeweapon 0 8
+more1spells -1
+shield
+human
+frontpos
+rank 1
+allitemslots
+
+newmonster "Battlemagus"
+clearweapons
+clearspec
+spr1 "Arcana/mmk1.tga"
+spr2 "Arcana/mmk2.tga"
+descr "Those whom have seen their lands beset by all sorts of enemies threatening the progression of the arcane arts develop greater forms of magical combat to protect their way of life. There is no truly dedicated military belonging to the Grand Magi, but those who make it this far are often seen as such."
+hp 10
+armor 2
+str 6
+mor 7
+mr 6
+spellweapon 26 1
+meleeweapon 0 474
+more1spells -1
+largeshield
+human
+frontpos
+rank 1
+allitemslots
+
+newmonster "War Mage"
+clearweapons
+clearspec
+spr1 "Arcana/mmmk1.tga"
+spr2 "Arcana/mmmk2.tga"
+descr "Few achieve such heights in arcane combat to attain the title of Warmage. Those that do have shown time and time again that they are the true defenders in a barbaric world, standing between progress and the chaos that threatens it."
+hp 15
+armor 3
+str 8
+mor 8
+mr 7
+spellweaponbonus 26 1
+meleeweapon 0 490
+more1spells -1
+largeshield
+human
+frontpos
+rank 1
+allitemslots
+
+newmonster "Mage"
+clearweapons
+clearspec
+spr1 "Arcana/Mageb.tga"
+spr2 "Arcana/Mage2b.tga"
+descr "All arcane scholars begin their journey mastering the intricate knowledge of the Aether somewhere. These humble students would defend their places of learning with their lives."
+hp 4
+str 1
+mor 6
+mr 6
+spellweapon 29 1
+human
+rearpos
+rank 0
+allitemslots
+
+newmonster "White Mage"
+spr1 "Arcana/Magew.tga"
+spr2 "Arcana/Mage2w.tga"
+descr "Magi that decide to focus in arcana concerning life force and beneficial effects are known as White Magi. They are seen as noble in their society, forsaking the notion of harming another, as it serves no relevant purpose to their studies."
+hp 6
+str 1
+mor 7
+mr 7
+spellweaponbonus 16 1
+rangedweapon 4096 "Invigorate"
+human
+holy
+rearpos
+rank 0
+allitemslots
+
+newmonster "Black Mage"
+spr1 "Arcana/Mageblk.tga"
+spr2 "Arcana/Mage2blk.tga"
+descr "Magi that decide to focus in arcana concering decay and fundamentally detrimental effects are known as Black Magi. These people are treated with some modicum of caution, as they tend to be most concerned with power and how to gain an edge against those that stand in the way of it."
+hp 6
+str 1
+mor 8
+mr 6
+spellweaponbonus 37 1
+rangedweapon 4 "Enervate"
+human
+hadesres 100
+diseaseres
+rearpos
+rank 0
+allitemslots
+
+newmonster "Grey Mage"
+spr1 "Arcana/Magem.tga"
+spr2 "Arcana/Mage2m.tga"
+descr "Magi that decide to focus in arcana concerning structure and artificial means of improvement are known as Grey Magi. Such students seek new ways of applying the elements in methods they percieve to be better. Hardening earth into metal is the most common practice used to apply this methodology amongst the Grey Magi. Some infer that this is primarily because ballistophobia is common when regarding magic users and armor tends to help."
+hp 8
+str 4
+armor 2
+mor 6
+mr 7
+spellweaponbonus 23 1
+rangedweapon 1835008 "Fortify"
+siegeweapon 2 "Iron Rain"
+human
+pierceres
+rearpos
+rank 1
+allitemslots
+
+newmonster "Green Mage"
+spr1 "Arcana/Mageg.tga"
+spr2 "Arcana/Mage2g.tga"
+descr "Magi that decide to focus in arcana concerning nature and the forces of change found in Elysium are known as Green Magi. Often, these particular kind of magi take to the surrounding woods in order to better commune with that which they study, nearly to the point where they seem at home in the wild. Most magi believe their verdant peers to be walking a fine line between study and abhorred barbarism."
+hp 8
+str 2
+mor 6
+mr 7
+spellweaponbonus 39 1
+rangedweapon 4096 "Naturalize"
+human
+poisonaura 4
+poisonres 100
+foreststealth
+frontpos
+rank -1
+allitemslots
+
+newmonster "Starspawn Scholar"
+spr1 "Arcana/ill.tga"
+spr2 "Arcana/ill2.tga"
+descr "Arcanists tend not to really know from where these exchange students originate. They seem to have absolutely no issue, if not become seemingly eager to participate in protecting the lands of the magi whenever a threat arises. The magi are ever appreciative of such kind souls that would risk their lives simply to rebuff an enemy to a nation other than their own. For whatever reason some reports of preforations in enemy skulls suspiciously the same size as their tentacles follow these students, though Arcanists conclude this must be some side effect of their magic and nothing more."
+hp 12
+str 1
+mor 15
+mr 6
+spellweapon 42 2
+rangedweaponbonus 0 "Void Worms"
+rank 0
+mindexpl 1
+voidsanity 20
+charmres
+swamp
+water
+spiritsight
+
+newmonster "Phantom Scholar"
+spr1 "Arcana/ams.tga"
+spr2 "Arcana/ams2.tga"
+descr "Ghostly apparitions of scholars past, present, and future are always welcomed in the ranks of those that defend the arcane lands of the magi. These exchange students are exalted, as astoningly to most Arcanists, they require but a simple request before complying to fight alongside the other magi. Clearly this is but a reflection of their diligence toward learning. Suggestions that these students are mindless are widely frowned upon."
+hp 6
+str 1
+mor 99
+mr 6
+spellweaponbonus 17 2
+meleeweapon 7 659
+rangedweapon50 5 "Soulbolt"
+frontpos
+rank 0
+undead
+coldres        100
+poisonres      100
+diseaseres 
+ethereal
+float
+spiritsight
+invisible
+noheal
+
+newmonster "Infernal Scholar"
+spr1 "Arcana/dem.tga"
+spr2 "Arcana/dem2.tga"
+descr "As per the agreement signed in blood with the Greater Devils allowing such a pact to be formed, infernal students are required to protect the lands of the magi from invaders. Arcanists relish the professionalism in these exchange students. Strangely, nothing was asked in return for this addendum to the exchange program, as the magi that study abroad in the inferno have never reported they were asked to defend the flaming citidels found therein. Equally odd, no mage has ever decided to return to make such reports."
+hp 8
+str 2
+mor 8
+mr 7
+spellweaponbonus 1 2
+assassinweapon 0 "Awaken Sin"
+meleeweapon 3 0
+frontpos
+rank -1
+fireres        100
+diseaseres
+spiritsight
+seduceaura 1
+charmres
+affres 100
+
+
+newmonster "Arcanist"
+copystats "Mage"
+clearweapons
+spr1 "Arcana/Arcanb.tga"
+spr2 "Arcana/Arcan2b.tga"
+descr "Those who aspire for greater heights in the study of all things arcane seldom take the first step on the path of perfection. Any mage holding the title of an Arcanist, however, has done precisely that."
+hp 8
+str 5
+mor 10
+mr 8
+spellweapon 43 1 
+spellweapon 29 1 
+spellweapon 36 1 
+meleeweapon 0 "Staff"
+acutesenses
+scrycost 5
+scry 20
+human
+rearpos
+rank -1
+allitemslots
+power 0 1
+mastery 1
+
+
+newmonster "Grand Arcanist"
+copystats "Mage"
+clearweapons
+spr1 "Arcana/Garcb.tga"
+spr2 "Arcana/Garc2b.tga"
+descr "A spellcaster regarded as a Grand Arcanist is truly a mystical and terrifying sight to behold, as it's a title bestowed, not claimed. Their mastery of the arcane arts puts any paltry mage to utter shame. The respect they command amongst their arcane peers is nearly unprecedented."
+hp 10
+str 5
+mor 15
+mr 10
+spellweapon 43 2
+spellweapon 29 2
+spellweaponbonus 36 2
+meleeweapon 0 "Staff"
+spiritsight
+scrycost 5
+scry 30
+human
+leadership 2
+rearpos
+rank -1
+allitemslots
+power 0 2
+mastery 1
+
+
+newmonster "Archmagus"
+copystats "Mage"
+clearweapons
+spr1 "Arcana/Archb.tga"
+spr2 "Arcana/Arch2b.tga"
+descr "Whispers tell of mages so powerful, time and space seem irrelevant to them. These legendary Archmagi are simultaneously revered, envied, and rightly feared. The command they possess over the Aether simply cannot be matched."
+hp 14
+str 5
+mor 20
+mr 14
+spellweaponbonus 51 3 #high arc
+spellweaponbonus 29 3 #Wiz
+spellweaponbonus 61 3 #Astrology
+spellweaponbonus 36 3 #command
+spellweaponbonus 43 3 #illus
+meleeweapon 0 "Staff"
+#immortal
+#immortalap 8
+unaging
+affres 60
+rank -1
+spiritsight
+farsight 1
+scrycost 5
+scry 40
+armytrainer 3
+leadership 5
+charmres
+teleport
+fast
+human
+rearpos
+allitemslots
+power 0 3
+
+newmonster "Entropy Magus"
+clearspec
+clearweapons
+spr1 "Arcana/voidm.tga"
+spr2 "Arcana/voidm2.tga"
+descr "Some wayward prodigies seeking arcane knowledge from alternative sources may find themselves treading down a grim path from which seldom any return. Any mage regarded as an Entropy Magus is one to hold in horror. They've turned their back on the pursuit of knowledge in exchange for immeasurable power. These dark spellcasters abandoned their fear of death long ago."
+hp 30
+str 3
+mor 50
+mr 9
+prebatweapon 0 "Entropic Tide"
+spellweapon50 50 3
+spellweapon 11 3
+spellweaponbonus 8 3
+meleeweapon 0 "Ebony Staff"
+voidsanity 100
+hadesres
+saner 5
+planeshift 1
+deployoutside
+noleader
+vengeance 2
+ethereal
+affres 100
+charmres
+unaging
+frontpos
+immortal
+immortalap 2
+rank 1
+allitemslots
+
+newmonster "Lord Alchemist"
+clearweapons
+spr1 "Arcana/Lalch.tga"
+spr2 "Arcana/Lalch2.tga"
+descr "Where some magi seek arcane secrets for the sake of understanding, and others for power, more still strive to learn in the pursuit of profit. An alchemist that attains lordship over any amount of land proves to be a success indeed through the secrets they've uncovered in their prosperous career. Some even carry around relics of their lucrative past, telling of their experiences."
+hp 8
+str 5
+armor 1
+mor 10
+mr 9
+spellweapon 55 2
+meleeweapon 0 "Golden Staff"
+localgoldbonus 200
+localironbonus 200
+goldcarrier 50
+ironcarrier 50
+#gold 5000
+#iron 5000
+limitgold 2
+limitiron 2
+trade 1
+randomitem 100
+human
+rearpos
+rank 0
+allitemslots
+
+# -----  Create the new class -----
+
+newclass
+setclassname	"Grand Arcanist"
+classdescr "The magi under the Grand Arcanist are a widely peaceful people with a singular goal in mind. All strive to further the progression in their collective understanding of all things arcane.^^Their strengths lie in the level of expertise that even the lowest ranking mage has in the way of magic. Every member is a spellcaster, ranging from petty magicians to powerful Archmagi. The social structure of the magi is that of a society of scholarly peers where the opportunity to learn the secrets that the Aether has to offer is commonplace amongst its people. Many flock to the various libraries constructed under this principle of shared knowledge.^^As the Grand Arcanist it is important to bide time by establishing a territory and constructing libraries. Scrying and using autonomous scouts to explore the area is integral to the survival of the magi, who rely heavily on caution in order to ensure their success.^^Abilities:^Basic commanders have the ability to scry a selected area.^Lord Alchemists can be placed on large sources of gold to boost the income.^Grand Arcanists and Archmagi can gain the ability to teleport both themselves and their armies.^All units have some spellcasting capability.^Libraries owned increase chances of magi spawning within them.^Start with level 3 library and Crystal Globe to scry other planes."
+setmaincom	"Grand Arcanist"
+addstartunits	"Mage" 3
+addstartunits	"Battlemage" 5
+addstartcom	"Arcanist"
+#addstartunits 	"Grey Mage" 10
+#addstartunits 	"Green Mage" 10
+#addstartunits 	"White Mage" 10
+#addstartunits 	"Black Mage" 10           
+#addstartunits 	"Starspawn Scholar" 10
+#addstartunits	"Lord Alchemist" 2
+#addstartunits	"War Mage" 10
+#addstartcom	"Grand Arcanist"
+#addstartcom "Entropy Magus"
+#addstartcom "Archmagus"
+addunitrec	"Mage" 100 2 40 0 0 0
+addunitrec	"Lord Alchemist" 100 1 90 0 0
+addcomrec	"Arcanist" 2 100 0 0
+libraryrec
+addunitrec	"Battlemage" 100 5 60 0 10 0
+addunitrec	"Battlemagus" 100 5 40 0 20 0
+reclimiter	"=Battlemage"
+addunitrec	"War Mage" 100 5 40 0 30 0
+reclimiter	"=Battlemagus"
+nostdtroops
+#goldbonus 90000
+#ironbonus 90000
+#tradebonus 90000
+recwizchance 40
+hometerr 88
+#addstartterr 151
+addstartterr 90
+addstartterr 95
+#reqterr 88	
+#reqterr 29
+#reqterr 151
+nametype 7
+
+squareevent
++class -2 "Grand Arcanist"
++class -3 "Grand Arcanist"
++chance 30
++terrain -3
+newunits -3 "1*Mage"
+message -3 "A promising young mind joins your ranks."
+endevent
+
+selectterr 90 #small changes made to stonehenge; apmovecost reduced to 1, enables location as a place you can warp to from the void, and adds small fortification.
+apcost 1
+voidret
+walls
+
+
+

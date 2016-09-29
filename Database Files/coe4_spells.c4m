@@ -1,0 +1,5380 @@
+# BUILT‐IN MAGIC PATHS AND SPELLS IN COE4.EXE, EXPRESSED AS PSEUDO-MOD CODE
+#
+# Spells, of course, aren't moddable at all, so the "commands" in this file
+# are all bogus (and commented out). The one exception is I borrowed the
+# burnforest command, from monster modding, to mark spells with a flag set
+# that grants the ability to burn forests to anyone knowing the spell.
+#
+# Each spell for its effect refers to a weapon definition that may or may not
+# be named identically with the spell. (The weapon name might well be entirely
+# different from the spell name.)
+# The weapon definition IS moddable, of course, but the spell making use of it
+# applies a damage value to the weapon which isn't.
+#
+# Also note that more than one spell can carry the same name
+# and that there is no guarantee their effects will be identical.
+#
+# At the end of this file is a summary,
+# listing the numbers of spells found in each path.
+#
+# /Marlin
+
+# Path  1: Infernal Magic
+# Path  2: Elemental Magic
+# Path  3: Pyromancy
+# Path  4: Hydromancy
+# Path  5: Storm Magic
+# Path  6: Geomancy
+# Path  7: Hedge Magic
+# Path  8: Unlife
+# Path  9: Dark Magic
+# Path 10: Foul Magic
+# Path 11: Blood Magic
+# Path 12: Crystal Sorcery
+# Path 13: Garnet Sorcery
+# Path 14: Jade Sorcery
+# Path 15: Onyx Sorcery
+# Path 16: White Magic
+# Path 17: Spiritism
+# Path 18: Fortune Magic
+# Path 19: Solar Magic
+# Path 20: Mysticism
+# Path 21: Serpent Magic
+# Path 22: Golden Magic
+# Path 23: Iron Arcana
+# Path 24: Kuro Do
+# Path 25: Prayers
+# Path 26: Enchantment
+# Path 27: Frost Magic
+# Path 28: Dark Prayers
+# Path 29: Wizardry
+# Path 30: Shamanism
+# Path 31: War and the Sun
+# Path 32: Night
+# Path 33: Rain
+# Path 34: Bloody Mother
+# Path 35: Nahualli Magic
+# Path 36: Command
+# Path 37: Black Magic
+# Path 38: Necromancy
+# Path 39: Druidism
+# Path 40: Witchery
+# Path 41: Troll Magic
+# Path 42: Void Magic
+# Path 43: Illusionism
+# Path 44: Sage Magic
+# Path 45: Dwarf Magic
+# Path 46: Maladies
+# Path 47: Beast Wards
+# Path 48: Warrior Wards
+# Path 49: Paladin Magic
+# Path 50: Famine Magic
+# Path 51: High Arcana
+# Path 52: Moon Magic
+# Path 53: Silver Arcana
+# Path 54: Forest Magic
+# Path 55: Alchemy
+# Path 56: Gold Arcana
+# Path 57: Metal Arcana
+# Path 58: Sky
+# Path 59: Death
+# Path 60: Tree Magic
+# Path 61: Astrology
+
+
+# NECROMANCY:
+
+#newspell "Disease"
+#path       38  Necromancy
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Decay"
+#path       38  Necromancy
+#level       1
+#weapon    466  Decay
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Fear"
+#path       38  Necromancy
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Drain Life"
+#path       38  Necromancy
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Bolt of Unlife"
+#path       38  Necromancy
+#level       1
+#weapon    235  Bolt of Unlife
+#dmg         6  D6 magic damage
+
+#newspell "Strength Sap"
+#path       38  Necromancy
+#level       1
+#weapon    249  Strength Sap
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Black Cloud"
+#path       38  Necromancy
+#level       1
+#weapon    245  Black Cloud
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Reanimation"
+#path       38  Necromancy
+#level       1
+#weapon    266  Summon Soulless
+#dmg         1  One unit summoned
+
+#newspell "Raise Longdead"
+#path       38  Necromancy
+#level       1
+#weapon    265  Summon Longdead
+#dmg         1  One unit summoned
+
+#newspell "Terror"
+#path       38  Necromancy
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Cloud of Death"
+#path       38  Necromancy
+#level       2
+#weapon     31  Cloud of Death
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Bane Fire"
+#path       38  Necromancy
+#level       2
+#weapon     32  Bane Fire
+#dmg        20  D20 magic damage
+
+#newspell "Soul Vortex"
+#path       38  Necromancy
+#level       2
+#weapon    478  Soul Vortex
+#dmg         6  D6 magic damage
+
+#newspell "Finger of Death"
+#path       38  Necromancy
+#level       2
+#weapon    134  Finger of Death
+#dmg       999  D999 magic damage
+
+#newspell "Weakness"
+#path       38  Necromancy
+#level       2
+#weapon    250  Weakness
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Wither"
+#path       38  Necromancy
+#level       2
+#weapon    281  Wither
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Plague"
+#path       38  Necromancy
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Dance Macabre"
+#path       38  Necromancy
+#level       2
+#weapon    265  Summon Longdead
+#dmg         5  D5 units summoned
+
+#newspell "Dark Power"
+#path       38  Necromancy
+#level       2
+#weapon    106  Dark Power
+#dmg         7  D7 magic damage
+
+#newspell "Bane Fire Vortex"
+#path       38  Necromancy
+#level       3
+#weapon    213  Bane Fire Vortex
+#dmg        30  D30 magic damage
+
+#newspell "Invulnerability"
+#path       38  Necromancy
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+
+#newspell "Death Spell"
+#path       38  Necromancy
+#level       3
+#weapon    105  Death Spell
+#dmg        20  D20 magic damage
+
+#newspell "Soul Drain"
+#path       38  Necromancy
+#level       3
+#weapon     82  Soul Drain
+#dmg         5  D5 magic damage
+#slowtocast
+
+#newspell "Chill of the Dead"
+#path       38  Necromancy
+#level       3
+#weapon    251  Chill of the Dead
+#dmg        13  D13 cold damage
+
+#newspell "Shade of Death"
+#path       38  Necromancy
+#level       3
+#weapon    252  Shade of Death
+#dmg      2048  = 0x800 (Weakness)
+#slowtocast
+
+#newspell "Tendrils of Death"
+#path       38  Necromancy
+#level       3
+#weapon    246  Tendrils of Death
+#dmg      2053  = 0x805 (Disease + Decay + Weakness)
+
+#newspell "Black Death"
+#path       38  Necromancy
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Army of the Dead"
+#path       38  Necromancy
+#level       3
+#weapon    265  Summon Longdead
+#dmg        18  D18 units summoned
+
+
+# FOUL MAGIC:
+
+#newspell "Disease"
+#path       10  Foul Magic
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Black Cloud"
+#path       10  Foul Magic
+#level       1
+#weapon    245  Black Cloud
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Decay"
+#path       10  Foul Magic
+#level       1
+#weapon    466  Decay
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Wither"
+#path       10  Foul Magic
+#level       2
+#weapon    281  Wither
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Plague"
+#path       10  Foul Magic
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Gift of Death"
+#path       10  Foul Magic
+#level       2
+#weapon    467  Gift of Death
+#dmg         5  = 0x5 (Disease + Decay)
+
+#newspell "Tendrils of Death"
+#path       10  Foul Magic
+#level       3
+#weapon    246  Tendrils of Death
+#dmg      2053  = 0x805 (Disease + Decay + Weakness)
+
+#newspell "Black Death"
+#path       10  Foul Magic
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Symbol of Death"
+#path       10  Foul Magic
+#level       3
+#weapon    396  Symbol of Death
+#dmg         2  D2 magic damage
+
+
+# UNLIFE:
+
+#newspell "Drain Life"
+#path        8  Unlife
+#level       1
+#weapon     18  Drain Life
+#dmg         8  D8 magic damage
+
+#newspell "Strength Sap"
+#path        8  Unlife
+#level       1
+#weapon    249  Strength Sap
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Bolt of Unlife"
+#path        8  Unlife
+#level       1
+#weapon    235  Bolt of Unlife
+#dmg         6  D6 magic damage
+
+#newspell "Finger of Death"
+#path        8  Unlife
+#level       2
+#weapon    134  Finger of Death
+#dmg       999  D999 magic damage
+
+#newspell "Dark Power"
+#path        8  Unlife
+#level       2
+#weapon    106  Dark Power
+#dmg         7  D7 magic damage
+
+#newspell "Weakness"
+#path        8  Unlife
+#level       2
+#weapon    250  Weakness
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Soul Vortex"
+#path        8  Unlife
+#level       2
+#weapon    478  Soul Vortex
+#dmg         6  D6 magic damage
+
+#newspell "Soul Drain"
+#path        8  Unlife
+#level       3
+#weapon     82  Soul Drain
+#dmg         6  D6 magic damage
+#slowtocast
+
+#newspell "Chill of the Dead"
+#path        8  Unlife
+#level       3
+#weapon    251  Chill of the Dead
+#dmg        13  D13 cold damage
+
+#newspell "Symbol of Unlife"
+#path        8  Unlife
+#level       3
+#weapon    398  Symbol of Unlife
+#dmg         2  D2 magic damage
+
+
+# DARK MAGIC:
+
+#newspell "Fear"
+#path        9  Dark Magic
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Shadowform"
+#path        9  Dark Magic
+#level       1
+#weapon    633  Shadow Form
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Tendril of Darkness"
+#path        9  Dark Magic
+#level       1
+#weapon    395  Tendril of Darkness
+#dmg         5  D5 magic damage
+
+#newspell "Summon Shade"
+#path        9  Dark Magic
+#level       1
+#weapon    203  Summon Shade
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Terror"
+#path        9  Dark Magic
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Summon Shades"
+#path        9  Dark Magic
+#level       2
+#weapon    203  Summon Shade
+#dmg         3  D3 units summoned
+#slowtocast
+
+#newspell "Shade Warriors"
+#path        9  Dark Magic
+#level       2
+#weapon    635  Shade Warriors
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Weakness"
+#path        9  Dark Magic
+#level       2
+#weapon    250  Weakness
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Lashes of Darkness"
+#path        9  Dark Magic
+#level       2
+#weapon    576  Lashes of Darkness
+#dmg         5  D5 magic damage
+
+#newspell "Horde of the Night"
+#path        9  Dark Magic
+#level       3
+#weapon    203  Summon Shade
+#dmg         8  D8 units summoned
+#slowtocast
+
+#newspell "Army of Darkness"
+#path        9  Dark Magic
+#level       3
+#weapon    636  Army of Darkness
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Shade of Death"
+#path        9  Dark Magic
+#level       3
+#weapon    252  Shade of Death
+#dmg      2048  = 0x800 (Weakness)
+#slowtocast
+
+#newspell "Symbol of Dread"
+#path        9  Dark Magic
+#level       3
+#weapon    397  Symbol of Dread
+#dmg         2  D2 magic damage
+
+
+# ENCHANTMENT:
+
+#newspell "Fire Resistance"
+#path       26  Enchantment
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Fire Shield"
+#path       26  Enchantment
+#level       1
+#weapon    637  Fire Shield
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Sleep"
+#path       26  Enchantment
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Luck"
+#path       26  Enchantment
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Fortitude"
+#path       26  Enchantment
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Ironskin"
+#path       26  Enchantment
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Toughness"
+#path       26  Enchantment
+#level       1
+#weapon    435  Ironskin
+#dmg   1835008  = 0x1C0000 (Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+#newspell "Strength"
+#path       26  Enchantment
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Fortune"
+#path       26  Enchantment
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Fire Ward"
+#path       26  Enchantment
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Winter Ward"
+#path       26  Enchantment
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Thunder Ward"
+#path       26  Enchantment
+#level       2
+#weapon    673  Elemental Resistance
+#dmg        32  = 0x20 (Shock Immunity)
+
+#newspell "Venom Ward"
+#path       26  Enchantment
+#level       2
+#weapon    673  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Army of Stone"
+#path       26  Enchantment
+#level       2
+#weapon    430  Army of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Soldiers of Steel"
+#path       26  Enchantment
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Enchanted Sleep"
+#path       26  Enchantment
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Weakness"
+#path       26  Enchantment
+#level       2
+#weapon    250  Weakness
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Indomitability"
+#path       26  Enchantment
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg   1835008  = 0x1C0000 (Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+#newspell "Herculean Soldiers"
+#path       26  Enchantment
+#level       2
+#weapon    430  Army of Stone
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Soldiers of Flame"
+#path       26  Enchantment
+#level       2
+#weapon    638  Soldiers of Flame
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Battle Fortune"
+#path       26  Enchantment
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Slumbering Army"
+#path       26  Enchantment
+#level       3
+#weapon    304  Slumbering Army
+#dmg         1  sleep
+#slowtocast
+
+#newspell "Invulnerability"
+#path       26  Enchantment
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+
+#newspell "Army of Flames"
+#path       26  Enchantment
+#level       3
+#weapon    639  Army of Flames
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Army of Steel"
+#path       26  Enchantment
+#level       3
+#weapon    433  Legion of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Legion of Stone"
+#path       26  Enchantment
+#level       3
+#weapon    429  Legion of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+
+# FROST MAGIC:
+
+#newspell "Freeze"
+#path       27  Frost Magic
+#level       1
+#weapon     61  Freeze
+#dmg         8  D8 cold damage
+
+#newspell "Frost"
+#path       27  Frost Magic
+#level       1
+#weapon     62  Frost
+#dmg         3  D3 cold damage
+
+#newspell "Frozen Heart"
+#path       27  Frost Magic
+#level       1
+#weapon     68  Frozen Heart
+#dmg        20  D20 cold damage
+
+#newspell "Icicle"
+#path       27  Frost Magic
+#level       1
+#weapon     69  Icicle
+#dmg         6  D6 pierce damage
+
+#newspell "Cold Resistance"
+#path       27  Frost Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Ice Shards"
+#path       27  Frost Magic
+#level       2
+#weapon     70  Ice Shards
+#dmg        12  D12 pierce damage
+
+#newspell "Falling Frost"
+#path       27  Frost Magic
+#level       2
+#weapon     64  Falling Frost
+#dmg         6  D6 cold damage
+
+#newspell "Blizzard"
+#path       27  Frost Magic
+#level       2
+#weapon     66  Blizzard
+#dmg         3  D3 cold damage
+#slowtocast
+
+#newspell "Hail Storm"
+#path       27  Frost Magic
+#level       2
+#weapon    328  Hail Storm
+#dmg         4  D4 blunt damage
+#slowtocast
+
+#newspell "Encase in Ice"
+#path       27  Frost Magic
+#level       2
+#weapon    240  Encase in Ice
+#dmg         2  D2 cold damage
+
+#newspell "Winter Ward"
+#path       27  Frost Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Frozen Flames"
+#path       27  Frost Magic
+#level       3
+#weapon     64  Falling Frost
+#dmg        17  D17 cold damage
+
+#newspell "Legion of Ice"
+#path       27  Frost Magic
+#level       3
+#weapon     72  Legion of Ice
+#dmg        10  = 0xA (Armor +1 + Cold Immunity)
+
+#newspell "Ice Prison"
+#path       27  Frost Magic
+#level       3
+#weapon    241  Ice Prison
+#dmg         6  D6 cold damage
+
+
+# WITCHERY:
+
+#newspell "Charm"
+#path       40  Witchery
+#level       1
+#weapon     73  Charm
+#dmg         1  charm
+
+#newspell "Curse"
+#path       40  Witchery
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Venom"
+#path       40  Witchery
+#level       1
+#weapon     75  Venom
+#dmg        20  D20 poison damage
+
+#newspell "Poison Cloud"
+#path       40  Witchery
+#level       1
+#weapon    272  Poison Cloud
+#dmg         4  D4 poison damage
+
+#newspell "Sleep"
+#path       40  Witchery
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Poison Resistance"
+#path       40  Witchery
+#level       1
+#weapon    670  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Confusion"
+#path       40  Witchery
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Acid Cloud"
+#path       40  Witchery
+#level       1
+#weapon    619  Acid Cloud
+#dmg         2  D2 acid damage
+
+#newspell "Charm"
+#path       40  Witchery
+#level       2
+#weapon     52  Charm
+#dmg         1  charm
+
+#newspell "Curse of the Frog Prince"
+#path       40  Witchery
+#level       2
+#weapon     76  Polymorph into Frog
+#dmg         1  polymorph
+
+#newspell "Enchanted Sleep"
+#path       40  Witchery
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Poison Mist"
+#path       40  Witchery
+#level       2
+#weapon    503  Poison Mist
+#dmg         8  D8 poison damage
+
+#newspell "Venomous Death"
+#path       40  Witchery
+#level       2
+#weapon     75  Venom
+#dmg        60  D60 poison damage
+
+#newspell "Venom Ward"
+#path       40  Witchery
+#level       2
+#weapon    672  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Cloud of Confusion"
+#path       40  Witchery
+#level       2
+#weapon    452  Cloud of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Acid Mist"
+#path       40  Witchery
+#level       2
+#weapon    620  Acid Mist
+#dmg         2  D2 acid damage
+
+#newspell "True Charm"
+#path       40  Witchery
+#level       3
+#weapon     74  True Charm
+#dmg         1  charm
+
+#newspell "Enchanting Voice"
+#path       40  Witchery
+#level       3
+#weapon     80  Enchanting Voice
+#dmg         1  sleep
+
+#newspell "Mass Charm"
+#path       40  Witchery
+#level       3
+#weapon     79  Mass Charm
+#dmg         1  charm
+
+#newspell "Curse of Pigs"
+#path       40  Witchery
+#level       3
+#weapon    220  Polymorph into Boar
+#dmg         1  polymorph
+#slowtocast
+
+#newspell "Mist of Confusion"
+#path       40  Witchery
+#level       3
+#weapon    453  Mist of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+
+# INFERNAL MAGIC:
+
+#newspell "Flame Burst"
+#path        1  Infernal Magic
+#level       1
+#weapon     53  Flame Burst
+#dmg         8  D8 fire damage
+
+#newspell "Blood Boil"
+#path        1  Infernal Magic
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Pain"
+#path        1  Infernal Magic
+#level       1
+#weapon     16  Pain
+#dmg        10  D10 magic damage
+
+#newspell "Spontaneous Combustion"
+#path        1  Infernal Magic
+#level       1
+#weapon    242  Combustion
+#dmg        32  = 0x20 (Burn)
+
+#newspell "Summon Imp"
+#path        1  Infernal Magic
+#level       1
+#weapon    121  Summon Imp
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Strength"
+#path        1  Infernal Magic
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Harm"
+#path        1  Infernal Magic
+#level       2
+#weapon    484  Harm
+#dmg        33  D33 magic damage
+
+#newspell "Agony"
+#path        1  Infernal Magic
+#level       2
+#weapon    152  Agony
+#dmg         9  D9 magic damage
+
+#newspell "Hellbind Heart"
+#path        1  Infernal Magic
+#level       2
+#weapon    642  Hellbind Heart
+#dmg         1  enslave
+#slowtocast
+
+#newspell "Summon Imps"
+#path        1  Infernal Magic
+#level       2
+#weapon    121  Summon Imp
+#dmg         3  D3 units summoned
+#slowtocast
+
+#newspell "Lashes of Pain"
+#path        1  Infernal Magic
+#level       2
+#weapon    244  Lashes of Pain
+#dmg         9  D9 slash damage
+
+#newspell "Blood Burst"
+#path        1  Infernal Magic
+#level       2
+#weapon    367  Blood Burst
+#dmg        20  D20 magic damage
+
+#newspell "Infernal Strength"
+#path        1  Infernal Magic
+#level       2
+#weapon    444  strength, row
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Bloodletting"
+#path        1  Infernal Magic
+#level       3
+#weapon    645  Bloodletting
+#dmg         6  D6 magic damage
+#slowtocast
+
+#newspell "Infernal Gate"
+#path        1  Infernal Magic
+#level       3
+#weapon    323  Summon Fiend of Darkness
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Summon Fiend"
+#path        1  Infernal Magic
+#level       3
+#weapon    122  Summon Fiend of Darkness
+#dmg         3  D3 units summoned
+#slowtocast
+
+#newspell "Summon Demon"
+#path        1  Infernal Magic
+#level       3
+#weapon    123  Summon Lesser Demon
+#dmg         3  D3 units summoned
+#slowtocast
+
+#newspell "Imp Horde"
+#path        1  Infernal Magic
+#level       3
+#weapon    121  Summon Imp
+#dmg        12  D12 units summoned
+#slowtocast
+
+#newspell "Rain of Blood"
+#path        1  Infernal Magic
+#level       3
+#weapon    468  Rain of Blood
+#dmg         7  fear: D7 vs morale
+#slowtocast
+
+
+# BLOOD MAGIC:
+
+#newspell "Blood Boil"
+#path       11  Blood Magic
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Leech"
+#path       11  Blood Magic
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Strength"
+#path       11  Blood Magic
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Harm"
+#path       11  Blood Magic
+#level       2
+#weapon    484  Harm
+#dmg        33  D33 magic damage
+
+#newspell "Hellbind Heart"
+#path       11  Blood Magic
+#level       2
+#weapon    642  Hellbind Heart
+#dmg         1  enslave
+#slowtocast
+
+#newspell "Blood Burst"
+#path       11  Blood Magic
+#level       2
+#weapon    367  Blood Burst
+#dmg        20  D20 magic damage
+
+#newspell "Blood Rush"
+#path       11  Blood Magic
+#level       2
+#weapon    444  strength, row
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Bloodletting"
+#path       11  Blood Magic
+#level       3
+#weapon     82  Soul Drain
+#dmg         6  D6 magic damage
+#slowtocast
+
+#newspell "Rupture"
+#path       11  Blood Magic
+#level       3
+#weapon    153  Rupture
+#dmg         7  D7 magic damage
+#slowtocast
+
+#newspell "Rain of Blood"
+#path       11  Blood Magic
+#level       3
+#weapon    468  Rain of Blood
+#dmg         7  fear: D7 vs morale
+#slowtocast
+
+
+# HEDGE MAGIC:
+
+#newspell "Disease"
+#path        7  Hedge Magic
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path        7  Hedge Magic
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Sleep"
+#path        7  Hedge Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Gust of Wind"
+#path        7  Hedge Magic
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Summon Wolf"
+#path        7  Hedge Magic
+#level       1
+#weapon    148  Summon Wolf
+#dmg         1  One unit summoned
+
+#newspell "Fortitude"
+#path        7  Hedge Magic
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Poison Cloud"
+#path        7  Hedge Magic
+#level       1
+#weapon    272  Poison Cloud
+#dmg         4  D4 poison damage
+
+#newspell "Flame Burst"
+#path        7  Hedge Magic
+#level       1
+#weapon     53  Flame Burst
+#dmg         8  D8 fire damage
+
+#newspell "Strength"
+#path        7  Hedge Magic
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Vine Arrow"
+#path        7  Hedge Magic
+#level       1
+#weapon    661  Vine Arrow
+#dmg         6  D6 pierce damage
+
+#newspell "Plague"
+#path        7  Hedge Magic
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Storm Wind"
+#path        7  Hedge Magic
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Curse of the Frog Prince"
+#path        7  Hedge Magic
+#level       2
+#weapon     76  Polymorph into Frog
+#dmg         1  polymorph
+
+#newspell "Summon Wolves"
+#path        7  Hedge Magic
+#level       2
+#weapon    148  Summon Wolf
+#dmg         3  D3 units summoned
+
+#newspell "Poison Mist"
+#path        7  Hedge Magic
+#level       2
+#weapon    503  Poison Mist
+#dmg         8  D8 poison damage
+
+#newspell "Summon Murder of Crows"
+#path        7  Hedge Magic
+#level       2
+#weapon    470  Summon Murder Of Crows
+#dmg         3  D3 units summoned
+
+#newspell "Enchanted Sleep"
+#path        7  Hedge Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Summon Great Boar"
+#path        7  Hedge Magic
+#level       2
+#weapon    471  Summon Great Boar
+#dmg         1  One unit summoned
+
+#newspell "Arcane Tempest"
+#path        7  Hedge Magic
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Black Death"
+#path        7  Hedge Magic
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Army of Wolves"
+#path        7  Hedge Magic
+#level       3
+#weapon    148  Summon Wolf
+#dmg        10  D10 units summoned
+
+
+# CRYSTAL SORCERY:
+
+#newspell "Gust of Wind"
+#path       12  Crystal Sorcery
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Seeking Arrow"
+#path       12  Crystal Sorcery
+#level       1
+#weapon    200  Seeking Arrow
+#dmg         7  D7 pierce damage
+
+#newspell "Luck"
+#path       12  Crystal Sorcery
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Fortune"
+#path       12  Crystal Sorcery
+#level       2
+#weapon    119  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Winds"
+#path       12  Crystal Sorcery
+#level       2
+#weapon    114  Winds
+#dmg         3  D3 blunt damage
+
+#newspell "Air Shield"
+#path       12  Crystal Sorcery
+#level       2
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Protective Winds"
+#path       12  Crystal Sorcery
+#level       3
+#weapon    653  Protective Winds
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Chain Lightning"
+#path       12  Crystal Sorcery
+#level       3
+#weapon    110  Chain Lightning
+#dmg         7  D7 shock damage
+
+
+# GARNET SORCERY:
+
+#newspell "Blood Boil"
+#path       13  Garnet Sorcery
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Pain"
+#path       13  Garnet Sorcery
+#level       1
+#weapon     16  Pain
+#dmg        10  D10 magic damage
+
+#newspell "Flame Strike"
+#path       13  Garnet Sorcery
+#level       2
+#weapon    663  Flame Strike
+#dmg        15  D15 fire damage
+
+#newspell "Agony"
+#path       13  Garnet Sorcery
+#level       2
+#weapon    152  Agony
+#dmg         7  D7 magic damage
+
+#newspell "Falling Flames"
+#path       13  Garnet Sorcery
+#level       3
+#weapon     56  Falling Fires
+#dmg         8  D8 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Flame Explosion"
+#path       13  Garnet Sorcery
+#level       3
+#weapon    368  Pillar of Fire
+#dmg        25  D25 fire damage
+
+
+# JADE SORCERY:
+
+#newspell "Venom"
+#path       14  Jade Sorcery
+#level       1
+#weapon     75  Venom
+#dmg        20  D20 poison damage
+
+#newspell "Poison Bolts"
+#path       14  Jade Sorcery
+#level       1
+#weapon    271  Poison Bolts
+#dmg         8  D8 poison damage
+
+#newspell "Poison Resistance"
+#path       14  Jade Sorcery
+#level       1
+#weapon    670  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Regeneration"
+#path       14  Jade Sorcery
+#level       1
+#weapon    627  Regeneration
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Venomous Death"
+#path       14  Jade Sorcery
+#level       2
+#weapon     75  Venom
+#dmg        40  D40 poison damage
+
+#newspell "Venom Ward"
+#path       14  Jade Sorcery
+#level       2
+#weapon    672  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Lungs of Watery Death"
+#path       14  Jade Sorcery
+#level       2
+#weapon    179  Sailor's Death
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Hydra's Blessing"
+#path       14  Jade Sorcery
+#level       2
+#weapon    628  Hydra's Blessing
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Mass Regeneration"
+#path       14  Jade Sorcery
+#level       3
+#weapon    630  Mass Regeneration
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Poison Mist"
+#path       14  Jade Sorcery
+#level       3
+#weapon    503  Poison Mist
+#dmg        12  D12 poison damage
+
+
+# ONYX SORCERY:
+
+#newspell "Fear"
+#path       15  Onyx Sorcery
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Bones of Stone"
+#path       15  Onyx Sorcery
+#level       1
+#weapon    646  Bones of Stone
+#dmg   1048576  = 0x100000 (Blunt Resistance)
+
+#newspell "Stygian Skin"
+#path       15  Onyx Sorcery
+#level       1
+#weapon    647  Stygian Skin
+#dmg    262144  = 0x40000 (Pierce Resistance)
+
+#newspell "Stoneskin"
+#path       15  Onyx Sorcery
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Raise Longdead"
+#path       15  Onyx Sorcery
+#level       1
+#weapon    265  Summon Longdead
+#dmg         1  One unit summoned
+
+#newspell "Terror"
+#path       15  Onyx Sorcery
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Granite Army"
+#path       15  Onyx Sorcery
+#level       2
+#weapon    430  Army of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Dance of Bones"
+#path       15  Onyx Sorcery
+#level       2
+#weapon    265  Summon Longdead
+#dmg         3  D3 units summoned
+
+#newspell "Nightmares"
+#path       15  Onyx Sorcery
+#level       3
+#weapon    445  Nightmares
+#dmg         7  fear: D7 vs morale
+
+#newspell "Army of Bones"
+#path       15  Onyx Sorcery
+#level       3
+#weapon    265  Summon Longdead
+#dmg         7  D7 units summoned
+
+
+# WHITE MAGIC:
+
+#newspell "Resist Magic"
+#path       16  White Magic
+#level       1
+#weapon    320  ben (one)
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Sunlight"
+#path       16  White Magic
+#level       1
+#weapon    126  Sunlight
+#dmg         3  D3 fire damage
+
+#newspell "Luck"
+#path       16  White Magic
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Banish"
+#path       16  White Magic
+#level       1
+#weapon    139  Banishment
+#dmg       999  banish
+
+#newspell "Aura of Awe"
+#path       16  White Magic
+#level       1
+#weapon    206  Aura of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Air Shield"
+#path       16  White Magic
+#level       1
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Fortune"
+#path       16  White Magic
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Solar Rays"
+#path       16  White Magic
+#level       2
+#weapon    128  Solar Rays
+#dmg         2  D2 fire damage
+
+#newspell "Storm Wind"
+#path       16  White Magic
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Greater Banishment"
+#path       16  White Magic
+#level       2
+#weapon    140  Threefold Banishment
+#dmg       999  banish
+
+#newspell "Divine Aura"
+#path       16  White Magic
+#level       2
+#weapon    469  Divine Aura
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Antimagic"
+#path       16  White Magic
+#level       2
+#weapon    641  Antimagic
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Divine Word"
+#path       16  White Magic
+#level       3
+#weapon    141  Fivefold Banishment
+#dmg       999  banish
+
+#newspell "Alter Reality"
+#path       16  White Magic
+#level       3
+#weapon    124  Luck
+#dmg       128  = 0x80 (Luck)
+#slowtocast
+
+#newspell "Symbol of Light"
+#path       16  White Magic
+#level       3
+#weapon    399  Symbol of Light
+#dmg         4  D4 magic damage
+
+
+# SPIRITISM:
+
+#newspell "Call Ancestor"
+#path       17  Spiritism
+#level       1
+#weapon    264  Summon Ancestral Warrior
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Curse"
+#path       17  Spiritism
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Disease"
+#path       17  Spiritism
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Banish Spirit"
+#path       17  Spiritism
+#level       1
+#weapon    139  Banishment
+#dmg       999  banish
+
+#newspell "Call Vengeful Spirit"
+#path       17  Spiritism
+#level       1
+#weapon     30  Fear
+#dmg         9  fear: D9 vs morale
+#slowtocast
+
+#newspell "Call Spirit of the Western Wind"
+#path       17  Spiritism
+#level       1
+#weapon    114  Winds
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Wrath of the Ancestors"
+#path       17  Spiritism
+#level       2
+#weapon    263  Summon Ancestor Spirit
+#dmg         4  D4 units summoned
+#slowtocast
+
+#newspell "Wind of Silence"
+#path       17  Spiritism
+#level       2
+#weapon    255  Wind of Silence
+#dmg       999  banish
+
+#newspell "Fortune of the Ancestors"
+#path       17  Spiritism
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Call Storm Spirit"
+#path       17  Spiritism
+#level       2
+#weapon    115  Storm Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Call the Spirits of Thunder"
+#path       17  Spiritism
+#level       2
+#weapon    149  Thunderhead
+#dmg        13  D13 shock damage
+#slowtocast
+
+#newspell "Call the Spirits of Plague"
+#path       17  Spiritism
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Call Spirits of the Night"
+#path       17  Spiritism
+#level       2
+#weapon    611  Terror
+#dmg         5  fear: D5 vs morale
+#slowtocast
+
+#newspell "Spirit Gate"
+#path       17  Spiritism
+#level       3
+#weapon    263  Summon Ancestor Spirit
+#dmg         9  D9 units summoned
+#slowtocast
+
+#newspell "Call Spirit Lord of the Sky"
+#path       17  Spiritism
+#level       3
+#weapon    117  Gale
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Eternal Rest"
+#path       17  Spiritism
+#level       3
+#weapon    256  Call Spirits of the Dead
+#dmg       999  banish
+
+
+# FORTUNE MAGIC:
+
+#newspell "Luck"
+#path       18  Fortune Magic
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Fortune"
+#path       18  Fortune Magic
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Battle Fortune"
+#path       18  Fortune Magic
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+
+# SOLAR MAGIC:
+
+#newspell "Sunlight"
+#path       19  Solar Magic
+#level       1
+#weapon    126  Sunlight
+#dmg         3  D3 fire damage
+
+#newspell "Sunbeam"
+#path       19  Solar Magic
+#level       1
+#weapon    127  Sunbeam
+#dmg         2  D2 fire damage
+
+#newspell "Aura of the Sun"
+#path       19  Solar Magic
+#level       1
+#weapon    206  Aura of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Solar Rays"
+#path       19  Solar Magic
+#level       2
+#weapon    128  Solar Rays
+#dmg         2  D2 fire damage
+
+#newspell "Solar Flare"
+#path       19  Solar Magic
+#level       2
+#weapon    127  Sunbeam
+#dmg         8  D8 fire damage
+
+#newspell "Vengeance of the Sun"
+#path       19  Solar Magic
+#level       2
+#weapon    374  Vengeance of the Sun
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Solar Brilliance"
+#path       19  Solar Magic
+#level       3
+#weapon    129  Solar Brilliance
+#dmg         2  D2 fire damage
+#slowtocast
+
+#newspell "Army of the Sun"
+#path       19  Solar Magic
+#level       3
+#weapon    207  Army of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Godflesh"
+#path       19  Solar Magic
+#level       3
+#weapon    435  Ironskin
+#dmg   1974276  = 0x1E2004 (Fire Immunity + Awe +1 + Armor +2 + Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+
+# MYSTICISM:
+
+#newspell "Cleansing Water"
+#path       20  Mysticism
+#level       1
+#weapon    130  Cleansing Water
+#dmg         2  D2 blunt damage
+
+#newspell "Purify"
+#path       20  Mysticism
+#level       1
+#weapon    394  Purify
+#dmg        10  D10 magic damage
+
+#newspell "Dehydration"
+#path       20  Mysticism
+#level       1
+#weapon    422  Dehydration
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Rising Tide"
+#path       20  Mysticism
+#level       2
+#weapon    391  Rising Tide
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Torrent of the Sacred River"
+#path       20  Mysticism
+#level       2
+#weapon    132  Torrent of the Sacred River
+#dmg         3  D3 blunt damage
+
+#newspell "Syllable of Death"
+#path       20  Mysticism
+#level       2
+#weapon    390  Syllable of Death
+#dmg       999  D999 magic damage
+
+#newspell "Holy Word"
+#path       20  Mysticism
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Final Rest"
+#path       20  Mysticism
+#level       3
+#weapon    679  Call the Dead
+#dmg         2  banish
+
+#newspell "Divine Names"
+#path       20  Mysticism
+#level       3
+#weapon    680  Divine Names
+#dmg        16  = 0x10 (Paralyzation)
+
+
+# SERPENT MAGIC:
+
+#newspell "Venom"
+#path       21  Serpent Magic
+#level       1
+#weapon     75  Venom
+#dmg        26  D26 poison damage
+
+#newspell "Poison Resistance"
+#path       21  Serpent Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Poison Bolts"
+#path       21  Serpent Magic
+#level       1
+#weapon    271  Poison Bolts
+#dmg         8  D8 poison damage
+
+#newspell "Poison Cloud"
+#path       21  Serpent Magic
+#level       1
+#weapon    272  Poison Cloud
+#dmg         5  D5 poison damage
+
+#newspell "Summon Snake"
+#path       21  Serpent Magic
+#level       1
+#weapon    136  Summon Snake
+#dmg         1  One unit summoned
+
+#newspell "Poison Mist"
+#path       21  Serpent Magic
+#level       2
+#weapon    503  Poison Mist
+#dmg         8  D8 poison damage
+
+#newspell "Venomous Death"
+#path       21  Serpent Magic
+#level       2
+#weapon     75  Venom
+#dmg        60  D60 poison damage
+
+#newspell "Venom Ward"
+#path       21  Serpent Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg        16  = 0x10 (Poison Immunity)
+
+#newspell "Pit of Snakes"
+#path       21  Serpent Magic
+#level       2
+#weapon    136  Summon Snake
+#dmg         3  D3 units summoned
+
+#newspell "Hydra's Blessing"
+#path       21  Serpent Magic
+#level       2
+#weapon    628  Hydra's Blessing
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Summon Serpent"
+#path       21  Serpent Magic
+#level       2
+#weapon    137  Summon Serpent
+#dmg         1  One unit summoned
+
+#newspell "Poison Darts"
+#path       21  Serpent Magic
+#level       2
+#weapon    664  Poison Darts
+#dmg         6  D6 poison damage
+
+#newspell "Deadly Fumes"
+#path       21  Serpent Magic
+#level       3
+#weapon    373  Deadly Fumes
+#dmg         6  D6 poison damage
+
+#newspell "Summon Serpents"
+#path       21  Serpent Magic
+#level       3
+#weapon    137  Summon Serpent
+#dmg         5  D5 units summoned
+
+#newspell "Green Death"
+#path       21  Serpent Magic
+#level       3
+#weapon    503  Poison Mist
+#dmg        22  D22 poison damage
+
+
+# GOLDEN MAGIC:
+
+#newspell "Sleep"
+#path       22  Golden Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Sunbeam"
+#path       22  Golden Magic
+#level       1
+#weapon    127  Sunbeam
+#dmg         2  D2 fire damage
+
+#newspell "Flames"
+#path       22  Golden Magic
+#level       1
+#weapon    660  Flames
+#dmg         3  D3 fire damage
+
+#newspell "Fire Resistance"
+#path       22  Golden Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Fireball"
+#path       22  Golden Magic
+#level       2
+#weapon     54  Fireball
+#dmg        15  D15 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Fire Ward"
+#path       22  Golden Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Solar Flare"
+#path       22  Golden Magic
+#level       2
+#weapon    127  Sunbeam
+#dmg         8  D8 fire damage
+
+#newspell "Enchanted Sleep"
+#path       22  Golden Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Flame Storm"
+#path       22  Golden Magic
+#level       3
+#weapon     57  Flamestorm
+#dmg         9  D9 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Army of Gold"
+#path       22  Golden Magic
+#level       3
+#weapon     71  Army of Gold
+#dmg    131076  = 0x20004 (Fire Immunity + Armor +2)
+
+#newspell "Army of the Sun"
+#path       22  Golden Magic
+#level       3
+#weapon    207  Army of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Slumbering Army"
+#path       22  Golden Magic
+#level       3
+#weapon    304  Slumbering Army
+#dmg         1  sleep
+#slowtocast
+
+
+# IRON ARCANA:
+
+#newspell "Iron Shard"
+#path       23  Iron Arcana
+#level       1
+#weapon    506  Iron Shard
+#dmg         5  D5 blunt damage
+
+#newspell "Iron Skin"
+#path       23  Iron Arcana
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Iron Spear"
+#path       23  Iron Arcana
+#level       1
+#weapon    505  Iron Spear
+#dmg        12  D12 pierce damage
+
+#newspell "Luck"
+#path       23  Iron Arcana
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Paralyze"
+#path       23  Iron Arcana
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Iron Darts"
+#path       23  Iron Arcana
+#level       2
+#weapon    199  Iron Darts
+#dmg         6  D6 pierce damage
+
+#newspell "Soldiers of Steel"
+#path       23  Iron Arcana
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Iron Shower"
+#path       23  Iron Arcana
+#level       2
+#weapon    403  Iron Shower
+#dmg         5  D5 blunt damage
+
+#newspell "Summon Earth"
+#path       23  Iron Arcana
+#level       2
+#weapon    196  Summon Lesser Earth
+#dmg         2  D2 units summoned
+#slowtocast
+
+#newspell "Antimagic"
+#path       23  Iron Arcana
+#level       2
+#weapon    641  Antimagic
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Fortune"
+#path       23  Iron Arcana
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Soul Slay"
+#path       23  Iron Arcana
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Iron Storm"
+#path       23  Iron Arcana
+#level       3
+#weapon    198  Iron Storm
+#dmg         6  D6 pierce damage
+#slowtocast
+
+#newspell "Invulnerability"
+#path       23  Iron Arcana
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+
+#newspell "Iron Globes"
+#path       23  Iron Arcana
+#level       3
+#weapon    331  Stone Shards
+#dmg        50  D50 blunt damage
+
+#newspell "Legion of Steel"
+#path       23  Iron Arcana
+#level       3
+#weapon    433  Legion of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Battle Fortune"
+#path       23  Iron Arcana
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+
+# KURO DO:
+
+#newspell "Disease"
+#path       24  Kuro Do
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path       24  Kuro Do
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Pain"
+#path       24  Kuro Do
+#level       1
+#weapon     16  Pain
+#dmg        10  D10 magic damage
+
+#newspell "Fear"
+#path       24  Kuro Do
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Gust of Wind"
+#path       24  Kuro Do
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Plague"
+#path       24  Kuro Do
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Harm"
+#path       24  Kuro Do
+#level       2
+#weapon    484  Harm
+#dmg        30  D30 magic damage
+
+#newspell "Terror"
+#path       24  Kuro Do
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Storm Wind"
+#path       24  Kuro Do
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Blizzard"
+#path       24  Kuro Do
+#level       2
+#weapon     66  Blizzard
+#dmg         3  D3 cold damage
+#slowtocast
+
+#newspell "Thunderhead"
+#path       24  Kuro Do
+#level       2
+#weapon    149  Thunderhead
+#dmg        12  D12 shock damage
+#slowtocast
+
+#newspell "Summon Wolves"
+#path       24  Kuro Do
+#level       2
+#weapon    148  Summon Wolf
+#dmg         4  D4 units summoned
+
+#newspell "Rain of Stones"
+#path       24  Kuro Do
+#level       3
+#weapon    327  Rain of Stones
+#dmg         7  D7 blunt damage
+#slowtocast
+
+#newspell "Earthquake"
+#path       24  Kuro Do
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Arcane Tempest"
+#path       24  Kuro Do
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Black Death"
+#path       24  Kuro Do
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+
+# DRUIDISM:
+
+#newspell "Befriend Animal"
+#path       39  Druidism
+#level       1
+#weapon    217  Charm Animal
+#dmg         1  charm
+
+#newspell "Tangle Vine"
+#path       39  Druidism
+#level       1
+#weapon    247  Tangle Vines
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Poison Arrow"
+#path       39  Druidism
+#level       1
+#weapon    229  Poison Arrow
+#dmg         6  D6 pierce damage
+
+#newspell "Vine Arrow"
+#path       39  Druidism
+#level       1
+#weapon    661  Vine Arrow
+#dmg         6  D6 pierce damage
+
+#newspell "Poison Vine"
+#path       39  Druidism
+#level       1
+#weapon    329  Poison Vine
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Barkskin"
+#path       39  Druidism
+#level       1
+#weapon    380  Barkskin
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Briar Cage"
+#path       39  Druidism
+#level       2
+#weapon    189  Briar Cage
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Poison Vines"
+#path       39  Druidism
+#level       2
+#weapon    215  Poison Vines
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Command Beasts"
+#path       39  Druidism
+#level       2
+#weapon    218  Charm Animal
+#dmg         1  charm
+
+#newspell "Curse of Wood"
+#path       39  Druidism
+#level       2
+#weapon    282  Curse of Wood
+#dmg      4096  = 0x1000 (Transform into Tree)
+
+#newspell "Oak Army"
+#path       39  Druidism
+#level       2
+#weapon    381  Oak Army
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Shooting Thorns"
+#path       39  Druidism
+#level       2
+#weapon    369  Shooting Thorns
+#dmg         2  D2 pierce damage
+
+#newspell "Domestication"
+#path       39  Druidism
+#level       2
+#weapon    372  Charm animal (easymr)
+#dmg         1  charm
+
+#newspell "Wild Growth"
+#path       39  Druidism
+#level       3
+#weapon    216  Wild Growth
+#dmg       512  = 0x200 (Entanglement)
+#slowtocast
+
+#newspell "Earthquake"
+#path       39  Druidism
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Lord of the Wild"
+#path       39  Druidism
+#level       3
+#weapon    219  Charm Animal
+#dmg         1  charm
+
+
+# PRAYERS:
+
+#newspell "Conversion"
+#path       25  Prayers
+#level       1
+#weapon    498  Conversion
+#dmg         1  charm
+
+#newspell "Resist Magic"
+#path       25  Prayers
+#level       1
+#weapon    103  Luck
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Blessing"
+#path       25  Prayers
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Banish"
+#path       25  Prayers
+#level       1
+#weapon    139  Banishment
+#dmg       999  banish
+
+#newspell "Greater Blessing"
+#path       25  Prayers
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Mass Conversion"
+#path       25  Prayers
+#level       2
+#weapon    499  Mass Conversion
+#dmg         1  charm
+
+#newspell "Greater Banishment"
+#path       25  Prayers
+#level       2
+#weapon    140  Threefold Banishment
+#dmg       999  banish
+
+#newspell "Smite"
+#path       25  Prayers
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+#newspell "Bless Army"
+#path       25  Prayers
+#level       3
+#weapon    684  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "True Faith"
+#path       25  Prayers
+#level       3
+#weapon    500  True Faith
+#dmg         1  charm
+
+#newspell "Divine Word"
+#path       25  Prayers
+#level       3
+#weapon    141  Fivefold Banishment
+#dmg       999  banish
+
+
+# PALADIN MAGIC:
+
+#newspell "Lesser Banishment"
+#path       49  Paladin Magic
+#level       1
+#weapon    138  Lesser Banishment
+#dmg        13  banish
+
+#newspell "Lesser Smite"
+#path       49  Paladin Magic
+#level       1
+#weapon    514  Lesser Smite
+#dmg        13  D13 fire damage
+
+#newspell "Aura of God"
+#path       49  Paladin Magic
+#level       1
+#weapon    515  God Flesh
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Godflesh"
+#path       49  Paladin Magic
+#level       2
+#weapon    515  God Flesh
+#dmg   1966080  = 0x1E0000 (Armor +2 + Pierce Resistance + Slash Resistance + Blunt Resistance)
+# Bitflag1
+
+#newspell "Avatar"
+#path       49  Paladin Magic
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+# Bitflag1
+
+
+# WIZARDRY:
+
+#newspell "Frozen Heart"
+#path       29  Wizardry
+#level       1
+#weapon     68  Frozen Heart
+#dmg        20  D20 cold damage
+
+#newspell "Flames"
+#path       29  Wizardry
+#level       1
+#weapon    660  Flames
+#dmg         3  D3 fire damage
+
+#newspell "Venom"
+#path       29  Wizardry
+#level       1
+#weapon     75  Venom
+#dmg        20  D20 poison damage
+
+#newspell "Air Shield"
+#path       29  Wizardry
+#level       1
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Confusion"
+#path       29  Wizardry
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Acid Darts"
+#path       29  Wizardry
+#level       1
+#weapon    617  Acid Dart
+#dmg         5  D5 acid damage
+
+#newspell "Stone Shards"
+#path       29  Wizardry
+#level       1
+#weapon    331  Stone Shards
+#dmg         4  D4 blunt damage
+
+#newspell "Combustion"
+#path       29  Wizardry
+#level       1
+#weapon    243  Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Oak Army"
+#path       29  Wizardry
+#level       2
+#weapon    381  Oak Army
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Chain Lightning"
+#path       29  Wizardry
+#level       2
+#weapon    110  Chain Lightning
+#dmg         5  D5 shock damage
+
+#newspell "Fireball"
+#path       29  Wizardry
+#level       2
+#weapon     54  Fireball
+#dmg        15  D15 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Poison Mist"
+#path       29  Wizardry
+#level       2
+#weapon    503  Poison Mist
+#dmg         8  D8 poison damage
+
+#newspell "Protective Winds"
+#path       29  Wizardry
+#level       2
+#weapon    653  Protective Winds
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Acid Spray"
+#path       29  Wizardry
+#level       2
+#weapon    618  Acid Spray
+#dmg        10  D10 acid damage
+
+#newspell "Eruption"
+#path       29  Wizardry
+#level       2
+#weapon    313  Eruption
+#dmg         9  D9 blunt damage
+
+#newspell "Flame Storm"
+#path       29  Wizardry
+#level       3
+#weapon     57  Flamestorm
+#dmg         7  D7 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Invulnerability"
+#path       29  Wizardry
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+
+#newspell "Call Lightning"
+#path       29  Wizardry
+#level       3
+#weapon    267  Call Lightning
+#dmg         8  D8 shock damage
+
+#newspell "Wild Growth"
+#path       29  Wizardry
+#level       3
+#weapon    216  Wild Growth
+#dmg       512  = 0x200 (Entanglement)
+#slowtocast
+
+#newspell "Acid Rain"
+#path       29  Wizardry
+#level       3
+#weapon    621  Acid Rain
+#dmg        12  D12 acid damage
+
+#newspell "Maws of the Earth"
+#path       29  Wizardry
+#level       3
+#weapon    650  Maws of the Earth
+#dmg       100  D100 blunt damage
+
+
+# GEOMANCY:
+
+#newspell "Tremor"
+#path        6  Geomancy
+#level       1
+#weapon    313  Eruption
+#dmg         2  D2 blunt damage
+
+#newspell "Stone Shards"
+#path        6  Geomancy
+#level       1
+#weapon    331  Stone Shards
+#dmg         4  D4 blunt damage
+
+#newspell "Earth Grip"
+#path        6  Geomancy
+#level       1
+#weapon    310  aff (earth, unresistable)
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Iron Skin"
+#path        6  Geomancy
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Strength"
+#path        6  Geomancy
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Eruption"
+#path        6  Geomancy
+#level       2
+#weapon    313  Eruption
+#dmg         9  D9 blunt damage
+
+#newspell "Earth Meld"
+#path        6  Geomancy
+#level       2
+#weapon    317  Earth Meld
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Soldiers of Steel"
+#path        6  Geomancy
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Summon Earth"
+#path        6  Geomancy
+#level       2
+#weapon    196  Summon Lesser Earth
+#dmg         3  D3 units summoned
+#slowtocast
+
+#newspell "Strength of the Earth"
+#path        6  Geomancy
+#level       2
+#weapon    655  Strength of the Earth
+#dmg      4608  = 0x1200 (Strength +2 + Regeneration)
+
+#newspell "Iron Bolts"
+#path        6  Geomancy
+#level       2
+#weapon    649  Iron Bolts
+#dmg        10  D10 blunt damage
+
+#newspell "Chasm"
+#path        6  Geomancy
+#level       3
+#weapon    190  Chasm
+#dmg       100  D100 blunt damage
+
+#newspell "Maws of the Earth"
+#path        6  Geomancy
+#level       3
+#weapon    650  Maws of the Earth
+#dmg       100  D100 blunt damage
+
+#newspell "Army of Gold"
+#path        6  Geomancy
+#level       3
+#weapon    381  Oak Army
+#dmg    131076  = 0x20004 (Fire Immunity + Armor +2)
+
+#newspell "Earthquake"
+#path        6  Geomancy
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+
+# HYDROMANCY:
+
+#newspell "Dehydration"
+#path        4  Hydromancy
+#level       1
+#weapon    422  Dehydration
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Summon Water"
+#path        4  Hydromancy
+#level       1
+#weapon    195  Summon Lesser Water
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Stream of Water"
+#path        4  Hydromancy
+#level       1
+#weapon    401  Stream of Water
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Acid Darts"
+#path        4  Hydromancy
+#level       1
+#weapon    617  Acid Dart
+#dmg         5  D5 acid damage
+
+#newspell "Torrent of Water"
+#path        4  Hydromancy
+#level       2
+#weapon    187  Torrent of Water
+#dmg         6  D6 blunt damage
+
+#newspell "Sailor's Death"
+#path        4  Hydromancy
+#level       2
+#weapon    179  Sailor's Death
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Call Water"
+#path        4  Hydromancy
+#level       2
+#weapon    195  Summon Lesser Water
+#dmg         4  D4 units summoned
+#slowtocast
+
+#newspell "Rising Tide"
+#path        4  Hydromancy
+#level       2
+#weapon    391  Rising Tide
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Acid Spray"
+#path        4  Hydromancy
+#level       2
+#weapon    618  Acid Spray
+#dmg        10  D10 acid damage
+
+#newspell "Deluge"
+#path        4  Hydromancy
+#level       3
+#weapon    318  Deluge
+#dmg        11  D11 blunt damage
+
+#newspell "Watery Doom"
+#path        4  Hydromancy
+#level       3
+#weapon    319  Watery Doom
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Army of Waves"
+#path        4  Hydromancy
+#level       3
+#weapon    195  Summon Lesser Water
+#dmg        10  D10 units summoned
+#slowtocast
+
+#newspell "Acid Rain"
+#path        4  Hydromancy
+#level       3
+#weapon    621  Acid Rain
+#dmg        12  D12 acid damage
+
+
+# PYROMANCY:
+
+#newspell "Flame Burst"
+#path        3  Pyromancy
+#level       1
+#weapon     53  Flame Burst
+#dmg         8  D8 fire damage
+
+#newspell "Flames"
+#path        3  Pyromancy
+#level       1
+#weapon    660  Flames
+#dmg         3  D3 fire damage
+
+#newspell "Fire Resistance"
+#path        3  Pyromancy
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Blood Boil"
+#path        3  Pyromancy
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Fire Shield"
+#path        3  Pyromancy
+#level       1
+#weapon    637  Fire Shield
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Combustion"
+#path        3  Pyromancy
+#level       1
+#weapon    243  Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Meteor"
+#path        3  Pyromancy
+#level       2
+#weapon     59  Meteor
+#dmg        40  D40 blunt damage
+#slowtocast
+
+#newspell "Incinerate"
+#path        3  Pyromancy
+#level       2
+#weapon    449  Incinerate
+#dmg        25  D25 fire damage
+
+#newspell "Fireball"
+#path        3  Pyromancy
+#level       2
+#weapon     54  Fireball
+#dmg        15  D15 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Fire Cloud"
+#path        3  Pyromancy
+#level       2
+#weapon     55  Fire Cloud
+#dmg        10  D10 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Falling Fires"
+#path        3  Pyromancy
+#level       2
+#weapon     56  Falling Fires
+#dmg         6  D6 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Fire Ward"
+#path        3  Pyromancy
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Summon Fire"
+#path        3  Pyromancy
+#level       2
+#weapon    193  Summon Lesser Fire
+#dmg         3  D3 units summoned
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+#slowtocast
+
+#newspell "Mass Combustion"
+#path        3  Pyromancy
+#level       2
+#weapon    504  Mass Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+#slowtocast
+
+#newspell "Flame Eruption"
+#path        3  Pyromancy
+#level       3
+#weapon     56  Falling Fires
+#dmg        18  D18 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Flame Storm"
+#path        3  Pyromancy
+#level       3
+#weapon     57  Flamestorm
+#dmg         7  D7 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Hellfire"
+#path        3  Pyromancy
+#level       3
+#weapon     58  Hellfire
+#dmg        10  D10 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+#slowtocast
+
+#newspell "Meteor Showers"
+#path        3  Pyromancy
+#level       3
+#weapon     60  Meteor Showers
+#dmg        35  D35 blunt damage
+#slowtocast
+
+#newspell "Pillar of Fire"
+#path        3  Pyromancy
+#level       3
+#weapon    368  Pillar of Fire
+#dmg        60  D60 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+
+# STORM MAGIC:
+
+#newspell "Shock"
+#path        5  Storm Magic
+#level       1
+#weapon    107  Shock
+#dmg         6  D6 shock damage
+
+#newspell "Shock Field"
+#path        5  Storm Magic
+#level       1
+#weapon    623  Shock Field
+#dmg         2  D2 shock damage
+
+#newspell "Sparks"
+#path        5  Storm Magic
+#level       1
+#weapon    437  Sparks
+#dmg         3  D3 shock damage
+
+#newspell "Gust of Wind"
+#path        5  Storm Magic
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Lightning Resistance"
+#path        5  Storm Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg        32  = 0x20 (Shock Immunity)
+
+#newspell "Air Shield"
+#path        5  Storm Magic
+#level       1
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Storm Wind"
+#path        5  Storm Magic
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Chain Lightning"
+#path        5  Storm Magic
+#level       2
+#weapon    110  Chain Lightning
+#dmg         5  D5 shock damage
+
+#newspell "Orb Lightning"
+#path        5  Storm Magic
+#level       2
+#weapon    150  Orb lightning
+#dmg         8  D8 shock damage
+
+#newspell "Lightning Bolt"
+#path        5  Storm Magic
+#level       2
+#weapon    624  Lightning Bolt
+#dmg        10  D10 shock damage
+
+#newspell "Thunder Strike"
+#path        5  Storm Magic
+#level       2
+#weapon    625  Thunder Strike
+#dmg        45  D45 shock damage
+#slowtocast
+
+#newspell "Thunderhead"
+#path        5  Storm Magic
+#level       2
+#weapon    149  Thunderhead
+#dmg        12  D12 shock damage
+#slowtocast
+
+#newspell "Thunder Ward"
+#path        5  Storm Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg        32  = 0x20 (Shock Immunity)
+
+#newspell "Summon Clouds"
+#path        5  Storm Magic
+#level       2
+#weapon    194  Summon Cloud Elemental
+#dmg         2  D2 units summoned
+#slowtocast
+
+#newspell "Protective Winds"
+#path        5  Storm Magic
+#level       2
+#weapon    653  Protective Winds
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Gale"
+#path        5  Storm Magic
+#level       3
+#weapon    117  Gale
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Arcane Tempest"
+#path        5  Storm Magic
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Friendly Storm"
+#path        5  Storm Magic
+#level       3
+#weapon    654  Friendly Storm
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Call Lightning"
+#path        5  Storm Magic
+#level       3
+#weapon    267  Call Lightning
+#dmg         8  D8 shock damage
+
+#newspell "Lightning Storm"
+#path        5  Storm Magic
+#level       3
+#weapon    726  Lightning Storm
+#dmg        14  D14 shock damage
+
+
+# ELEMENTAL MAGIC:
+
+#newspell "Combustion"
+#path        2  Elemental Magic
+#level       1
+#weapon    243  Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Dehydration"
+#path        2  Elemental Magic
+#level       1
+#weapon    422  Dehydration
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Gust of Wind"
+#path        2  Elemental Magic
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Earth Grip"
+#path        2  Elemental Magic
+#level       1
+#weapon    310  aff (earth, unresistable)
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Torrent of Water"
+#path        2  Elemental Magic
+#level       2
+#weapon    187  Torrent of Water
+#dmg         6  D6 blunt damage
+
+#newspell "Sailor's Death"
+#path        2  Elemental Magic
+#level       2
+#weapon    179  Sailor's Death
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Earth Meld"
+#path        2  Elemental Magic
+#level       2
+#weapon    317  Earth Meld
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Fireball"
+#path        2  Elemental Magic
+#level       2
+#weapon     54  Fireball
+#dmg        15  D15 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Orb Lightning"
+#path        2  Elemental Magic
+#level       2
+#weapon    150  Orb lightning
+#dmg         8  D8 shock damage
+
+#newspell "Storm Wind"
+#path        2  Elemental Magic
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Call Lightning"
+#path        2  Elemental Magic
+#level       3
+#weapon    267  Call Lightning
+#dmg         8  D8 shock damage
+
+#newspell "Flame Storm"
+#path        2  Elemental Magic
+#level       3
+#weapon     57  Flamestorm
+#dmg         7  D7 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Army of Waves"
+#path        2  Elemental Magic
+#level       3
+#weapon    195  Summon Lesser Water
+#dmg         9  D9 units summoned
+#slowtocast
+
+#newspell "Earthquake"
+#path        2  Elemental Magic
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+
+# DARK PRAYERS:
+
+#newspell "Blood Boil"
+#path       28  Dark Prayers
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Leech"
+#path       28  Dark Prayers
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Pain"
+#path       28  Dark Prayers
+#level       1
+#weapon     16  Pain
+#dmg        10  D10 magic damage
+
+#newspell "Call Spider"
+#path       28  Dark Prayers
+#level       1
+#weapon    364  Summon Small Spider
+#dmg         1  One unit summoned
+
+#newspell "Call Scorpion"
+#path       28  Dark Prayers
+#level       1
+#weapon    472  Summon Scorpion
+#dmg         1  One unit summoned
+
+#newspell "Hellbind Heart"
+#path       28  Dark Prayers
+#level       2
+#weapon    642  Hellbind Heart
+#dmg         1  enslave
+#slowtocast
+
+#newspell "Lashes of Fire"
+#path       28  Dark Prayers
+#level       2
+#weapon    211  Lashes of Fire
+#dmg        11  D11 fire damage
+
+#newspell "Word of Power"
+#path       28  Dark Prayers
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Terror"
+#path       28  Dark Prayers
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Vengeance"
+#path       28  Dark Prayers
+#level       2
+#weapon    365  Vengeance
+#dmg        13  D13 magic damage
+
+#newspell "Call Large Spiders"
+#path       28  Dark Prayers
+#level       2
+#weapon    473  Summon Large Spider
+#dmg         2  D2 units summoned
+
+#newspell "Bloodletting"
+#path       28  Dark Prayers
+#level       3
+#weapon     82  Soul Drain
+#dmg         6  D6 magic damage
+#slowtocast
+
+#newspell "Rupture"
+#path       28  Dark Prayers
+#level       3
+#weapon    153  Rupture
+#dmg         7  D7 magic damage
+#slowtocast
+
+#newspell "Lashes of Death"
+#path       28  Dark Prayers
+#level       3
+#weapon    362  Lashes of Death
+#dmg        15  D15 magic damage
+
+#newspell "Spider Swarm"
+#path       28  Dark Prayers
+#level       3
+#weapon    473  Summon Large Spider
+#dmg        11  D11 units summoned
+
+
+# WAR AND THE SUN:
+
+#newspell "Strength"
+#path       31  War and the Sun
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Regeneration"
+#path       31  War and the Sun
+#level       1
+#weapon    103  Luck
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Sunlight"
+#path       31  War and the Sun
+#level       1
+#weapon    126  Sunlight
+#dmg         3  D3 fire damage
+
+#newspell "Blood Boil"
+#path       31  War and the Sun
+#level       1
+#weapon     67  Blood Boil
+#dmg        15  D15 fire damage
+
+#newspell "Aura of the Sun"
+#path       31  War and the Sun
+#level       1
+#weapon    206  Aura of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Blessing"
+#path       31  War and the Sun
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Solar Rays"
+#path       31  War and the Sun
+#level       2
+#weapon    128  Solar Rays
+#dmg         2  D2 fire damage
+
+#newspell "Incinerate"
+#path       31  War and the Sun
+#level       2
+#weapon    449  Incinerate
+#dmg        25  D25 fire damage
+
+#newspell "Greater Blessing"
+#path       31  War and the Sun
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       31  War and the Sun
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Solar Brilliance"
+#path       31  War and the Sun
+#level       3
+#weapon    129  Solar Brilliance
+#dmg         2  D2 fire damage
+#slowtocast
+
+#newspell "Army of the Sun"
+#path       31  War and the Sun
+#level       3
+#weapon    207  Army of the Sun
+#dmg      8192  = 0x2000 (Awe +1)
+
+#newspell "Army of Jaguars"
+#path       31  War and the Sun
+#level       3
+#weapon    630  Mass Regeneration
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Smite"
+#path       31  War and the Sun
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# BLOODY MOTHER:
+
+#newspell "Regeneration"
+#path       34  Bloody Mother
+#level       1
+#weapon    103  Luck
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Strength"
+#path       34  Bloody Mother
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Leech"
+#path       34  Bloody Mother
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Blessing"
+#path       34  Bloody Mother
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Blood Burst"
+#path       34  Bloody Mother
+#level       2
+#weapon    367  Blood Burst
+#dmg        20  D20 magic damage
+
+#newspell "Blood Rush"
+#path       34  Bloody Mother
+#level       2
+#weapon    444  strength, row
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Harm"
+#path       34  Bloody Mother
+#level       2
+#weapon    484  Harm
+#dmg        33  D33 magic damage
+
+#newspell "Greater Blessing"
+#path       34  Bloody Mother
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       34  Bloody Mother
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Army of Jaguars"
+#path       34  Bloody Mother
+#level       3
+#weapon    630  Mass Regeneration
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Rain of Blood"
+#path       34  Bloody Mother
+#level       3
+#weapon    468  Rain of Blood
+#dmg         7  fear: D7 vs morale
+
+#newspell "Smite"
+#path       34  Bloody Mother
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# NIGHT:
+
+#newspell "Moonlight"
+#path       32  Night
+#level       1
+#weapon    458  Moonlight
+#dmg         3  D3 magic damage
+
+#newspell "Slumber"
+#path       32  Night
+#level       1
+#weapon    225  Slumber
+#dmg         1  sleep
+
+#newspell "Shadowform"
+#path       32  Night
+#level       1
+#weapon    633  Shadow Form
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Blessing"
+#path       32  Night
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Terror"
+#path       32  Night
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Touch of the Moon"
+#path       32  Night
+#level       2
+#weapon    226  Touch of the Moon
+#dmg         1  sleep
+
+#newspell "Greater Blessing"
+#path       32  Night
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       32  Night
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Moonbeams"
+#path       32  Night
+#level       2
+#weapon    459  Moonbeams
+#dmg         3  D3 magic damage
+
+#newspell "Lunar Brilliance"
+#path       32  Night
+#level       3
+#weapon    457  Lunar Brilliance
+#dmg         3  D3 magic damage
+
+#newspell "Army of Darkness"
+#path       32  Night
+#level       3
+#weapon    104  Luck
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Smite"
+#path       32  Night
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# DEATH:
+
+#newspell "Decay"
+#path       59  Death
+#level       1
+#weapon    466  Decay
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Disease"
+#path       59  Death
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Strength Sap"
+#path       59  Death
+#level       1
+#weapon    249  Strength Sap
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Blessing"
+#path       59  Death
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Weakness"
+#path       59  Death
+#level       2
+#weapon    250  Weakness
+#dmg      2048  = 0x800 (Weakness)
+
+#newspell "Wither"
+#path       59  Death
+#level       2
+#weapon    281  Wither
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Plague"
+#path       59  Death
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Greater Blessing"
+#path       59  Death
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       59  Death
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Dance Macabre"
+#path       59  Death
+#level       3
+#weapon    265  Summon Longdead
+#dmg         5  D5 units summoned
+
+#newspell "Shade of Death"
+#path       59  Death
+#level       3
+#weapon    252  Shade of Death
+#dmg      2048  = 0x800 (Weakness)
+#slowtocast
+
+#newspell "Smite"
+#path       59  Death
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# RAIN:
+
+#newspell "Dehydration"
+#path       33  Rain
+#level       1
+#weapon    422  Dehydration
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Leech"
+#path       33  Rain
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Blessing"
+#path       33  Rain
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Torrent of Water"
+#path       33  Rain
+#level       2
+#weapon    187  Torrent of Water
+#dmg         6  D6 blunt damage
+
+#newspell "Rising Tide"
+#path       33  Rain
+#level       2
+#weapon    391  Rising Tide
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Greater Blessing"
+#path       33  Rain
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       33  Rain
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Deluge"
+#path       33  Rain
+#level       3
+#weapon    318  Deluge
+#dmg        11  D11 blunt damage
+
+#newspell "Living Rain"
+#path       33  Rain
+#level       3
+#weapon    195  Summon Lesser Water
+#dmg         7  D7 units summoned
+#slowtocast
+
+#newspell "Smite"
+#path       33  Rain
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# SKY:
+
+#newspell "Shock"
+#path       58  Sky
+#level       1
+#weapon    107  Shock
+#dmg         6  D6 shock damage
+
+#newspell "Gust of Wind"
+#path       58  Sky
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Blessing"
+#path       58  Sky
+#level       1
+#weapon    682  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Thunderhead"
+#path       58  Sky
+#level       2
+#weapon    149  Thunderhead
+#dmg        12  D12 shock damage
+#slowtocast
+
+#newspell "Storm Wind"
+#path       58  Sky
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Greater Blessing"
+#path       58  Sky
+#level       2
+#weapon    683  Blessing
+#dmg     65536  = 0x10000 (Blessing)
+
+#newspell "Word of Power"
+#path       58  Sky
+#level       2
+#weapon    610  Word of Power
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Gale"
+#path       58  Sky
+#level       3
+#weapon    117  Gale
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Living Clouds"
+#path       58  Sky
+#level       3
+#weapon    194  Summon Cloud Elemental
+#dmg         2  D2 units summoned
+#slowtocast
+
+#newspell "Smite"
+#path       58  Sky
+#level       3
+#weapon    400  Smite
+#dmg       999  D999 fire damage
+
+
+# NAHUALLI MAGIC:
+
+#newspell "Disease"
+#path       35  Nahualli Magic
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path       35  Nahualli Magic
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Sleep"
+#path       35  Nahualli Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Gust of Wind"
+#path       35  Nahualli Magic
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Call Vengeful Spirit"
+#path       35  Nahualli Magic
+#level       1
+#weapon     30  Fear
+#dmg         9  fear: D9 vs morale
+
+#newspell "Leech"
+#path       35  Nahualli Magic
+#level       1
+#weapon     18  Drain Life
+#dmg         6  D6 magic damage
+
+#newspell "Harm"
+#path       35  Nahualli Magic
+#level       2
+#weapon    484  Harm
+#dmg        30  D30 magic damage
+
+#newspell "Plague"
+#path       35  Nahualli Magic
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Storm Wind"
+#path       35  Nahualli Magic
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Black Death"
+#path       35  Nahualli Magic
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Great Curse"
+#path       35  Nahualli Magic
+#level       3
+#weapon    492  Curses
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Shade of Death"
+#path       35  Nahualli Magic
+#level       3
+#weapon    252  Shade of Death
+#dmg      2048  = 0x800 (Weakness)
+#slowtocast
+
+
+# COMMAND:
+
+#newspell "Sleep"
+#path       36  Command
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Hold"
+#path       36  Command
+#level       1
+#weapon    300  Hold
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Confusion"
+#path       36  Command
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Enslave"
+#path       36  Command
+#level       2
+#weapon    643  Enslave
+#dmg         1  enslave
+# Bitflag1
+
+#newspell "Enchanted Sleep"
+#path       36  Command
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Bewilderment"
+#path       36  Command
+#level       2
+#weapon    665  Bewilderment
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Mass Control"
+#path       36  Command
+#level       3
+#weapon    234  Enslave
+#dmg         1  enslave
+
+#newspell "Mass Command"
+#path       36  Command
+#level       3
+#weapon    233  Mass Command
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Mass Confusion"
+#path       36  Command
+#level       3
+#weapon    454  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+
+# BLACK MAGIC:
+
+#newspell "Confusion"
+#path       37  Black Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Paralyze"
+#path       37  Black Magic
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Decay"
+#path       37  Black Magic
+#level       1
+#weapon    466  Decay
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Disintegrate"
+#path       37  Black Magic
+#level       2
+#weapon    230  Disintegrate
+#dmg        20  D20 magic damage
+
+#newspell "Terror"
+#path       37  Black Magic
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Cloud of Death"
+#path       37  Black Magic
+#level       2
+#weapon     31  Cloud of Death
+#dmg         4  = 0x4 (Decay)
+
+#newspell "Death Spell"
+#path       37  Black Magic
+#level       3
+#weapon    105  Death Spell
+#dmg        20  D20 magic damage
+
+#newspell "Arcane Tempest"
+#path       37  Black Magic
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+
+# TROLL MAGIC:
+
+#newspell "Disease"
+#path       41  Troll Magic
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path       41  Troll Magic
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Sleep Cloud"
+#path       41  Troll Magic
+#level       1
+#weapon    336  Sleep Cloud
+#dmg         1  sleep
+
+#newspell "Summon Frogs"
+#path       41  Troll Magic
+#level       1
+#weapon    309  Summon Frog
+#dmg         3  D3 units summoned
+
+#newspell "Summon Wolf"
+#path       41  Troll Magic
+#level       1
+#weapon    148  Summon Wolf
+#dmg         1  One unit summoned
+
+#newspell "Fortitude"
+#path       41  Troll Magic
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Fear"
+#path       41  Troll Magic
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Plague"
+#path       41  Troll Magic
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse of the Frog Prince"
+#path       41  Troll Magic
+#level       2
+#weapon     76  Polymorph into Frog
+#dmg         1  polymorph
+
+#newspell "Enchanted Sleep"
+#path       41  Troll Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Bucket of Frogs"
+#path       41  Troll Magic
+#level       2
+#weapon    309  Summon Frog
+#dmg         8  D8 units summoned
+
+#newspell "A Promise for Life"
+#path       41  Troll Magic
+#level       2
+#weapon    335  Promise for Life
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Terror"
+#path       41  Troll Magic
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Summon Wolves"
+#path       41  Troll Magic
+#level       2
+#weapon    148  Summon Wolf
+#dmg         6  D6 units summoned
+
+#newspell "Summon Giant Toad"
+#path       41  Troll Magic
+#level       2
+#weapon    340  Summon Giant Toad
+#dmg         1  One unit summoned
+
+#newspell "Summon Monster Toad"
+#path       41  Troll Magic
+#level       2
+#weapon    308  Summon Monster Toad
+#dmg         1  One unit summoned
+
+#newspell "Black Death"
+#path       41  Troll Magic
+#level       3
+#weapon    334  Black Death (only enemies)
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Slumber of the Stones"
+#path       41  Troll Magic
+#level       3
+#weapon    307  Slumber of the Stones
+#dmg         1  sleep
+#slowtocast
+
+#newspell "Summon Wolf Pack"
+#path       41  Troll Magic
+#level       3
+#weapon    148  Summon Wolf
+#dmg        16  D16 units summoned
+
+#newspell "Dread of Monsters"
+#path       41  Troll Magic
+#level       3
+#weapon    337  Dread Spell
+#dmg         8  fear: D8 vs morale
+
+#newspell "Summon Giant Toads"
+#path       41  Troll Magic
+#level       3
+#weapon    340  Summon Giant Toad
+#dmg         6  D6 units summoned
+
+
+# VOID MAGIC:
+
+#newspell "Starlight"
+#path       42  Void Magic
+#level       1
+#weapon    351  Star Light
+#dmg         5  D5 magic damage
+
+#newspell "Mind Burn"
+#path       42  Void Magic
+#level       1
+#weapon    350  Mind Burn
+#dmg        11  D11 magic damage
+
+#newspell "Paralyze"
+#path       42  Void Magic
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Words of the Void"
+#path       42  Void Magic
+#level       1
+#weapon    353  Words of the Void
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Reading the Stars"
+#path       42  Void Magic
+#level       1
+#weapon    355  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Confusion"
+#path       42  Void Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Star Showers"
+#path       42  Void Magic
+#level       2
+#weapon    345  Star Showers
+#dmg        10  D10 magic damage
+
+#newspell "Soul Slay"
+#path       42  Void Magic
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Invade Mind"
+#path       42  Void Magic
+#level       2
+#weapon    644  Invade Mind
+#dmg         1  enslave
+
+#newspell "Strange Hymn"
+#path       42  Void Magic
+#level       2
+#weapon    343  Strange Hymn
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Meteor"
+#path       42  Void Magic
+#level       2
+#weapon     59  Meteor
+#dmg        40  D40 blunt damage
+#slowtocast
+
+#newspell "Summon Lesser Horror"
+#path       42  Void Magic
+#level       2
+#weapon    348  Summon Spine Membrane Horror
+#dmg         1  One unit summoned
+#slowtocast
+
+#newspell "Foresight"
+#path       42  Void Magic
+#level       2
+#weapon    356  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Mental Overload"
+#path       42  Void Magic
+#level       2
+#weapon    455  Mental Overload
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Meteor Showers"
+#path       42  Void Magic
+#level       3
+#weapon     60  Meteor Showers
+#dmg        35  D35 blunt damage
+#slowtocast
+
+#newspell "Mind Vortex"
+#path       42  Void Magic
+#level       3
+#weapon    346  aff (mr)[paralyze]
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Void Gate"
+#path       42  Void Magic
+#level       3
+#weapon    347  Summon Mind Slime Horror
+#dmg         4  D4 units summoned
+#slowtocast
+
+#newspell "A New Way"
+#path       42  Void Magic
+#level       3
+#weapon    354  A New Way
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Strange Dimensions"
+#path       42  Void Magic
+#level       3
+#weapon    357  Strange Dimensions
+#dmg       256  = 0x100 (Etherealness)
+#slowtocast
+
+#newspell "Summon Spine Membranes"
+#path       42  Void Magic
+#level       3
+#weapon    348  Summon Spine Membrane Horror
+#dmg         4  D4 units summoned
+#slowtocast
+
+#newspell "Summon Float Cat Horrors"
+#path       42  Void Magic
+#level       3
+#weapon    349  Summon Float Cat Horror
+#dmg         4  D4 units summoned
+#slowtocast
+
+#newspell "Symbols of Insanity"
+#path       42  Void Magic
+#level       3
+#weapon    454  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+
+# ILLUSIONISM:
+
+#newspell "Sleep"
+#path       43  Illusionism
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Fear"
+#path       43  Illusionism
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Mirror Image"
+#path       43  Illusionism
+#level       1
+#weapon    428  Mirror Image
+#dmg         2  D2 mirror images
+
+#newspell "Confusion"
+#path       43  Illusionism
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Displace Self"
+#path       43  Illusionism
+#level       1
+#weapon     29  ben (self)
+#dmg   2097152  = 0x200000 (Displacement)
+
+#newspell "Beam of Light"
+#path       43  Illusionism
+#level       1
+#weapon    571  Beam of Light
+#dmg         3  D3 magic damage
+
+#newspell "Enchanted Sleep"
+#path       43  Illusionism
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Terror"
+#path       43  Illusionism
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Illusionary Army"
+#path       43  Illusionism
+#level       2
+#weapon    428  Mirror Image
+#dmg         8  D8 mirror images
+
+#newspell "Bewilderment"
+#path       43  Illusionism
+#level       2
+#weapon    452  Cloud of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Color Spray"
+#path       43  Illusionism
+#level       2
+#weapon    487  Color Spray
+#dmg         2  D2 magic damage
+
+#newspell "Slumbering Army"
+#path       43  Illusionism
+#level       3
+#weapon    304  Slumbering Army
+#dmg         1  sleep
+#slowtocast
+
+#newspell "Mist of Confusion"
+#path       43  Illusionism
+#level       3
+#weapon    453  Mist of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Visions of Dread"
+#path       43  Illusionism
+#level       3
+#weapon    337  Dread Spell
+#dmg         8  fear: D8 vs morale
+
+#newspell "Displace Army"
+#path       43  Illusionism
+#level       3
+#weapon    104  Luck
+#dmg   2097152  = 0x200000 (Displacement)
+
+
+# SAGE MAGIC:
+
+#newspell "Sleep"
+#path       44  Sage Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Fire Resistance"
+#path       44  Sage Magic
+#level       1
+#weapon    670  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Confusion"
+#path       44  Sage Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Enchanted Sleep"
+#path       44  Sage Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Fortune"
+#path       44  Sage Magic
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Bewilderment"
+#path       44  Sage Magic
+#level       2
+#weapon    452  Cloud of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Slumbering Army"
+#path       44  Sage Magic
+#level       3
+#weapon    304  Slumbering Army
+#dmg         1  sleep
+#slowtocast
+
+#newspell "Invulnerability"
+#path       44  Sage Magic
+#level       3
+#weapon    615  Invulnerability
+#dmg   4194304  = 0x400000 (Non-Magical Invulnerability)
+
+#newspell "Riddles of Insanity"
+#path       44  Sage Magic
+#level       3
+#weapon    456  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+
+# DWARF MAGIC:
+
+#newspell "Flame Burst"
+#path       45  Dwarf Magic
+#level       1
+#weapon     53  Flame Burst
+#dmg         8  D8 fire damage
+
+#newspell "Confusion"
+#path       45  Dwarf Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Fire Resistance"
+#path       45  Dwarf Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Cold Resistance"
+#path       45  Dwarf Magic
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Tremor"
+#path       45  Dwarf Magic
+#level       1
+#weapon    313  Eruption
+#dmg         2  D2 blunt damage
+
+#newspell "Earth Grip"
+#path       45  Dwarf Magic
+#level       1
+#weapon    310  aff (earth, unresistable)
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Fortitude"
+#path       45  Dwarf Magic
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Iron Skin"
+#path       45  Dwarf Magic
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Smokeless Flame"
+#path       45  Dwarf Magic
+#level       2
+#weapon    448  Smokeless Flame
+#dmg        25  D25 fire damage
+
+#newspell "Runes of Confusion"
+#path       45  Dwarf Magic
+#level       2
+#weapon    452  Cloud of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Fire Ward"
+#path       45  Dwarf Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Winter Ward"
+#path       45  Dwarf Magic
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Eruption"
+#path       45  Dwarf Magic
+#level       2
+#weapon    313  Eruption
+#dmg         9  D9 blunt damage
+
+#newspell "Earth Meld"
+#path       45  Dwarf Magic
+#level       2
+#weapon    317  Earth Meld
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Army of Stone"
+#path       45  Dwarf Magic
+#level       2
+#weapon    430  Army of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Soldiers of Steel"
+#path       45  Dwarf Magic
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Flame Pillars"
+#path       45  Dwarf Magic
+#level       3
+#weapon    450  Flame Pillars
+#dmg        25  D25 fire damage
+
+#newspell "Chasm"
+#path       45  Dwarf Magic
+#level       3
+#weapon    190  Chasm
+#dmg       100  D100 blunt damage
+
+#newspell "Maws of the Earth"
+#path       45  Dwarf Magic
+#level       3
+#weapon    650  Maws of the Earth
+#dmg       100  D100 blunt damage
+
+#newspell "Army of Gold"
+#path       45  Dwarf Magic
+#level       3
+#weapon    381  Oak Army
+#dmg    131076  = 0x20004 (Fire Immunity + Armor +2)
+
+#newspell "Earthquake"
+#path       45  Dwarf Magic
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+#newspell "Army of Steel"
+#path       45  Dwarf Magic
+#level       3
+#weapon    433  Legion of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Legion of Stone"
+#path       45  Dwarf Magic
+#level       3
+#weapon    429  Legion of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+
+# MALADIES:
+
+#newspell "Disease"
+#path       46  Maladies
+#level       1
+#weapon    609  Disease Spell
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path       46  Maladies
+#level       1
+#weapon     36  Curse
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Gust of Wind"
+#path       46  Maladies
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Summon Crows"
+#path       46  Maladies
+#level       1
+#weapon    470  Summon Murder Of Crows
+#dmg         1  One unit summoned
+
+#newspell "Fear"
+#path       46  Maladies
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Plague"
+#path       46  Maladies
+#level       2
+#weapon     86  Plague
+#dmg         1  = 0x1 (Disease)
+
+#newspell "Curse"
+#path       46  Maladies
+#level       2
+#weapon    497  Curses
+#dmg         2  = 0x2 (Curse)
+
+#newspell "Storm Wind"
+#path       46  Maladies
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Summon Murder of Crows"
+#path       46  Maladies
+#level       2
+#weapon    470  Summon Murder Of Crows
+#dmg         3  D3 units summoned
+
+#newspell "Terror"
+#path       46  Maladies
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Arcane Tempest"
+#path       46  Maladies
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Black Death"
+#path       46  Maladies
+#level       3
+#weapon     87  Black Death
+#dmg         1  = 0x1 (Disease)
+#slowtocast
+
+#newspell "Army of Crows"
+#path       46  Maladies
+#level       3
+#weapon    470  Summon Murder Of Crows
+#dmg        13  D13 units summoned
+
+#newspell "Curse"
+#path       46  Maladies
+#level       3
+#weapon    492  Curses
+#dmg         2  = 0x2 (Curse)
+
+
+# BEAST WARDS:
+
+#newspell "Befriend Animal"
+#path       47  Beast Wards
+#level       1
+#weapon    217  Charm Animal
+#dmg         1  charm
+
+#newspell "Summon Wolf"
+#path       47  Beast Wards
+#level       1
+#weapon    148  Summon Wolf
+#dmg         1  One unit summoned
+
+#newspell "Summon Crows"
+#path       47  Beast Wards
+#level       1
+#weapon    470  Summon Murder Of Crows
+#dmg         1  One unit summoned
+
+#newspell "Summon Snake"
+#path       47  Beast Wards
+#level       1
+#weapon    136  Summon Snake
+#dmg         1  One unit summoned
+
+#newspell "Command Beasts"
+#path       47  Beast Wards
+#level       2
+#weapon    218  Charm Animal
+#dmg         1  charm
+
+#newspell "Summon Wolves"
+#path       47  Beast Wards
+#level       2
+#weapon    148  Summon Wolf
+#dmg         3  D3 units summoned
+
+#newspell "Summon Murder of Crows"
+#path       47  Beast Wards
+#level       2
+#weapon    470  Summon Murder Of Crows
+#dmg         3  D3 units summoned
+
+#newspell "Summon Great Boar"
+#path       47  Beast Wards
+#level       2
+#weapon    471  Summon Great Boar
+#dmg         1  One unit summoned
+
+#newspell "Summon Serpent"
+#path       47  Beast Wards
+#level       2
+#weapon    137  Summon Serpent
+#dmg         1  One unit summoned
+
+#newspell "Army of Wolves"
+#path       47  Beast Wards
+#level       3
+#weapon    148  Summon Wolf
+#dmg        10  D10 units summoned
+
+#newspell "Army of Crows"
+#path       47  Beast Wards
+#level       3
+#weapon    470  Summon Murder Of Crows
+#dmg        13  D13 units summoned
+
+#newspell "Army of Boars"
+#path       47  Beast Wards
+#level       3
+#weapon    471  Summon Great Boar
+#dmg         4  D4 units summoned
+
+
+# WARRIOR WARDS:
+
+#newspell "Luck"
+#path       48  Warrior Wards
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Toughness"
+#path       48  Warrior Wards
+#level       1
+#weapon    435  Ironskin
+#dmg   1835008  = 0x1C0000 (Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+#newspell "Strength"
+#path       48  Warrior Wards
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Fortitude"
+#path       48  Warrior Wards
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Spirit of Luck"
+#path       48  Warrior Wards
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Spirit of Fortitude"
+#path       48  Warrior Wards
+#level       2
+#weapon    430  Army of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Spirit of Strength"
+#path       48  Warrior Wards
+#level       2
+#weapon    444  strength, row
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Spirit of Toughness"
+#path       48  Warrior Wards
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg   1835008  = 0x1C0000 (Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+#newspell "Battle Fortune"
+#path       48  Warrior Wards
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Legion of Stone"
+#path       48  Warrior Wards
+#level       3
+#weapon    429  Legion of Stone
+#dmg         2  = 0x2 (Armor +1)
+
+
+# FAMINE MAGIC:
+
+#newspell "Summon Crows"
+#path       50  Famine Magic
+#level       1
+#weapon    470  Summon Murder Of Crows
+#dmg         5  D5 units summoned
+
+#newspell "Summon Mantis"
+#path       50  Famine Magic
+#level       2
+#weapon    509  Summon Giant Mantis
+#dmg         5  D5 units summoned
+
+#newspell "Starvation"
+#path       50  Famine Magic
+#level       3
+#weapon    510  Starvation
+#dmg      2052  = 0x804 (Decay + Weakness)
+
+
+# HIGH ARCANA:
+
+#newspell "Combustion"
+#path       51  High Arcana
+#level       1
+#weapon    243  Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Fire Resistance"
+#path       51  High Arcana
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Fire Shield"
+#path       51  High Arcana
+#level       1
+#weapon    637  Fire Shield
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Ironskin"
+#path       51  High Arcana
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Earth Grip"
+#path       51  High Arcana
+#level       1
+#weapon    310  aff (earth, unresistable)
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Sleep"
+#path       51  High Arcana
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Luck"
+#path       51  High Arcana
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Paralyze"
+#path       51  High Arcana
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Meteor"
+#path       51  High Arcana
+#level       2
+#weapon     59  Meteor
+#dmg        40  D40 blunt damage
+#slowtocast
+
+#newspell "Mass Combustion"
+#path       51  High Arcana
+#level       2
+#weapon    504  Mass Combustion
+#dmg        32  = 0x20 (Burn)
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+#slowtocast
+
+#newspell "Soldiers of Flame"
+#path       51  High Arcana
+#level       2
+#weapon    638  Soldiers of Flame
+#dmg      1024  = 0x400 (Fire Shield (3))
+
+#newspell "Fire Ward"
+#path       51  High Arcana
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Earth Meld"
+#path       51  High Arcana
+#level       2
+#weapon    317  Earth Meld
+#dmg       256  = 0x100 (Earth Grip)
+
+#newspell "Soldiers of Steel"
+#path       51  High Arcana
+#level       2
+#weapon    434  Soldiers of Steel
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Soul Slay"
+#path       51  High Arcana
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Enchanted Sleep"
+#path       51  High Arcana
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Fortune"
+#path       51  High Arcana
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Meteor Showers"
+#path       51  High Arcana
+#level       3
+#weapon     60  Meteor Showers
+#dmg        35  D35 blunt damage
+#slowtocast
+
+#newspell "Army of Gold"
+#path       51  High Arcana
+#level       3
+#weapon    381  Oak Army
+#dmg    131076  = 0x20004 (Fire Immunity + Armor +2)
+
+#newspell "Slumbering Army"
+#path       51  High Arcana
+#level       3
+#weapon    304  Slumbering Army
+#dmg         1  sleep
+#slowtocast
+
+#newspell "Battle Fortune"
+#path       51  High Arcana
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+
+# MOON MAGIC:
+
+#newspell "Moonlight"
+#path       52  Moon Magic
+#level       1
+#weapon    458  Moonlight
+#dmg         3  D3 magic damage
+
+#newspell "Sleep"
+#path       52  Moon Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Fear"
+#path       52  Moon Magic
+#level       1
+#weapon     30  Fear
+#dmg        10  fear: D10 vs morale
+
+#newspell "Shadowform"
+#path       52  Moon Magic
+#level       1
+#weapon    633  Shadow Form
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Terror"
+#path       52  Moon Magic
+#level       2
+#weapon    611  Terror
+#dmg         8  fear: D8 vs morale
+
+#newspell "Touch of the Moon"
+#path       52  Moon Magic
+#level       2
+#weapon    226  Touch of the Moon
+#dmg         1  sleep
+
+#newspell "Moonbeams"
+#path       52  Moon Magic
+#level       2
+#weapon    459  Moonbeams
+#dmg         3  D3 magic damage
+
+#newspell "Shade Warriors"
+#path       52  Moon Magic
+#level       2
+#weapon    635  Shade Warriors
+#dmg       256  = 0x100 (Etherealness)
+
+#newspell "Antimagic"
+#path       52  Moon Magic
+#level       2
+#weapon    641  Antimagic
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Lunar Brilliance"
+#path       52  Moon Magic
+#level       3
+#weapon    457  Lunar Brilliance
+#dmg         3  D3 magic damage
+
+#newspell "Army of Darkness"
+#path       52  Moon Magic
+#level       3
+#weapon    104  Luck
+#dmg       256  = 0x100 (Etherealness)
+
+
+# SILVER ARCANA:
+
+#newspell "Shock"
+#path       53  Silver Arcana
+#level       1
+#weapon    107  Shock
+#dmg         6  D6 shock damage
+
+#newspell "Gust of Wind"
+#path       53  Silver Arcana
+#level       1
+#weapon    113  Gust of Wind
+#dmg         3  D3 blunt damage
+
+#newspell "Air Shield"
+#path       53  Silver Arcana
+#level       1
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Luck"
+#path       53  Silver Arcana
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Paralyze"
+#path       53  Silver Arcana
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Storm Wind"
+#path       53  Silver Arcana
+#level       2
+#weapon    115  Storm Wind
+#dmg         4  D4 blunt damage
+
+#newspell "Chain Lightning"
+#path       53  Silver Arcana
+#level       2
+#weapon    110  Chain Lightning
+#dmg         5  D5 shock damage
+
+#newspell "Lightning Bolt"
+#path       53  Silver Arcana
+#level       2
+#weapon    624  Lightning Bolt
+#dmg        10  D10 shock damage
+
+#newspell "Summon Clouds"
+#path       53  Silver Arcana
+#level       2
+#weapon    194  Summon Cloud Elemental
+#dmg         2  D2 units summoned
+#slowtocast
+
+#newspell "Protective Winds"
+#path       53  Silver Arcana
+#level       2
+#weapon    653  Protective Winds
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Antimagic"
+#path       53  Silver Arcana
+#level       2
+#weapon    641  Antimagic
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Fortune"
+#path       53  Silver Arcana
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Soul Slay"
+#path       53  Silver Arcana
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Arcane Tempest"
+#path       53  Silver Arcana
+#level       3
+#weapon    116  Arcane Tempest
+#dmg         3  D3 blunt damage
+#slowtocast
+
+#newspell "Friendly Storm"
+#path       53  Silver Arcana
+#level       3
+#weapon    654  Friendly Storm
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Call Lightning"
+#path       53  Silver Arcana
+#level       3
+#weapon    267  Call Lightning
+#dmg         8  D8 shock damage
+
+#newspell "Battle Fortune"
+#path       53  Silver Arcana
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+
+# FOREST MAGIC:
+
+#newspell "Befriend Animal"
+#path       54  Forest Magic
+#level       1
+#weapon    217  Charm Animal
+#dmg         1  charm
+
+#newspell "Sleep"
+#path       54  Forest Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Confusion"
+#path       54  Forest Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Summon Wolf"
+#path       54  Forest Magic
+#level       1
+#weapon    148  Summon Wolf
+#dmg         1  One unit summoned
+
+#newspell "Fortitude"
+#path       54  Forest Magic
+#level       1
+#weapon    431  Fortitude
+#dmg         2  = 0x2 (Armor +1)
+
+#newspell "Strength"
+#path       54  Forest Magic
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Charm"
+#path       54  Forest Magic
+#level       2
+#weapon     52  Charm
+#dmg         1  charm
+
+#newspell "Curse of the Frog Prince"
+#path       54  Forest Magic
+#level       2
+#weapon     76  Polymorph into Frog
+#dmg         1  polymorph
+
+#newspell "Cloud of Confusion"
+#path       54  Forest Magic
+#level       2
+#weapon    452  Cloud of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Summon Wolves"
+#path       54  Forest Magic
+#level       2
+#weapon    148  Summon Wolf
+#dmg         3  D3 units summoned
+
+#newspell "Command Beasts"
+#path       54  Forest Magic
+#level       2
+#weapon    218  Charm Animal
+#dmg         1  charm
+
+#newspell "Enchanted Sleep"
+#path       54  Forest Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Army of Wolves"
+#path       54  Forest Magic
+#level       3
+#weapon    148  Summon Wolf
+#dmg        10  D10 units summoned
+
+#newspell "Enchanting Voice"
+#path       54  Forest Magic
+#level       3
+#weapon     80  Enchanting Voice
+#dmg         1  sleep
+
+#newspell "Mist of Confusion"
+#path       54  Forest Magic
+#level       3
+#weapon    453  Mist of Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+
+# ALCHEMY:
+
+#newspell "Fire Resistance"
+#path       55  Alchemy
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Cold Resistance"
+#path       55  Alchemy
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         8  = 0x8 (Cold Immunity)
+
+#newspell "Strength"
+#path       55  Alchemy
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Ironskin"
+#path       55  Alchemy
+#level       2
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Regeneration"
+#path       55  Alchemy
+#level       2
+#weapon    627  Regeneration
+#dmg      4096  = 0x1000 (Regeneration)
+
+#newspell "Toughness"
+#path       55  Alchemy
+#level       2
+#weapon    435  Ironskin
+#dmg   1835008  = 0x1C0000 (Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+#newspell "Flesh is Stronger"
+#path       55  Alchemy
+#level       3
+#weapon    435  Ironskin
+#dmg   1970180  = 0x1E1004 (Fire Immunity + Regeneration + Armor +2 + Pierce Resistance + Slash Resistance + Blunt Resistance)
+
+
+# GOLD ARCANA:
+
+#newspell "Sunbeam"
+#path       56  Gold Arcana
+#level       1
+#weapon    127  Sunbeam
+#dmg         2  D2 fire damage
+
+#newspell "Flames"
+#path       56  Gold Arcana
+#level       1
+#weapon    660  Flames
+#dmg         3  D3 fire damage
+
+#newspell "Fire Resistance"
+#path       56  Gold Arcana
+#level       1
+#weapon    671  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Luck"
+#path       56  Gold Arcana
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Paralyze"
+#path       56  Gold Arcana
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Incinerate"
+#path       56  Gold Arcana
+#level       2
+#weapon    449  Incinerate
+#dmg        25  D25 fire damage
+
+#newspell "Fireball"
+#path       56  Gold Arcana
+#level       2
+#weapon     54  Fireball
+#dmg        15  D15 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Fire Ward"
+#path       56  Gold Arcana
+#level       2
+#weapon    673  Elemental Resistance
+#dmg         4  = 0x4 (Fire Immunity)
+
+#newspell "Summon Fire"
+#path       56  Gold Arcana
+#level       2
+#weapon    193  Summon Lesser Fire
+#dmg         2  D2 units summoned
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Solar Flare"
+#path       56  Gold Arcana
+#level       2
+#weapon    127  Sunbeam
+#dmg         8  D8 fire damage
+
+#newspell "Antimagic"
+#path       56  Gold Arcana
+#level       2
+#weapon    641  Antimagic
+#dmg        64  = 0x40 (Magic Resistance +2)
+
+#newspell "Fortune"
+#path       56  Gold Arcana
+#level       2
+#weapon    120  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Soul Slay"
+#path       56  Gold Arcana
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Flame Storm"
+#path       56  Gold Arcana
+#level       3
+#weapon     57  Flamestorm
+#dmg         7  D7 fire damage
+burnforest   1  # Knowledge of this spell allows caster to burn forests
+
+#newspell "Pillar of Fire"
+#path       56  Gold Arcana
+#level       3
+#weapon    368  Pillar of Fire
+#dmg        60  D60 fire damage
+
+#newspell "Army of Gold"
+#path       56  Gold Arcana
+#level       3
+#weapon     71  Army of Gold
+#dmg    131076  = 0x20004 (Fire Immunity + Armor +2)
+
+#newspell "Battle Fortune"
+#path       56  Gold Arcana
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+
+# METAL ARCANA:
+
+#newspell "Air Shield"
+#path       57  Metal Arcana
+#level       1
+#weapon    648  Air Shield
+#dmg      2048  = 0x800 (Air Shield)
+
+#newspell "Iron Skin"
+#path       57  Metal Arcana
+#level       1
+#weapon    435  Ironskin
+#dmg    131072  = 0x20000 (Armor +2)
+
+#newspell "Luck"
+#path       57  Metal Arcana
+#level       1
+#weapon    103  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Paralyze"
+#path       57  Metal Arcana
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+
+# TREE MAGIC:
+
+#newspell "Tangle Vine"
+#path       60  Tree Magic
+#level       1
+#weapon    247  Tangle Vines
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Poison Arrow"
+#path       60  Tree Magic
+#level       1
+#weapon    229  Poison Arrow
+#dmg         6  D6 pierce damage
+
+#newspell "Vine Arrow"
+#path       60  Tree Magic
+#level       1
+#weapon    661  Vine Arrow
+#dmg         6  D6 pierce damage
+
+#newspell "Poison Vine"
+#path       60  Tree Magic
+#level       1
+#weapon    329  Poison Vine
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Sleep"
+#path       60  Tree Magic
+#level       1
+#weapon     77  Sleep
+#dmg         1  sleep
+
+#newspell "Strength"
+#path       60  Tree Magic
+#level       1
+#weapon    443  strength, aoe 3
+#dmg       512  = 0x200 (Strength +2)
+
+#newspell "Confusion"
+#path       60  Tree Magic
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Briar Cage"
+#path       60  Tree Magic
+#level       2
+#weapon    189  Briar Cage
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Poison Vines"
+#path       60  Tree Magic
+#level       2
+#weapon    215  Poison Vines
+#dmg       512  = 0x200 (Entanglement)
+
+#newspell "Curse of Wood"
+#path       60  Tree Magic
+#level       2
+#weapon    282  Curse of Wood
+#dmg      4096  = 0x1000 (Transform into Tree)
+
+#newspell "Shooting Thorns"
+#path       60  Tree Magic
+#level       2
+#weapon    369  Shooting Thorns
+#dmg         2  D2 pierce damage
+# Bitflag1
+
+#newspell "Enchanted Sleep"
+#path       60  Tree Magic
+#level       2
+#weapon     78  Enchanted Sleep
+#dmg         1  sleep
+
+#newspell "Summon Dragonflies"
+#path       60  Tree Magic
+#level       2
+#weapon    709  Summon Dragonfly
+#dmg         4  D4 units summoned
+
+#newspell "Wild Growth"
+#path       60  Tree Magic
+#level       3
+#weapon    216  Wild Growth
+#dmg       512  = 0x200 (Entanglement)
+#slowtocast
+
+#newspell "Earthquake"
+#path       60  Tree Magic
+#level       3
+#weapon    316  Earthquake
+#dmg         5  D5 blunt damage
+#slowtocast
+
+
+# ASTROLOGY:
+
+#newspell "Starlight"
+#path       61  Astrology
+#level       1
+#weapon    351  Star Light
+#dmg         5  D5 magic damage
+
+#newspell "Mind Burn"
+#path       61  Astrology
+#level       1
+#weapon    350  Mind Burn
+#dmg        11  D11 magic damage
+
+#newspell "Paralyze"
+#path       61  Astrology
+#level       1
+#weapon    232  Paralyze
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Words of the Void"
+#path       61  Astrology
+#level       1
+#weapon    353  Words of the Void
+#dmg        64  = 0x40 (Stun)
+
+#newspell "Reading the Stars"
+#path       61  Astrology
+#level       1
+#weapon    355  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Confusion"
+#path       61  Astrology
+#level       1
+#weapon    451  Confusion
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Moonlight"
+#path       61  Astrology
+#level       1
+#weapon    458  Moonlight
+#dmg         3  D3 magic damage
+
+#newspell "Star Showers"
+#path       61  Astrology
+#level       2
+#weapon    345  Star Showers
+#dmg        10  D10 magic damage
+
+#newspell "Soul Slay"
+#path       61  Astrology
+#level       2
+#weapon    344  Soul Slay (+mr-paralyze)
+#dmg       999  D999 magic damage
+
+#newspell "Invade Mind"
+#path       61  Astrology
+#level       2
+#weapon    644  Invade Mind
+#dmg         1  enslave
+
+#newspell "Meteor"
+#path       61  Astrology
+#level       2
+#weapon     59  Meteor
+#dmg        40  D40 blunt damage
+#slowtocast
+
+#newspell "Foresight"
+#path       61  Astrology
+#level       2
+#weapon    356  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Mental Overload"
+#path       61  Astrology
+#level       2
+#weapon    455  Mental Overload
+#dmg    262144  = 0x40000 (Confusion)
+
+#newspell "Moonbeams"
+#path       61  Astrology
+#level       2
+#weapon    459  Moonbeams
+#dmg         3  D3 magic damage
+
+#newspell "Meteor Showers"
+#path       61  Astrology
+#level       3
+#weapon     60  Meteor Showers
+#dmg        35  D35 blunt damage
+#slowtocast
+
+#newspell "Mind Vortex"
+#path       61  Astrology
+#level       3
+#weapon    346  aff (mr)[paralyze]
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Mental Hold"
+#path       61  Astrology
+#level       3
+#weapon    343  Strange Hymn
+#dmg        16  = 0x10 (Paralyzation)
+
+#newspell "Great Foretelling"
+#path       61  Astrology
+#level       3
+#weapon    104  Luck
+#dmg       128  = 0x80 (Luck)
+
+#newspell "Lunar Brilliance"
+#path       61  Astrology
+#level       3
+#weapon    457  Lunar Brilliance
+#dmg         3  D3 magic damage
+
+
+# 820 spells found in total
+# Distributed as follows:
+
+#  1, Infernal Magic   19 spells   (L1:  6,  L2:  7,  L3:  6)
+#  2, Elemental Magic  14 spells   (L1:  4,  L2:  6,  L3:  4)
+#  3, Pyromancy        19 spells   (L1:  6,  L2:  8,  L3:  5)
+#  4, Hydromancy       13 spells   (L1:  4,  L2:  5,  L3:  4)
+#  5, Storm Magic      20 spells   (L1:  6,  L2:  9,  L3:  5)
+#  6, Geomancy         15 spells   (L1:  5,  L2:  6,  L3:  4)
+#  7, Hedge Magic      21 spells   (L1: 10,  L2:  8,  L3:  3)
+#  8, Unlife           10 spells   (L1:  3,  L2:  4,  L3:  3)
+#  9, Dark Magic       13 spells   (L1:  4,  L2:  5,  L3:  4)
+# 10, Foul Magic        9 spells   (L1:  3,  L2:  3,  L3:  3)
+# 11, Blood Magic      10 spells   (L1:  3,  L2:  4,  L3:  3)
+# 12, Crystal Sorcery   8 spells   (L1:  3,  L2:  3,  L3:  2)
+# 13, Garnet Sorcery    6 spells   (L1:  2,  L2:  2,  L3:  2)
+# 14, Jade Sorcery     10 spells   (L1:  4,  L2:  4,  L3:  2)
+# 15, Onyx Sorcery     10 spells   (L1:  5,  L2:  3,  L3:  2)
+# 16, White Magic      15 spells   (L1:  6,  L2:  6,  L3:  3)
+# 17, Spiritism        16 spells   (L1:  6,  L2:  7,  L3:  3)
+# 18, Fortune Magic     3 spells   (L1:  1,  L2:  1,  L3:  1)
+# 19, Solar Magic       9 spells   (L1:  3,  L2:  3,  L3:  3)
+# 20, Mysticism         9 spells   (L1:  3,  L2:  4,  L3:  2)
+# 21, Serpent Magic    15 spells   (L1:  5,  L2:  7,  L3:  3)
+# 22, Golden Magic     12 spells   (L1:  4,  L2:  4,  L3:  4)
+# 23, Iron Arcana      17 spells   (L1:  5,  L2:  7,  L3:  5)
+# 24, Kuro Do          16 spells   (L1:  5,  L2:  7,  L3:  4)
+# 25, Prayers          11 spells   (L1:  4,  L2:  3,  L3:  4)
+# 26, Enchantment      26 spells   (L1:  8,  L2: 12,  L3:  6)
+# 27, Frost Magic      14 spells   (L1:  5,  L2:  6,  L3:  3)
+# 28, Dark Prayers     15 spells   (L1:  5,  L2:  6,  L3:  4)
+# 29, Wizardry         21 spells   (L1:  8,  L2:  7,  L3:  6)
+# 30, Shamanism         0 spells
+# 31, War and the Sun  14 spells   (L1:  6,  L2:  4,  L3:  4)
+# 32, Night            12 spells   (L1:  4,  L2:  5,  L3:  3)
+# 33, Rain             10 spells   (L1:  3,  L2:  4,  L3:  3)
+# 34, Bloody Mother    12 spells   (L1:  4,  L2:  5,  L3:  3)
+# 35, Nahualli Magic   12 spells   (L1:  6,  L2:  3,  L3:  3)
+# 36, Command           9 spells   (L1:  3,  L2:  3,  L3:  3)
+# 37, Black Magic       8 spells   (L1:  3,  L2:  3,  L3:  2)
+# 38, Necromancy       28 spells   (L1:  9,  L2: 10,  L3:  9)
+# 39, Druidism         16 spells   (L1:  6,  L2:  7,  L3:  3)
+# 40, Witchery         21 spells   (L1:  8,  L2:  8,  L3:  5)
+# 41, Troll Magic      21 spells   (L1:  7,  L2:  9,  L3:  5)
+# 42, Void Magic       22 spells   (L1:  6,  L2:  8,  L3:  8)
+# 43, Illusionism      15 spells   (L1:  6,  L2:  5,  L3:  4)
+# 44, Sage Magic        9 spells   (L1:  3,  L2:  3,  L3:  3)
+# 45, Dwarf Magic      23 spells   (L1:  8,  L2:  8,  L3:  7)
+# 46, Maladies         14 spells   (L1:  5,  L2:  5,  L3:  4)
+# 47, Beast Wards      12 spells   (L1:  4,  L2:  5,  L3:  3)
+# 48, Warrior Wards    10 spells   (L1:  4,  L2:  4,  L3:  2)
+# 49, Paladin Magic     5 spells   (L1:  3,  L2:  1,  L3:  1)
+# 50, Famine Magic      3 spells   (L1:  1,  L2:  1,  L3:  1)
+# 51, High Arcana      21 spells   (L1:  8,  L2:  9,  L3:  4)
+# 52, Moon Magic       11 spells   (L1:  4,  L2:  5,  L3:  2)
+# 53, Silver Arcana    17 spells   (L1:  5,  L2:  8,  L3:  4)
+# 54, Forest Magic     15 spells   (L1:  6,  L2:  6,  L3:  3)
+# 55, Alchemy           7 spells   (L1:  3,  L2:  3,  L3:  1)
+# 56, Gold Arcana      17 spells   (L1:  5,  L2:  8,  L3:  4)
+# 57, Metal Arcana      4 spells   (L1:  4)
+# 58, Sky              10 spells   (L1:  3,  L2:  4,  L3:  3)
+# 59, Death            12 spells   (L1:  4,  L2:  5,  L3:  3)
+# 60, Tree Magic       15 spells   (L1:  7,  L2:  6,  L3:  2)
+# 61, Astrology        19 spells   (L1:  7,  L2:  7,  L3:  5)

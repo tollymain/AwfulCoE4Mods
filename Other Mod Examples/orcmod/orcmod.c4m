@@ -1,0 +1,134 @@
+# ----- Basic Mod Info -----
+
+icon		"orcmod/orcbanner.tga"
+description 	"This mods add a new class, the orc warlord. It is a simple mod made to demonstrate how CoE4 modding works."
+
+
+# -----  Create the new ritual power and create a few rituals for it -----
+# It is possible to create rituals before the actual monsters used in them are created
+
+newritpow
+
+newritual	"Hatch Orcs"
+level	        1
+summoning
+addstring       "4d6*Orc"
+addstring       "1d4+1*Orc & 1d4+1*Orc Archer"
+addstring       "c*Orc Mage & 1d6*Orc"
+
+newritual	"Hatch Many Orcs"
+level	        2
+summoning
+addstring       "10d4*Orc"
+
+newritual	"Hatch Many More Orcs"
+level	        3
+summoning
+addstring       "6d20*Orc"
+
+newritual	"Lesser Ritual of Mastery"
+level	        1
+newrit		1
+soundfx		57
+cost		0 5
+free
+
+newritual	"Ritual of Mastery"
+level	        1
+newrit		2
+levelup		2
+rebatelvl	2
+soundfx		57
+cost		0 15
+free
+
+newritual	"Ritual of Grand Mastery"
+level	        2
+newrit		3
+levelup		3
+rebatelvl	3
+soundfx		57
+cost 		0 45
+free
+
+
+# ----- Add all the new monsters -----
+
+newmonster "Orc"
+spr1 "orcmod/orc1.tga"
+spr2 "orcmod/orc2.tga"
+hp 6
+str 5
+mor 5
+mr 3
+mountain
+meleeweapon 1 "Spear"
+shield
+
+
+newmonster "Orc Archer"
+copystats "Orc"
+spr1 "orcmod/orca1.tga"
+spr2 "orcmod/orca2.tga"
+clearweapons
+rangedweapon 0 "Bow"
+meleeweapon 1 "Dagger"
+
+
+newmonster "Orc Mage"
+copystats "Orc"
+str 4
+mr 7
+clearweapons
+spellweapon 7 1
+meleeweapon 0 "Staff"
+power 0 1
+mastery 1
+
+newmonster "Orc Wizard"
+copystats "Orc"
+str 4
+mr 7
+clearweapons
+spellweapon 7 2
+meleeweapon 0 "Staff"
+power 0 2
+mastery 1
+
+newmonster "Orc Grand Wizard"
+copystats "Orc"
+str 4
+mr 7
+clearweapons
+spellweapon 7 3
+meleeweapon 0 "Staff"
+power 0 3
+
+
+newmonster "Orc Warlord"
+copystats "Orc"
+spr1 "orcmod/orcw1.tga"
+spr2 "orcmod/orcw2.tga"
+hp 12
+mor 6
+mr 4
+clearweapons
+meleeweapon 2 "Broadsword"
+
+
+# -----  Create the new class -----
+
+newclass
+setclassname	"Orc Warlord"
+setmaincom	"Orc Warlord"
+addstartunits	"Orc" 10
+addstartunits	"Orc Archer" 5
+addstartcom	"Orc Mage"
+
+addunitrec	"Orc" 100 5 50 0 0
+addunitrec	"Orc Archer" 100 5 50 0 10
+addcomrec	"Orc Mage" 5 20 10 0
+nostdtroops
+
+
+
