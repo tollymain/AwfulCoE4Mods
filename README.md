@@ -8,35 +8,53 @@ And there's also a new version of the mod (last one in a while, I promise):
 
 Better Homeland Security Mod v.1.07 (github edition)
 
-Changelog: 
-v.1 Initial release
-v.1.01 Added recruitable watered-down militia for generic captains
+Changelog:
+
+v.1
+
+Initial release
+
+v.1.01
+
+Added recruitable watered-down militia for generic captains
+
 v.1.02 
+
 - Unified unit names
 - Slightly beefed up the guardians to the point where they can take a group of giant mantises (somewhat common early gameover) and survive
 - Wild animals will now try to stay in their home terrain (forests, desert, no more lions in the arctic, etc.)
+
 v.1.03
+
 - Fixed a few small bugs
 - Guardian Commanders now have easier-to-recognise names
 - Added pre-battle companion summons from homeland security
 - Bandits and such will try to stay in settlements
+
 v.1.04
+
 - Added Engineers, they turn into Chief Engineers and Chief Capitalist after some time
 - Engineers are somewhat rare and expensive (class dependant) but produce a tiny amount of static income (~60 turns before it pays back)
 - Engineers can cut down forests/jungles, Chief Engineers can deal with mountains
 - Building things is cheaper higher level engineers and they have other benefits too
 - Stagecoach plans put on hold for now because I'd need to get a good unit icon for them (has to be done through structure "units" I'm afraid)
 - Maybe some other changes that I can't remember
+
 v.1.05
+
 - Made a purist version of the mod
 - Engineers now make Dead Forests instead of Plains when cutting down forested terrain.
 - Added slightly better descriptions to the new units
 - Reduced recruitment chance for Engineers
+
 v.1.06
+
 - Slightly weakened some guardians (Enchanter, Warlock)
 - New purist version with all the militia powers taken out
 - Lowered the chance to recruit Engineers again (particularly for witch and the druid)
+
 v.1.07
+
 - First (rudimentary) Github Release!
 - Equipped militia is now stationary (oops) and basic militia changes spears for daggers (smaller oops)
 - Fixed a few typos in descriptions
