@@ -667,6 +667,7 @@ nodemon
 nomonreq
 summoning
 free
+terr -32
 addstring "1d3*Defensive Militia"
 addstring "(-)Levy"
 addstring "(-)Defensive Militia"
@@ -683,6 +684,7 @@ nodemon
 nomonreq
 summoning
 free
+terr -32
 addstring "1d3*Equipped Militia"
 addstring "(-)Defensive Militia"
 addstring "(-)Equipped Militia"
