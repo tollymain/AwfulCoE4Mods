@@ -1,12 +1,8 @@
 # AwfulCoE4Mods
 
-This branch aspires to be a collection of resources for any prospective modders. 
-
-The respective folders contain the following
-
 Official documentation:
 
-Collection of documents posted by Jonas (game developer) primarily in various threads on the Steam community forums for CoE4.
+Collection of documents posted by Johan (game developer) primarily in various threads on the Steam community forums for CoE4.
 
 Other Files:
 
