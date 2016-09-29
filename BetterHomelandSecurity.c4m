@@ -1,0 +1,871 @@
+# ----- Basic Mod Info -----
+
+icon		"BetterHomelandSecurity/BetterHomelandSecurity.tga"
+description 	"This is an improved version of a mod which adds defensive immobile units to all starting citadels. (v.1.06)"
+
+###### UNITS ######
+
+## Guardian units
+# Statue
+newmonster "Citadel Guardian"
+copystats "Guardian"
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
+
+# Ballista
+newmonster "Guardian Ballista"
+copystats "Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Tower Guards
+newmonster "Guardian Tower Guard"
+copystats "Tower Guard"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Bane Fire Archers
+newmonster "Guardian Bane Fire Archer"
+copystats "Bane Fire Archer"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Devils
+newmonster "Guardian Devil"
+copystats "Devil"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Imps
+newmonster "Guardian Imp Familiar"
+copystats "Imp Familiar"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Androphag Archers
+newmonster "Guardian Androphag Archer"
+copystats "Androphag Archer"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Ba'alite Archers
+newmonster "Guardian Ba'alite Archer"
+copystats "Ba'alite Archer"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Sheds
+newmonster "Guardian Shed"
+copystats "Shed"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Bakemono Archers
+newmonster "Guardian Dai Bakemono Archer"
+copystats "Dai Bakemono Archer"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Pseudo Werebears
+newmonster "Guardian Pseudo Werebear"
+copystats "Barbarian Warrior"
+hp 30
+mr 5
+str 7
+mor 6
+clearspec
+regeneration
+stationary
+clearweapons
+meleeweapon 6 "bite"
+meleeweapon 4 "claw"
+meleeweapon 4 "claw"
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Effigy
+newmonster "Guardian Effigy"
+copystats "Effigy"
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
+
+# Triarii
+newmonster "Guardian Triarius"
+copystats "Triarius"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Boar Warriors
+newmonster "Guardian Boar Warrior"
+copystats "Boar Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Hoburg Crossbows
+newmonster "Guardian Hoburg Crossbow"
+copystats "Hoburg Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Lesser Fire Elementals
+newmonster "Guardian Lesser Fire"
+copystats "Lesser Fire"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Lesser Cloud Elementals
+newmonster "Guardian Cloud Elemental"
+copystats "Cloud Elemental"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Lesser Earth Elementals
+newmonster "Guardian Lesser Earth"
+copystats "Lesser Earth"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Lesser Water Elementals
+newmonster "Guardian Lesser Water"
+copystats "Lesser Water"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Tribal Warriors
+newmonster "Guardian Tribal Warrior"
+copystats "Tribal Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Rock Trolls
+newmonster "Guardian Rock Troll"
+copystats "Rock Troll"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Strange Things
+newmonster "Guardian Strange Thing"
+copystats "Strange Thing"
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Star Oaks
+newmonster "Guardian Star Oak"
+copystats "Star Oak"
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Flame Branded Ballistas
+newmonster "Guardian Flame Branded Ballista"
+copystats "Flame Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Rime Branded Ballistas
+newmonster "Guardian Rime Branded Ballista"
+copystats "Rime Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Harbinger
+newmonster "Guardian Harbinger"
+copystats "Harbinger"
+clearmove
+clearspec
+fireres
+shockres
+fastheal
+awe 2
+flying
+stationary
+clearweapons 
+prebatweapon 65536 "Personal Blessing"
+spellweapon 25 2
+spellweapon 5 1
+rangedweaponbonus 0 "Heavenly Horn"
+hp 49
+mr 9
+str 8
+mor 15
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Phase Spiders
+newmonster "Guardian Phase Spider"
+copystats "Phase Spider"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Archers
+newmonster "Guardian Illusionist Archer"
+copystats "Archer"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+# Hobmark Crossbows
+newmonster "Guardian Hobmark Crossbow"
+copystats "Hobmark Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+descr "Citadel Guardians are an ardent group of defenders that protect the birthplace of your movement."
+
+## Militia units
+# Defensive Militia
+newmonster "Defensive Militia"
+copystats "Levy"
+clearweapons
+meleeweapon 0 1
+str 2
+mor 2
+hp 3
+stationary
+descr "The Defensive Militia is a ragtag group of defenders who volunteered to protect their settlements against whatever may come. Their ineptitude is however in stark contrast with such goals, and their primary purpose appears to be informing whatever force comes into the village that they are under your control, and hoping that they leave peacefully."
+
+# Equipped Defensive Militia
+newmonster "Equipped Militia"
+copystats "Militia"
+mor 2
+stationary
+descr "The Defensive Militia is a ragtag group of defenders who volunteered to protect their settlements against whatever may come. Their ineptitude is however in stark contrast with such goals, and their primary purpose appears to be informing whatever force comes into the village that they are under your control, and hoping that they leave peacefully. This particular group at least appears to be armed."
+
+
+# Commander - Captain
+selectmonster "Captain"
+power 47 2
+
+# Commander - High Lord
+selectmonster "High Lord"
+power 47 1
+
+# Commander - Necromancer's Apprentice
+selectmonster "Necromancer's Apprentice"
+power 47 1
+
+# Commander - Cultist
+selectmonster "Cultist"
+power 47 1
+
+# Commander - Witch's Apprentice
+selectmonster "Witch's Apprentice"
+power 47 1
+
+# Commander - Hierodule
+selectmonster "Hierodule"
+power 47 1
+
+# Commander - Bakemono General
+selectmonster "Bakemono General"
+power 47 1
+
+# Commander - Mounted Chief
+selectmonster "Mounted Chief"
+power 47 1
+
+# Commander - Centurion
+selectmonster "Centurion"
+power 47 1
+
+# Commander - Earth Reader
+selectmonster "Earth Reader"
+power 47 1
+
+# Commander - Druid's Apprentice
+selectmonster "Druid's Apprentice"
+power 47 1
+
+# Commander - Hogmeister
+selectmonster "Hogmeister"
+power 47 1
+
+# Commander - Warlock's Apprentice
+selectmonster "Warlock's Apprentice"
+power 47 1
+
+# Commander - Tribal King
+selectmonster "Tribal King"
+power 47 1
+
+# Commander - Enchanter's Apprentice
+selectmonster "Enchanter's Apprentice"
+power 47 1
+
+# Commander - Cultist of the Deep
+selectmonster "Cultist of the Deep"
+power 47 1
+
+# Commander - Dwarf Commander
+selectmonster "Dwarf Commander"
+power 47 1
+
+# Commander - Bishop
+selectmonster "Bishop"
+power 47 1
+
+# Commander - Illusionist's Apprentice
+selectmonster "Illusionist's Apprentice"
+power 47 1
+
+# Commander - Nekromant
+selectmonster "Nekromant"
+power 47 1
+
+## Wildlife units
+# Moose
+selectmonster "Moose"
+forest1
+# Boars
+selectmonster "Boar"
+forest1
+# Wolves
+selectmonster "Wolf"
+forest1
+# Rabbits
+selectmonster "Rabbit"
+forest2
+# Bears
+selectmonster "Bear"
+north1
+# Deer
+selectmonster "Deer"
+forest1
+# Elephants
+selectmonster "Elephant"
+south1
+desert2
+# Lions
+selectmonster "Lion"
+south1
+desert2
+# Tigers
+selectmonster "Tiger"
+jungle1
+# Snakes
+selectmonster "Snake"
+forest1
+# Serpents
+selectmonster "Serpent"
+forest1
+# Fire ants
+selectmonster "Fire Ant"
+mountain2
+forest2
+# Giant Ants
+selectmonster "Giant Ant"
+mountain1
+# Scorpions
+selectmonster "Scorpion"
+desert1
+
+## Independent units
+# NOTE: Dwarves are commented out to allow Dvalas to expand
+# Dwarf
+# selectmonster "Dwarf"
+# money1
+# Outdoor Dwarf
+# selectmonster "Outdoor Dwarf"
+# money1
+
+# Bandit
+selectmonster "Bandit"
+money1
+# Spearman
+selectmonster "Spearman"
+money1
+# Archer
+selectmonster "Archer"
+money1
+# Swordsman
+selectmonster "Swordsman"
+money1
+# Crossbowman
+selectmonster "Crossbowman"
+money1
+# Brigand
+selectmonster "Brigand"
+money1
+# Pygmy
+selectmonster "Pygmy"
+money1
+# Levy
+selectmonster "Levy"
+money1
+# Goblin
+selectmonster "Goblin"
+money1
+# Hyena Tribe Warrior
+selectmonster "Hyena Tribe Warrior"
+money1
+# Lion Tribe Warrior
+selectmonster "Lion Tribe Warrior"
+money1
+# Lion King
+selectmonster "Lion King"
+money1
+# Witch Doctor
+selectmonster "Witch Doctor"
+money1
+# Captain
+selectmonster "Captain"
+money1
+
+## Prebattle companion summons
+# Heroes - sidekick
+newmonster "Sidekick"
+copystats "Archer"
+
+# Goblin Chieftain
+selectmonster "Goblin Chieftain"
+prebatweapon 20 "Summon Goblin"
+
+# Ogre Chief
+selectmonster "Ogre Chief"
+prebatweapon 3 "Summon Ogre"
+
+# Goblin Hero
+selectmonster "Goblin Hero"
+prebatweapon 8 "Summon Goblin"
+
+# Goblin Murderer
+selectmonster "Goblin Murderer"
+prebatweapon 3 "Summon Goblin"
+
+# Hero
+selectmonster "Hero"
+prebatweapon 3 "Summon Sidekick"
+
+# Chosen of Dvalin
+selectmonster "Chosen of Dvalin"
+prebatweapon 3 "Summon Outdoor Dwarfs"
+prebatweapon 7 "Summon Dwarf Warriors"
+
+## Engineers
+# Engineer
+newmonster "Engineer"
+copystats "Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 8
+armor 0
+mr 3
+mor 8
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+growtime 25
+noleader
+aimaxshop 1
+aihold 1
+gold 1
+rearpos
+rank -1
+power 48 1
+descr "The intrepid Engineer can build roads through forests. His ingenuity allows him to create inventions which generate a profit of 1 gold per turn for the realm. In time, the Engineer will gain enough experience to become a Chief Engineer."
+
+newmonster "Chief Engineer"
+copystats "Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 12
+armor 0
+mr 5
+mor 8
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+rebate 1
+growtime 50
+aimaxshop 1
+aihold 1
+gold 2
+rearpos
+rank -1
+power 48 2
+descr "Engineers who have gained enough experience can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. His ingenuity allows him to create inventions which generate a profit of 2 gold per turn for the realm. In time, the Chief Engineer will earn enough money and experience to become a Chief Capitalist."
+
+
+newmonster "Captain Of The Industry"
+copystats "Master Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 14
+armor 0
+mr 8
+mor 6
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+rebate 2
+lucky
+clumsy
+sleepres
+charmres
+aimaxshop 1
+aihold 1
+gold 2
+trade 1
+rearpos
+rank -1
+power 47 1
+power 48 3
+descr "The most experienced of Engineers recognise that the true value of their labour lies in being good at telling people what to do, and making a profit out of it. They can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. His ingenuity allows him to create inventions which generate a profit of 3 gold per turn for the realm. His presence also brings about a slight increase in trade."
+
+
+###### WEAPONS ######
+
+## Guardian Weapons
+# Harbinger Blessing
+newweapon "Personal Blessing"
+dmgtype 13
+nostr
+trgrank -9
+aoe 1
+init 20
+onlyfriend
+
+## Prebattle summons
+# Goblin
+newweapon "Summon Goblin"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Ogre
+newweapon "Summon Ogre"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Heroes - Sidekick
+newweapon "Summon Sidekick"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Dwarf Warriors
+newweapon "Summon Dwarf Warrior"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Outdoor Dwarves
+newweapon "Summon Outdoor Dwarf"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+###### RITUALS ######
+
+## Militia raising
+newritpow # 47
+# Raise unequipped militia
+newritual "Raise Minimal Defensive Militia"
+level 1
+descr "The commander tries to find between one and three members of the settlement who are willing to defend it with their lives."
+noundead
+nodemon
+nomonreq
+summoning
+free
+addstring "1d3*Defensive Militia"
+addstring "(-)Levy"
+addstring "(-)Defensive Militia"
+addstring "(-)Equipped Militia"
+closewin
+
+# Raise equipped militia (can be combined with the Levy command of Baron)
+newritual "Equip Defensive Militia"
+level 2
+descr "The commander equips between one and three members of the settlement who are willing to defend it with their lives."
+cost 1 2
+noundead
+nodemon
+nomonreq
+summoning
+free
+addstring "1d3*Equipped Militia"
+addstring "(-)Defensive Militia"
+addstring "(-)Equipped Militia"
+closewin
+
+## Engineer buildings
+newritpow # 48
+# Build road through forest
+newritual "Cut Down Forest"
+level 1
+cost 0 20
+apcost 10
+rebatefx25 1
+rebatefx50 2
+descr "The Engineer can cut down Forests and Jungles to allow for faster transport."
+free
+terr -6
+alterloc 36
+closewin
+
+# Build road through mountain
+newritual "Build Road Through Mountains"
+level 2
+cost 0 30
+apcost 12
+rebatefx50 2
+descr "The Engineer can design roads through Mountains and Hills, turning them into plains"
+terr -5
+alterloc 0
+free
+closewin
+
+# Build stagecoach
+#newritual "Build Stagecoach"
+#cost 0 50
+#apcost 15
+#level 3
+#descr "The Capitalist can commission the erection of a building which allows commanders to regain some used AP, at cost of gold."
+#terr -29
+#free
+#closewin
+
+###### CLASSES #######
+
+# Baron
+selectclass 1
+addstartunits "Guardian Ballista" 4
+addstartunits "Guardian Tower Guard" 12
+addstartcom "Guardian Tower Guard"
+addcomrec "Engineer" 10 80 40 0
+
+# Necromancer
+selectclass 2
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Bane Fire Archer" 16
+addstartcom "Guardian Bane Fire Archer"
+addcomrec "Engineer" 7 80 40 0
+
+# Demonologist
+selectclass 3
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Imp Familiar" 3
+addstartunits "Guardian Devil" 2
+addstartcom "Guardian Devil"
+addcomrec "Engineer" 7 80 40 0
+
+# Witch
+selectclass 4
+addstartunits "Guardian Androphag Archer" 10
+addstartcom "Guardian Androphag Archer"
+addcomrec "Engineer" 2 80 40 0
+
+# Priestess
+selectclass 5
+addstartunits "Guardian Ba'alite Archer" 8
+addstartcom "Guardian Shed"
+addcomrec "Engineer" 7 80 40 0
+
+# Bakemono
+selectclass 6
+addstartunits "Guardian Dai Bakemono Archer" 12
+addstartcom "Guardian Dai Bakemono Archer"
+addcomrec "Engineer" 7 80 40 0
+
+# Barbarian
+selectclass 7
+addstartunits "Guardian Pseudo Werebear" 12
+addstartcom "Guardian Effigy" 1
+addcomrec "Engineer" 3 80 40 0
+
+# Senator
+selectclass 8
+addstartunits "Guardian Ballista" 4
+addstartunits "Guardian Triarius" 8
+addstartcom "Guardian Triarius"
+addcomrec "Engineer" 10 80 40 0
+
+# Pale One
+selectclass 9
+addstartunits "Granite Guardian" 2
+addstartcom "Granite Guardian"
+addcomrec "Engineer" 7 80 40 0
+
+# Druid
+selectclass 10
+addstartunits "Guardian Boar Warrior" 12
+addstartcom "Guardian Boar Warrior"
+addcomrec "Engineer" 3 80 40 0
+
+# Hoburg
+selectclass 11
+addstartunits "Guardian Hoburg Crossbow" 30
+addstartcom "Guardian Hoburg Crossbow"
+addcomrec "Engineer" 10 80 40 0
+
+# Warlock
+selectclass 12
+addstartunits "Guardian Cloud Elemental" 1
+addstartunits "Guardian Lesser Earth" 1
+addstartunits "Guardian Lesser Water" 1
+addstartcom "Guardian Lesser Fire"
+addcomrec "Engineer" 5 80 40 0
+
+# Priest King
+selectclass 13
+addstartunits "Guardian Tribal Warrior" 14
+addstartcom "Guardian Tribal Warrior"
+addcomrec "Engineer" 7 80 40 0
+
+# Troll King
+selectclass 14
+addstartunits "Guardian Rock Troll" 2
+addstartcom "Guardian Rock Troll"
+addcomrec "Engineer" 3 80 40 0
+
+# Enchanter
+selectclass 15
+addstartcom "Citadel Guardian"
+addcomrec "Engineer" 7 80 40 0
+
+# Beholder
+selectclass 16
+addstartcom "Citadel Guardian"
+addcomrec "Engineer" 5 80 40 0
+
+# Archmage
+selectclass 17
+addstartcom "Citadel Guardian"
+addcomrec "Engineer" 5 80 40 0
+
+# Goblin King
+selectclass 18
+addstartunits "Citadel Guardian" 2
+addstartcom "Citadel Guardian"
+addcomrec "Engineer" 5 80 40 0
+
+# High Cultist
+selectclass 19
+addstartunits "Guardian Strange Thing" 12
+addstartcom "Guardian Star Oak"
+addcomrec "Engineer" 7 80 40 0
+
+# Dwarf Queen
+selectclass 20
+addstartunits "Guardian Flame Branded Ballista" 8
+addstartcom "Guardian Rime Branded Ballista"
+addcomrec "Engineer" 5 80 40 0
+
+# Voice of El
+selectclass 21
+addstartunits "Guardian Tower Guard" 14
+addstartcom "Guardian Harbinger"
+addcomrec "Engineer" 10 80 40 0
+
+# Illusionist
+selectclass 22
+addstartcom "Guardian Phase Spider"
+addstartunits "Guardian Illusionist Archer" 14
+addcomrec "Engineer" 7 80 40 0
+
+# Markgraf
+selectclass 23
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Hobmark Crossbow" 30
+addstartcom "Guardian Hobmark Crossbow"
+addcomrec "Engineer" 7 80 40 0

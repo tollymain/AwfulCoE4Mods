@@ -1,0 +1,477 @@
+# ----- Basic Mod Info -----
+
+icon		"BetterHomelandSecurityPurist/BetterHomelandSecurityPurist.tga"
+description 	"This is an improved version of a mod which adds defensive immobile units to all starting citadels. (Purist v.1.05)"
+
+###### UNITS ######
+
+## Guardian units
+# Statue
+newmonster "Citadel Guardian"
+copystats "Guardian"
+fastheal
+immortal
+nametype 0
+# Ballista
+newmonster "Guardian Ballista"
+copystats "Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+# Tower Guards
+newmonster "Guardian Tower Guard"
+copystats "Tower Guard"
+stationary
+fastheal
+immortal
+nametype 0
+# Bane Fire Archers
+newmonster "Guardian Bane Fire Archer"
+copystats "Bane Fire Archer"
+stationary
+fastheal
+immortal
+nametype 0
+# Devils
+newmonster "Guardian Devil"
+copystats "Devil"
+stationary
+fastheal
+immortal
+nametype 0
+# Imps
+newmonster "Guardian Imp Familiar"
+copystats "Imp Familiar"
+stationary
+fastheal
+immortal
+nametype 0
+# Androphag Archers
+newmonster "Guardian Androphag Archer"
+copystats "Androphag Archer"
+stationary
+fastheal
+immortal
+nametype 0
+# Ba'alite Archers
+newmonster "Guardian Ba'alite Archer"
+copystats "Ba'alite Archer"
+stationary
+fastheal
+immortal
+nametype 0
+# Sheds
+newmonster "Guardian Shed"
+copystats "Shed"
+stationary
+fastheal
+immortal
+nametype 0
+# Bakemono Archers
+newmonster "Guardian Dai Bakemono Archer"
+copystats "Dai Bakemono Archer"
+stationary
+fastheal
+immortal
+nametype 0
+# Pseudo Werebears
+newmonster "Guardian Pseudo Werebear"
+copystats "Barbarian Warrior"
+hp 30
+mr 5
+str 7
+mor 6
+clearspec
+regeneration
+stationary
+clearweapons
+meleeweapon 6 "bite"
+meleeweapon 4 "claw"
+meleeweapon 4 "claw"
+fastheal
+immortal
+nametype 0
+# Effigy
+newmonster "Guardian Effigy"
+copystats "Effigy"
+fastheal
+immortal
+nametype 0
+# Triarii
+newmonster "Guardian Triarius"
+copystats "Triarius"
+stationary
+fastheal
+immortal
+nametype 0
+# Boar Warriors
+newmonster "Guardian Boar Warrior"
+copystats "Boar Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+# Hoburg Crossbows
+newmonster "Guardian Hoburg Crossbow"
+copystats "Hoburg Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+# Lesser Fire Elementals
+newmonster "Guardian Lesser Fire"
+copystats "Lesser Fire"
+stationary
+fastheal
+immortal
+nametype 0
+# Lesser Cloud Elementals
+newmonster "Guardian Cloud Elemental"
+copystats "Cloud Elemental"
+stationary
+fastheal
+immortal
+nametype 0
+# Lesser Earth Elementals
+newmonster "Guardian Lesser Earth"
+copystats "Lesser Earth"
+stationary
+fastheal
+immortal
+nametype 0
+# Lesser Water Elementals
+newmonster "Guardian Lesser Water"
+copystats "Lesser Water"
+stationary
+fastheal
+immortal
+nametype 0
+# Tribal Warriors
+newmonster "Guardian Tribal Warrior"
+copystats "Tribal Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+# Rock Trolls
+newmonster "Guardian Rock Troll"
+copystats "Rock Troll"
+stationary
+fastheal
+immortal
+nametype 0
+# Strange Things
+newmonster "Guardian Strange Thing"
+copystats "Strange Thing"
+fastheal
+immortal
+nametype 0
+# Star Oaks
+newmonster "Guardian Star Oak"
+copystats "Star Oak"
+fastheal
+immortal
+nametype 0
+# Flame Branded Ballistas
+newmonster "Guardian Flame Branded Ballista"
+copystats "Flame Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+# Rime Branded Ballistas
+newmonster "Guardian Rime Branded Ballista"
+copystats "Rime Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+# Harbinger
+newmonster "Guardian Harbinger"
+copystats "Harbinger"
+clearmove
+clearspec
+fireres
+shockres
+fastheal
+awe 2
+flying
+stationary
+clearweapons 
+prebatweapon 65536 "Personal Blessing"
+spellweapon 25 2
+spellweapon 5 1
+rangedweaponbonus 0 "Heavenly Horn"
+hp 49
+mr 9
+str 8
+mor 15
+immortal
+nametype 0
+# Phase Spiders
+newmonster "Guardian Phase Spider"
+copystats "Phase Spider"
+stationary
+fastheal
+immortal
+nametype 0
+# Archers
+newmonster "Guardian Illusionist Archer"
+copystats "Archer"
+stationary
+fastheal
+immortal
+nametype 0
+# Hobmark Crossbows
+newmonster "Guardian Hobmark Crossbow"
+copystats "Hobmark Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+
+## Militia units
+# Militia
+newmonster "Defensive Militia"
+copystats "Levy"
+str 2
+mor 2
+hp 3
+
+
+## Wildlife units
+# Moose
+selectmonster "Moose"
+forest1
+# Boars
+selectmonster "Boar"
+forest1
+# Wolves
+selectmonster "Wolf"
+forest1
+# Rabbits
+selectmonster "Rabbit"
+forest2
+# Bears
+selectmonster "Bear"
+north1
+# Deer
+selectmonster "Deer"
+forest1
+# Elephants
+selectmonster "Elephant"
+south1
+desert2
+# Lions
+selectmonster "Lion"
+south1
+desert2
+# Tigers
+selectmonster "Tiger"
+jungle1
+# Snakes
+selectmonster "Snake"
+forest1
+# Serpents
+selectmonster "Serpent"
+forest1
+# Fire ants
+selectmonster "Fire Ant"
+mountain2
+forest2
+# Giant Ants
+selectmonster "Giant Ant"
+mountain1
+# Scorpions
+selectmonster "Scorpion"
+desert1
+
+## Independent units
+# NOTE: Dwarves are commented out to allow Dvalas to expand
+# Dwarf
+# selectmonster "Dwarf"
+# money1
+# Outdoor Dwarf
+# selectmonster "Outdoor Dwarf"
+# money1
+
+# Bandit
+selectmonster "Bandit"
+money1
+# Spearman
+selectmonster "Spearman"
+money1
+# Archer
+selectmonster "Archer"
+money1
+# Swordsman
+selectmonster "Swordsman"
+money1
+# Crossbowman
+selectmonster "Crossbowman"
+money1
+# Brigand
+selectmonster "Brigand"
+money1
+# Pygmy
+selectmonster "Pygmy"
+money1
+# Levy
+selectmonster "Levy"
+money1
+# Goblin
+selectmonster "Goblin"
+money1
+# Hyena Tribe Warrior
+selectmonster "Hyena Tribe Warrior"
+money1
+# Lion Tribe Warrior
+selectmonster "Lion Tribe Warrior"
+money1
+# Lion King
+selectmonster "Lion King"
+money1
+# Witch Doctor
+selectmonster "Witch Doctor"
+money1
+# Captain
+selectmonster "Captain"
+money1
+
+
+###### WEAPONS ######
+
+## Guardian Weapons
+# Harbinger Blessing
+newweapon "Personal Blessing"
+dmgtype 13
+nostr
+trgrank -9
+aoe 1
+init 20
+onlyfriend
+
+###### RITUALS ######
+
+
+###### CLASSES #######
+
+# Baron
+selectclass 1
+addstartunits "Guardian Ballista" 4
+addstartunits "Guardian Tower Guard" 12
+addstartcom "Guardian Tower Guard"
+
+# Necromancer
+selectclass 2
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Bane Fire Archer" 16
+addstartcom "Guardian Bane Fire Archer"
+
+# Demonologist
+selectclass 3
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Imp Familiar" 3
+addstartunits "Guardian Devil" 2
+addstartcom "Guardian Devil"
+
+# Witch
+selectclass 4
+addstartunits "Guardian Androphag Archer" 10
+addstartcom "Guardian Androphag Archer"
+
+# Priestess
+selectclass 5
+addstartunits "Guardian Ba'alite Archer" 8
+addstartcom "Guardian Shed"
+
+# Bakemono
+selectclass 6
+addstartunits "Guardian Dai Bakemono Archer" 12
+addstartcom "Guardian Dai Bakemono Archer"
+
+# Barbarian
+selectclass 7
+addstartunits "Guardian Pseudo Werebear" 12
+addstartcom "Guardian Effigy" 1
+
+# Senator
+selectclass 8
+addstartunits "Guardian Ballista" 4
+addstartunits "Guardian Triarius" 8
+addstartcom "Guardian Triarius"
+
+# Pale One
+selectclass 9
+addstartunits "Granite Guardian" 2
+addstartcom "Granite Guardian"
+
+# Druid
+selectclass 10
+addstartunits "Guardian Boar Warrior" 12
+addstartcom "Guardian Boar Warrior"
+
+# Hoburg
+selectclass 11
+addstartunits "Guardian Hoburg Crossbow" 30
+addstartcom "Guardian Hoburg Crossbow"
+
+# Warlock
+selectclass 12
+addstartunits "Guardian Cloud Elemental" 1
+addstartunits "Guardian Lesser Earth" 1
+addstartunits "Guardian Lesser Water" 1
+addstartcom "Guardian Lesser Fire"
+
+# Priest King
+selectclass 13
+addstartunits "Guardian Tribal Warrior" 14
+addstartcom "Guardian Tribal Warrior"
+
+# Troll King
+selectclass 14
+addstartunits "Guardian Rock Troll" 2
+addstartcom "Guardian Rock Troll"
+
+# Enchanter
+selectclass 15
+addstartcom "Citadel Guardian"
+
+# Beholder
+selectclass 16
+addstartcom "Citadel Guardian"
+
+# Archmage
+selectclass 17
+addstartcom "Citadel Guardian"
+
+# Goblin King
+selectclass 18
+addstartcom "Citadel Guardian"
+
+# High Cultist
+selectclass 19
+addstartunits "Guardian Strange Thing" 12
+addstartcom "Guardian Star Oak"
+
+# Dwarf Queen
+selectclass 20
+addstartunits "Guardian Flame Branded Ballista" 8
+addstartcom "Guardian Rime Branded Ballista"
+
+# Voice of El
+selectclass 21
+addstartunits "Guardian Tower Guard" 14
+addstartcom "Guardian Harbinger"
+
+# Illusionist
+selectclass 22
+addstartcom "Guardian Phase Spider"
+addstartunits "Guardian Illusionist Archer" 14
+
+# Markgraf
+selectclass 23
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartunits "Guardian Hobmark Crossbow" 30
+addstartcom "Guardian Hobmark Crossbow"
