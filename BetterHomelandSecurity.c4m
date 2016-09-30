@@ -13,6 +13,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
 
 # Ballista
@@ -23,6 +24,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Tower Guards
@@ -33,6 +35,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Bane Fire Archers
@@ -43,6 +46,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Devils
@@ -53,6 +57,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Imps
@@ -63,6 +68,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Androphag Archers
@@ -73,6 +79,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Ba'alite Archers
@@ -83,6 +90,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Sheds
@@ -93,6 +101,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Bakemono Archers
@@ -103,6 +112,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Pseudo Werebears
@@ -123,6 +133,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Effigy
@@ -132,6 +143,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
 
 # Triarii
@@ -142,6 +154,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Boar Warriors
@@ -152,6 +165,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Hoburg Crossbows
@@ -162,6 +176,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Lesser Fire Elementals
@@ -172,6 +187,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Lesser Cloud Elementals
@@ -182,6 +198,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Lesser Earth Elementals
@@ -192,6 +209,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Lesser Water Elementals
@@ -202,6 +220,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Tribal Warriors
@@ -212,6 +231,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Rock Trolls
@@ -222,6 +242,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Strange Things
@@ -231,6 +252,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Star Oaks
@@ -251,6 +273,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Rime Branded Ballistas
@@ -261,6 +284,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Harbinger
@@ -286,6 +310,7 @@ mor 15
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Phase Spiders
@@ -296,6 +321,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Archers
@@ -306,6 +332,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Hobmark Crossbows
@@ -316,6 +343,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Resign token
