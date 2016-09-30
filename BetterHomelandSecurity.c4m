@@ -16,6 +16,16 @@ charmres
 power 49 1
 descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
 
+# Granite Guardian
+newmonster "Guardian Statue"
+copystats "Granite Guardian"
+fastheal
+immortal
+nametype 0
+charmres
+power 49 1
+descr "Guardian Statues are defensive structures that protect the birthplace of your movement."
+
 # Ballista
 newmonster "Guardian Ballista"
 copystats "Ballista"
@@ -863,8 +873,8 @@ addcomrec "Engineer" 10 80 40 0
 
 # Pale One
 selectclass 9
-addstartunits "Granite Guardian" 2
-addstartcom "Granite Guardian"
+addstartunits "Guardian Statue" 2
+addstartcom "Guardian Statue"
 addcomrec "Engineer" 7 80 40 0
 
 # Druid
