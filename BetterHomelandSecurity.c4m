@@ -952,8 +952,12 @@ addstartcom "Guardian Hobmark Crossbow"
 addcomrec "Engineer" 7 80 40 0
 
 ###### EVENTS ######
-# Commit suicide for player 0
+# Commit suicide for player 0 - killsquare doesn't work (bug in coe), so ...
 playerevent
 +hasunit 0 "Guardian Soldier"
-killsquare
++player 0
++armyowner 0
+newunits 16 "Slave to Unreason"
+newunits 16 "Hunter of Gods"
+newunits 16 "Maker of Ruins"
 endevent
