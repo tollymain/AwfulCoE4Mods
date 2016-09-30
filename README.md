@@ -65,6 +65,7 @@ v.1.08
 
 - Raising militia requires settlements (not sure how I missed that)
 - Added charm resistance to guardians
+- Added resign button
 
 This gives class-themed starting immobile units and commanders to everyone. They are not selectable for movement/transfer nor recruitable, making it easy not to confuse them with the real units. Sentry the defensive commander, he can't move or use rituals anyway. Same purpose as most similar mods, also has the effect that you have to both conquer the starting AI citadel and kill all the commanders to win. Has several benefits including letting you contain enemies so you can play with the rest of the game or even farm them for charmed commanders, and making it even less likely that the AI gets killed by a pack of stray moose. Post any comments, suggestions, etc, here. Credit where it's due to the original authors of mods like these but honestly it's modding so whatever.
 

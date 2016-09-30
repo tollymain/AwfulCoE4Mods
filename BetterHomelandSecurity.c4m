@@ -240,6 +240,7 @@ fastheal
 immortal
 nametype 0
 charmres
+power 49 1
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 # Flame Branded Ballistas
@@ -315,6 +316,12 @@ fastheal
 immortal
 nametype 0
 charmres
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Resign token
+newmonster "Guardian Soldier"
+copystats "Guardian Tower Guard"
+stationary
 descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
 
 ## Militia units
@@ -756,6 +763,21 @@ closewin
 #free
 #closewin
 
+## Guardian rituals
+newritpow # 49
+# Resign - the only way to make this work for just the Player and not the AI is to use token units
+newritual "Resign"
+level 1
+free
+descr "This ritual will kill your guardian commander!! Use only if you know what you are doing. This ritual only works for Player 0 and is intended for singleplayer use only."
+summoning
+addstring "Guardian Soldier"
+addstring "(-)Guardian Soldier"
+apcost 3
+nomonreq
+closewin
+
+
 ###### CLASSES #######
 
 # Baron
@@ -900,3 +922,10 @@ reqterr 19 # Require at least one old battlefield somewhere on the map
 addstartunits "Guardian Hobmark Crossbow" 30
 addstartcom "Guardian Hobmark Crossbow"
 addcomrec "Engineer" 7 80 40 0
+
+###### EVENTS ######
+# Commit suicide for player 0
+playerevent
++hasunit 0 "Guardian Soldier"
+killsquare
+endevent

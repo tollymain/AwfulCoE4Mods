@@ -21,6 +21,7 @@ v.1.05
 v.1.06
 - Removed all militia powers (you can just leave units behind if you want. will make allied AI sites more vulnerable to player takeover)
 - Slightly weakened some guardians
+- Added a resign button
 
 This gives class-themed starting immobile units and commanders to everyone. They are not selectable for movement/transfer nor recruitable, making it easy not to confuse them with the real units. Sentry the defensive commander, he can't move or use rituals anyway. Same purpose as most similar mods, also has the effect that you have to both conquer the starting AI citadel [i]and[/i] kill all the commanders to win. Has several benefits including letting you contain enemies so you can play with the rest of the game or even farm them for charmed commanders, and making it even less likely that the AI gets killed by a pack of stray moose. Post any comments, suggestions, etc, here. Credit where it's due to the original authors of mods like these but honestly it's modding so whatever.
 
