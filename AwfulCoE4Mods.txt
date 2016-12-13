@@ -1,4 +1,4 @@
-[b]Better Homeland Security Mod v.1.07[/b] (github edition)
+[b]Better Homeland Security Mod v.1.09[/b] (dryad edition)
 
 [timg]http://i.imgur.com/iAKJUDb.png[/timg]
 
@@ -39,6 +39,13 @@ v.1.07
 v.1.08
 - Raising militia requires settlements (not sure how I missed that)
 - Added charm resistance to guardians
+- Expanded list of commanders who can raise militia
+- Added a commander "Spy" version of scout, ala Dominions
+v.1.09
+- Modularised changes to allow users to pick and choose whatever features they want
+- Updated ritual numbering for v4.21
+- Added guardians for the Dryad Queen
+- Fixed few minor bugs in descriptions and ability blocks
 
 This gives class-themed starting immobile units and commanders to everyone. They are not selectable for movement/transfer nor recruitable, making it easy not to confuse them with the real units. Sentry the defensive commander, he can't move or use rituals anyway. Same purpose as most similar mods, also has the effect that you have to both conquer the starting AI citadel [i]and[/i] kill all the commanders to win. Has several benefits including letting you contain enemies so you can play with the rest of the game or even farm them for charmed commanders, and making it even less likely that the AI gets killed by a pack of stray moose. Post any comments, suggestions, etc, here. Credit where it's due to the original authors of mods like these but honestly it's modding so whatever.
 

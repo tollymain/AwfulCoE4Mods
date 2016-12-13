@@ -1,0 +1,114 @@
+# ----- Basic Mod Info -----
+
+icon		"./AwfulCoE4Mods/LessAggressiveWildlife.tga"
+description 	"This mod makes all wild monsters stay within their preferred terrain. Additionally, humanoid (and certain other) monsters will stay in captured settlements until they are pushed out. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+modprio 4
+
+###### UNITS ######
+## Wildlife units
+# Moose
+selectmonster "Moose"
+forest1
+# Boars
+selectmonster "Boar"
+forest1
+# Wolves
+selectmonster "Wolf"
+forest1
+# Rabbits
+selectmonster "Rabbit"
+forest2
+# Bears
+selectmonster "Bear"
+north1
+# Deer
+selectmonster "Deer"
+forest1
+# Elephants
+selectmonster "Elephant"
+south1
+desert2
+# Lions
+selectmonster "Lion"
+south1
+desert2
+# Tigers
+selectmonster "Tiger"
+jungle1
+# Snakes
+selectmonster "Snake"
+forest1
+# Serpents
+selectmonster "Serpent"
+forest1
+# Fire ants
+selectmonster "Fire Ant"
+mountain2
+forest2
+# Giant Ants
+selectmonster "Giant Ant"
+mountain1
+# Scorpions
+selectmonster "Scorpion"
+desert1
+
+## Independent units
+# NOTE: Dwarves are commented out to allow Dvalas to expand
+# Dwarf
+# selectmonster "Dwarf"
+# money1
+# Outdoor Dwarf
+# selectmonster "Outdoor Dwarf"
+# money1
+
+# Bandit
+selectmonster "Bandit"
+money1
+# Spearman
+selectmonster "Spearman"
+money1
+# Archer
+selectmonster "Archer"
+money1
+# Swordsman
+selectmonster "Swordsman"
+money1
+# Crossbowman
+selectmonster "Crossbowman"
+money1
+# Brigand
+selectmonster "Brigand"
+money1
+# Pygmy
+selectmonster "Pygmy"
+money1
+# Levy
+selectmonster "Levy"
+money1
+# Goblin
+selectmonster "Goblin"
+money1
+# Hyena Tribe Warrior
+selectmonster "Hyena Tribe Warrior"
+money1
+# Lion Tribe Warrior
+selectmonster "Lion Tribe Warrior"
+money1
+# Lion King
+selectmonster "Lion King"
+money1
+# Witch Doctor
+selectmonster "Witch Doctor"
+money1
+# Captain
+selectmonster "Captain"
+money1
+# Bishop Fish
+selectmonster "Bishop Fish"
+money1
+# Kraken
+selectmonster "Kraken"
+money1
+# Ichtyid Captain
+selectmonster "Ichtyid Captain"
+money1

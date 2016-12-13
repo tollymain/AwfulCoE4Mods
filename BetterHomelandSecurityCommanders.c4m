@@ -1,0 +1,117 @@
+# ----- Basic Mod Info -----
+
+icon		"./AwfulCoE4Mods/BetterHomelandSecurityCommanders.tga"
+description 	"This mod adds immobile defensive commanders to all players starting locations. REQUIRES BetterHomelandSecurity (v.1.00, for Conquest of Elysium 4 version 4.21)"
+modprio 8
+
+###### CLASSES #######
+
+# Baron
+selectclass 1
+addstartcom "Guardian Tower Guard"
+
+# Necromancer
+selectclass 2
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartcom "Guardian Bane Fire Archer"
+
+# Demonologist
+selectclass 3
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartcom "Guardian Devil"
+
+# Witch
+selectclass 4
+addstartcom "Guardian Androphag Archer"
+
+# Priestess
+selectclass 5
+addstartcom "Guardian Shed"
+
+# Bakemono
+selectclass 6
+addstartcom "Guardian Dai Bakemono Archer"
+
+# Barbarian
+selectclass 7
+addstartcom "Guardian Effigy" 1
+
+# Senator
+selectclass 8
+addstartcom "Guardian Triarius"
+
+# Pale One
+selectclass 9
+addstartcom "Guardian Statue"
+
+# Druid
+selectclass 10
+addstartcom "Guardian Boar Warrior"
+
+# Hoburg
+selectclass 11
+addstartcom "Guardian Hoburg Crossbow"
+
+# Warlock
+selectclass 12
+addstartcom "Guardian Lesser Fire"
+
+# Priest King
+selectclass 13
+addstartcom "Guardian Tribal Warrior"
+
+# Troll King
+selectclass 14
+addstartcom "Guardian Rock Troll"
+
+# Enchanter
+selectclass 15
+addstartcom "Citadel Guardian"
+
+# Beholder
+selectclass 16
+addstartcom "Citadel Guardian"
+
+# Archmage
+selectclass 17
+addstartcom "Citadel Guardian"
+
+# Goblin King
+selectclass 18
+addstartcom "Citadel Guardian"
+
+# High Cultist
+selectclass 19
+addstartcom "Guardian Star Oak"
+
+# Dwarf Queen
+selectclass 20
+addstartcom "Guardian Rime Branded Ballista"
+
+# Voice of El
+selectclass 21
+addstartcom "Guardian Harbinger"
+
+# Illusionist
+selectclass 22
+addstartcom "Guardian Phase Spider"
+
+# Markgraf
+selectclass 23
+reqterr 19 # Require at least one old battlefield somewhere on the map
+addstartcom "Guardian Hobmark Crossbow"
+
+# Dryad Queen
+selectclass 24
+addstartcom "Guardian Minotaur Warrior"
+
+###### EVENTS ######
+# Commit suicide for player 0 - killsquare doesn't work (bug in coe), so ...
+playerevent
++hasunit 0 "Guardian Soldier"
++player 0
++armyowner 0
+newunits 16 "Slave to Unreason"
+newunits 16 "Hunter of Gods"
+newunits 16 "Maker of Ruins"
+endevent

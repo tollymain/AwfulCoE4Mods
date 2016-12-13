@@ -1,0 +1,642 @@
+# ----- Basic Mod Info -----
+
+icon		"./AwfulCoE4Mods/AwfulCoE4ModsCore.tga"
+description 	"This is a required module for all Something Awful mods for Conquest of Elysium 4. IT DOES NOT CHANGE GAMEPLAY IN ANY WAY. Mod version 1.00, built for COE4 version 4.21"
+modprio 1
+
+############################################################################################################################
+# For compatibility reasons the Core module contains definitions for all AwfulCoE4Mods, and should always be loaded first. #
+#                           There should be NO gameplay changes contained within.                                          #
+############################################################################################################################
+
+###### UNIT DEFINITIONS ######
+
+## Guardian units
+# Statue
+newmonster "Citadel Guardian"
+copystats "Guardian"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
+
+# Granite Guardian
+newmonster "Guardian Statue"
+copystats "Granite Guardian"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Guardian Statues are defensive structures that protect the birthplace of your movement."
+
+# Ballista
+newmonster "Guardian Ballista"
+copystats "Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Tower Guards
+newmonster "Guardian Tower Guard"
+copystats "Tower Guard"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Bane Fire Archers
+newmonster "Guardian Bane Fire Archer"
+copystats "Bane Fire Archer"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Devils
+newmonster "Guardian Devil"
+copystats "Devil"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Imps
+newmonster "Guardian Imp Familiar"
+copystats "Imp Familiar"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Androphag Archers
+newmonster "Guardian Androphag Archer"
+copystats "Androphag Archer"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Ba'alite Archers
+newmonster "Guardian Ba'alite Archer"
+copystats "Ba'alite Archer"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Sheds
+newmonster "Guardian Shed"
+copystats "Shed"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Bakemono Archers
+newmonster "Guardian Dai Bakemono Archer"
+copystats "Dai Bakemono Archer"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Pseudo Werebears
+newmonster "Guardian Pseudo Werebear"
+copystats "Barbarian Warrior"
+hp 30
+mr 5
+str 7
+mor 6
+clearspec
+regeneration
+stationary
+clearweapons
+meleeweapon 6 "bite"
+meleeweapon 4 "claw"
+meleeweapon 4 "claw"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Effigy
+newmonster "Guardian Effigy"
+copystats "Effigy"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are defensive structures that protect the birthplace of your movement."
+
+# Triarii
+newmonster "Guardian Triarius"
+copystats "Triarius"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Boar Warriors
+newmonster "Guardian Boar Warrior"
+copystats "Boar Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Hoburg Crossbows
+newmonster "Guardian Hoburg Crossbow"
+copystats "Hoburg Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Lesser Fire Elementals
+newmonster "Guardian Lesser Fire"
+copystats "Lesser Fire"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Lesser Cloud Elementals
+newmonster "Guardian Cloud Elemental"
+copystats "Cloud Elemental"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Lesser Earth Elementals
+newmonster "Guardian Lesser Earth"
+copystats "Lesser Earth"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Lesser Water Elementals
+newmonster "Guardian Lesser Water"
+copystats "Lesser Water"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Tribal Warriors
+newmonster "Guardian Tribal Warrior"
+copystats "Tribal Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Rock Trolls
+newmonster "Guardian Rock Troll"
+copystats "Rock Troll"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Strange Things
+newmonster "Guardian Strange Thing"
+copystats "Strange Thing"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Star Oaks
+newmonster "Guardian Star Oak"
+copystats "Star Oak"
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Flame Branded Ballistas
+newmonster "Guardian Flame Branded Ballista"
+copystats "Flame Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Rime Branded Ballistas
+newmonster "Guardian Rime Branded Ballista"
+copystats "Rime Branded Ballista"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Harbinger
+newmonster "Guardian Harbinger"
+copystats "Harbinger"
+clearmove
+clearspec
+fireres
+shockres
+fastheal
+awe 2
+flying
+stationary
+clearweapons 
+prebatweapon 65536 "Personal Blessing"
+spellweapon 25 2
+spellweapon 5 1
+rangedweaponbonus 0 "Heavenly Horn"
+hp 49
+mr 9
+str 8
+mor 15
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Phase Spiders
+newmonster "Guardian Phase Spider"
+copystats "Phase Spider"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Archers
+newmonster "Guardian Illusionist Archer"
+copystats "Archer"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Hobmark Crossbows
+newmonster "Guardian Hobmark Crossbow"
+copystats "Hobmark Crossbow"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Minotaur Warrior
+newmonster "Guardian Minotaur Warrior"
+copystats "Minotaur Warrior"
+stationary
+fastheal
+immortal
+nametype 0
+charmres
+power 50 1
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+# Resign token
+newmonster "Guardian Soldier"
+copystats "Guardian Tower Guard"
+stationary
+descr "Citadel Guardians are an ardent group of defenders who protect the birthplace of your movement."
+
+## Militia units
+# Defensive Militia
+newmonster "Defensive Militia"
+copystats "Levy"
+clearweapons
+meleeweapon 0 1
+str 2
+mor 2
+hp 3
+stationary
+descr "The Defensive Militia is a ragtag group of defenders who volunteered to protect their settlements against whatever may come. Their ineptitude is however in stark contrast with such goals, and their primary purpose appears to be informing whatever force comes into the village that they are under your control, and hoping that they leave peacefully."
+
+# Equipped Defensive Militia
+newmonster "Equipped Militia"
+copystats "Militia"
+mor 2
+stationary
+descr "The Defensive Militia is a ragtag group of defenders who volunteered to protect their settlements against whatever may come. Their ineptitude is however in stark contrast with such goals, and their primary purpose appears to be informing whatever force comes into the village that they are under your control, and hoping that they leave peacefully. This particular group at least appears to be armed."
+
+## Engineers
+# Engineer
+newmonster "Engineer"
+copystats "Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 8
+armor 0
+mr 3
+mor 8
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+growtime 25
+noleader
+aimaxshop 1
+aihold 1
+gold 1
+rearpos
+rank -1
+power 48 1
+descr "The intrepid Engineer can build roads through forests. His ingenuity allows him to create inventions which generate a profit of 1 gold per turn for the realm. In time, the Engineer will gain enough experience to become a Chief Engineer."
+
+newmonster "Chief Engineer"
+copystats "Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 12
+armor 0
+mr 5
+mor 8
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+rebate 1
+growtime 50
+aimaxshop 1
+aihold 1
+gold 2
+rearpos
+rank -1
+power 48 2
+descr "Engineers who have gained enough experience can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. His ingenuity allows him to create inventions which generate a profit of 2 gold per turn for the realm. In time, the Chief Engineer will earn enough money and experience to become a Captain Of The Industry."
+
+
+newmonster "Captain Of The Industry"
+copystats "Master Alchemist"
+clearmove
+clearspec
+clearweapons
+hp 14
+armor 0
+mr 8
+mor 6
+str 3
+meleeweapon 0 1
+human
+allitemslots
+randomitem 25
+nametype 14
+rebate 2
+lucky
+clumsy
+sleepres
+charmres
+aimaxshop 1
+aihold 1
+gold 3
+trade 1
+rearpos
+rank -1
+power 47 1
+power 48 3
+descr "The most experienced of Engineers recognise that the true value of their labour lies in being good at telling people what to do and making a profit along the way. They can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. The capitalist's ingenuity allows him to create inventions which generate a profit of 3 gold per turn for the realm. His presence also brings about a slight increase in trade."
+
+# Spy
+newmonster "Spy"
+copystats "Assassin"
+hp 12
+mor 8
+lucky
+noleader
+aimaxshop 1
+rank -1
+rearpos
+
+## Prebattle companion summons
+# Heroes - sidekick
+newmonster "Sidekick"
+copystats "Archer"
+
+###### WEAPON DEFINITIONS ######
+
+## Guardian Weapons
+# Harbinger Blessing
+newweapon "Personal Blessing"
+dmgtype 13
+nostr
+trgrank -9
+aoe 1
+init 20
+onlyfriend
+
+## Prebattle summons
+# Goblin
+newweapon "Summon Goblin"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Ogre
+newweapon "Summon Ogre"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Heroes - Sidekick
+newweapon "Summon Sidekick"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Dwarf Warriors
+newweapon "Summon Dwarf Warrior"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+# Outdoor Dwarves
+newweapon "Summon Outdoor Dwarf"
+dmgtype 18
+nostr
+range 1
+init 0
+trgrank 6
+
+###### NEWRITPOW RITUAL DEFINITIONS ######
+
+## Militia raising
+newritpow # 48
+# Raise unequipped militia
+newritual "Raise Minimal Defensive Militia"
+level 1
+descr "The commander tries to find between one and three members of the settlement who are willing to defend it with their lives."
+noundead
+nodemon
+nomonreq
+summoning
+free
+terr -58
+addstring "1d3*Defensive Militia"
+addstring "(-)Levy"
+addstring "(-)Defensive Militia"
+addstring "(-)Equipped Militia"
+closewin
+
+# Raise equipped militia (can be combined with the Levy command of Baron)
+newritual "Equip Defensive Militia"
+level 2
+descr "The commander equips between one and three members of the settlement who are willing to defend it with their lives."
+cost 1 2
+noundead
+nodemon
+nomonreq
+summoning
+free
+terr -58
+addstring "1d3*Equipped Militia"
+addstring "(-)Defensive Militia"
+addstring "(-)Equipped Militia"
+closewin
+
+## Engineer buildings
+newritpow # 49
+# Build road through forest
+newritual "Cut Down Forest"
+level 1
+cost 0 20
+apcost 10
+rebatefx25 1
+rebatefx50 2
+descr "The Engineer can cut down Forests and Jungles to allow for faster transport."
+free
+terr -6
+alterloc 36
+closewin
+
+# Build road through mountain
+newritual "Build Road Through Mountains"
+level 2
+cost 0 30
+apcost 12
+rebatefx50 2
+descr "The Engineer can design roads through Mountains and Hills, turning them into plains"
+terr -5
+alterloc 0
+free
+closewin
+
+# Build stagecoach
+#newritual "Build Stagecoach"
+#cost 0 50
+#apcost 15
+#level 3
+#descr "The Capitalist can commission the erection of a building which allows commanders to regain some used AP, at cost of gold."
+#terr -29
+#free
+#closewin
+
+## Guardian rituals
+newritpow # 50
+# Resign - the only way to make this work for just the Player and not the AI is to use token units
+newritual "Resign"
+level 1
+free
+descr "This ritual will kill your guardian commander!! Use only if you know what you are doing. This ritual only works for Player 0 and is intended for singleplayer use only."
+summoning
+addstring "Guardian Soldier"
+addstring "(-)Guardian Soldier"
+apcost 3
+nomonreq
+closewin
+
+
+###### CLASS DEFINITIONS #######
+# Empty for now

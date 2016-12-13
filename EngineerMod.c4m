@@ -1,0 +1,103 @@
+# ----- Basic Mod Info -----
+
+icon		"./AwfulCoE4Mods/EngineerMod.tga"
+description 	"This mod allows players to recruit engineers, who can build paths through forests and mountains. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+modprio 4
+
+###### CLASSES #######
+
+# Baron
+selectclass 1
+addcomrec "Engineer" 10 80 40 0
+
+# Necromancer
+selectclass 2
+addcomrec "Engineer" 7 80 40 0
+
+# Demonologist
+selectclass 3
+addcomrec "Engineer" 7 80 40 0
+
+# Witch
+selectclass 4
+addcomrec "Engineer" 2 80 40 0
+
+# Priestess
+selectclass 5
+addcomrec "Engineer" 7 80 40 0
+
+# Bakemono
+selectclass 6
+addcomrec "Engineer" 7 80 40 0
+
+# Barbarian
+selectclass 7
+addcomrec "Engineer" 3 80 40 0
+
+# Senator
+selectclass 8
+addcomrec "Engineer" 10 80 40 0
+
+# Pale One
+selectclass 9
+addcomrec "Engineer" 7 80 40 0
+
+# Druid
+selectclass 10
+addcomrec "Engineer" 3 80 40 0
+
+# Hoburg
+selectclass 11
+addcomrec "Engineer" 10 80 40 0
+
+# Warlock
+selectclass 12
+addcomrec "Engineer" 5 80 40 0
+
+# Priest King
+selectclass 13
+addcomrec "Engineer" 7 80 40 0
+
+# Troll King
+selectclass 14
+addcomrec "Engineer" 3 80 40 0
+
+# Enchanter
+selectclass 15
+addcomrec "Engineer" 7 80 40 0
+
+# Beholder
+selectclass 16
+addcomrec "Engineer" 5 80 40 0
+
+# Archmage
+selectclass 17
+addcomrec "Engineer" 5 80 40 0
+
+# Goblin King
+selectclass 18
+addcomrec "Engineer" 5 80 40 0
+
+# High Cultist
+selectclass 19
+addcomrec "Engineer" 7 80 40 0
+
+# Dwarf Queen
+selectclass 20
+addcomrec "Engineer" 5 80 40 0
+
+# Voice of El
+selectclass 21
+addcomrec "Engineer" 10 80 40 0
+
+# Illusionist
+selectclass 22
+addcomrec "Engineer" 7 80 40 0
+
+# Markgraf
+selectclass 23
+addcomrec "Engineer" 7 80 40 0
+
+# Dryad Queen
+selectclass 24
+addcomrec "Engineer" 2 80 40 0

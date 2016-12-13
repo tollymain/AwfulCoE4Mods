@@ -1,0 +1,91 @@
+# ----- Basic Mod Info -----
+
+icon		"./AwfulCoE4Mods/MilitiaMod.tga"
+description 	"This mod allows low level commanders to recruit weak token militia. Helps with team games in particular. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+modprio 4
+
+###### UNITS ######
+
+# Commander - Captain
+selectmonster "Captain"
+power 48 2
+
+# Commander - High Lord
+selectmonster "High Lord"
+power 48 1
+
+# Commander - Necromancer's Apprentice
+selectmonster "Necromancer's Apprentice"
+power 48 1
+
+# Commander - Cultist
+selectmonster "Cultist"
+power 48 1
+
+# Commander - Witch's Apprentice
+selectmonster "Witch's Apprentice"
+power 47 1
+
+# Commander - Hierodule
+selectmonster "Hierodule"
+power 48 1
+
+# Commander - Bakemono General
+selectmonster "Bakemono General"
+power 48 1
+
+# Commander - Mounted Chief
+selectmonster "Mounted Chief"
+power 48 1
+
+# Commander - Centurion
+selectmonster "Centurion"
+power 48 1
+
+# Commander - Earth Reader
+selectmonster "Earth Reader"
+power 48 1
+
+# Commander - Druid's Apprentice
+selectmonster "Druid's Apprentice"
+power 48 1
+
+# Commander - Hogmeister
+selectmonster "Hogmeister"
+power 48 1
+
+# Commander - Warlock's Apprentice
+selectmonster "Warlock's Apprentice"
+power 48 1
+
+# Commander - Tribal King
+selectmonster "Tribal King"
+power 48 1
+
+# Commander - Enchanter's Apprentice
+selectmonster "Enchanter's Apprentice"
+power 48 1
+
+# Commander - Cultist of the Deep
+selectmonster "Cultist of the Deep"
+power 48 1
+
+# Commander - Dwarf Commander
+selectmonster "Dwarf Commander"
+power 48 1
+
+# Commander - Bishop
+selectmonster "Bishop"
+power 48 1
+
+# Commander - Illusionist's Apprentice
+selectmonster "Illusionist's Apprentice"
+power 48 1
+
+# Commander - Nekromant
+selectmonster "Nekromant"
+power 48 1
+
+# Commander - Satyr Commander
+selectmonster "Satyr Commander"
+power 48 1
