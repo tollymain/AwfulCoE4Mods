@@ -67,6 +67,13 @@ v.1.08
 - Added charm resistance to guardians
 - Added resign button
 
+v.1.09
+
+- Every feature is now optional and can be activated separately
+- Updated for v 4.21, including Dryad Queen Guardians
+- New Feature: Spies! Scout commanders come back from Dominions
+- Hopefully it should be now trivial to add new races/tweaks/rituals/features and make them compatible 
+
 This gives class-themed starting immobile units and commanders to everyone. They are not selectable for movement/transfer nor recruitable, making it easy not to confuse them with the real units. Sentry the defensive commander, he can't move or use rituals anyway. Same purpose as most similar mods, also has the effect that you have to both conquer the starting AI citadel and kill all the commanders to win. Has several benefits including letting you contain enemies so you can play with the rest of the game or even farm them for charmed commanders, and making it even less likely that the AI gets killed by a pack of stray moose. Post any comments, suggestions, etc, here. Credit where it's due to the original authors of mods like these but honestly it's modding so whatever.
 
 I've done the watered-down militia thing - the generic captains can now use two new rituals, one that adds 1d3 super crappy militia (like even worse than normal) to a settlement site at the cost of 1AP, and another one which adds tiny less crappy militia (actually a watered down version of the Baron militia in this case) for 1AP and 2 iron.
