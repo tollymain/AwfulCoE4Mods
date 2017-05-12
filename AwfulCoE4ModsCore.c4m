@@ -422,7 +422,7 @@ aihold 1
 gold 1
 rearpos
 rank -1
-power 48 1
+power 49 1
 descr "The intrepid Engineer can build roads through forests. His ingenuity allows him to create inventions which generate a profit of 1 gold per turn for the realm. In time, the Engineer will gain enough experience to become a Chief Engineer."
 
 newmonster "Chief Engineer"
@@ -447,7 +447,7 @@ aihold 1
 gold 2
 rearpos
 rank -1
-power 48 2
+power 49 2
 descr "Engineers who have gained enough experience can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. His ingenuity allows him to create inventions which generate a profit of 2 gold per turn for the realm. In time, the Chief Engineer will earn enough money and experience to become a Captain Of The Industry."
 
 
@@ -477,8 +477,8 @@ gold 3
 trade 1
 rearpos
 rank -1
-power 47 1
-power 48 3
+power 48 1
+power 49 3
 descr "The most experienced of Engineers recognise that the true value of their labour lies in being good at telling people what to do and making a profit along the way. They can build roads through both mountains and forests, and more cheaply than their less-experienced brethern at that. The capitalist's ingenuity allows him to create inventions which generate a profit of 3 gold per turn for the realm. His presence also brings about a slight increase in trade."
 
 # Spy
