@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/EngineerMod.tga"
-description 	"This mod allows players to recruit engineers, who can build paths through forests and mountains. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+description 	"This mod allows players to recruit engineers, who can build paths through forests and mountains. (v.1.09, for Conquest of Elysium 4 version 4.21)"
 modprio 4
 
 ###### CLASSES #######

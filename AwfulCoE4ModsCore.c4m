@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/AwfulCoE4ModsCore.tga"
-description 	"This is a required module for all Something Awful mods for Conquest of Elysium 4. IT DOES NOT CHANGE GAMEPLAY IN ANY WAY. Mod version 1.00, built for COE4 version 4.21"
+description 	"This is a required module for all Something Awful Pack mods for Conquest of Elysium 4. IT DOES NOT CHANGE GAMEPLAY IN ANY WAY. Mod version 1.09, built for COE4 version 4.21"
 modprio 1
 
 ############################################################################################################################
@@ -484,7 +484,7 @@ descr "The most experienced of Engineers recognise that the true value of their 
 # Spy
 newmonster "Spy"
 copystats "Assassin"
-hp 13
+hp 12
 mor 8
 lucky
 noleader

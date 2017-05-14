@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/MilitiaMod.tga"
-description 	"This mod allows low level commanders to recruit weak token militia. Helps with team games in particular. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+description 	"This mod allows low level commanders to recruit weak token militia. Helps with team games in particular. (v.1.09, for Conquest of Elysium 4 version 4.21)"
 modprio 4
 
 ###### UNITS ######

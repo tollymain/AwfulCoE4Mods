@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/MiscFixes.tga"
-description 	"This mod contains few miscellaneus fixes and tweaks to vanilla content. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+description 	"This mod contains few miscellaneous fixes and tweaks to vanilla content. (v.1.09, for Conquest of Elysium 4 version 4.21)"
 modprio 4
 
 # Goblin Chieftain
@@ -38,6 +38,10 @@ reqterr 19 # Require at least one old battlefield somewhere on the map
 # Demonologist
 selectclass 3
 reqterr 19 # Require at least one old battlefield somewhere on the map
+
+# Pale One
+selectclass 9
+reqterr 39 #Require at least one temple somewhere on the map.
 
 # Markgraf
 selectclass 23

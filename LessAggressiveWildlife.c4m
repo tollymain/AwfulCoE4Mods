@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/LessAggressiveWildlife.tga"
-description 	"This mod makes all wild monsters stay within their preferred terrain. Additionally, humanoid (and certain other) monsters will stay in captured settlements until they are pushed out. (v.1.00, for Conquest of Elysium 4 version 4.21)"
+description 	"This mod makes all wild monsters stay within their preferred terrain. Additionally, humanoid (and certain other) monsters will stay in captured settlements until they are pushed out. (v.1.09, for Conquest of Elysium 4 version 4.21)"
 modprio 4
 
 ###### UNITS ######

@@ -53,4 +53,4 @@ I've done the watered-down militia thing - the generic captains can now use two 
 
 Extract it into Documents and Settings(called Users in Windows 10)\[Username]\AppData\Roaming\coe4\mods
 
-[url=https://github.com/private-speech/AwfulCoE4Mods]Download link (Github)[/url]
+[url=https://github.com/tollymain/AwfulCoE4Mods]Download link (Github)[/url]

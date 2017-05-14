@@ -1,7 +1,7 @@
 # ----- Basic Mod Info -----
 
 icon		"./AwfulCoE4Mods/BetterHomelandSecurityCommanders.tga"
-description 	"This mod adds immobile defensive commanders to all players starting locations. REQUIRES BetterHomelandSecurity (v.1.00, for Conquest of Elysium 4 version 4.21)"
+description 	"This mod adds immobile defensive commanders to all players starting locations. REQUIRES BetterHomelandSecurity (v.1.09, for Conquest of Elysium 4 version 4.21)"
 modprio 8
 
 ###### CLASSES #######
